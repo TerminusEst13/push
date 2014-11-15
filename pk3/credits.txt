@@ -1,0 +1,37 @@
+- Gun sprite drawn by Sgt. Shivers
+- Laser trails by ijon tichy.
+- Double-jump system by ijon tichy.
+- Player sounds from Quake 3.
+- Player sprites from Mars 3D.
+- Dunked smoke from Marathon.
+- Defense Drone sprites by Revae.
+- Push laser sprites by Eriance.
+- Force Gauntlet sprites by Riet.
+- Critical error code coded by Kyle873
+
+- D_DM2INT is from Extreme Pinball
+- Other music is credited in MapInfo.
+
+- PUSH02, PUSH04, and PUSH09 by Sgt. Shivers.
+- PUSH03 by Roman6a.
+- PUSH05 and PUSH18 by Dewce.
+- PUSH06 by DRL 3.33.
+- PUSH07 and PUSH14 by OnePunch-Man.
+ ^ PUSH14 textures by Agaures.
+- PUSH08 by Mike12.
+- PUSH09 by Sgt. Shivers.
+- PUSH10 by Darsycho.
+- PUSH11 by DanteEdward.
+- PUSH12 by Aquasa.
+- PUSH15 and PUSH17 by UnholyPimpin.
+- PUSH16 by Seryder.
+- PUSH19 by PresidentPeople.
+ ^ Duke3D textures, water fountain and palm tree sprites from Realm 667.
+ ^ Folding chair and potted plant from Doom Vacation.
+ ^ Sky from PSX Doom TC.
+ ^ Sand texture from Armageddon2v63.
+- PUSH20 by Combinebobnt.
+- PUSH21 by Hypnotoad.
+ ^- Duke3D textures taken from Duke Nukem 3D, obviously.
+- PUSH22 by an anon off 4chan.
+ ^- Textures taken from cc4-tex.

@@ -1,0 +1,213 @@
+actor "Force Gauntlet" : Weapon
+{
+    Weapon.SelectionOrder 1
+    Weapon.Slotnumber 1
+    States
+    {
+    Ready:
+        TNT1 A 0 A_TakeInventory("GauntletHit",1)
+        KGNT A 1 A_WeaponReady
+        Loop
+    Deselect:
+        TNT1 AAA 0 A_Lower
+        KGNT A 1 A_Lower
+        Loop
+    Select:
+        TNT1 AAA 0 A_Raise
+        KGNT A 1 A_Raise
+        Loop
+    Fire:
+        KGNT RQ 1
+    Hold:
+        TNT1 A 5
+        TNT1 A 0 A_PlayWeaponSound("Gauntlet/Swing")
+        KGNT H 1
+        TNT1 A 0 A_FireCustomMissile("GauntletAttack",0,0)
+        KGNT I 1
+        KGNT J 1
+        TNT1 A 0 A_JumpIfInventory("GauntletHit",1,"FireHit")
+        KGNT K 1
+        KGNT L 1
+        TNT1 A 20
+        TNT1 A 0 A_Refire
+        TNT1 A 0 A_ClearRefire
+        KGNT QR 1 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
+        goto Ready
+    FireHit:
+        TNT1 A 0 A_Stop
+        TNT1 A 0 A_SetBlend("White",0.3,10)
+        KGNT MNM 1 Radius_Quake(2,6,0,16,0)
+        TNT1 A 0 A_Recoil(3)
+        KGNT OP 1
+        TNT1 A 10 A_ClearRefire
+        KGNT QR 1 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
+        goto Ready
+    AltFire:
+        KGNT BC 1 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
+        TNT1 A 0 A_Recoil(-1)
+        TNT1 A 0 A_SetBlend("White",0.1,6)
+        TNT1 A 0 A_PlayWeaponSound("Gauntlet/Pull")
+        TNT1 A 0 A_FireCustomMissile("GauntletShot",0,0,0,0)
+        KGNT DE 2
+        KGNT FGG 1 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
+        KGNT A 30 A_WeaponReady(WRF_NOSECONDARY | WRF_NOSWITCH)
+        Goto Ready
+    Spawn:
+        TNT1 A -1
+        Stop
+    }
+}
+
+actor GauntletAttack : FastProjectile
+{
+    Radius 2
+    Height 2
+    Damage (10)
+    Speed 80
+    RenderStyle Add
+    Alpha 0.6
+    Scale 0.75
+    SeeSound "none"
+    DeathSound "none"
+    Species "Player"
+    DamageType "GauntletDamage"
+    Projectile
+    +THRUGHOST
+    States
+    {
+    Spawn:
+        TNT1 A 1
+        stop
+    Death:
+        TNT1 A 1
+        TNT1 A 0 A_Stop
+        TNT1 A 0 A_PlaySound("gauntlet/miss")
+        TNT1 AAAAAA 0 A_SpawnItemEx("GauntletMissPuff",0,0,0,random(-200,200)/100.00,random(-200,200)/100.00,random(-200,200)/100.00,random(-180,180),160)
+        FHFX SS 1
+        FHFX TU 2
+        FHFX VW 3
+        stop
+    XDeath:
+    Crash:
+        TNT1 A 1
+        TNT1 A 0 A_Stop
+        TNT1 A 0 A_GiveToTarget("GauntletHit",1)
+        TNT1 A 0 A_PlaySound("gauntlet/hit")
+        TNT1 AAAAAA 0 A_SpawnItemEx("GauntletHitPuff",0,0,0,random(-200,200)/100.00,random(-200,200)/100.00,random(-200,200)/100.00,random(-180,180),160)
+        FAXE RST 1  
+        FAXE UV 2
+        FAXE WX 3
+        stop
+    }
+}
+
+actor GauntletMissPuff
+{
+    RenderStyle Add
+    Alpha 0.4
+    Scale 0.4
+    +NOINTERACTION
+    +CLIENTSIDEONLY
+    States
+    {
+    Spawn:
+        FHFX STUVW 2
+        stop
+    }
+}
+
+actor GauntletHitPuff
+{
+    RenderStyle Add
+    Alpha 0.4
+    Scale 0.4
+    +NOINTERACTION
+    +CLIENTSIDEONLY
+    States
+    {
+    Spawn:
+        FAXE RSTUVWX 2
+        stop
+    }
+}
+
+ACTOR GauntletShot : FastProjectile
+{
+    Speed 150
+    Damage (10)
+    Height 8
+    Radius 12
+    RenderStyle Add
+    Alpha 0.75
+    Scale 0.5
+    SeeSound ""
+    DamageType "NoDamage"
+    States
+    {
+    Spawn:
+        TNT1 A 1 //A_SpawnItemEx("FakeLoreShotTrail",0,0,0,0,0,0,0,160)
+        TNT1 A 0 A_Stop
+    AirDeath:
+        FXPL A 0 A_Explode(96, 160)
+        goto Death2
+    Death:
+        FXPL A 0 A_Explode(160,160)
+        goto Death2
+    Death2:
+        TNT1 A 0
+        TNT1 A 0 A_PlaySound("gauntlet/shothit")
+        TNT1 AAAAAA 0 A_SpawnItemEx("GauntletHitPuff",0,0,0,random(-200,200)/100.00,random(-200,200)/100.00,random(-100,100)/100.00,random(-180,180),160)
+        TNT1 AAAAAA 0 A_SpawnItemEx("GauntletHitPuff2",0,0,0,random(-200,200)/100.00,random(-200,200)/100.00,random(-100,100)/100.00,random(-180,180),160)
+        TNT1 A 1
+        stop
+    }
+}
+
+ACTOR FakeLoreShotJump
+{
+    Radius 1
+    Height 1
+    Speed 0
+    +NOCLIP
+    +FORCERADIUSDMG
+    -SOLID
+    +DONTBLAST
+    DamageType "NoDamage"
+    Obituary "%k shouldn't have killed %o with this."
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_Explode(164,96,1)
+        Stop
+    }
+}
+
+actor GauntletHitPuff2
+{
+    RenderStyle Add
+    Alpha 0.55
+    Scale 0.4
+    +NOINTERACTION
+    +CLIENTSIDEONLY
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_Jump(255,"Spawn1","Spawn2","Spawn3","Spawn4")
+        TNT1 A 1
+        loop
+    Spawn1:
+        MLFX A 1 A_FadeOut(0.05)
+        loop
+    Spawn2:
+        MLFX B 1 A_FadeOut(0.05)
+        loop
+    Spawn3:
+        MLFX C 1 A_FadeOut(0.05)
+        loop
+    Spawn4:
+        MLFX D 1 A_FadeOut(0.05)
+        loop
+    }
+}

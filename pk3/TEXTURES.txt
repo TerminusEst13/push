@@ -1,0 +1,22 @@
+Texture STARTAN1, 64, 128
+{
+	Patch SW12_4, 0, 0
+	Patch SW12_5, 32, 0
+}
+
+Texture SW1GARG, 64, 128
+{
+	Patch WALL47_2, 0, 0
+	Patch WALL42_6, 12, 62
+}
+
+Texture SW1LION, 64, 128
+{
+	Patch WALL47_2, 0, 0
+	Patch WALL42_5, 11, 62
+}
+
+Texture SP_ROCK1, 128, 128
+{
+	Patch WALL63_1, 0, 0
+}

@@ -1,0 +1,9 @@
+skybox Cus3
+{
+PLU3_N
+PLU3_E
+PLU3_S
+PLU3_W
+PLU3_T
+PLU3_B
+}

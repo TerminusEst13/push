@@ -1,0 +1,187 @@
+actor 500Health: Health
+{
+    Inventory.Amount 1
+    Inventory.MaxAmount 500
+}
+
+actor PinballPlayer : DoomPlayer
+{
+    Speed 1
+    Health 500
+    Radius 16
+    Height 56
+    PainChance 255
+    Gravity 0.575
+    Mass 40
+    Player.JumpZ 13
+    Player.ForwardMove 2.2, 1.1
+    Player.SideMove 2.2, 1.1
+    Player.DisplayName "Network User"
+    Player.StartItem "Push Gun"
+    Player.StartItem "Force Gauntlet"
+    DamageFactor "PushDamage", 0.5
+    DamageFactor "PushDamage2", 0.5
+    DamageFactor "GrenadeDamage", 0.5
+    DamageFactor "NoDamage", 0.0
+    RadiusDamageFactor 0.25
+    Player.ColorRange 112, 127
+    +NOBLOOD
+    +THRUSPECIES
+    Species "Player"
+    States
+    {
+    Spawn:
+        PLAY A -1
+        Loop
+    See:
+        PLAY ABCD 4 
+        Loop
+    Missile:
+        PLAY E 12 
+        Goto Spawn
+    Melee:
+        PLAY F 6 BRIGHT
+        Goto Missile
+    Pain:
+        PLAY G 4 
+        PLAY G 4 A_Pain
+        Goto Spawn
+    Pain.PushDamage:
+        TNT1 A 0 A_SetBlend("Blue",0.25,5)
+        TNT1 A 0 A_PlaySoundEx("push/hit","soundslot7",0,0)
+        PLAY A 1
+        goto Spawn
+    Pain.PushDamage2:
+        TNT1 A 0 A_SetBlend("Green",0.25,5)
+        TNT1 A 0 A_PlaySoundEx("push/hit","soundslot7",0,0)
+        PLAY A 1
+        goto Spawn
+    Pain.GrenadeDamage:
+        TNT1 A 0 A_GiveInventory("GetDunkedNerd",1)
+        PLAY A 1
+        goto Spawn
+    Pain.GauntletDamage:
+        TNT1 A 0 A_GiveInventory("ThrownTheGauntlet",1)
+        PLAY A 1
+        goto Spawn
+    Pain.HitlerDamage:
+    Pain.DroneDamage:
+        TNT1 A 0 ThrustThing(angle*256/360+random(1,256), random(20,60), 1, 0)
+        PLAY A 1
+        goto Spawn
+    XDeath:
+    Death:
+        TNT1 A 0 A_PlayerScream
+        TNT1 A 0 A_NoBlocking
+        PLAY HHH 2 A_FadeOut(0.1)
+        PLAY III 2 A_FadeOut(0.1)
+        PLAY JJJ 2 A_FadeOut(0.1)
+        PLAY Z 1
+        PLAY Z -1
+        Stop
+    }
+}
+
+actor GetDunkedNerd : CustomInventory
+{
+    Inventory.MaxAmount 1
+    Inventory.Amount 1
+    +AUTOACTIVATE
+    -INVBAR
+    States
+    {
+    Pickup:
+        TNT1 A 0 A_JumpIfInventory("OnTheGround",1,"Launch")
+        TNT1 A 0 A_SetBlend("White",0.85,35)
+        TNT1 A 0 A_GiveInventory("DoomedGuy",70)
+        TNT1 A 0 A_PlaySoundEx("push/dunk","soundslot6",0,1)
+        TNT1 A 0 ThrustThingZ(0,20,1,1)
+        TNT1 A 0 ACS_ExecuteAlways(404,0,0,0,0)
+        //TNT1 A 0 ACS_ExecuteAlways(405,0,0,0,0)
+        TNT1 A 0 ThrustThing(angle*256/360+128, 100, 1, 0)
+        stop
+    Launch:
+        TNT1 A 0 ThrustThingZ(0,40,0,1)
+        TNT1 A 0 ThrustThing(angle*256/360+128, 50, 1, 0)
+        stop
+    }
+}
+
+actor ThrownTheGauntlet : CustomInventory
+{
+    Inventory.MaxAmount 1
+    Inventory.Amount 1
+    +AUTOACTIVATE
+    -INVBAR
+    States
+    {
+    Pickup:
+        TNT1 A 0 A_SetBlend("White",0.85,35)
+        TNT1 A 0 A_GiveInventory("DoomedGuy",70)
+        TNT1 A 0 A_PlaySoundEx("gauntlet/smash","soundslot6",0,1)
+        TNT1 A 0 ACS_ExecuteAlways(404,0,0,0,0)
+        //TNT1 A 0 ACS_ExecuteAlways(405,0,0,0,0)
+        TNT1 A 0 A_JumpIfInventory("OnTheGround",1,"Launch")
+        TNT1 A 0 ThrustThingZ(0,20,1,1)
+        TNT1 A 0 ThrustThing(angle*256/360+128, 80, 1, 0)
+        stop
+    Launch:
+        TNT1 A 0 ThrustThingZ(0,40,0,1)
+        TNT1 A 0 ThrustThing(angle*256/360+128, 80, 1, 0)
+        stop
+    }
+}
+
+actor DunkedSmokeActivator : CustomInventory
+{
+    Inventory.MaxAmount 1
+    Inventory.Amount 1
+    +AUTOACTIVATE
+    -INVBAR
+    States
+    {
+    Pickup:
+        TNT1 A 0
+        TNT1 A 0 A_TakeInventory("DoomedGuy",1)
+        TNT1 AAA 0 A_SpawnItemEx("DunkedSmoke",0,0,26,random(-100,100)/150.0,random(-100,100)/150.0,random(-100,100)/150.0,0,160)
+        stop
+    }
+}
+
+actor DunkedSmoke
+{
+    RenderStyle Add
+    Alpha 0.9
+    Scale 0.6
+    +CLIENTSIDEONLY
+    +NOINTERACTION
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_Jump(256,"Spawn1","Spawn2","Spawn3","Spawn4","Spawn5","Spawn6","Spawn7")
+        TNT1 A 1
+        loop
+    Spawn1:
+        MSMK A 2 BRIGHT A_FadeOut(0.05)
+        loop
+    Spawn2:
+        MSMK B 2 BRIGHT A_FadeOut(0.05)
+        loop
+    Spawn3:
+        MSMK C 2 BRIGHT A_FadeOut(0.05)
+        loop
+    Spawn4:
+        MSMK D 2 BRIGHT A_FadeOut(0.05)
+        loop
+    Spawn5:
+        MSMK E 2 BRIGHT A_FadeOut(0.05)
+        loop
+    Spawn6:
+        MSMK F 2 BRIGHT A_FadeOut(0.05)
+        loop
+    Spawn7:
+        MSMK G 2 BRIGHT A_FadeOut(0.05)
+        loop
+    }
+}

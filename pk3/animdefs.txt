@@ -1,0 +1,22 @@
+Warp Texture SLIPGATE
+Warp Texture PWATER
+Warp Texture Q1EX_241
+Warp Texture 13_bleak
+
+texture blkfall1
+pic 1 tics 6
+pic 2 tics 6
+pic 3 tics 6
+pic 4 tics 6
+
+texture blkwat1
+pic 1 tics 6
+pic 2 tics 6
+pic 3 tics 6
+pic 4 tics 6
+
+texture lavfall1
+pic 1 tics 6
+pic 2 tics 6
+pic 3 tics 6
+pic 4 tics 6

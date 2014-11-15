@@ -1,0 +1,26 @@
+actor Boolean: Inventory
+{
+    Inventory.MaxAmount 1
+    +UNDROPPABLE
+    -INVBAR
+}
+
+actor Counter: Inventory
+{
+    Inventory.MaxAmount 0x7FFFFFFF
+    +UNDROPPABLE
+    -INVBAR
+}
+
+actor OnTheGround : Boolean {}
+actor EmergencyDodgeDone : Boolean {}
+actor LightAsAFeather : Boolean {}
+actor ImAlive : Boolean {}
+actor GauntletHit : Boolean {}
+actor DoomedGuy : Counter { Inventory.MaxAmount 70 }
+
+#include "decorate/player.dec"
+#include "decorate/weapon.dec"
+#include "decorate/weapon2.dec"
+#include "decorate/world.dec"
+#include "decorate/parkmore.dec"

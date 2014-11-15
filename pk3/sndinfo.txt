@@ -1,0 +1,32 @@
+push/fire             PUSHPRIM // I believe this is from Doom 64?
+push/altfire          PUSHALT  // Can't remember where this is from, sorry.
+push/dodge            PUSHDDGE // Taken from Smash Bros. Brawl
+push/grenadehit       PUSHALTH // Taken from Devil May Cry 3
+push/laserhit         PUSHPRIH // Taken from Quake 3
+push/dunk             PUSHDUNK // Taken from Kamen Rider Battride War
+push/hit              ENEMYHIT
+
+drone/idle            DRONIDLE // Taken from Timesplitters 2
+$random drone/see { drosee1 drosee2 drosee3 } // Taken from Timesplitters 2
+drosee1               DRONSEE1
+drosee2               DRONSEE2
+drosee3               DRONSEE3
+
+$volume push/hit      0.85
+
+gauntlet/swing        GANTSWNG // Taken from Halo: Reach
+gauntlet/hit          GANTHIT  // Taken from Halo: Reach
+gauntlet/miss         GANTMISS // Taken from Halo: Reach
+gauntlet/pull         GANTPULL // Can't remember where this is from, sorry.
+gauntlet/smash        GANTSMSH // Taken from Smash Bros. Brawl
+gauntlet/shothit      GANTSHIT // Taken from Smash Bros. Brawl
+
+
+FlameJet/Torch        E_FJET   // Taken from Rise of the Triad
+hitler/awake          DSHR1SIT // Taken from Wolfenstein 3D
+
+SHIFTN                SHIFTN   // Unknown source.
+SHIFTY                SHIFTY   // Same.
+
+
+suddendeath/alarm     TIMEALRM // Taken from Doom 3

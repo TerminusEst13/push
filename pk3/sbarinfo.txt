@@ -1,0 +1,40 @@
+height 0;
+
+statusbar normal, forcescaled
+{
+InInventory ImAlive, 1
+{
+    DrawImage "HEMPTY", 151, 4;
+    InInventory not EmergencyDodgeDone, 1
+    {
+        AspectRatio "4:3"
+        { DrawImage "JUMPICON", 3, 170; }
+        AspectRatio "16:10"
+        { DrawImage "JUMPICON", -29, 170; }
+        AspectRatio "16:9"
+        { DrawImage "JUMPICON", -50, 170; }
+    }
+}
+}
+
+statusbar fullscreen, forcescaled
+{
+InInventory ImAlive, 1
+{
+    DrawImage "HEMPTY", 151, 4;
+    InInventory not EmergencyDodgeDone, 1
+    {
+        AspectRatio "4:3"
+        { DrawImage "JUMPICON", 3, 170; }
+        AspectRatio "16:10"
+        { DrawImage "JUMPICON", -29, 170; }
+        AspectRatio "16:9"
+        { DrawImage "JUMPICON", -50, 170; }
+    }
+}
+}
+
+statusbar automap
+{
+    DrawImage "HEMPTY", 151, 4;
+}

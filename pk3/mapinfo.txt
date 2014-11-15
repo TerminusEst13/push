@@ -1,0 +1,151 @@
+gameinfo
+{
+    infopage = "PUSHTIP0", "CREDIT0"
+}
+
+map PUSH01 "The Original - TE13"
+{
+    next = "PUSH02"
+    music = "MPUSH01" // aRTy - Doomed by aRTy 27.10.95
+    sky1 = "RSKY1"
+}
+
+map PUSH02 "PUSHKA - Sgt. Shivers"
+{
+    next = "PUSH03"
+    music = "MPUSH02" // Necros - Point of Departure
+    sky1 = "RSKY2"
+}
+
+map PUSH03 "Call it Quakepush or Something - Roman6a"
+{
+    next = "PUSH04"
+    music = "MPUSH03" // Unreal: Return to Na Pali - Dark
+    sky1 = "SKY2_2"
+}
+
+map PUSH04 "Hitler Is Coming To Push You - Sgt. Shivers"
+{
+    next = "PUSH05"
+    music = "MPUSH04" // Alexander Brandon - Eruption of Vesuvius
+    sky1 = "RSKY3"
+}
+
+map PUSH05 "Zzzzzzzzz - Dewce"
+{
+    next = "PUSH06"
+    music = "MPUSH05" // Deus Ex - Quotes
+}
+
+map PUSH06 "Pink is a Cool Color - DRL 3.33"
+{
+    next = "PUSH07"
+    music = "MPUSH06" // Coretex - Home
+}
+
+map PUSH07 "Final Dunkstination - Onepunch-Man"
+{
+    next = "PUSH08"
+    sky1 = "DUNKSKY"
+    music = "MPUSH07" // Xaser - Zen Dynamics
+}
+
+map PUSH08 "Jelly Trains - Mike12"
+{
+    next = "PUSH09"
+    music = "MPUSH08" // Jazz Jackrabbit 2 - Frolick Lane
+}
+
+map PUSH09 "It Was An Accident, I Swear - Sgt. Shivers"
+{
+    next = "PUSH10"
+    sky1 = "AZSKY"
+    music = "MPUSH09" // Unknown - Gateways Pt. II
+}
+
+map PUSH10 "Cybergrid (aka ''Stardate 20x6 ripoff'') - Darsycho"
+{
+    next = "PUSH11"
+    music = "MPUSH10" // Xaser - Enigma
+}
+
+map PUSH11 "No Golden Stars - DanteEdward"
+{
+    next = "PUSH12"
+    music = "MPUSH11" // Unreal - Warlord
+    sky1 = "RSKY2"
+}
+
+map PUSH12 "Hey There's, Like, Two Planets - Aquasa"
+{
+    next = "PUSH13"
+    sky1 = "CC4SKY2"
+    music = "MPUSH12" // Captain - Space Debris
+}
+
+map PUSH13 "Your Pants Will Be Scared ;_; - TE13"
+{
+    next = "PUSH14"
+    music = "MPUSH13" // Dark Vengeance - Song 3
+}
+
+map PUSH14 "Rules One and Two - OnePunch-Man"
+{
+    next = "PUSH15"
+    music = "MPUSH14" // elfan - Brahma Yarga
+}
+
+map PUSH15 "Dreadful Nexus of Evil - UnholyPimpin"
+{
+    next = "PUSH16"
+    sky1 = "BLACK"
+    music = "MPUSH15" // SlayeR - Mist
+}
+
+map PUSH16 "Icon of Panic - Seryder"
+{
+    next = "PUSH17"
+    music = "MPUSH16" // M o O n W a l k e R - D00M2(Game oveR)
+}
+
+map PUSH17 "Pushy the Cacodemon - UnholyPimpin"
+{
+    next = "PUSH18"
+    sky1 = "RSKY2"
+    music = "MPUSH17" // Alexander Brandon - Bright Club Lane
+}
+
+map PUSH18 "Come On and Slam - Dewce"
+{
+    next = "PUSH19"
+    sky1 = "SPACESKY", 1.1
+    music = "MPUSH18" // Quazar - Hybrid Song 2:20
+}
+
+map PUSH19 "Pushin' on the Ritz - PresidentPeople"
+{
+    next = "PUSH20"
+    Sky1 = "SKY08"
+    music = "MPUSH19" // tjoa - indiaspecial
+}
+
+map PUSH20 "o no - Combinebobnt"
+{
+    next = "PUSH21"
+    sky1 = "RSKY1"
+    music = "MPUSH20" // Ken Silverman - PREPSONG
+}
+
+map PUSH21 "Pull de Sac - Hypnotoad"
+{
+    next = "PUSH22"
+    sky1 = "DUNKSKY"
+    music = "MPUSH21" // Highway Fusion - Digital Sound Proyect(?)
+}
+
+map PUSH22 "The Crucible - Anonymous"
+{
+    next = "PUSH01"
+    sky1 = "CUS3"
+    music = "MPUSH22" // Elwood - Feats of Valor
+}
