@@ -1,0 +1,10 @@
+<topsrs> is dwango5 map01 a map choice
+<topsrs> failing that, just plain map01
+<TerminusEst13> jen nooooo :(
+<TerminusEst13> Actually a Push-ified Dwango5 Map01 would be really cool. I guess I'll do that for my third map.
+
+Smooth up the circle on push12
+
+Fist alt-fire should reflect projectiles
+
+Push push20's insta-kill-when-lower code on push16's platforms.
