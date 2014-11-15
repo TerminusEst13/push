@@ -8,3 +8,18 @@ Smooth up the circle on push12
 Fist alt-fire should reflect projectiles
 
 Push push20's insta-kill-when-lower code on push16's platforms.
+
+push19 has you spawn on 3d floor
+
+Timer for respawn protection / Powerup that fades out after two seconds.
+
+A_Stop on Death.
+
+Push21 needs more buildings.
+
+Fix mismatched colors on F1 help screen.
+
+<PresidentPeople> TerminusEst13: Playe reports an issue with Push22.  Too many spots to hide in
+<PresidentPeople> The thin ledges that make up the outlying towers are easy to camp on, out of sight
+<PresidentPeople> I'd check the lava falls as well
+<PresidentPeople> The short ones coming out of the brown blocks
