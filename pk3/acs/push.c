@@ -89,7 +89,7 @@ script 532 ENTER
     int Angle;
     int DropSomeWeight;
 
-    SetActorProperty(0,APROP_Mass,0x7FFFFFFF);
+    GiveInventory("SetUnshootable",1);
     TakeInventory("Fist",1);
     TakeInventory("Shotgun",1);
     TakeInventory("SuperShotgun",1);
@@ -106,7 +106,7 @@ script 532 ENTER
 
         if (DropSomeWeight == 70 && CheckInventory("LightAsAFeather") == 0)
         {
-            SetActorProperty(0,APROP_Mass,40);
+            GiveInventory("SetShootable",1);
             GiveInventory("LightAsAFeather",1);
         }
         DropSomeWeight++;
@@ -147,25 +147,8 @@ script 533 RESPAWN
 script 534 DEATH
 {
     TakeInventory("ImAlive",1);
+    TakeInventory("LightAsAFeather",1);
 }
-
-/*// The below was nicked from DoomRadys Classes
-
-script 405 (void) //Matrix 01
-{
-FontTim += 35;
-
-while(FontTim >= 0)
-{
-SetFont("bigfont");
-FontX = random(0,1.00);
-FontY = random(0,1.00);
-hudmessage (s:FontZ[random(0,1)],s:"\n";
-1, 0,FontCL[random(0,2)], FontX, FontY, 0.1);
-delay(1);
-FontTim--;
-}
-}*/
 
 // The below was made by Kyle873, whom is 7H3 1337357 |-|4(|<3R 0N 7H3 PU5H|\|37
 
