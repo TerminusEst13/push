@@ -52,19 +52,21 @@ script 531 OPEN
 Script 530 OPEN
 {
     // Probably could compress this into the above script, but I'd rather not take a chance.
+    int TimeUntilSuddenDeath = 1;
 
-    int TimeUntilSuddenDeath = 0;
-
-    delay(35);
+    delay(5);
 
     if (GetCvar("push_suddendeath") == 1)
     {
         while(GetCvar("push_timelimit") >= TimeUntilSuddenDeath)
         {
             delay(2100);
+            //PrintBold(s:"2100 tics have passed.");
             TimeUntilSuddenDeath++;
         }
-        if (GetCvar("push_timelimit") < 0) { delay(2100); }
+        if (GetCvar("push_timelimit") <= 0) { delay(2100); }
+
+        //PrintBold(s:"Preparing for sudden death.");
 
         if (RealPlayerCount() > 1 && GetCvar("push_suddendeath") == 1)
         {
