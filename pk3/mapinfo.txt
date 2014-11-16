@@ -76,10 +76,10 @@ map PUSH11 "No Golden Stars - DanteEdward"
     sky1 = "RSKY2"
 }
 
-map PUSH12 "Hey There's, Like, Two Planets - Aquasa"
+map PUSH12 "Planetary Database - Aquasa"
 {
     next = "PUSH13"
-    sky1 = "CC4SKY2"
+    sky1 = "CC4SKY2", 0.35
     music = "MPUSH12" // Captain - Space Debris
 }
 
