@@ -9,7 +9,7 @@ Fist alt-fire should reflect projectiles
 
 Push push20's insta-kill-when-lower code on push16's platforms.
 
-push19 has you spawn on 3d floor
+push21 has you spawn on 3d floor
 
 Timer for respawn protection / Powerup that fades out after two seconds.
 
@@ -23,3 +23,7 @@ Fix mismatched colors on F1 help screen.
 <PresidentPeople> The thin ledges that make up the outlying towers are easy to camp on, out of sight
 <PresidentPeople> I'd check the lava falls as well
 <PresidentPeople> The short ones coming out of the brown blocks
+
+Push12 needs tweaked a little more. Implement skybox, have spinning data-rings around it CYDM01 style. Floor should be circuitry.
+
+Push10 needs a dramatic overhaul. It's laggy and far too easy to stall/camp on.

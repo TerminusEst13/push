@@ -50,19 +50,20 @@ Script 530 OPEN
 {
     // Probably could compress this into the above script, but I'd rather not take a chance.
 
-    int TimeUntilSuddenDeath;
+    int TimeUntilSuddenDeath = 0;
 
     delay(35);
 
     if (GetCvar("push_suddendeath") == 1)
     {
-        if (GetCvar("push_timelimit") <= 0) { TimeUntilSuddenDeath = 1; }
-        else { TimeUntilSuddenDeath = GetCvar("push_timelimit"); }
+        while(GetCvar("push_timelimit") > TimeUntilSuddenDeath)
+        {
+            delay(2100);
+            TimeUntilSuddenDeath++;
+        }
+        if (GetCvar("push_timelimit") < 0) { delay(2100); }
 
-        // 35 * 60 = 2100 tics in a minute.
-        delay(2100 * TimeUntilSuddenDeath);
-
-        if (RealPlayerCount() > 1)
+        if (RealPlayerCount() > 1 && GetCvar("push_suddendeath") == 1)
         {
             AmbientSound("suddendeath/alarm",127);
             HudMessageBold(s:"WARNING: INVALID ACCESS DETECTED";HUDMSG_TYPEON,0,CR_RED,0.5,0.2,3.5,0.05);
@@ -90,6 +91,7 @@ script 532 ENTER
     int DropSomeWeight;
 
     GiveInventory("SetUnshootable",1);
+    GiveInventory("PowerRespawnProtection",1);
     TakeInventory("Fist",1);
     TakeInventory("Shotgun",1);
     TakeInventory("SuperShotgun",1);
