@@ -90,8 +90,8 @@ actor PinballPlayer : DoomPlayer
         TNT1 A 0 A_NoBlocking
         PLAY III 2 A_FadeOut(0.1)
         PLAY JJJ 2 A_FadeOut(0.1)
-        PLAY K 1
-        PLAY K -1
+        PLAY Z 1
+        PLAY Z -1
         Stop
     }
 }
