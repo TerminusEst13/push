@@ -56,7 +56,7 @@ Script 530 OPEN
 
     if (GetCvar("push_suddendeath") == 1)
     {
-        while(GetCvar("push_timelimit") > TimeUntilSuddenDeath)
+        while(GetCvar("push_timelimit") >= TimeUntilSuddenDeath)
         {
             delay(2100);
             TimeUntilSuddenDeath++;
@@ -66,6 +66,7 @@ Script 530 OPEN
         if (RealPlayerCount() > 1 && GetCvar("push_suddendeath") == 1)
         {
             AmbientSound("suddendeath/alarm",127);
+            SetFont("smallfont");
             HudMessageBold(s:"WARNING: INVALID ACCESS DETECTED";HUDMSG_TYPEON,0,CR_RED,0.5,0.2,3.5,0.05);
 
             while (1)
