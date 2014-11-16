@@ -143,9 +143,16 @@ map PUSH21 "Pull de Sac - Hypnotoad"
     music = "MPUSH21" // Highway Fusion - Digital Sound Proyect(?)
 }
 
-map PUSH22 "The Crucible - Anonymous"
+map PUSH22 "The Crucible - Butt_Ghost"
 {
-    next = "PUSH01"
+    next = "PUSH23"
     sky1 = "CUS3"
     music = "MPUSH22" // Elwood - Feats of Valor
+}
+
+map PUSH23 "Hell Ring of Evil - W1D3A55"
+{
+    next = "PUSH01"
+    sky1 = "RSKY1"
+    music = "MPUSH23" // Final Fantasy Mystic Quest - Boss Battle
 }

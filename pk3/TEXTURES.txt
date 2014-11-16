@@ -20,3 +20,78 @@ Texture SP_ROCK1, 128, 128
 {
 	Patch WALL63_1, 0, 0
 }
+
+graphic pushtip0, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_1fctf, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_coop, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_ctf, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_dm, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_duel, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_inv, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_lms, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_poss, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_scp, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_st, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_tdm, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_term, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_tlms, 320, 200
+{
+    patch f1help2b, 0, 0
+}
+
+graphic f1_tposs, 320, 200
+{
+    patch f1help2b, 0, 0
+}

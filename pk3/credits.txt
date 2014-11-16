@@ -8,6 +8,7 @@
 - Push laser sprites by Eriance.
 - Force Gauntlet sprites by Riet.
 - Critical error code coded by Kyle873
+- Push grenade sprites from Freedoom.
 
 - D_DM2INT is from Extreme Pinball
 - Other music is credited in MapInfo.
@@ -19,7 +20,6 @@
 - PUSH07 and PUSH14 by OnePunch-Man.
  ^ PUSH14 textures by Agaures.
 - PUSH08 by Mike12.
-- PUSH09 by Sgt. Shivers.
 - PUSH10 by Darsycho.
 - PUSH11 by DanteEdward.
 - PUSH12 by Aquasa.
@@ -33,5 +33,6 @@
 - PUSH20 by Combinebobnt.
 - PUSH21 by Hypnotoad.
  ^- Duke3D textures taken from Duke Nukem 3D, obviously.
-- PUSH22 by an anon off 4chan.
+- PUSH22 by Butt_Ghost.
  ^- Textures taken from cc4-tex.
+- PUSH23 by W1D3A55
