@@ -30,6 +30,9 @@ script 531 OPEN
     if (!GetCvar("push_punchdrunk"))
         { ConsoleCommand("set push_punchdrunk 0"); ConsoleCommand("archivecvar push_punchdrunk"); }
 
+    if (!GetCvar("push_triggerhappy"))
+        { ConsoleCommand("set push_triggerhappy 0"); ConsoleCommand("archivecvar push_triggerhappy"); }
+
     while (1)
     {
 
@@ -107,6 +110,7 @@ script 532 ENTER
     TakeInventory("Chainsaw",1);
     TakeInventory("EmergencyDodgeDone",1);
     if (GetCvar("push_punchdrunk") == 1) { TakeInventory("Push Gun",1); }
+    if (GetCvar("push_triggerhappy") == 1) { TakeInventory("Force Gauntlet",1); }
     GiveInventory("ImAlive",1);
 
     while (1)
