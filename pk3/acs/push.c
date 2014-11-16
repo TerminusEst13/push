@@ -27,6 +27,9 @@ script 531 OPEN
     if (!GetCvar("push_timelimit"))
         { ConsoleCommand("set push_timelimit 4"); ConsoleCommand("archivecvar push_timelimit"); }
 
+    if (!GetCvar("push_punchdrunk"))
+        { ConsoleCommand("set push_punchdrunk 0"); ConsoleCommand("archivecvar push_punchdrunk"); }
+
     while (1)
     {
 
@@ -101,6 +104,7 @@ script 532 ENTER
     TakeInventory("BFG9000",1);
     TakeInventory("Chainsaw",1);
     TakeInventory("EmergencyDodgeDone",1);
+    if (GetCvar("push_punchdrunk") == 1) { TakeInventory("Push Gun",1); }
     GiveInventory("ImAlive",1);
 
     while (1)
@@ -127,14 +131,6 @@ script 532 ENTER
         }
         else
           { TakeInventory("OnTheGround", 1); }
-
-        // Movement
-        /*if (GetActorVelZ(0) <= 8 && !CheckInventory("OnTheGround") && !CheckInventory("EmergencyDodgeDone") && keypressed(BT_JUMP))
-        {
-            ActivatorSound("push/dodge", 127);
-            ThrustThingZ(0,56,0,0);
-            GiveInventory("EmergencyDodgeDone", 1);
-        }*/
 
         if (isDead(0)) { terminate; }
 
