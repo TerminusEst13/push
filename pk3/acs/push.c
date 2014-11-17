@@ -109,13 +109,20 @@ script 532 ENTER
     TakeInventory("BFG9000",1);
     TakeInventory("Chainsaw",1);
     TakeInventory("EmergencyDodgeDone",1);
-    if (GetCvar("push_punchdrunk") == 1) { TakeInventory("Push Gun",1); }
-    if (GetCvar("push_triggerhappy") == 1) { TakeInventory("Force Gauntlet",1); }
     GiveInventory("ImAlive",1);
 
     while (1)
     {
         GiveInventory("500Health",500);
+
+        if (GetCvar("push_punchdrunk") == 1)
+          { TakeInventory("Push Gun",1); }
+        else
+          { GiveInventory("Push Gun",1); }
+        if (GetCvar("push_triggerhappy") == 1)
+          { TakeInventory("Force Gauntlet",1); }
+        else
+          { GiveInventory("Force Gauntlet",1); }
 
         if (DropSomeWeight == 70 && CheckInventory("LightAsAFeather") == 0)
         {
