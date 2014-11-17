@@ -175,6 +175,12 @@ map PUSH25 "Moon Shoes - Esselfortium"
 
 map PUSH26 "Twitter Hashtag - W1D3A55"
 {
-    next = "PUSH01"
+    next = "PUSH27"
     music = "MPUSH26" // Magnar/Lizard - ancient days...
+}
+
+map PUSH27 "Nunzio's Block Party - gaydad420"
+{
+    next = "PUSH01"
+    music = "MPUSH27" // mike clarke - globduletoymadman1
 }
