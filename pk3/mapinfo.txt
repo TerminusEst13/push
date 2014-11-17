@@ -182,5 +182,6 @@ map PUSH26 "Twitter Hashtag - W1D3A55"
 map PUSH27 "Nunzio's Block Party - gaydad420"
 {
     next = "PUSH01"
+    sky1 = "RETSKY1", 0.1
     music = "MPUSH27" // mike clarke - globduletoymadman1
 }

@@ -20,3 +20,11 @@ pic 1 tics 6
 pic 2 tics 6
 pic 3 tics 6
 pic 4 tics 6
+
+texture britwtr1
+pic 1 tics 4
+pic 2 tics 4
+pic 3 tics 4
+pic 4 tics 4
+pic 5 tics 4
+pic 6 tics 4
