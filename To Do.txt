@@ -26,3 +26,13 @@ In push16, you can sometimes spawn on the insta-kill stuff after the platforms h
 Increase height of killfloor on push09 so people can recover a bit more easily.
 
 THere needs to be a reason to use the teleporter in push03, at the moment it's only a trap.
+
+Change billboards on push24/25 to be something more relevant. Maybe other, interesting mods? Made-up stuff?
+
+Remove all weapons/items on Push24/25.
+
+Expand out push24/25, make it more open to jump from rooftop to rooftop. Rise ceiling. Close off buildings.
+
+Fix all missing textures on push24/25.
+
+Expand treetops on push26, include projectile-blocking walls and mapspot tagged 130.

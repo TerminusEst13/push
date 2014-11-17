@@ -152,7 +152,29 @@ map PUSH22 "The Crucible - Butt_Ghost"
 
 map PUSH23 "Hell Ring of Evil - W1D3A55"
 {
-    next = "PUSH01"
+    next = "PUSH24"
     sky1 = "RSKY1"
     music = "MPUSH23" // Final Fantasy Mystic Quest - Boss Battle
+}
+
+map PUSH24 "Planet Xerox - Esselfortium"
+{
+    next = "PUSH25"
+    sky1 = "BIGSKY1", 0.1
+    music = "MPUSH24" // Descent - Level 1: Lunar Outpost
+    forcenoskystretch
+}
+
+map PUSH25 "Moon Shoes - Esselfortium"
+{
+    next = "PUSH26"
+    sky1 = "BIGSKY1", 0.1
+    music = "MPUSH25" // Skaven - Omniphilia
+    forcenoskystretch
+}
+
+map PUSH26 "Twitter Hashtag - W1D3A55"
+{
+    next = "PUSH01"
+    music = "MPUSH26" // Magnar/Lizard - ancient days...
 }
