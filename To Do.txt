@@ -14,3 +14,15 @@ Push21 needs more buildings.
 <PresidentPeople> The short ones coming out of the brown blocks
 
 Push10 needs a dramatic overhaul. It's laggy and far too easy to stall/camp on.
+
+Change triggerhappy/punchdrunk checks from start of Enter to the While.
+
+A_Pain on Dunk/Smash.
+
+Triangle platforms are misaligned on push16.
+
+In push16, you can sometimes spawn on the insta-kill stuff after the platforms have lowered.
+
+Increase height of killfloor on push09 so people can recover a bit more easily.
+
+THere needs to be a reason to use the teleporter in push03, at the moment it's only a trap.
