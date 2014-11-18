@@ -27,5 +27,3 @@ Expand out push24/25, make it more open to jump from rooftop to rooftop. Rise ce
 Fix all missing textures on push24/25.
 
 Expand treetops on push26, include projectile-blocking walls and mapspot tagged 130.
-
-Make push20's music louder.
