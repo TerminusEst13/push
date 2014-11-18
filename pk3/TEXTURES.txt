@@ -1,3 +1,5 @@
+// Push 22
+
 Texture STARTAN1, 64, 128
 {
 	Patch SW12_4, 0, 0
@@ -104,6 +106,21 @@ Texture LITE3, 32, 128
 	Patch WLITB0, 16, 120
 	Patch WLITC0, 24, 120
 }
+
+// Push 24
+
+Texture N_GRAY51, 128, 128
+{
+	Patch N_GRAY04, 0, 0
+	Patch N_GRAYWN, 0, 56
+}
+
+Texture NBLAKWAL, 64, 128
+{
+	Patch NWALL012, 0, 0
+}
+
+// Push tipbox
 
 graphic pushtip0, 320, 200
 {

@@ -28,3 +28,6 @@ pic 3 tics 4
 pic 4 tics 4
 pic 5 tics 4
 pic 6 tics 4
+
+texture HEXFIRE1 range HEXFIRE4 tics 5
+warp texture QLAVA

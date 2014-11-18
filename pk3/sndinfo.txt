@@ -30,3 +30,5 @@ SHIFTY                SHIFTY   // Same.
 
 
 suddendeath/alarm     TIMEALRM // Taken from Doom 3
+
+HEDAT1	HEDAT1

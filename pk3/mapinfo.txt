@@ -150,7 +150,7 @@ map PUSH22 "The Crucible - Butt_Ghost"
     music = "MPUSH22" // Elwood - Feats of Valor
 }
 
-map PUSH23 "Hell Ring of Evil - W1D3A55"
+map PUSH23 "The Tower of Fire - W1D3A55"
 {
     next = "PUSH24"
     sky1 = "RSKY1"
@@ -160,28 +160,27 @@ map PUSH23 "Hell Ring of Evil - W1D3A55"
 map PUSH24 "Planet Xerox - Esselfortium"
 {
     next = "PUSH25"
-    sky1 = "BIGSKY1", 0.1
-    music = "MPUSH24" // Descent - Level 1: Lunar Outpost
+    sky1 = "BIGSKY1", 0.3
+    music = "MPUSH24" // Skaven - Omniphiliac
     forcenoskystretch
 }
 
-map PUSH25 "Moon Shoes - Esselfortium"
+map PUSH25 "Twitter Hashtag - W1D3A55"
 {
     next = "PUSH26"
-    sky1 = "BIGSKY1", 0.1
-    music = "MPUSH25" // Skaven - Omniphilia
-    forcenoskystretch
+    music = "MPUSH25" // Magnar/Lizard - ancient days...
 }
 
-map PUSH26 "Twitter Hashtag - W1D3A55"
+map PUSH26 "Nunzio's Block Party - gaydad420"
 {
     next = "PUSH27"
-    music = "MPUSH26" // Magnar/Lizard - ancient days...
+    sky1 = "RETSKY1", 0.1
+    music = "MPUSH26" // mike clarke - globduletoymadman1
 }
 
-map PUSH27 "Nunzio's Block Party - gaydad420"
+map PUSH27 "Blazing Hell - Gothic"
 {
     next = "PUSH01"
-    sky1 = "RETSKY1", 0.1
-    music = "MPUSH27" // mike clarke - globduletoymadman1
+    music = "MPUSH27" // Impaler - Klischee Power Metal
+    sky1 = "RSKY1"
 }

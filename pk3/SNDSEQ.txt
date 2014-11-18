@@ -1,0 +1,4 @@
+:RaisingLava
+	platform		1
+	playrepeat		HEDAT1
+end

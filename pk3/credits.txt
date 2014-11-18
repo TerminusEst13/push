@@ -15,6 +15,7 @@
 
 - PUSH02, PUSH04, and PUSH09 by Sgt. Shivers.
 - PUSH03 by Roman6a.
+ ^- Textures from Quake (except for the lava).
 - PUSH05 and PUSH18 by Dewce.
 - PUSH06 by DRL 3.33.
 - PUSH07 and PUSH14 by OnePunch-Man.
@@ -37,7 +38,9 @@
 - PUSH22 by Butt_Ghost.
  ^- Textures taken from cc4-tex.
 - PUSH23 and PUSH26 by W1D3A55.
-- PUSH24 and PUSH25 by Esselfortium.
-- PUSH27 by gaydad420.
+- PUSH24 by Esselfortium.
+- PUSH26 by gaydad420.
  ^- Skybox from Sonic Advance 2.
  ^- Water from Metroid Fusion.
+- PUSH27 by Gothic.
+ ^- Textures from Quake.
