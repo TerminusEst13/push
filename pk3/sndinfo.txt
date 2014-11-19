@@ -32,3 +32,26 @@ SHIFTY                SHIFTY   // Same.
 suddendeath/alarm     TIMEALRM // Taken from Doom 3
 
 HEDAT1	HEDAT1
+
+
+$random hidden/message { msg1 msg2 msg3 msg4 msg5 msg6 msg7 msg8 msg9 msg10 msg11 msg12 msg13 msg14 msg15 msg16 msg17 msg18 msg19 msg20 }
+msg1                  ILMNTI01
+msg2                  ILMNTI02
+msg3                  ILMNTI03
+msg4                  ILMNTI04
+msg5                  ILMNTI05
+msg6                  ILMNTI06
+msg7                  ILMNTI07
+msg8                  ILMNTI08
+msg9                  ILMNTI09
+msg10                 ILMNTI10
+msg11                 ILMNTI11
+msg12                 ILMNTI12
+msg13                 ILMNTI13
+msg14                 ILMNTI14
+msg15                 ILMNTI15
+msg16                 ILMNTI16
+msg17                 ILMNTI17
+msg18                 ILMNTI18
+msg19                 ILMNTI19
+msg20                 ILMNTI20
