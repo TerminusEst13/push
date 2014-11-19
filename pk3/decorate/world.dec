@@ -470,6 +470,8 @@ ACTOR SuddenDeathDrone
     }
 }
 
+// Push 19
+
 ACTOR FountainWater 13000 //R667 LiquidFountains.wad
 {
   Radius 2
@@ -544,4 +546,75 @@ ACTOR FoldingChair 10605 //vacav14.wad
     BCHA A -1
     Stop
   }
+}
+
+
+// Push 29
+
+//Core Gyro screws
+actor GyroScrew1 10538
+{
+//$Category MM8BDM-Props
++SOLID
++NOGRAVITY
++ALLOWCLIENTSPAWN
++SYNCHRONIZED
++FORCEYBILLBOARD
+height 64
+radius 32
+scale 2.5
+States
+{
+Spawn:
+TWST AB 5
+loop
+}
+}
+
+actor GyroScrew2 10539
+{
+//$Category MM8BDM-Props
++SOLID
++NOGRAVITY
++SYNCHRONIZED
++ALLOWCLIENTSPAWN
++FORCEYBILLBOARD
+height 64
+radius 32
+scale 2.5
+States
+{
+Spawn:
+TWST CD 5
+loop
+}
+}
+
+//New one added in LegoPack
+actor GyroScrew3 : GyroScrew1 16206
+{
+//$Category Legopack-Props
+States
+{
+Spawn:
+TWST EF 5
+loop
+}
+}
+
+//Hue
+actor TotodileProp 16198
+{
+//$Category Legopack-Props
+-SOLID
+scale 2.5
+radius 4
+height 4
++NOGRAVITY
+States
+{
+Spawn:
+CRC8 A -1
+stop
+}
 }

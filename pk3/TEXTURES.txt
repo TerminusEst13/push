@@ -120,6 +120,454 @@ Texture NBLAKWAL, 64, 128
 	Patch NWALL012, 0, 0
 }
 
+// Push 29
+
+Texture GYR2STP1, 32, 16
+{
+	XScale 0.5
+	YScale 0.5
+	WorldPanning
+	Patch GYROR1, 0, 0
+}
+
+Texture GYR2STP2, 16, 16
+{
+	XScale 0.5
+	YScale 0.5
+	WorldPanning
+	Patch GYROR3, 0, 0
+}
+
+Texture GYR2STP3, 16, 16
+{
+	XScale 0.5
+	YScale 0.5
+	WorldPanning
+	Patch GYROR4, 0, 0
+}
+
+Texture GYR2FLR1, 16, 16
+{
+	XScale 0.5
+	YScale 0.5
+	WorldPanning
+	Patch GYROR5, 0, 0
+}
+
+Texture GYROGRN1, 16, 16
+{
+	XScale 0.5
+	YScale 0.5
+	WorldPanning
+	Patch GYROR2, 0, 0
+}
+
+Texture GYRO2FNF, 32, 32
+{
+	XScale 0.5
+	YScale 0.5
+	WorldPanning
+	Patch GYROL0, 0, 0
+}
+
+Texture GYRO2FNB, 32, 32
+{
+	XScale 0.5
+	YScale 0.5
+	WorldPanning
+	Patch GYROL0, 0, 0
+}
+
+Texture GYRO2FN0, 32, 32
+{
+	XScale 0.5
+	YScale 0.5
+	WorldPanning
+	Patch GYROL0, 0, 0
+}
+
+Texture GYRO2FN1, 32, 32
+{
+	XScale 0.5
+	YScale 0.5
+	WorldPanning
+	Patch GYROL1, 0, 0
+}
+
+Texture GYRO2FN2, 32, 32
+{
+	XScale 0.5
+	YScale 0.5
+	WorldPanning
+	Patch GYROL2, 0, 0
+}
+
+Texture GYRO2FN3, 32, 32
+{
+	XScale 0.5
+	YScale 0.5
+	WorldPanning
+	Patch GYROL3, 0, 0
+}
+
+Texture GYRO2FNP, 32, 32
+{
+	XScale 0.5
+	YScale 0.5
+	WorldPanning
+	Patch GYROL4, 0, 0
+}
+
+//Core Gyroman
+texture GYROSKY, 32, 32
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT1, 0, 0
+   WorldPanning 
+}
+
+texture GYROCLOU, 256, 256
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT31, 0, 128
+   Patch GYROT31, 0, -128
+    WorldPanning
+}
+
+texture GYROFAX1, 32, 32
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT15, 0, 0
+   WorldPanning 
+}
+
+texture GYROFAN1, 32, 32
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT15, 0, 0
+   WorldPanning 
+}
+
+texture GYROFAN2, 32, 32
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT16, 0, 0
+   WorldPanning 
+}
+
+texture GYROFAN3, 32, 32
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT17, 0, 0
+   WorldPanning 
+}
+
+texture GYROFAN4, 32, 32
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT18, 0, 0
+   WorldPanning 
+}
+
+texture GYROMET1, 32, 512
+{
+   Patch GYROT25, 0, 32
+   Patch GYROT25, 0, 64
+   Patch GYROT25, 0, 96
+   Patch GYROT25, 0, 128
+   Patch GYROT25, 0, 160
+   Patch GYROT25, 0, 192
+   Patch GYROT25, 0, 224
+   Patch GYROT25, 0, 256
+   Patch GYROT25, 0, 288
+   Patch GYROT25, 0, 320
+   Patch GYROT25, 0, 352
+   Patch GYROT25, 0, 384
+   Patch GYROT25, 0, 416
+   Patch GYROT25, 0, 448
+   Patch GYROT25, 0, 480
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT2, 0, 0
+   WorldPanning 
+}
+
+texture GYROMET2, 16, 32
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT3, 0, 0
+   WorldPanning 
+}
+
+texture GYROMET3, 32, 512
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT25, 0, 32
+   Patch GYROT25, 0, 64
+   Patch GYROT25, 0, 96
+   Patch GYROT25, 0, 128
+   Patch GYROT25, 0, 160
+   Patch GYROT25, 0, 192
+   Patch GYROT25, 0, 224
+   Patch GYROT25, 0, 256
+   Patch GYROT25, 0, 288
+   Patch GYROT25, 0, 320
+   Patch GYROT25, 0, 352
+   Patch GYROT25, 0, 384
+   Patch GYROT25, 0, 416
+   Patch GYROT25, 0, 448
+   Patch GYROT25, 0, 480
+   Patch GYROT4, 0, 0
+   WorldPanning 
+}
+
+texture GYROMET4, 32, 512
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT25, 0, 32
+   Patch GYROT25, 0, 64
+   Patch GYROT25, 0, 96
+   Patch GYROT25, 0, 128
+   Patch GYROT25, 0, 160
+   Patch GYROT25, 0, 192
+   Patch GYROT25, 0, 224
+   Patch GYROT25, 0, 256
+   Patch GYROT25, 0, 288
+   Patch GYROT25, 0, 320
+   Patch GYROT25, 0, 352
+   Patch GYROT25, 0, 384
+   Patch GYROT25, 0, 416
+   Patch GYROT25, 0, 448
+   Patch GYROT25, 0, 480
+   Patch GYROT14, 0, 0
+   WorldPanning 
+}
+
+texture GYROELV1, 48, 48
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT6, 0, 0
+   WorldPanning 
+}
+
+texture GYROELV2, 48, 48
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT8, 0, 0
+   WorldPanning 
+}
+
+texture GYROELV3, 48, 48
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT7, 0, 0
+   WorldPanning 
+}
+
+texture GYROSTP1, 32, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT9, 0, 0
+   WorldPanning 
+}
+
+texture GYROSTP2, 32, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT10, 0, 0
+   WorldPanning 
+}
+
+texture GYROSTP3, 48, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT11, 0, 0
+   WorldPanning 
+}
+
+texture GYROSTP4, 64, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT12, 0, 0
+   WorldPanning 
+}
+
+texture GYROSTP5, 48, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT13, 0, 0
+   WorldPanning 
+}
+
+texture GYROFLR1, 16, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT19, 0, 0
+   WorldPanning 
+}
+
+texture GYROFLR2, 16, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT20, 0, 0
+   WorldPanning 
+}
+
+texture GYROFLR3, 16, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT21, 0, 0
+   WorldPanning 
+}
+
+texture GYROFLR4, 16, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT22, 0, 0
+   WorldPanning 
+}
+
+texture GYROFLR5, 16, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT24, 0, 0
+   WorldPanning 
+}
+
+
+texture GYROFLR6, 32, 32
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT23, 0, 0
+   WorldPanning 
+}
+
+texture GYROFLR7, 32, 32
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT25, -16, 0
+   Patch GYROT25, 16, 0
+   Patch GYROT25, 0, -16
+    Patch GYROT25, 0, 16
+   WorldPanning 
+}
+
+texture GYROFLR8, 16, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT26, 0, 0
+   WorldPanning 
+}
+
+texture GYROFAX2, 32, 32
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT27, 0, 0
+   WorldPanning 
+}
+
+
+texture GYROFAN5, 32, 32
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT27, 0, 0
+   WorldPanning 
+}
+
+texture GYROFAN6, 32, 32
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT28, 0, 0
+   WorldPanning 
+}
+
+texture GYROFAN7, 32, 32
+{
+   XScale 0.5
+   YScale 0.5
+   Patch GYROT29, 0, 0
+   WorldPanning 
+}
+
+texture GYROFAN8, 128, 128
+{
+   XScale 0.025
+   YScale 0.025
+   Patch GYROT30, 0, 0
+   WorldPanning 
+}
+
+//Core Tengub
+texture TENBBLK1, 16, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch TENGUB46, 0, 0
+   WorldPanning
+}
+
+texture TENBPIP2, 16, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch TENGUB27, 0, 0
+   WorldPanning
+}
+
+texture TENBPIP3, 16, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch TENGUB28, 0, 0
+   WorldPanning
+}
+
+texture TENBPLT2, 32, 16
+{
+   XScale 0.5
+   YScale 0.5
+   Patch TENGUB25, 0, 0
+   WorldPanning
+}
+
+//Cloud
+texture CLOUBFAN, 128, 128
+{
+   XScale 0.5
+   YScale 0.5
+   Patch CLOUD22, 0, 0
+   WorldPanning 
+}
+
 // Push tipbox
 
 graphic pushtip0, 320, 200

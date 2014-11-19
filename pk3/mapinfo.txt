@@ -180,7 +180,13 @@ map PUSH26 "Nunzio's Block Party - gaydad420"
 
 map PUSH27 "Blazing Hell - Gothic"
 {
-    next = "PUSH01"
+    next = "PUSH28"
     music = "MPUSH27" // Impaler - Klischee Power Metal
     sky1 = "RSKY1"
+}
+
+map PUSH29 "Soaring Above the Clouds - LegoCS"
+{
+    next = "PUSH01"
+    music = "MPUSH29"
 }
