@@ -1,79 +1,6 @@
-ACTOR FlameJet 30001 //YOU GOT THE TORCH, YOU GOT THE POWER! YEAH!
-{
-    Radius 8
-    Height 15
-    Scale 0.8
-    Mass 0x7FFFFFF
-    -PUSHABLE
-    +SOLID
-    +RANDOMIZE
-    +FORCEYBILLBOARD
-    DamageType "NoDamage"
-    States
-    {
-    Spawn:
-        TNT1 A 0 A_PlaySound("FlameJet/Torch")
-        FJUP ABCD 2
-        FJUP EFGHIJKL 2 Bright A_Explode(512,128)
-        FJUP MNOP 2 Bright
-        FJUP A 70
-        Loop
-    }
-}
+// Hazards go here.
 
-actor SFog1 30002
-{
-    -SOLID
-    +RANDOMIZE
-    +CLIENTSIDEONLY
-    +NOINTERACTION
-    Renderstyle Translucent
-    Alpha 0.2
-    Scale 2.0
-    States
-    {
-    Spawn:
-        FOG1 A 10
-        FOG1 B 10
-        FOG1 C 10
-        FOG1 D 10
-        Loop
-    }
-}
-
-actor SpookyWraith 30003
-{
-    Radius 12
-    Height 8
-    Monster
-    -COUNTKILL
-    -SOLID
-    +RANDOMIZE
-    +FLOATBOB
-    +FLOAT
-    +NOGRAVITY
-    +GHOST
-    +DONTBLAST
-    Mass 0x7FFFFFFF
-    Renderstyle Translucent
-    Alpha 0.3
-    Speed 3
-    //BounceFactor 1.0
-    //WallBounceFactor 1.0
-    States
-    {
-    Spawn:
-        SPIR AAAAA 4 A_Wander
-        SPIR BBBBB 4 A_Wander
-        TNT1 A 0 A_Jump(128,"Spawn2")
-        Loop
-    Spawn2:
-        TNT1 A 0 A_Stop
-        TNT1 A 0 A_SetAngle(angle+random(-2750,2750)/100.00)
-        SPIR A 1 A_Recoil(-3)
-        goto Spawn
-    }
-}
+ // Push04
 
 actor HitlerShooter 30004
 {
@@ -379,6 +306,49 @@ ACTOR HitlerJumpage
     }
 }
 
+// Push09
+
+ACTOR FlameJet 30001 //YOU GOT THE TORCH, YOU GOT THE POWER! YEAH!
+{
+    Radius 8
+    Height 15
+    Scale 0.8
+    Mass 0x7FFFFFF
+    -PUSHABLE
+    +SOLID
+    +RANDOMIZE
+    +FORCEYBILLBOARD
+    DamageType "NoDamage"
+    States
+    {
+    Spawn:
+        TNT1 A 0 A_PlaySound("FlameJet/Torch")
+        FJUP ABCD 2
+        FJUP EFGHIJKL 2 Bright A_Explode(512,128)
+        FJUP MNOP 2 Bright
+        FJUP A 70
+        Loop
+    }
+}
+
+// Push 19
+
+ACTOR DeskExplosive 13001
+{
+   Radius 128
+   Height 128
+   Obituary "%o fell out of bounds."
+   Damagetype "Massacre"
+   States
+   {
+      Spawn:
+       TNT1 A 35 A_Explode(10000,128)
+	    loop
+   }
+}
+
+// Global
+
 actor DroneBall : ArachnotronPlasma
 {
     Speed 35
@@ -468,153 +438,4 @@ ACTOR SuddenDeathDrone
         TNT1 A 0 A_ClearTarget
         goto Spawn2
     }
-}
-
-// Push 19
-
-ACTOR FountainWater 13000 //R667 LiquidFountains.wad
-{
-  Radius 2
-  Height 2
-  Scale 0.75
-  RenderStyle Translucent
-  Alpha 0.75
-  +NOBLOCKMAP
-  +MOVEWITHSECTOR
-  States
-  {
-  Spawn:
-    WFOU ABCD 3
-    Loop
-  }
-}
-
-ACTOR DeskExplosive 13001
-{
-   Radius 128
-   Height 128
-   Obituary "%o fell out of bounds."
-   Damagetype "Massacre"
-   States
-   {
-      Spawn:
-       TNT1 A 35 A_Explode(10000,128)
-	    loop
-   }
-}
-
-
-ACTOR PalmTree4 10603 //R667 PalmTrees.wad
-{
-  Radius 16
-  Height 160
-  //+SOLID
-  +NOBLOCKMAP
-  States
-  {
-  Spawn:
-    PAMP A -1
-    Stop
-  }
-}
-
-ACTOR PottedPlant 10604 //vacav14.wad
-{
-  Radius 8
-  Height 16
-  //+SOLID
-  +NOBLOCKMAP
-  States
-  {
-  Spawn:
-    PLNT A -1
-    Stop
-  }
-}
-
-ACTOR FoldingChair 10605 //vacav14.wad
-{
-  YScale 0.75
-  XScale 0.83
-  Radius 8
-  Height 16
-  //+SOLID
-  +NOBLOCKMAP
-  States
-  {
-  Spawn:
-    BCHA A -1
-    Stop
-  }
-}
-
-
-// Push 29
-
-//Core Gyro screws
-actor GyroScrew1 10538
-{
-//$Category MM8BDM-Props
-+SOLID
-+NOGRAVITY
-+ALLOWCLIENTSPAWN
-+SYNCHRONIZED
-+FORCEYBILLBOARD
-height 64
-radius 32
-scale 2.5
-States
-{
-Spawn:
-TWST AB 5
-loop
-}
-}
-
-actor GyroScrew2 10539
-{
-//$Category MM8BDM-Props
-+SOLID
-+NOGRAVITY
-+SYNCHRONIZED
-+ALLOWCLIENTSPAWN
-+FORCEYBILLBOARD
-height 64
-radius 32
-scale 2.5
-States
-{
-Spawn:
-TWST CD 5
-loop
-}
-}
-
-//New one added in LegoPack
-actor GyroScrew3 : GyroScrew1 16206
-{
-//$Category Legopack-Props
-States
-{
-Spawn:
-TWST EF 5
-loop
-}
-}
-
-//Hue
-actor TotodileProp 16198
-{
-//$Category Legopack-Props
--SOLID
-scale 2.5
-radius 4
-height 4
-+NOGRAVITY
-States
-{
-Spawn:
-CRC8 A -1
-stop
-}
 }

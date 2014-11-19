@@ -23,4 +23,5 @@ actor DoomedGuy : Counter { Inventory.MaxAmount 70 }
 #include "decorate/weapon.dec"
 #include "decorate/weapon2.dec"
 #include "decorate/world.dec"
+#include "decorate/props.dec"
 #include "decorate/parkmore.dec"
