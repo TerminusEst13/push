@@ -152,6 +152,21 @@ Texture SECRET4, 192, 256
 	Patch SECRET4, 0, 0
 }
 
+Texture SECRET5, 256, 128
+{
+	Patch SECRET5, 0, 0
+}
+
+Texture SECRET6, 256, 128
+{
+	Patch SECRET6, 0, 0
+}
+
+Texture SECRET7, 256, 128
+{
+	Patch SECRET7, 0, 0
+}
+
 Texture HAKWAL1, 128, 128
 {
 	Patch HAKWAL1, 0, 0
@@ -175,6 +190,11 @@ Texture HAKWAL4, 128, 128
 Texture HAKWAL5, 128, 128
 {
 	Patch HAKWAL5, 0, 0
+}
+
+Texture ANIMSEC1, 256, 128
+{
+	Patch ANIMSEC1, 0, 0
 }
 
 // Push 29
