@@ -16,15 +16,6 @@ THere needs to be a reason to use the teleporter in push03, at the moment it's o
 
 In push17 (Caco), needs to play OM NOM NOM when someone enters his mouth.
 
-Make sure PUSH28 has:
-- Instant Death floor.
-- Projectile-blocking walls.
-- Mapspot 130.
-
-Player skin for the player.
-
 Widen up and lower bottom bridge on Push23 (Fire)
-
-Fix Push09
 
 Fun Police should spawn on the corners in Push27 (Block party)
