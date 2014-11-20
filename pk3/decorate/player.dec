@@ -13,7 +13,7 @@ actor PowerRespawnProtection : PowerProtection
     +DONTBLAST
 }
 
-actor PinballPlayer : DoomPlayer
+actor PushPlayer : DoomPlayer
 {
     Speed 1
     Health 500
@@ -32,6 +32,7 @@ actor PinballPlayer : DoomPlayer
     DamageFactor "PushDamage2", 0.5
     DamageFactor "GrenadeDamage", 0.5
     DamageFactor "NoDamage", 0.0
+    Player.SoundClass "Pusher"
     RadiusDamageFactor 0.25
     Player.ColorRange 112, 127
     +NOBLOOD

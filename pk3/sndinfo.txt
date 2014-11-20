@@ -1,3 +1,51 @@
+$playersound      Pusher   male    *death          MLPLDETH
+$playersounddup   Pusher   male    *xdeath         *death
+$playersounddup   Pusher   male    *burndeath      *death
+$playersounddup   Pusher   male    *crazydeath     *death
+$playersounddup   Pusher   male    *wimpydeath     *death
+$playersounddup   Pusher   male    *gibbed         *death
+$playersound      Pusher   male    *pain100        MLPLPAIN
+$playersounddup   Pusher   male    *pain75         *pain100
+$playersounddup   Pusher   male    *pain50         *pain100
+$playersounddup   Pusher   male    *pain25         *pain100
+$playersound      Pusher   male    *grunt          SILENCE
+$playersound      Pusher   male    *land           PLLAND
+$playersound      Pusher   male    *usefail        MLNOWAY
+$playersound      Pusher   male    *taunt          MLTAUNT
+$playersound      Pusher   male    *jump           SILENCE
+
+$playersound      Pusher   female  *death          FMPLDETH
+$playersounddup   Pusher   female  *xdeath         *death
+$playersounddup   Pusher   female  *burndeath      *death
+$playersounddup   Pusher   female  *crazydeath     *death
+$playersounddup   Pusher   female  *wimpydeath     *death
+$playersounddup   Pusher   female  *gibbed         *death
+$playersound      Pusher   female  *pain100        FMPLPAIN
+$playersounddup   Pusher   female  *pain75         *pain100
+$playersounddup   Pusher   female  *pain50         *pain100
+$playersounddup   Pusher   female  *pain25         *pain100
+$playersound      Pusher   female  *grunt          SILENCE
+$playersound      Pusher   female  *land           PLLAND
+$playersound      Pusher   female  *usefail        FMNOWAY
+$playersound      Pusher   female  *taunt          FMTAUNT
+$playersound      Pusher   female  *jump           SILENCE
+
+$playersound      Pusher   other   *death          OTPLDETH
+$playersounddup   Pusher   other   *xdeath         *death
+$playersounddup   Pusher   other   *burndeath      *death
+$playersounddup   Pusher   other   *crazydeath     *death
+$playersounddup   Pusher   other   *wimpydeath     *death
+$playersounddup   Pusher   other   *gibbed         *death
+$playersound      Pusher   other   *pain100        OTPLPAIN
+$playersounddup   Pusher   other   *pain75         *pain100
+$playersounddup   Pusher   other   *pain50         *pain100
+$playersounddup   Pusher   other   *pain25         *pain100
+$playersound      Pusher   other   *grunt          SILENCE
+$playersound      Pusher   other   *land           PLLAND
+$playersound      Pusher   other   *usefail        OTNOWAY
+$playersound      Pusher   other   *taunt          OTTAUNT
+$playersound      Pusher   other   *jump           SILENCE
+
 push/fire             PUSHPRIM // I believe this is from Doom 64?
 push/altfire          PUSHALT  // Can't remember where this is from, sorry.
 push/dodge            PUSHDDGE // Taken from Smash Bros. Brawl

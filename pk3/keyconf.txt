@@ -1,2 +1,2 @@
 clearplayerclasses
-addplayerclass PinballPlayer
+addplayerclass PushPlayer

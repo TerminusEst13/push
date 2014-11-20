@@ -14,12 +14,17 @@ In push16, you can sometimes spawn on the insta-kill stuff after the platforms h
 
 THere needs to be a reason to use the teleporter in push03, at the moment it's only a trap.
 
-Push11's (Bowser) holes really need patched.
-
-Push25 (Twitter) needs to be brighter.
-
 In push17 (Caco), needs to play OM NOM NOM when someone enters his mouth.
 
-Push22 (Crucible) needs to be a lot smaller, less laggy, and less safe.
+Make sure PUSH28 has:
+- Instant Death floor.
+- Projectile-blocking walls.
+- Mapspot 130.
 
-On Push16 (Icon), replace Zombieman with Romero.
+Player skin for the player.
+
+Widen up and lower bottom bridge on Push23 (Fire)
+
+Fix Push09
+
+Fun Police should spawn on the corners in Push27 (Block party)
