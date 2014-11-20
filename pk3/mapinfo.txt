@@ -193,6 +193,13 @@ map PUSH28 "Enlightened - Wad Squad"
 
 map PUSH29 "Soaring Above the Clouds - LegoCS"
 {
-    next = "PUSH01"
+    next = "PUSH30"
     music = "MPUSH29" // Xaser - Bluntfaced
+}
+
+map PUSH30 "StarTropics - MrSetharoo"
+{
+    next = "PUSH01"
+    //sky1 = "sky1", 69
+    music = "MPUSH30" // StarTropics - Underworld
 }
