@@ -211,7 +211,7 @@ map PUSH31 "Sweets Time - Kurashiki"
     music = "MPUSH31"
 }
 
-map PUSH32 "Zombo.com - PresidentPeople"
+map PUSH32 "Limitless - PresidentPeople"
 {
     next = "PUSH01"
 	sky1 = "ZOMBOSKY"
