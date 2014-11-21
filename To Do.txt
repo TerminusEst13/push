@@ -17,11 +17,6 @@ THere needs to be a reason to use the teleporter in push03, at the moment it's o
 In push17 (Caco), needs to play OM NOM NOM when someone enters his mouth.
 
 
-<LegoCS> First, the asymmetry in the middle bridge due to the size extensions is a little annoying [ https://www.dropbox.com/s/fz0u7afwolo2w9t/Screenshot_Doom_20141120_162232.png?dl=0 ]
-<LegoCS> Second there are instance under certain 3D bridges don't have scrolling [though this might be my fault]
-<LegoCS> Finally the totodile should be hidden, not sitting just outside where it is supposed to be hidden [ https://www.dropbox.com/s/mygxv7b06ly4akh/Screenshot_Doom_20141120_162851.png?dl=0 ]
-
-
 [06:27:59 pm] playe: hey term
 [06:28:01 pm] TerminusEst13: Yo.
 [06:28:09 pm] playe: are you going to make the spawn sound a dial up tone as well?
@@ -40,6 +35,3 @@ In push17 (Caco), needs to play OM NOM NOM when someone enters his mouth.
 
 
 Shadows under platforms in push09.
-
-
-Get rid of camp corners in push29.
