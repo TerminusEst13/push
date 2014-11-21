@@ -55,3 +55,5 @@ texture GYROFAX2
     pic GYROFAN5 tics 4
 	pic GYROFAN6 tics 4
 	pic GYROFAN7 tics 4
+
+Warp Texture KSBLU_FB

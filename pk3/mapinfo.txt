@@ -199,7 +199,14 @@ map PUSH29 "Soaring Above the Clouds - LegoCS"
 
 map PUSH30 "StarTropics - MrSetharoo"
 {
-    next = "PUSH01"
+    next = "PUSH31"
     //sky1 = "sky1", 69
     music = "MPUSH30" // StarTropics - Underworld
+}
+
+map PUSH31 "Sweets Time - Kurashiki"
+{
+    next = "PUSH01"
+    sky1 = "KSKY"
+    music = "MPUSH31"
 }
