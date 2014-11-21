@@ -271,6 +271,7 @@ actor HitlerBall : CacodemonBall
     Height 8
     ReactionTime 100
     DamageType "HitlerDamage"
+    +FORCEXYBILLBOARD
     States
     {
     Spawn:
@@ -356,6 +357,7 @@ actor DroneBall : ArachnotronPlasma
     ReactionTime 50
     DamageType "DroneDamage"
     +SEEKERMISSILE
+    +FORCEXYBILLBOARD
     States
     {
     Spawn:
