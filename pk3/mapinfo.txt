@@ -215,5 +215,5 @@ map PUSH32 "Zombo.com - PresidentPeople"
 {
     next = "PUSH01"
 	sky1 = "ZOMBOSKY"
-    music = "MPUSH32" // Drax - Anal Catharsis
+    music = "MPUSH32" // Vibe - look at the stars
 }

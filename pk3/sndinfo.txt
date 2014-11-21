@@ -1,3 +1,4 @@
+// Male voice taken from Quake III Arena.
 $playersound      Pusher   male    *death          MLPLDETH
 $playersounddup   Pusher   male    *xdeath         *death
 $playersounddup   Pusher   male    *burndeath      *death
@@ -14,6 +15,7 @@ $playersound      Pusher   male    *usefail        MLNOWAY
 $playersound      Pusher   male    *taunt          MLTAUNT
 $playersound      Pusher   male    *jump           SILENCE
 
+// Female voice taken from Quake III Arena.
 $playersound      Pusher   female  *death          FMPLDETH
 $playersounddup   Pusher   female  *xdeath         *death
 $playersounddup   Pusher   female  *burndeath      *death
@@ -30,6 +32,7 @@ $playersound      Pusher   female  *usefail        FMNOWAY
 $playersound      Pusher   female  *taunt          FMTAUNT
 $playersound      Pusher   female  *jump           SILENCE
 
+// Other voice taken from Super Smash Bros. Brawl/Melee.
 $playersound      Pusher   other   *death          OTPLDETH
 $playersounddup   Pusher   other   *xdeath         *death
 $playersounddup   Pusher   other   *burndeath      *death

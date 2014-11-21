@@ -1,8 +1,7 @@
 - Gun sprite drawn by Sgt. Shivers
 - Laser trails by ijon tichy.
 - Double-jump system by ijon tichy.
-- Player sounds from Quake 3.
-- Player sprites from Mars 3D.
+- Player sprites edited from Mars 3D.
 - Dunked smoke from Marathon.
 - Defense Drone sprites by Revae.
 - Push laser sprites by Eriance.
@@ -27,7 +26,7 @@
  ^ Skybox taken from Cybercrime 3.
 - PUSH15 and PUSH17 by UnholyPimpin.
 - PUSH16 by Seryder.
-- PUSH19 by PresidentPeople.
+- PUSH19 and PUSH32 by PresidentPeople.
  ^ Duke3D textures, water fountain and palm tree sprites from Realm 667.
  ^ Folding chair and potted plant from Doom Vacation.
  ^ Sky from PSX Doom TC.
