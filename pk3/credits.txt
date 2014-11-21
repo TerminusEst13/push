@@ -45,6 +45,9 @@
 - PUSH27 by Gothic.
  ^- Textures from Quake.
 - PUSH28 by Sgt. Shivers, Kyle873, Seryder, and TerminusEst13.
+ ^- Textures from HacX.
 - PUSH29 by Lego.
  ^- Textures from Mega Man 8-Bit Deathmatch.
 - PUSH30 by MrSetharoo.
+ ^- Textures from (where else?) StarTropics.
+- PUSH31 by Kurashiki.
