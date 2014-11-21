@@ -56,7 +56,7 @@ map PUSH08 "Jelly Trains - Mike12"
     music = "MPUSH08" // Jazz Jackrabbit 2 - Frolick Lane
 }
 
-map PUSH09 "It Was An Accident, I Swear - Sgt. Shivers"
+map PUSH09 "Ziggurat Vertigo - Sgt. Shivers"
 {
     next = "PUSH10"
     sky1 = "AZSKY"
@@ -206,7 +206,14 @@ map PUSH30 "StarTropics - MrSetharoo"
 
 map PUSH31 "Sweets Time - Kurashiki"
 {
-    next = "PUSH01"
+    next = "PUSH32"
     sky1 = "KSKY"
     music = "MPUSH31"
+}
+
+map PUSH32 "Zombo.com - PresidentPeople"
+{
+    next = "PUSH01"
+	sky1 = "ZOMBOSKY"
+    music = "MPUSH32" // Drax - Anal Catharsis
 }
