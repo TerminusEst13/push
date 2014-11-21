@@ -45,6 +45,7 @@ ACTOR PlasmaGrenade
     -NOGRAVITY
     +SKYEXPLODE
     +THRUGHOST
+    +FORCEXYBILLBOARD
     Decal Scorch
     Scale 0.4
     Gravity 0.5
@@ -254,6 +255,7 @@ actor BulletBlasterTrail
     RenderStyle Add
     Alpha 0.9
     +NOINTERACTION
+    +FORCEXYBILLBOARD
     +CLIENTSIDEONLY
     States
     {

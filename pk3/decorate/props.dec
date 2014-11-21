@@ -8,6 +8,7 @@ actor SFog1 30002
     +RANDOMIZE
     +CLIENTSIDEONLY
     +NOINTERACTION
+    +FORCEYBILLBOARD
     Renderstyle Translucent
     Alpha 0.2
     Scale 2.0
@@ -63,6 +64,7 @@ ACTOR RomeroHead 12999 //R667 LiquidFountains.wad
   Radius 2
   Height 2
   -SHOOTABLE
+  +FORCEYBILLBOARD
   States
   {
   Spawn:
@@ -82,6 +84,7 @@ ACTOR FountainWater 13000 //R667 LiquidFountains.wad
   Alpha 0.75
   +NOBLOCKMAP
   +MOVEWITHSECTOR
+  +FORCEYBILLBOARD
   States
   {
   Spawn:
@@ -96,6 +99,7 @@ ACTOR PalmTree4 10603 //R667 PalmTrees.wad
   Height 160
   //+SOLID
   +NOBLOCKMAP
+  +FORCEYBILLBOARD
   States
   {
   Spawn:
@@ -110,6 +114,7 @@ ACTOR PottedPlant 10604 //vacav14.wad
   Height 16
   //+SOLID
   +NOBLOCKMAP
+  +FORCEYBILLBOARD
   States
   {
   Spawn:
@@ -126,6 +131,7 @@ ACTOR FoldingChair 10605 //vacav14.wad
   Height 16
   //+SOLID
   +NOBLOCKMAP
+  +FORCEYBILLBOARD
   States
   {
   Spawn:

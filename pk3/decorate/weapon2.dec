@@ -127,6 +127,7 @@ actor GauntletHitPuff
     Scale 0.4
     +NOINTERACTION
     +CLIENTSIDEONLY
+    +FORCEXYBILLBOARD
     States
     {
     Spawn:
@@ -194,6 +195,7 @@ actor GauntletHitPuff2
     Scale 0.4
     +NOINTERACTION
     +CLIENTSIDEONLY
+    +FORCEXYBILLBOARD
     States
     {
     Spawn:
