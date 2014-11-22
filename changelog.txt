@@ -1,0 +1,8 @@
+FROM V0.4 TO V0.5:
+==================
+GAMEPLAY:
+
+POLISH:
+- Player is now slightly smaller, with a scale of 0.9.
+
+WHY WE CAN'T HAVE NICE DETAIL:

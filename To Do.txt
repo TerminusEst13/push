@@ -35,3 +35,50 @@ In push17 (Caco), needs to play OM NOM NOM when someone enters his mouth.
 
 
 Shadows under platforms in push09.
+
+
+Push32 needs to remove the HOM.
+
+Push31 needs its 130 mapspot spawns double-checked. Also, what's keeping the jump icon from working?
+
+"Welcome, to zombocom" voiceclip on entering map32.
+
+
+<Marcaek> TerminusEst13, perhaps some kind of less random mode to spawn in a drone every X intervals?
+<Marcaek> or wait
+<Marcaek> random spawn point :?
+<TerminusEst13> That's a good idea. I'll go with that, thanks.
+<Marcaek> oooh
+
+
+Push17 should have cacodemons coming out of the mouth
+
+
+Push22 should have the grey rocks colored red.
+
+
+
+Remove camping spots at push24, push23, push21
+
+
+Replace teleport fog. Reverse version of the player deaths?
+
+Under bridge in push29 is a terrible camp area
+
+
+Lower the layers of the cake in Push31
+Why don't the fun police spawn in push31?
+Can hide behind the cake and flan in push31
+
+
+Raise the ceiling on push32
+"Welcome to zombo.com" on push32 intro.
+
+
+Flatten the tracks on push08 so people can't camp there.
+
+
+People can camp behind the pillars on push24
+
+
+Implement changelog, have section "Why We Can't Have Nice Detail:".
