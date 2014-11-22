@@ -78,7 +78,17 @@ Raise the ceiling on push32
 Flatten the tracks on push08 so people can't camp there.
 
 
-People can camp behind the pillars on push24
+People can camp behind the pillars on push24. Move to center sections.
 
 
-Implement changelog, have section "Why We Can't Have Nice Detail:".
+Push24's new lights don't flash.
+
+Glowing lights in push24 shoul be jumppads.
+
+Replace push25.
+
+The stone walls on push27 should be different textures from the floor.
+
+Push29's moire patterning hurts people's eyes. Replace with something cleaner.
+
+Tweak the brightness on push32, people are having trouble seeing shots.
