@@ -19,6 +19,7 @@ actor PushPlayer : DoomPlayer
     Health 500
     Radius 16
     Height 56
+    Scale 0.9
     PainChance 255
     Gravity 0.575
     Mass 40
