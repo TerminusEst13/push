@@ -20,6 +20,7 @@ MAPS:
 - Push30 has been dramatically rehauled, and both the map and the textures themselves are now much larger.
 - Push11 has been replaced.
 - Push17 now has little babby cacos coming out of the mouth every ten seconds.
+- Push33 has been implemented.
 
 POLISH:
 - Player is now slightly smaller, with a scale of 0.9.

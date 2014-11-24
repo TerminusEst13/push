@@ -52,3 +52,8 @@
 - PUSH30 by MrSetharoo.
  ^- Textures from (where else?) StarTropics.
 - PUSH31 by Kurashiki.
+- PUSH33 by Tango.
+ ^- Water texture by didy.
+ ^- Sky texture taken from Odamex CTF.
+ ^- owall and oconcr taken from Ola Bjorling's Darkening E2).
+ ^- Vegetation taken from Exhumed, Captain Toenail, and didy.

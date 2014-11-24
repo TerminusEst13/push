@@ -214,7 +214,14 @@ map PUSH31 "Sweets Time - Kurashiki"
 
 map PUSH32 "Limitless - PresidentPeople"
 {
-    next = "PUSH01"
+    next = "PUSH33"
 	sky1 = "ZOMBOSKY"
     music = "MPUSH32" // Vibe - look at the stars
+}
+
+map PUSH33 "Coral Circuit - Tango"
+{
+    next = "PUSH01"
+    music = "MPUSH33" // Fearofdark & stinkbug - Atlantis Highway
+    sky1 = "SKYDAY"
 }

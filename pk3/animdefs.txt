@@ -57,3 +57,7 @@ texture GYROFAX2
 	pic GYROFAN7 tics 4
 
 Warp Texture KSBLU_FB
+
+texture DWATER1
+range DWATER8
+tics 6
