@@ -4,8 +4,28 @@ GAMEPLAY:
 - Levels that are too bright now automatically give the players items that turn shots translucent, rather than additive.
 - Players now have an inventory item that activates a wallhack visor, which allows them to see exactly where other players are located.
 
+MAPS:
+- Thanks to PresidentPeople, Push32 has had the circles slowly peter out in darkness, for easier identification of where you are.
+- The height of Push32 has been increased, and players will no longer be scraping against the ceiling after four minutes.
+- The grey rocks on Push22 are now colored red, for easier identification of kill floors.
+- Push31 has had the height of the cake lowered, less 3D floors, and the platforms brought closer to the center.
+- The Fun Police should now work on Push31.
+- Everyone now spawns at the same height on Push23. No more spawning next to lava.
+- The glowing lights on Push24 have resumed their original jumppad behavior in SpaceDM5.
+- The stone walls on Push27 are now different colors than the floor textures, for easier differentiation between floor and wall.
+- Now no player spawns on Push16 are on an area sinkable into the floor.
+- The small ledges outside the center platform on Push12 are no longer instant kill.
+
 POLISH:
 - Player is now slightly smaller, with a scale of 0.9.
 - Push32/Limitless level now starts off with the "Welcome to zombo.com" message
+- The moire texture on Push29 has been recolored to be easier on the eyes.
 
 WHY WE CAN'T HAVE NICE DETAIL:
+- The red pillars on Push22 have been lowered so that people can no longer hide behind them.
+- The grates on the towers have had their texture replaced with a more easy-to-see-through alternative so that players can no longer hide as easily behind them.
+- The tracks on Push08 no longer are above the ground, but are now flat with the ground, so that people can no longer hang on the edge to avoid death.
+- The large smoke tower on Push21 has been removed to stop people from hiding behind it.
+- The floating skull/cacodemon pyramids on Push23 have been inverted to stop people from camping behind it.
+- The hazard pillars in Push24 have been moved to the center island so as to stop people from camping behind them.
+- The pillars underneath the middle bridge in Push29 have been lowered so as to keep people from camping behind them.
