@@ -14,6 +14,7 @@ InInventory ImAlive, 1
         AspectRatio "16:9"
         { DrawImage "JUMPICON", -50, 170; }
     }
+    InInventory WallHackVision, 1 {drawimage "CYBTRG", 0, 0;}
 }
 }
 
@@ -31,6 +32,7 @@ InInventory ImAlive, 1
         AspectRatio "16:9"
         { DrawImage "JUMPICON", -50, 170; }
     }
+    InInventory WallHackVision, 1 {drawimage "CYBTRG", 0, 0;}
 }
 }
 

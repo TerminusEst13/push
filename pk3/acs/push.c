@@ -13,6 +13,8 @@ int FontCL[3] ={CR_DARKGREEN,CR_GREEN,CR_OLIVE};
 #include "commonfuncs.h"
 #include "push_jump.h"
 
+int PlayerTIDs[PLAYERMAX];
+
 script 531 OPEN
 {
     IsServer = 1;
@@ -98,6 +100,8 @@ script 532 ENTER
     int Buttons;
     int Angle;
     int DropSomeWeight;
+    int tid;
+    int pln = PlayerNumber();
 
     GiveInventory("SetUnshootable",1);
     GiveInventory("PowerRespawnProtection",1);
@@ -113,6 +117,9 @@ script 532 ENTER
 
     while (1)
     {
+        tid = defaultTID(-1);
+        PlayerTIDs[pln] = tid;
+
         GiveInventory("500Health",500);
 
         if (GetCvar("push_punchdrunk") == 1)
@@ -160,25 +167,106 @@ script 534 DEATH
 {
     TakeInventory("ImAlive",1);
     TakeInventory("LightAsAFeather",1);
+    Thing_ChangeTID(0,0);
+}
+
+function void hudmessageonactor(int tid, int range, str sprite, str text, int id) // By Caligari 87
+{
+    int dist, ang, vang, pitch, x, y;
+    int HUDX = 1280;
+    int HUDY = 960;
+    int offset = 0;
+
+    if(sprite != -1)
+    {
+        setfont(sprite);
+        text = "A";
+        offset = 0.1;
+    }
+
+    sethudsize(HUDX, HUDY, 1);
+    x = getactorx(tid) - getactorx(0);
+    y = getactory(tid) - getactory(0); 
+
+    vang = vectorangle(x,y);
+    ang = (vang - GetActorAngle(0) + 1.0) % 1.0;
+
+    if(((vang+0.125)%0.5) > 0.25) dist = fixeddiv(y, sin(vang));
+    else dist = fixeddiv(x, cos(vang));
+
+    if ((ang < 0.2 || ang > 0.8) && dist < range)
+    {
+        pitch = vectorangle(dist, getactorz(tid) - (getactorz(0) + 41.0));
+        pitch = (pitch + GetActorPitch(0) + 1.0) % 1.0;
+
+        x = HUDX/2 - ((HUDX/2) * sin(ang) / cos(ang));
+        y = HUDY/2 - ((HUDX/2) * sin(pitch) / cos(pitch));
+
+        if(sprite != -1)
+            setfont(sprite);
+        hudmessage(s:text; HUDMSG_FADEOUT, id, CR_UNTRANSLATED, (x<<16)+offset, ((y<<16)+offset)-32.0, 0.25, 0.5);
+    }
+    else { hudmessage(s:" "; HUDMSG_PLAIN, id, CR_UNTRANSLATED, 0, 0, 0.1); }
+}
+
+script 421 (int which)
+{
+    int i, time, tid;
+    int pln = PlayerNumber();
+    
+    switch (which)
+    {
+      case 1:
+        GiveInventory("WallHackVision",1);
+        GiveInventory("CannotIntoWallhack", 1);
+
+        while (1)
+        {
+            for (i = 0; i < PLAYERMAX; i++)
+            {
+                if (i == pln || !PlayerInGame(i)) { continue; }
+                tid = PlayerTIDs[i];
+                if (isDead(tid)) { continue; }
+
+                HudMessageOnActor(tid, 0x7FFFFFFF, "PLAYMARK", "A", tid);
+            }
+
+            Delay(4);
+
+            if (!CheckInventory("WallhackVision")) { break; }
+            TakeInventory("CannotIntoWallhack", 1);
+
+            Delay(4);
+            if (!CheckInventory("WallhackVision")) { break; }
+        }
+        break;
+    
+      case 2:
+        TakeInventory("WallHackVision",1);
+        GiveInventory("CannotIntoWallhack",1);
+        Delay(15);
+        TakeInventory("CannotIntoWallhack",1);
+        break;
+    }
 }
 
 // The below was made by Kyle873, whom is 7H3 1337357 |-|4(|<3R 0N 7H3 PU5H|\|37
 
 script 404 (void)
 {
-	int Time = 52;
-	
-	while (Time > 0)
-	{
-		SetHudSize(320, 240, false);
-		
-		// Scanlines
-		if ((Timer() % 3) == 0)
-		DrawScanlines();
-		
-		// Binary
-		if ((Timer() % 3) == 0)
-			DrawBinary();
+    int Time = 52;
+    
+    while (Time > 0)
+    {
+        SetHudSize(320, 240, false);
+        
+        // Scanlines
+        if ((Timer() % 3) == 0)
+        DrawScanlines();
+        
+        // Binary
+        if ((Timer() % 3) == 0)
+            DrawBinary();
 
         SetFont("bigfont");
         FontX = random(0.00,320.00);
@@ -186,50 +274,50 @@ script 404 (void)
         hudmessage (s:FontZ[random(0,1)],s:"\n";
         1, 0,FontCL[random(0,2)], FontX, FontY, 0.1);
         delay(1);
-		
-		Time--;
-		Delay(1);
-	}
+        
+        Time--;
+        Delay(1);
+    }
 }
 
 function void DrawScanlines(void)
 {
-	int Y = Random(0, 240) << 16;
-	int Alpha = FixedDiv(Random(25, 75), 100);
-	
-	// Scanlines
-	SetFont("Line");
-	HudMessage(s:"A"; HUDMSG_FADEOUT, 0, CR_WHITE, 0.0, Y, 0.05, 1.0, Alpha);
+    int Y = Random(0, 240) << 16;
+    int Alpha = FixedDiv(Random(25, 75), 100);
+    
+    // Scanlines
+    SetFont("Line");
+    HudMessage(s:"A"; HUDMSG_FADEOUT, 0, CR_WHITE, 0.0, Y, 0.05, 1.0, Alpha);
 }
 
 function void DrawBinary(void)
 {
-	int X = Random(0, 320) << 16;
-	int Y = Random(0, 240 / 6) << 16;
-	int FadeInTime = 0.1;
-	int FadeOutTime = 0.25;
-	int Rows = Random(10, 30);
-	str Binary;
-	
-	for (int i = 0; i < Rows; i++)
-	{
-		if (Random(0, 1))
-			Binary = "1";
-		else
-			Binary = "0";
-		
-		SetFont("SMALLFONT");
-		HudMessage(s:Binary; HUDMSG_FADEINOUT, 0, CR_GREEN, X, Y, 0.05, FadeInTime, FadeOutTime, 0.75);
-		
-		FadeInTime += 0.1;
-		FadeOutTime += 0.1;
-		Y += 8.0;
-	}
-	
-	// OH NO
-	if (!Random(0, 100))
-	{
-		SetFont("BIGFONT");
-		HudMessage(s:"DIVIDE BY ZERO"; HUDMSG_FADEOUT, 0, CR_GREEN, X, Y - 100.0, 0.05, 3.0, 0.75);
-	}
+    int X = Random(0, 320) << 16;
+    int Y = Random(0, 240 / 6) << 16;
+    int FadeInTime = 0.1;
+    int FadeOutTime = 0.25;
+    int Rows = Random(10, 30);
+    str Binary;
+    
+    for (int i = 0; i < Rows; i++)
+    {
+        if (Random(0, 1))
+            Binary = "1";
+        else
+            Binary = "0";
+        
+        SetFont("SMALLFONT");
+        HudMessage(s:Binary; HUDMSG_FADEINOUT, 0, CR_GREEN, X, Y, 0.05, FadeInTime, FadeOutTime, 0.75);
+        
+        FadeInTime += 0.1;
+        FadeOutTime += 0.1;
+        Y += 8.0;
+    }
+    
+    // OH NO
+    if (!Random(0, 100))
+    {
+        SetFont("BIGFONT");
+        HudMessage(s:"DIVIDE BY ZERO"; HUDMSG_FADEOUT, 0, CR_GREEN, X, Y - 100.0, 0.05, 3.0, 0.75);
+    }
 }

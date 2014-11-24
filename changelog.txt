@@ -2,6 +2,7 @@ FROM V0.4 TO V0.5:
 ==================
 GAMEPLAY:
 - Levels that are too bright now automatically give the players items that turn shots translucent, rather than additive.
+- Players now have an inventory item that activates a wallhack visor, which allows them to see exactly where other players are located.
 
 POLISH:
 - Player is now slightly smaller, with a scale of 0.9.

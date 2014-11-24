@@ -15,9 +15,9 @@ actor HitlerShooter 30004
     States
     {
     Spawn:
-	    TNT1 A 0
-	    TNT1 A 1 ACS_ExecuteAlways(2, 0)
-	Spawn2:
+        TNT1 A 0
+        TNT1 A 1 ACS_ExecuteAlways(2, 0)
+    Spawn2:
         TNT1 A 35 
         Loop
     Fire:
@@ -344,7 +344,7 @@ ACTOR DeskExplosive 13001
    {
       Spawn:
        TNT1 A 35 A_Explode(10000,128)
-	    loop
+        loop
    }
 }
 

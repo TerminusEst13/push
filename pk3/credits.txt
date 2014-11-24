@@ -8,6 +8,7 @@
 - Force Gauntlet sprites by Riet.
 - Critical error code coded by Kyle873
 - Push grenade sprites from Freedoom.
+- hudmessageonactor by Caligari87.
 
 - D_DM2INT is from Extreme Pinball
 - Other music is credited in MapInfo.

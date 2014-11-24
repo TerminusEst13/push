@@ -1,3 +1,9 @@
+// Player & System
+// ===================
+
+radar/on			radar_on // Taken from Mega Man X5
+radar/off			radaroff // Taken from Mega Man X5
+
 // Male voice taken from Quake III Arena.
 $playersound      Pusher   male    *death          MLPLDETH
 $playersounddup   Pusher   male    *xdeath         *death
@@ -49,6 +55,9 @@ $playersound      Pusher   other   *usefail        OTNOWAY
 $playersound      Pusher   other   *taunt          OTTAUNT
 $playersound      Pusher   other   *jump           SILENCE
 
+// Weapons
+// ===========
+
 push/fire             PUSHPRIM // I believe this is from Doom 64?
 push/altfire          PUSHALT  // Can't remember where this is from, sorry.
 push/dodge            PUSHDDGE // Taken from Smash Bros. Brawl
@@ -56,12 +65,6 @@ push/grenadehit       PUSHALTH // Taken from Devil May Cry 3
 push/laserhit         PUSHPRIH // Taken from Quake 3
 push/dunk             PUSHDUNK // Taken from Kamen Rider Battride War
 push/hit              ENEMYHIT
-
-drone/idle            DRONIDLE // Taken from Timesplitters 2
-$random drone/see { drosee1 drosee2 drosee3 } // Taken from Timesplitters 2
-drosee1               DRONSEE1
-drosee2               DRONSEE2
-drosee3               DRONSEE3
 
 $volume push/hit      0.85
 
@@ -73,17 +76,24 @@ gauntlet/smash        GANTSMSH // Taken from Smash Bros. Brawl
 gauntlet/shothit      GANTSHIT // Taken from Smash Bros. Brawl
 
 
+// Maps
+// ===========
+
+drone/idle            DRONIDLE // Taken from Timesplitters 2
+$random drone/see { drosee1 drosee2 drosee3 } // Taken from Timesplitters 2
+drosee1               DRONSEE1
+drosee2               DRONSEE2
+drosee3               DRONSEE3
+
 FlameJet/Torch        E_FJET   // Taken from Rise of the Triad
 hitler/awake          DSHR1SIT // Taken from Wolfenstein 3D
 
 SHIFTN                SHIFTN   // Unknown source.
 SHIFTY                SHIFTY   // Same.
 
-
 suddendeath/alarm     TIMEALRM // Taken from Doom 3
 
 HEDAT1	HEDAT1
-
 
 $random hidden/message { msg1 msg2 msg3 msg4 msg5 msg6 msg7 msg8 msg9 msg10 msg11 msg12 msg13 msg14 msg15 msg16 msg17 msg18 msg19 msg20 }
 msg1                  ILMNTI01
