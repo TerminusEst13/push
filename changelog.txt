@@ -3,6 +3,7 @@ FROM V0.4 TO V0.5:
 GAMEPLAY:
 - Levels that are too bright now automatically give the players items that turn shots translucent, rather than additive.
 - Players now have an inventory item that activates a wallhack visor, which allows them to see exactly where other players are located.
+- Sudden Death Drones now have their mass halved, meaning they can be pushed about. Taking "damage" makes them forget about their target and wander about for a bit.
 
 MAPS:
 - Thanks to PresidentPeople, Push32 has had the circles slowly peter out in darkness, for easier identification of where you are.
@@ -15,6 +16,7 @@ MAPS:
 - The stone walls on Push27 are now different colors than the floor textures, for easier differentiation between floor and wall.
 - Now no player spawns on Push16 are on an area sinkable into the floor.
 - The small ledges outside the center platform on Push12 are no longer instant kill.
+- Push25 has been completely replaced.
 
 POLISH:
 - Player is now slightly smaller, with a scale of 0.9.

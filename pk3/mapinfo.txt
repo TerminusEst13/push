@@ -165,10 +165,11 @@ map PUSH24 "Planet Xerox - Esselfortium"
     forcenoskystretch
 }
 
-map PUSH25 "Twitter Hashtag - W1D3A55"
+map PUSH25 "Start to Crate - W1D3A55"
 {
     next = "PUSH26"
-    music = "MPUSH25" // Magnar/Lizard - ancient days...
+    sky1 = "SKY2_2", 0.1
+    music = "MPUSH25" // Hangover - Retribution
 }
 
 map PUSH26 "Nunzio's Block Party - gaydad420"
