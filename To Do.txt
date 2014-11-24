@@ -42,8 +42,6 @@ Push20 needs one player 1 start.
 
 Implement in-game credits/changelog.
 
-Remove spawns off pillars in push06
-
 
 
 
