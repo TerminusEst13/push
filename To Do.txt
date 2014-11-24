@@ -101,12 +101,21 @@ little ledges outside the center platform on push12 kill people.
 
 
 Maps:
-ideidoom-pushxx.wad
-tango-push8bit.wad (already comes with music)
+ideidoom-pushxx-continued.wad (comes with music)
+tango-push8bit(2).wad (already comes with music)
+tango-pushlantis.wad (already comes with music)
 infirnex-PUSHMAP.wad
 madokage-push_map.wad ( ModArchive - DipA - It's Night Forever.xm )
-StarTropicsPush.wad
+StarTropicsPush.wad (already has music)
+w1d3a55-push30.wad (needs DM spawns, replaces push25. ModArchive - Necros - CLICK.S3M)
 
 uq-pushmap.wad (Save for Zandro 2.0)
 TerminusEst13: Would you be all right with it if I moved the pillars on the east and the west back a little bit to the edge of the platforms? I can already see players wanting to hide behind them to let everyone else fight it out.
 universal quantifier: Sure
+
+
+
+Replacements:
+Push10: tango-push8bit(2).wad
+Push11: ideidoom-pushxx-continued.wad
+Push25: w1d3a55-push30.wad

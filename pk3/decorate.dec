@@ -18,6 +18,7 @@ actor LightAsAFeather : Boolean {}
 actor ImAlive : Boolean {}
 actor GauntletHit : Boolean {}
 actor DoomedGuy : Counter { Inventory.MaxAmount 70 }
+actor LevelIsTooBright : Boolean {}
 
 #include "decorate/player.dec"
 #include "decorate/weapon.dec"

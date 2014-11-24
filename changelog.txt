@@ -1,8 +1,10 @@
 FROM V0.4 TO V0.5:
 ==================
 GAMEPLAY:
+- Levels that are too bright now automatically give the players items that turn shots translucent, rather than additive.
 
 POLISH:
 - Player is now slightly smaller, with a scale of 0.9.
+- Push32/Limitless level now starts off with the "Welcome to zombo.com" message
 
 WHY WE CAN'T HAVE NICE DETAIL:

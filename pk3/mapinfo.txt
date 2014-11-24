@@ -208,7 +208,7 @@ map PUSH31 "Sweets Time - Kurashiki"
 {
     next = "PUSH32"
     sky1 = "KSKY"
-    music = "MPUSH31"
+    music = "MPUSH31" // OSTER Project - Tete-a-Tete
 }
 
 map PUSH32 "Limitless - PresidentPeople"
