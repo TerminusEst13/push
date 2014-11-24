@@ -63,10 +63,11 @@ map PUSH09 "Ziggurat Vertigo - Sgt. Shivers"
     music = "MPUSH09" // Unknown - Gateways Pt. II
 }
 
-map PUSH10 "Cybergrid (aka ''Stardate 20x6 ripoff'') - Darsycho"
+map PUSH10 "Funs in the Nighttime - Tango"
 {
     next = "PUSH11"
-    music = "MPUSH10" // Xaser - Enigma
+    music = "MPUSH10" // Fearofdark - SurfingOnASineWave
+    sky1 = "8BITSKY"
 }
 
 Map PUSH11 "The Big-Ass Teleporter - IdeIdoom"

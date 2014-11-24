@@ -61,3 +61,46 @@ Warp Texture KSBLU_FB
 texture DWATER1
 range DWATER8
 tics 6
+
+texture PURPLE 
+PIC 1 TICS 1
+pic 0 tics 1 
+
+texture purpsht1
+pic 1 tics 1
+pic 2 tics 1
+
+texture retro1
+pic 1 tics 6
+pic 2 tics 6
+pic 3 tics 6
+pic 4 tics 6
+
+texture yelanim1
+pic 1 tics 3
+pic 2 tics 3
+pic 3 tics 3
+pic 4 tics 3
+
+flat 1_SPE
+pic 1 tics 5
+pic 2 tics 15
+
+flat 2_SPE
+pic 1 tics 5
+pic 2 tics 5
+pic 3 tics 10
+
+flat 3_SPE
+pic 1 tics 10
+pic 2 tics 5
+pic 3 tics 5
+
+flat 4_SPE
+pic 1 tics 15
+pic 2 tics 5
+
+flat purplef
+pic 1 tics 1
+pic 2 tics 1
+

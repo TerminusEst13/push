@@ -1,3 +1,258 @@
+// Push 10
+
+Texture GODCELLS, 128, 128
+{
+	NullTexture
+	Patch GODCELLS, 0, 0
+}
+
+Texture ASPH, 128, 32
+{
+	Patch SPH3, 0, 0
+	Patch SPH2, 32, 0
+	Patch SPH1, 64, 0
+	Patch SPH0, 96, 0
+}
+
+Texture ASOKOJ, 64, 128
+{
+	Patch SOKOJ, 0, 0
+	Patch SOKOJ, 0, 64
+}
+
+Texture ASOKOB, 64, 128
+{
+	Patch SOKOB, 0, 64
+	Patch SOKOB, 0, 0
+}
+
+Texture ASOKOR, 64, 128
+{
+	Patch SOKOR, 0, 0
+	Patch SOKOR, 0, 64
+}
+
+Texture ABLACK, 64, 128
+{
+	Patch ABLACK, 0, 0
+	Patch ABLACK, 0, 64
+}
+
+Texture ABLU, 64, 128
+{
+	Patch ABLU, 0, 0
+	Patch ABLU, 0, 64
+}
+
+Texture AGREE, 64, 128
+{
+	Patch AGREE, 0, 0
+	Patch AGREE, 0, 64
+}
+
+Texture ARED, 64, 128
+{
+	Patch ARED, 0, 0
+	Patch ARED, 0, 64
+}
+
+Texture AWHITE, 64, 128
+{
+	Patch AWHITE, 0, 0
+	Patch AWHITE, 0, 64
+}
+
+Texture AYEL, 64, 128
+{
+	Patch AYEL, 0, 0
+	Patch AYEL, 0, 64
+}
+
+Texture BLUDW, 64, 128
+{
+	Patch ABLACK, 0, 64
+	Patch ABLACK, 0, 0
+	Patch BLUDW, 0, 0
+	Patch BLUDW, 0, 63
+	Patch BLUVERT, 0, 0
+}
+
+Texture GREDW, 64, 128
+{
+	Patch ABLACK, 0, 64
+	Patch ABLACK, 0, 0
+	Patch GREDW, 0, 0
+	Patch GREDW, 0, 63
+	Patch GREVERT, 0, 0
+}
+
+Texture PURPLE1, 64, 128
+{
+	Patch ABLU, 0, 0
+	Patch ABLU, 0, 64
+}
+
+Texture PURPLE, 64, 128
+{
+	Patch ARED, 0, 0
+	Patch ARED, 0, 64
+}
+
+Texture RETRO1, 64, 128
+{
+	Patch RETRO1, 0, 0
+	Patch RETRO1, 0, 64
+}
+
+Texture RETRO4, 64, 128
+{
+	Patch RETRO4, 0, 0
+	Patch RETRO4, 0, 64
+}
+
+Texture RETRO2, 64, 128
+{
+	Patch RETRO2, 0, 0
+	Patch RETRO2, 0, 64
+}
+
+Texture RETRO3, 64, 128
+{
+	Patch RETRO3, 0, 0
+	Patch RETRO3, 0, 64
+}
+
+Texture ASLY2, 128, 128
+{
+	Patch SLY1, 95, 9
+	Patch SLY2, 73, 32
+	Patch SLY3, 43, 45
+	Patch SLY3, 82, 83
+	Patch SLY3, 48, 108
+	Patch SLY2, -1, 83
+	Patch SLY2, 20, 32
+	Patch SLY2, 35, 13
+	Patch SLY1, 25, 64
+	Patch SLY1, 97, 121
+	Patch SLY1, 2, 109
+	Patch SLY1, 95, 9
+	Patch SLY2, 73, 32
+	Patch SLY3, 43, 45
+	Patch SLY3, 82, 83
+	Patch SLY3, 48, 108
+	Patch SLY2, -1, 83
+	Patch SLY2, 20, 32
+	Patch SLY2, 35, 13
+	Patch SLY1, 25, 64
+	Patch SLY1, 97, 121
+	Patch SLY1, 2, 109
+}
+
+Texture A8BITOPK, 128, 64
+{
+	Patch ABLACK, 0, 0
+	Patch ABLACK, 64, 0
+	Patch 8BIT, 0, 25
+}
+
+Texture A8BIT, 128, 64
+{
+	Patch 8BIT, 0, 25
+}
+
+Texture YELANIM1, 64, 128
+{
+	Patch ABLACK, 0, 0
+	Patch ABLACK, 0, 64
+	Patch YELSTRIP, 0, 0
+}
+
+Texture YELANIM2, 64, 128
+{
+	Patch ABLACK, 0, 0
+	Patch ABLACK, 0, 64
+	Patch YELSTRIP, 16, 0
+}
+
+Texture YELANIM3, 64, 128
+{
+	Patch ABLACK, 0, 0
+	Patch ABLACK, 0, 64
+	Patch YELSTRIP, 32, 0
+}
+
+Texture YELANIM4, 64, 128
+{
+	Patch ABLACK, 0, 0
+	Patch ABLACK, 0, 64
+	Patch YELSTRIP, 48, 0
+}
+
+Texture PURPSHT1, 64, 128
+{
+	Patch ARED, 0, 0
+	Patch ARED, 0, 64
+	Patch SHOOT2, 0, 0
+	Patch SHOOT2, 0, 32
+	Patch SHOOT2, 0, 64
+	Patch SHOOT2, 0, 96
+}
+
+Texture PURPSHT2, 64, 128
+{
+	Patch ABLU, 0, 0
+	Patch ABLU, 0, 64
+	Patch SHOOT1, 0, 0
+	Patch SHOOT1, 0, 32
+	Patch SHOOT1, 0, 64
+	Patch SHOOT1, 0, 96
+}
+
+Texture ASLY1, 128, 128
+{
+	Patch ABLACK, 0, 0
+	Patch ABLACK, 64, 0
+	Patch ABLACK, 0, 64
+	Patch ABLACK, 64, 64
+	Patch SLY1, 95, 9
+	Patch SLY2, 73, 32
+	Patch SLY3, 43, 45
+	Patch SLY3, 82, 83
+	Patch SLY3, 48, 108
+	Patch SLY2, -1, 83
+	Patch SLY2, 20, 32
+	Patch SLY2, 35, 13
+	Patch SLY1, 25, 64
+	Patch SLY1, 97, 121
+	Patch SLY1, 2, 109
+}
+
+Texture RED, 64, 128
+{
+	Patch ARED, 0, 0
+	Patch ARED, 0, 64
+}
+
+Texture WELCOME, 256, 64
+{
+	Patch WELCOME, 0, 0
+}
+
+Texture 8BITSKY, 256, 128
+{
+	Patch 8BITSKY, 0, 0
+}
+
+Texture AGRAY, 64, 64
+{
+	Patch AGRAY, 0, 0
+}
+
+Texture ATREE, 64, 64
+{
+	Patch ATREE, 0, 0
+}
+
 // Push 11
 
 Texture GRESKY1, 1024, 128
