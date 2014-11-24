@@ -69,11 +69,11 @@ map PUSH10 "Cybergrid (aka ''Stardate 20x6 ripoff'') - Darsycho"
     music = "MPUSH10" // Xaser - Enigma
 }
 
-map PUSH11 "No Golden Stars - DanteEdward"
+Map PUSH11 "The Big-Ass Teleporter - IdeIdoom"
 {
     next = "PUSH12"
-    music = "MPUSH11" // Unreal - Warlord
-    sky1 = "RSKY2"
+    music = "MPUSH11" // zodiak of cascada - Black Striker
+    Sky1 = "GRESKY1"
 }
 
 map PUSH12 "Planetary Database - Aquasa"
@@ -169,7 +169,7 @@ map PUSH25 "Start to Crate - W1D3A55"
 {
     next = "PUSH26"
     sky1 = "SKY2_2", 0.1
-    music = "MPUSH25" // Hangover - Retribution
+    music = "MPUSH25" // Quasian - Elusive Images
 }
 
 map PUSH26 "Nunzio's Block Party - gaydad420"

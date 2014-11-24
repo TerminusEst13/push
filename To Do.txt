@@ -45,6 +45,13 @@ Implement in-game credits/changelog.
 
 
 
+<PresidentPeople> The camp spot [in Push24] was moved to the middle, but the outer platform is pretty bare now
+<PresidentPeople> what about a slope up to the jump pad?
+<PresidentPeople> That is, a slope to a slightly higher shelf
+
+
+
+
 
 Maps to put in release post:
 ideidoom-pushxx-continued.wad (comes with music) - Replace push11

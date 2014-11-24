@@ -1,3 +1,13 @@
+// Push 11
+
+Texture GRESKY1, 1024, 128
+{
+	Patch GRESKY1, 768, 0
+	Patch GRESKY1B, 0, 0
+	Patch GRESKY1C, 256, 0
+	Patch GRESKY1D, 512, 0
+}
+
 // Push 22
 
 Texture STARTAN1, 64, 128
