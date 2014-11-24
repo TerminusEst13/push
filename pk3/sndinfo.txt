@@ -85,6 +85,18 @@ drosee1               DRONSEE1
 drosee2               DRONSEE2
 drosee3               DRONSEE3
 
+$random babbycaco/see { cacsee1 cacsee2 } // All babby Caco sounds by Scroton.
+cacsee1               CACOSEE1
+cacsee2               CACOSEE2
+babbycaco/death       CACODETH
+$random babbycaco/idle { cacact1 cacact2 cacact3 }
+cacact1               CACOACT1
+cacact2               CACOACT2
+cacact3               CACOACT3
+$random babbycaco/pain { cacpain1 cacpain2 }
+cacpain1              CACODTH1
+cacpain2              CACODTH2
+
 FlameJet/Torch        E_FJET   // Taken from Rise of the Triad
 hitler/awake          DSHR1SIT // Taken from Wolfenstein 3D
 

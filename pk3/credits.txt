@@ -9,6 +9,7 @@
 - Critical error code coded by Kyle873
 - Push grenade sprites from Freedoom.
 - hudmessageonactor by Caligari87.
+- Pusher Cacodemon by IdeIdoom.
 
 - D_DM2INT is from Extreme Pinball
 - Other music is credited in MapInfo.
