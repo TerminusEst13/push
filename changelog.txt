@@ -17,6 +17,7 @@ MAPS:
 - Now no player spawns on Push16 are on an area sinkable into the floor.
 - The small ledges outside the center platform on Push12 are no longer instant kill.
 - Push25 has been completely replaced.
+- Push30 has been dramatically rehauled, and both the map and the textures themselves are now much larger.
 
 POLISH:
 - Player is now slightly smaller, with a scale of 0.9.

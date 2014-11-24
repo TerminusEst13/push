@@ -568,6 +568,79 @@ texture CLOUBFAN, 128, 128
    WorldPanning 
 }
 
+// Push30
+
+Texture WATER, 16, 16
+{
+	XScale 0.3
+	YScale 0.3
+	Patch WATER, 0, 0
+}
+
+Texture WALL, 15, 16
+{
+	XScale 0.1
+	YScale 0.1
+	Patch WALL, 0, 0
+}
+
+Texture GRASS, 16, 16
+{
+	XScale 0.3
+	YScale 0.3
+	Patch GRASS, 0, 0
+}
+
+Texture BRICK, 14, 16
+{
+	XScale 0.5
+	YScale 0.5
+	Patch BRICK, -1, 0
+}
+
+Texture BRICK2, 14, 16
+{
+	XScale 0.4
+	YScale 0.4
+	Patch BRICK2, 0, 0
+}
+
+Texture NES1, 302, 100
+{
+	XScale 5.0
+	YScale 5.0
+	Patch NES1, 0, 0
+}
+
+Texture NES2, 301, 99
+{
+	XScale 5.0
+	YScale 5.0
+	Patch NES2, 0, 0
+}
+
+Texture NES3, 301, 98
+{
+	XScale 5.0
+	YScale 5.0
+	Patch NES3, 0, 0
+}
+
+Texture NES4, 302, 99
+{
+	XScale 5.0
+	YScale 5.0
+	Patch NES4, 0, 0
+}
+
+Texture NES5, 300, 301
+{
+	XScale 5.0
+	YScale 5.0
+	WorldPanning
+	Patch NES5, 0, 0
+}
+
 // Push tipbox
 
 graphic pushtip0, 320, 200

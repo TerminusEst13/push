@@ -120,3 +120,5 @@ msg20                 ILMNTI20
 world/jumppad1        JUMPPAD1 // Taken from Smash Bros. Brawl
 
 zombo/intro           zombo
+
+nes/startup           NES
