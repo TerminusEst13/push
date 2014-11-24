@@ -206,3 +206,117 @@ CRC8 A -1
 stop
 }
 }
+
+// Push 33
+
+Actor SeaTree1 8900
+{
+//$Category Trees
+Radius 2
+Height 2
+-SOLID
++CLIENTSIDEONLY
++NOINTERACTION
+States
+	{
+	Spawn:
+	    CTRE A -1
+		Stop
+	}
+}
+
+Actor SeaTree2 8901
+{
+//$Category Trees
+Radius 2
+Height 2
+-SOLID
++CLIENTSIDEONLY
++NOINTERACTION
+States
+	{
+	Spawn:
+	    CTRE B -1
+		Stop
+	}
+}
+
+Actor SeaTree3 8902
+{
+//$Category Trees
+Radius 2
+Height 2
+-SOLID
++CLIENTSIDEONLY
++NOINTERACTION
+States
+	{
+	Spawn:
+	    CTRE C -1
+		Stop
+	}
+}
+
+Actor SeaTree4 8903
+{
+//$Category Trees
+Radius 2
+Height 2
+-SOLID
++CLIENTSIDEONLY
++NOINTERACTION
+States
+	{
+	Spawn:
+	    CTRE D -1
+		Stop
+	}
+}
+
+Actor SeaTree5 8904
+{
+//$Category Trees
+Radius 2
+Height 2
+-SOLID
++CLIENTSIDEONLY
++NOINTERACTION
+States
+	{
+	Spawn:
+	    CTRE E -1
+		Stop
+	}
+}
+
+Actor SeaTree6 8905
+{
+//$Category Trees
+Radius 2
+Height 2
+-SOLID
++CLIENTSIDEONLY
++NOINTERACTION
+States
+	{
+	Spawn:
+	    CTRE F -1
+		Stop
+	}
+}
+
+Actor SeaTree7 8906
+{
+//$Category Trees
+Radius 2
+Height 2
+-SOLID
++CLIENTSIDEONLY
++NOINTERACTION
+States
+	{
+	Spawn:
+	    CTRE G -1
+		Stop
+	}
+}

@@ -221,7 +221,13 @@ map PUSH32 "Limitless - PresidentPeople"
 
 map PUSH33 "Coral Circuit - Tango"
 {
-    next = "PUSH01"
+    next = "PUSH34"
     music = "MPUSH33" // Fearofdark & stinkbug - Atlantis Highway
     sky1 = "SKYDAY"
+}
+
+map PUSH34 "The Dreadmill - Infirnex"
+{
+    next = "PUSH01"
+    music = "MPUSH34" // Teque - Resist
 }
