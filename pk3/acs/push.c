@@ -11,6 +11,7 @@ str FontZ[2] ={"0","1"};
 int FontCL[3] ={CR_DARKGREEN,CR_GREEN,CR_OLIVE};
 
 #include "commonfuncs.h"
+#include "push_text.h"
 #include "push_jump.h"
 
 int PlayerTIDs[PLAYERMAX];
