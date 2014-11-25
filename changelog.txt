@@ -11,7 +11,7 @@ MAPS:
 - The height of Push32 has been increased, and players will no longer be scraping against the ceiling after four minutes.
 - The grey rocks on Push22 are now colored red, for easier identification of kill floors.
 - Push31 has had the height of the cake lowered, less 3D floors, and the platforms brought closer to the center.
-- The Fun Police should now work on Push31.
+- The sudden death drones should now work on Push31 and Push22.
 - Everyone now spawns at the same height on Push23. No more spawning next to lava.
 - The glowing lights on Push24 have resumed their original jumppad behavior in SpaceDM5.
 - The stone walls on Push27 are now different colors than the floor textures, for easier differentiation between floor and wall.
@@ -24,10 +24,12 @@ MAPS:
 - Push17 now has little babby cacos coming out of the mouth every ten seconds.
 - Push33 has been implemented, Coral Circuit by Tango.
 - Push34 has been implemented, the Dreadmill by Infirnex.
+- Push35 has been implemented, the Nexus by Madokage.
+- Push36 has been implemented, Polygons are Inaccurate by Rofl25.
 
 POLISH:
 - Player is now slightly smaller, with a scale of 0.9.
-- Push32/Limitless level now starts off with the "Welcome to zombo.com" message
+- Push32 level now starts off with the "Welcome to zombo.com" message
 - The moire texture on Push29 has been recolored to be easier on the eyes.
 
 WHY WE CAN'T HAVE NICE DETAIL:

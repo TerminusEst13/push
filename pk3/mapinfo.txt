@@ -166,7 +166,7 @@ map PUSH24 "Planet Xerox - Esselfortium"
     forcenoskystretch
 }
 
-map PUSH25 "Start to Crate - W1D3A55"
+map PUSH25 "Unpushable Crates vs Unstoppable Pushers - W1D3A55"
 {
     next = "PUSH26"
     sky1 = "SKY2_2", 0.1
@@ -229,6 +229,20 @@ map PUSH33 "Coral Circuit - Tango"
 
 map PUSH34 "The Dreadmill - Infirnex"
 {
-    next = "PUSH01"
+    next = "PUSH35"
     music = "MPUSH34" // Teque - Resist
+}
+
+map PUSH35 "The Nexus - Madokage"
+{
+    next = "PUSH36"
+    music = "MPUSH35" // DipA - It's Night Forever
+    sky1 = "madosky", 0.50
+}
+
+map PUSH36 "Polygons are Inaccurate - Rofl25"
+{
+    next = "PUSH01"
+    music = "MPUSH36" // Unreal Tournament - Razorback
+    sky1 = "SKYBOX", 0.3
 }

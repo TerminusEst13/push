@@ -42,6 +42,10 @@ Push20 needs one player 1 start.
 
 Implement in-game credits/changelog.
 
+Painting/drawing utensil.
+
+Slow down ground on push08
+
 
 
 
@@ -54,12 +58,12 @@ Implement in-game credits/changelog.
 
 
 Maps to put in release post:
-ideidoom-pushxx-continued.wad (comes with music) - Replace push11
-tango-push8bit(2).wad (already comes with music) - Replace push10
-tango-pushlantis.wad (already comes with music) - Push33
-infirnex-PUSHMAP.wad                            - Push34
+(x) ideidoom-pushxx-continued.wad (comes with music) - Replace push11
+(x) tango-push8bit(2).wad (already comes with music) - Replace push10
+(x) tango-pushlantis.wad (already comes with music) - Push33
+(x) infirnex-PUSHMAP.wad                            - Push34
 madokage-push_map.wad ( ModArchive - DipA - It's Night Forever.xm ) - Push35
-StarTropicsPush.wad (already has music)                     - Replace Push30
+(x) StarTropicsPush.wad (already has music)                     - Replace Push30
                                                 push25 was rehauled
 
 
