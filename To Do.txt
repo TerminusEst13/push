@@ -40,8 +40,6 @@ Replace teleport fog. Reverse version of the player deaths?
 
 Push20 needs one player 1 start.
 
-Implement in-game credits/changelog.
-
 Painting/drawing utensil.
 
 Slow down ground on push08
@@ -58,15 +56,34 @@ Slow down ground on push08
 
 
 Maps to put in release post:
-(x) ideidoom-pushxx-continued.wad (comes with music) - Replace push11
-(x) tango-push8bit(2).wad (already comes with music) - Replace push10
-(x) tango-pushlantis.wad (already comes with music) - Push33
-(x) infirnex-PUSHMAP.wad                            - Push34
-madokage-push_map.wad ( ModArchive - DipA - It's Night Forever.xm ) - Push35
-(x) StarTropicsPush.wad (already has music)                     - Replace Push30
-                                                push25 was rehauled
+ideidoom-pushxx-continued.wad
+tango-push8bit(2).wad
+tango-pushlantis.wad
+infirnex-PUSHMAP.wad
+madokage-push_map.wad
+StarTropicsPush.wad
+push25 was rehauled
 
 
+FOR v0.6:
+===============
+
+shivers-Desert Track.wad
+push-v0.5-newpush28.pk3
+ideidoom-pushxx-continued-2.wad
+rofl25-PUSH36(2).wad
+
+<PresidentPeople> Small issue on the StarTropics map.  There's a very tiny ledge behind Mike's portrait, but only on his left, strangely
+
+
+Make walls on push35 further out.
+
+
+New How2Play:
+Panel 1: Launch enemies into the air with alt-fire, and push them off with primary fire.
+Panel 2: If you get launched off, recover! Use your double-jump and rocketjump off the killfloor to make it back!
+Panel 3: If someone is hiding, use Activate Inventory to scan for their location.
+Panel 4: BE THIS GUY, DON'T BE THIS GUY
 
 
 
@@ -74,3 +91,37 @@ madokage-push_map.wad ( ModArchive - DipA - It's Night Forever.xm ) - Push35
 uq-pushmap.wad (Save for Zandro 2.0)
 TerminusEst13: Would you be all right with it if I moved the pillars on the east and the west back a little bit to the edge of the platforms? I can already see players wanting to hide behind them to let everyone else fight it out.
 universal quantifier: Sure
+
+
+
+
+
+
+
+
+
+<Untitled> unless your map is very complex (lots of detail and whatnot), sheer size shouldn't be that deadly
+<PresidentPeople> I know people asked for big maps, but they're turning out to be hard to play on once the players dwindle away
+<TerminusEst13> Yeah.
+<PresidentPeople> Whether they're survivors, or a small group to begin with
+<WaTaKiD> so have the map shrink depending on # players left :p
+<WaTaKiD> some outer pillars lower to the floor or something idk
+<TerminusEst13> That's not a bad idea, Wata.
+<PresidentPeople> yeah, that sounds neat
+<TerminusEst13> It'll take revising and rebuilding every single big map available, but it's possible with GetPlayerCount.
+<WaTaKiD> gl hf
+<WaTaKiD> if that idea causes more trouble than its worth in the end, my apologies lol
+
+
+
+<PresidentPeople> Maybe if Push33 was broken up with some kind of walls
+<PresidentPeople> to keep less 3D floors in the FOV
+<TerminusEst13> The problem isn't the 3D floors, oddly, the problem is all of the actors.
+<TerminusEst13> There's...almost three megabytes of the map dedicated to the sprites alone.
+<PresidentPeople> Wow
+<TerminusEst13> Yeah. I deleted half of them (the ones not in view behind the map) and that halved the filesize, but there's still around I think 500 actors.
+<PresidentPeople> Could a texture of some kind be used as a substitute, with actors used more sparingly?
+<TerminusEst13> It's possible, since a lot of other maps use it (push29 first comes to mind), so it definitely can be done. I'm not personally familiar with how, but I'll have to check it out and see how viable it is.
+<PresidentPeople> Also, the coral isn't forcing x-billboarding
+<PresidentPeople> er
+<PresidentPeople> y-billboarding
