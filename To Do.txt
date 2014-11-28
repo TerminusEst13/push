@@ -38,13 +38,13 @@ Shadows under platforms in push09.
 
 Replace teleport fog. Reverse version of the player deaths?
 
-Push20 needs one player 1 start.
+Push20 and push34 needs one player 1 start.
 
 Painting/drawing utensil.
 
 Slow down ground on push08
 
-
+Rise up floors in push04
 
 
 <PresidentPeople> The camp spot [in Push24] was moved to the middle, but the outer platform is pretty bare now
@@ -52,17 +52,8 @@ Slow down ground on push08
 <PresidentPeople> That is, a slope to a slightly higher shelf
 
 
-
-
-
-Maps to put in release post:
-ideidoom-pushxx-continued.wad
-tango-push8bit(2).wad
-tango-pushlantis.wad
-infirnex-PUSHMAP.wad
-madokage-push_map.wad
-StarTropicsPush.wad
-push25 was rehauled
+<PresidentPeople> TerminusEst13: Kurashiki pointed out to me that the chocolate bar's texture is off-center on her map.  It must've become misaligned after the adjustments
+<TerminusEst13> ...Oops. Thanks for letting me know.
 
 
 FOR v0.6:
