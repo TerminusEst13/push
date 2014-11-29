@@ -56,39 +56,10 @@ Rise up floors in push04
 <TerminusEst13> ...Oops. Thanks for letting me know.
 
 
-FOR v0.6:
-===============
-
-shivers-Desert Track.wad
-push-v0.5-newpush28.pk3
-ideidoom-pushxx-continued-2.wad
-rofl25-PUSH36(2).wad
-
 <PresidentPeople> Small issue on the StarTropics map.  There's a very tiny ledge behind Mike's portrait, but only on his left, strangely
 
 
 Make walls on push35 further out.
-
-
-New How2Play:
-Panel 1: Launch enemies into the air with alt-fire, and push them off with primary fire.
-Panel 2: If you get launched off, recover! Use your double-jump and rocketjump off the killfloor to make it back!
-Panel 3: If someone is hiding, use Activate Inventory to scan for their location.
-Panel 4: BE THIS GUY, DON'T BE THIS GUY
-
-
-
-
-uq-pushmap.wad (Save for Zandro 2.0)
-TerminusEst13: Would you be all right with it if I moved the pillars on the east and the west back a little bit to the edge of the platforms? I can already see players wanting to hide behind them to let everyone else fight it out.
-universal quantifier: Sure
-
-
-
-
-
-
-
 
 
 <Untitled> unless your map is very complex (lots of detail and whatnot), sheer size shouldn't be that deadly
@@ -104,7 +75,6 @@ universal quantifier: Sure
 <WaTaKiD> if that idea causes more trouble than its worth in the end, my apologies lol
 
 
-
 <PresidentPeople> Maybe if Push33 was broken up with some kind of walls
 <PresidentPeople> to keep less 3D floors in the FOV
 <TerminusEst13> The problem isn't the 3D floors, oddly, the problem is all of the actors.
@@ -116,3 +86,37 @@ universal quantifier: Sure
 <PresidentPeople> Also, the coral isn't forcing x-billboarding
 <PresidentPeople> er
 <PresidentPeople> y-billboarding
+
+
+
+Tango: also also, if the title of the 8bit map could be changed to "Above the 8bit Freeway" instead of the silly title it has now that would be great :D also actually at this point the underwater one ought to just be named Atlantis Highway I think
+
+
+FOR v0.6:
+===============
+Update:
+push-v0.5-newpush28.pk3 (PUSH28)
+ideidoom-pushxx-continued-2.wad (PUSH11)
+rofl25-PUSH36(2).wad (PUSH36)
+infirnex-PUSH34-v2.wad (PUSH34)
+gothic-PUSH27-v2.wad (PUSH27)
+tango-pushlantis-v2.wad (PUSH33)
+DRL-PinkIsACoolColor-v6b.wad (PUSH06)
+
+New:
+shivers-Desert Track.wad
+
+
+
+New How2Play:
+Panel 1: Launch enemies into the air with alt-fire, and push them off with primary fire.
+Panel 2: If you get launched off, recover! Use your double-jump and rocketjump off the killfloor to make it back!
+Panel 3: If someone is hiding, use Activate Inventory to scan for their location.
+Panel 4: BE THIS GUY, DON'T BE THIS GUY
+
+
+
+
+uq-pushmap.wad (Save for Zandro 2.0)
+TerminusEst13: Would you be all right with it if I moved the pillars on the east and the west back a little bit to the edge of the platforms? I can already see players wanting to hide behind them to let everyone else fight it out.
+universal quantifier: Sure
