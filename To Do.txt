@@ -105,6 +105,11 @@ DRL-PinkIsACoolColor-v6b.wad (PUSH06)
 
 New:
 shivers-Desert Track.wad
+Gothic-Future2000.wad
+Guardsoul-PushMap.wad
+
+
+Make sure DRL's map is up to date.
 
 
 
