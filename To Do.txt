@@ -59,7 +59,7 @@ Rise up floors in push04
 <PresidentPeople> Small issue on the StarTropics map.  There's a very tiny ledge behind Mike's portrait, but only on his left, strangely
 
 
-Make walls on push35 further out.
+Make walls on push35 further out, reduce size of main arena.
 
 
 <Untitled> unless your map is very complex (lots of detail and whatnot), sheer size shouldn't be that deadly
@@ -92,6 +92,17 @@ Make walls on push35 further out.
 Tango: also also, if the title of the 8bit map could be changed to "Above the 8bit Freeway" instead of the silly title it has now that would be great :D also actually at this point the underwater one ought to just be named Atlantis Highway I think
 
 
+
+<DRL333> Speaking of faces, I know why the face texture in Push13 doesn't look right in software
+<DRL333> The texture's resoulution is causing it to bork in software
+<DRL333> It's the same thing that's happening to the NES is Seth's map
+<DRL333> Changing the resoultion to something like 256 x 256 should fix it
+
+
+
+Make push10's flashing red/blue textures less frequent.
+
+
 FOR v0.6:
 ===============
 Update:
@@ -107,6 +118,7 @@ New:
 shivers-Desert Track.wad
 Gothic-Future2000.wad
 Guardsoul-PushMap.wad
+UniversalQuantifier-push_ice.wad
 
 
 Make sure DRL's map is up to date.
