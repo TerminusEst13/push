@@ -6,9 +6,11 @@ MAPS:
 - Absolutely nothing about Push28 was changed.
 - The teleporters on Push11 have been lowered and their textures changed, for easier jumping-into and location differentiation.
 - Push33's amount of actors has been dramatically cut down to a third of what it was, and filesize was reduced from over three megabytes to barely 1.6. This should help make the map less laggy.
+- Push27 has been expanded and the center arena filled in. This should make the arena more difficult to recover from, and slightly more difficult to get knocked off.
 
 POLISH:
 - Push10 was renamed to "Above the 8-Bit Freeway" and Push33 renamed to "Atlantis Highway", as per author request.
+- Push27 now has lava balls spurting up every now and then.
 
 WHY WE CAN'T HAVE NICE DETAIL:
 
