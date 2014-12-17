@@ -62,3 +62,4 @@
 - PUSH35 by Madokage.
  ^- Textures from Yume Nikki.
 - PUSH36 by Rofl25.
+ ^- Textures from Smash Bros. N64.

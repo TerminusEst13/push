@@ -63,7 +63,7 @@ map PUSH09 "Ziggurat Vertigo - Sgt. Shivers"
     music = "MPUSH09" // Unknown - Gateways Pt. II
 }
 
-map PUSH10 "Funs in the Nighttime - Tango"
+map PUSH10 "Above the 8-Bit Freeway - Tango"
 {
     next = "PUSH11"
     music = "MPUSH10" // Fearofdark - SurfingOnASineWave
@@ -190,6 +190,7 @@ map PUSH27 "Blazing Hell - Gothic"
 map PUSH28 "Enlightened - Wad Squad"
 {
     next = "PUSH29"
+	sky1 = "WAKEUP"
     music = "MPUSH28" // Teque - Neurostate (Edited slightly)
 }
 
@@ -220,7 +221,7 @@ map PUSH32 "Limitless - PresidentPeople"
     music = "MPUSH32" // Vibe - look at the stars
 }
 
-map PUSH33 "Coral Circuit - Tango"
+map PUSH33 "Atlantis Highway - Tango"
 {
     next = "PUSH34"
     music = "MPUSH33" // Fearofdark & stinkbug - Atlantis Highway

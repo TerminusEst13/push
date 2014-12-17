@@ -1,3 +1,17 @@
+FROM V0.5 TO V0.6:
+==================
+GAMEPLAY:
+
+MAPS:
+- Absolutely nothing about Push28 was changed.
+
+POLISH:
+- Push10 was renamed to "Above the 8-Bit Freeway" and Push33 renamed to "Atlantis Highway", as per author request.
+
+WHY WE CAN'T HAVE NICE DETAIL:
+
+
+
 FROM V0.4 TO V0.5:
 ==================
 GAMEPLAY:
