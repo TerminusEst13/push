@@ -102,8 +102,6 @@ Make push10's flashing red/blue textures less frequent.
 FOR v0.6:
 ===============
 Update:
-push-v0.5-newpush28.pk3 (PUSH28)
-ideidoom-pushxx-continued-2.wad (PUSH11)
 rofl25-PUSH36(2).wad (PUSH36)
 infirnex-PUSH34-v2.wad (PUSH34)
 gothic-PUSH27-v2.wad (PUSH27)

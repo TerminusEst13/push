@@ -4,6 +4,7 @@ GAMEPLAY:
 
 MAPS:
 - Absolutely nothing about Push28 was changed.
+- The teleporters on Push11 have been lowered and their textures changed, for easier jumping-into and location differentiation.
 
 POLISH:
 - Push10 was renamed to "Above the 8-Bit Freeway" and Push33 renamed to "Atlantis Highway", as per author request.
