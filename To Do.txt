@@ -61,6 +61,8 @@ Rise up floors in push04
 
 Make walls on push35 further out, reduce size of main arena.
 
+On push32, darken the lines on the edges.
+
 
 <Untitled> unless your map is very complex (lots of detail and whatnot), sheer size shouldn't be that deadly
 <PresidentPeople> I know people asked for big maps, but they're turning out to be hard to play on once the players dwindle away
@@ -114,6 +116,7 @@ UniversalQuantifier-push_ice.wad
 Gardie-PUSH01-BATTLEFIELDfix.wad
 Gardie-PUSH02-Welcome_To_Vinesauce.wad
 Gardie-PUSH03-I_AM_TEKWALL4.wad
+Gardie-PUSH04-The_Platformer.wad
 
 
 Make sure DRL's map is up to date.
