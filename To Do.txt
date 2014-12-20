@@ -40,7 +40,8 @@ Replace teleport fog. Reverse version of the player deaths?
 
 Push20 and push34 needs one player 1 start.
 
-Painting/drawing utensil.
+Painting/drawing utensil
+ ^- Special key which fires a constant stream of bulletpuffs.
 
 Slow down ground on push08
 
@@ -101,12 +102,17 @@ On push32, darken the lines on the edges.
 Make push10's flashing red/blue textures less frequent.
 
 
+
+Increase overall floor height on push04
+
+
 FOR v0.6:
 ===============
 Update:
 rofl25-PUSH36(2).wad (PUSH36)
 infirnex-PUSH34-v2.wad (PUSH34)
 DRL-PinkIsACoolColor-v6b.wad (PUSH06)
+unholypimpin-PUSH17.wad (PUSH17)
 
 New:
 shivers-Desert Track.wad
