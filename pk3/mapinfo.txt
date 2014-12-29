@@ -256,7 +256,14 @@ map PUSH37 "XXX ImpBar - Mystical"
 
 map PUSH38 "Ice Ice Baby - UniversalQuantifier"
 {
-	next = "PUSH01"
+	next = "PUSH39"
     music = "MPUSH38" // Alexander Brandon - Snowfall
     sky1 = "ICESKY"
+}
+
+map PUSH39 "Fusion Reactor - UnholyPimpin"
+{
+	next = "PUSH01"
+    sky1 = "SKY2_2"
+    music = "MPUSH39" // Gilmore - Destructive
 }
