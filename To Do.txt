@@ -80,7 +80,6 @@ Make push10's flashing red/blue textures less frequent
 FOR v0.6:
 ===============
 Update:
-infirnex-PUSH34-v2.wad (PUSH34)
 DRL-PinkIsACoolColor-v6b.wad (PUSH06)
 
 New:

@@ -18,12 +18,14 @@ MAPS:
 - PUSH36 has been dramatically ensmallened and now can actually be recovered from.
 - PUSH17 has smaller walls to make it easier to recover and a few floating platforms for a little bit of Z-axis action.
 - PUSH30 has had the laggy pyramids removed, and many many more spawn points placed throughout the area.
+- PUSH34's silos have been expanded for more safe ground.
 
 POLISH:
 - Push10 was renamed to "Above the 8-Bit Freeway" and Push33 renamed to "Atlantis Highway", as per author request.
 - Push27 now has lava balls spurting up every now and then.
 - The lollipops in PUSH31 are now transparent, and the alignments on the chocolate bar were fixed.
 - UnholyPimpin has added a nice little touch to PUSH17, in honor of our Cacoward. Thanks, mate!
+- PUSH34's skybox has been tweaked to look a little prettier.
 
 WHY WE CAN'T HAVE NICE DETAIL:
 
