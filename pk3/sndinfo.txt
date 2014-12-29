@@ -134,3 +134,6 @@ world/jumppad1        JUMPPAD1 // Taken from Smash Bros. Brawl
 zombo/intro           zombo
 
 nes/startup           NES
+
+pushy/cacoward        cacoward // Taken from Viewtiful Joe; Red Hot Rumble
+pushy/caconope        caconope // Taken from Viewtiful Joe; Red Hot Rumble
