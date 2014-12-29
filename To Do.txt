@@ -82,7 +82,6 @@ FOR v0.6:
 Update:
 infirnex-PUSH34-v2.wad (PUSH34)
 DRL-PinkIsACoolColor-v6b.wad (PUSH06)
-StarTropicsPush2fix12-21-2014.wad (PUSH30)
 
 New:
 shivers-Desert Track.wad
