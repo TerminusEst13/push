@@ -27,9 +27,6 @@ In push17 (Caco), needs to play OM NOM NOM when someone enters his mouth.
 [06:32:46 pm] PresidentPeople: for extra dunk feels
 
 
-Shadows under platforms in push09.
-
-
 <Marcaek> TerminusEst13, perhaps some kind of less random mode to spawn in a drone every X intervals?
 <Marcaek> or wait
 <Marcaek> random spawn point :?
@@ -44,8 +41,6 @@ Painting/drawing utensil
  ^- Special key which fires a constant stream of bulletpuffs.
 
 Slow down ground on push08
-
-Rise up floors in push04
 
 
 <PresidentPeople> The camp spot [in Push24] was moved to the middle, but the outer platform is pretty bare now
@@ -78,19 +73,6 @@ On push32, darken the lines on the edges.
 <WaTaKiD> if that idea causes more trouble than its worth in the end, my apologies lol
 
 
-<PresidentPeople> Maybe if Push33 was broken up with some kind of walls
-<PresidentPeople> to keep less 3D floors in the FOV
-<TerminusEst13> The problem isn't the 3D floors, oddly, the problem is all of the actors.
-<TerminusEst13> There's...almost three megabytes of the map dedicated to the sprites alone.
-<PresidentPeople> Wow
-<TerminusEst13> Yeah. I deleted half of them (the ones not in view behind the map) and that halved the filesize, but there's still around I think 500 actors.
-<PresidentPeople> Could a texture of some kind be used as a substitute, with actors used more sparingly?
-<TerminusEst13> It's possible, since a lot of other maps use it (push29 first comes to mind), so it definitely can be done. I'm not personally familiar with how, but I'll have to check it out and see how viable it is.
-<PresidentPeople> Also, the coral isn't forcing x-billboarding
-<PresidentPeople> er
-<PresidentPeople> y-billboarding
-
-
 
 <DRL333> Speaking of faces, I know why the face texture in Push13 doesn't look right in software
 <DRL333> The texture's resoulution is causing it to bork in software
@@ -99,11 +81,7 @@ On push32, darken the lines on the edges.
 
 
 
-Make push10's flashing red/blue textures less frequent.
-
-
-
-Increase overall floor height on push04
+Make push10's flashing red/blue textures less frequent
 
 
 FOR v0.6:
@@ -113,6 +91,7 @@ rofl25-PUSH36(2).wad (PUSH36)
 infirnex-PUSH34-v2.wad (PUSH34)
 DRL-PinkIsACoolColor-v6b.wad (PUSH06)
 unholypimpin-PUSH17.wad (PUSH17)
+StarTropicsPush2fix12-21-2014.wad (PUSH30)
 
 New:
 shivers-Desert Track.wad
@@ -123,6 +102,9 @@ Gardie-PUSH01-BATTLEFIELDfix.wad
 Gardie-PUSH02-Welcome_To_Vinesauce.wad
 Gardie-PUSH03-I_AM_TEKWALL4.wad
 Gardie-PUSH04-The_Platformer.wad
+Mystical-beammap.pk3
+Mystical-barpush.pk3
+TheUnrealRogue-PUSHMAP.wad
 
 
 Make sure DRL's map is up to date.
