@@ -48,10 +48,6 @@ Slow down ground on push08
 <PresidentPeople> That is, a slope to a slightly higher shelf
 
 
-<PresidentPeople> TerminusEst13: Kurashiki pointed out to me that the chocolate bar's texture is off-center on her map.  It must've become misaligned after the adjustments
-<TerminusEst13> ...Oops. Thanks for letting me know.
-
-
 <PresidentPeople> Small issue on the StarTropics map.  There's a very tiny ledge behind Mike's portrait, but only on his left, strangely
 
 

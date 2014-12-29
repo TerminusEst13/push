@@ -12,6 +12,7 @@ MAPS:
 POLISH:
 - Push10 was renamed to "Above the 8-Bit Freeway" and Push33 renamed to "Atlantis Highway", as per author request.
 - Push27 now has lava balls spurting up every now and then.
+- The lollipops in PUSH31 are now transparent, and the alignments on the chocolate bar were fixed.
 
 WHY WE CAN'T HAVE NICE DETAIL:
 
