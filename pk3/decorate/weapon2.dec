@@ -9,11 +9,11 @@ actor "Force Gauntlet" : Weapon
         KGNT A 1 A_WeaponReady
         Loop
     Deselect:
-        TNT1 AAA 0 A_Lower
+        TNT1 AAAAA 0 A_Lower
         KGNT A 1 A_Lower
         Loop
     Select:
-        TNT1 AAA 0 A_Raise
+        TNT1 AAAAA 0 A_Raise
         KGNT A 1 A_Raise
         Loop
     Fire:
@@ -55,7 +55,8 @@ actor "Force Gauntlet" : Weapon
         TNT1 A 0 A_FireCustomMissile("GauntletShot",0,0,0,0)
         KGNT DE 2 BRIGHT
         KGNT FGG 1 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
-        KGNT A 30 A_WeaponReady(WRF_NOSECONDARY | WRF_NOSWITCH)
+        KGNT A 15 A_WeaponReady(WRF_NOSECONDARY | WRF_NOSWITCH)
+        KGNT A 15 A_WeaponReady(WRF_NOSECONDARY)
         Goto Ready
     Spawn:
         TNT1 A -1

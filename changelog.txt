@@ -4,6 +4,8 @@ GAMEPLAY:
 - Cacodemons on Push17 are easier to hit and no longer so stupidly aggressive.
 - The explosion radius of the grenade has been increased by 16 units, for slightly easier recoveries.
 - The alt-fire of the gauntlet is now capable of reflecting shots away from the player.
+- Weapon switching is now a little under twice as fast.
+- Both weapons' alt-fires had their WRF_NOSWITCH times slashed in half, meaning players will be able to swap to a different weapon much faster.
 
 MAPS:
 - Absolutely nothing about Push28 was changed.
