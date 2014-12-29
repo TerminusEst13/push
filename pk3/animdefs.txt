@@ -104,6 +104,7 @@ flat purplef
 pic 1 tics 1
 pic 2 tics 1
 
+// Push11
 texture GRNBLU1
 
 pic 1 tics 5
@@ -114,6 +115,7 @@ TEXTURE yellblu1
 pic 1 tics 5
 pic 2 tics 5
 
+// Push37
 texture IMPB1
     allowdecals
     pic IMPB1 rand 5 8
@@ -124,3 +126,6 @@ texture IMPB1
     pic IMPB2 rand 5 8
     pic IMPB1 rand 5 8
     pic IMPB4 rand 5 8
+
+// Push38
+WARP2 flat H2WAT2

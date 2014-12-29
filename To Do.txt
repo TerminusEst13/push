@@ -79,26 +79,23 @@ Make push10's flashing red/blue textures less frequent
 
 FOR v0.6:
 ===============
-Update:
-DRL-PinkIsACoolColor-v6b.wad (PUSH06)
-
 New:
 shivers-Desert Track.wad
 Gothic-Future2000.wad
 Guardsoul-PushMap.wad
-UniversalQuantifier-push_ice.wad
 Gardie-PUSH01-BATTLEFIELDfix.wad
 Gardie-PUSH02-Welcome_To_Vinesauce.wad
 Gardie-PUSH03-I_AM_TEKWALL4.wad
 Gardie-PUSH04-The_Platformer.wad
 Mystical-beammap.pk3
-Mystical-barpush.pk3
 TheUnrealRogue-PUSHMAP.wad
 UnholyPimpin-pushy1.wad (map01, map02, map03)
 
 
-Make sure DRL's map is up to date.
 
+Make sure the following maps have drones/projectile walls:
+- PUSH37
+- PUSH38
 
 
 New How2Play:

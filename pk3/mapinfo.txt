@@ -250,6 +250,13 @@ map PUSH36 "Polygons are Inaccurate - Rofl25"
 
 map PUSH37 "XXX ImpBar - Mystical"
 {
-    next = "PUSH01"
+    next = "PUSH38"
     music = "MPUSH37" // Necros - CLICK
+}
+
+map PUSH38 "Ice Ice Baby - UniversalQuantifier"
+{
+	next = "PUSH01"
+    music = "MPUSH38" // Alexander Brandon - Snowfall
+    sky1 = "ICESKY"
 }

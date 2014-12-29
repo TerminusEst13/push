@@ -449,7 +449,7 @@ States
 	}
 }
 
-// Push 37
+// Push37
 
 actor ImpGirl 29901
 {
@@ -462,4 +462,68 @@ actor ImpGirl 29901
     IMPG B 20
     loop
   }
+}
+
+// Push38
+
+ACTOR winterC 10242
+{
+  Radius 20
+  Height 140
+  +SOLID
+  +FORCEYBILLBOARD
+  States
+  {
+  Spawn:
+    WINT C -1
+    Stop
+  }
+}
+
+ACTOR winterF 10243
+{
+  Radius 10
+  Height 110
+  +SOLID
+  +FORCEYBILLBOARD
+  States
+  {
+  Spawn:
+    WINT F -1
+    Stop
+  }
+}
+
+ACTOR snowCaco 10244
+{
+  Radius 20
+  Height 140
+  +SOLID
+  +FORCEYBILLBOARD
+  States
+  {
+  Spawn:
+    SNCA A -1
+    Stop
+  }
+}
+
+Actor snowflake
+{
+	+NOCLIP
+	+DONTSPLASH
+	+NODROPOFF
+	+SPAWNCEILING
+	+NOGRAVITY
+	vspeed -5
+	+NOBLOCKMAP
+	+CLIENTSIDEONLY
+	States
+	{
+	Spawn:
+		SNOW A 400 BRIGHT
+	Death:
+		SNOW A 1 A_FadeOut (0.1)
+		Loop
+	}
 }
