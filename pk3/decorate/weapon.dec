@@ -123,7 +123,7 @@ ACTOR PushGrenadeSelfJumpage
     {
     Spawn:
         TNT1 A 0
-        TNT1 A 0 A_Explode(196,160,1)
+        TNT1 A 0 A_Explode(196,176,1)
         Stop
     }
 }

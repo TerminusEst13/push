@@ -2,6 +2,8 @@ FROM V0.5 TO V0.6:
 ==================
 GAMEPLAY:
 - Cacodemons on Push17 are easier to hit and no longer so stupidly aggressive.
+- The explosion radius of the grenade has been increased by 16 units, for slightly easier recoveries.
+- The alt-fire of the gauntlet is now capable of reflecting shots away from the player.
 
 MAPS:
 - Absolutely nothing about Push28 was changed.

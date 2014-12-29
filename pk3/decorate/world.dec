@@ -340,6 +340,7 @@ Actor Cacopusher : Cacodemon
     Height 32
     Scale 0.5
     Health 500
+    DamageFactor "NoDamage", 0.0
     -SOLID
     +MISSILEMORE
     +LOOKALLAROUND
