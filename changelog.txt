@@ -28,6 +28,7 @@ POLISH:
 - PUSH34's skybox has been tweaked to look a little prettier.
 
 WHY WE CAN'T HAVE NICE DETAIL:
+- PUSH06's lower platforms have been raised up to prevent people from camping there.
 
 
 
