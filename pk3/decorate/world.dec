@@ -336,13 +336,12 @@ ACTOR FlameJet 30001 //YOU GOT THE TORCH, YOU GOT THE POWER! YEAH!
 
 Actor Cacopusher : Cacodemon
 {
-    Radius 17
-    Height 27
+    Radius 24
+    Height 32
     Scale 0.5
     Health 500
     -SOLID
     +MISSILEMORE
-    +MISSILEEVENMORE
     +LOOKALLAROUND
     +QUICKTORETALIATE
     SeeSound "babbycaco/see"
@@ -356,6 +355,10 @@ Actor Cacopusher : Cacodemon
     Spawn2:
         HEAD A 3 A_Wander
         TNT1 A 0 A_Look
+        Loop
+    See:
+        HEAD A 3 A_Chase
+        HEAD A 3 A_FastChase
         Loop
     Missile:
         HEAD BC 5 A_FaceTarget
