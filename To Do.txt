@@ -50,9 +50,6 @@ Slow down ground on push08
 
 <PresidentPeople> Small issue on the StarTropics map.  There's a very tiny ledge behind Mike's portrait, but only on his left, strangely
 
-
-Make walls on push35 further out, reduce size of main arena.
-
 On push32, darken the lines on the edges.
 
 
