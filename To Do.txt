@@ -89,7 +89,6 @@ Gardie-PUSH03-I_AM_TEKWALL4.wad
 Gardie-PUSH04-The_Platformer.wad
 Mystical-beammap.pk3
 TheUnrealRogue-PUSHMAP.wad
-UnholyPimpin-pushy1.wad (map01)
 
 
 
@@ -112,3 +111,9 @@ Panel 4: BE THIS GUY, DON'T BE THIS GUY
 uq-pushmap.wad (Save for Zandro 2.0)
 TerminusEst13: Would you be all right with it if I moved the pillars on the east and the west back a little bit to the edge of the platforms? I can already see players wanting to hide behind them to let everyone else fight it out.
 universal quantifier: Sure
+
+
+
+FOR LATER:
+==============
+UnholyPimpin-pushy1.wad (map01 - Lags heavily on lower-end PCs)
