@@ -80,14 +80,6 @@ Make push10's flashing red/blue textures less frequent
 FOR v0.6:
 ===============
 New:
-shivers-Desert Track.wad
-Gothic-Future2000.wad
-Gardie-PUSH01-BATTLEFIELDfix.wad
-Gardie-PUSH02-Welcome_To_Vinesauce.wad
-Gardie-PUSH03-I_AM_TEKWALL4.wad
-Gardie-PUSH04-The_Platformer.wad
-Mystical-beammap.pk3
-TheUnrealRogue-PUSHMAP.wad
 
 
 
@@ -96,6 +88,24 @@ Make sure the following maps have drones/projectile walls:
 - PUSH38
 - PUSH39
 - PUSH40
+- PUSH41
+- PUSH42
+- PUSH43
+- PUSH44
+- PUSH45
+- PUSH46
+
+
+
+
+Push39's platforms should be larger, song doesn't loop.
+Push40's ghosts should be ghostier, arena boundaries widened, starting platforms widened.
+Reduce smokepuffs on PUSH41 by a bit, arena boundaries widened.
+Push43 needs to be brighter
+push44's spawns need removed off the lowering platforms.
+push45's ceiling is way too low
+
+
 
 
 New How2Play:
@@ -103,6 +113,15 @@ Panel 1: Launch enemies into the air with alt-fire, and push them off with prima
 Panel 2: If you get launched off, recover! Use your double-jump and rocketjump off the killfloor to make it back!
 Panel 3: If someone is hiding, use Activate Inventory to scan for their location.
 Panel 4: BE THIS GUY, DON'T BE THIS GUY
+
+
+
+
+UPDATE CREDITS/CHANGELOG, INCORPORATE IN-GAME
+
+
+
+
 
 
 
@@ -116,3 +135,7 @@ universal quantifier: Sure
 FOR LATER:
 ==============
 UnholyPimpin-pushy1.wad (map01 - Lags heavily on lower-end PCs)
+Gardie-PUSH03-I_AM_TEKWALL4.wad (ditto)
+TheUnrealRogue-PUSHMAP.wad (Needs a dramatic rehaul)
+shivers-Desert Track.wad (Ditto)
+Gardie-PUSH02-Welcome_To_Vinesauce.wad (ditto)
