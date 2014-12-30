@@ -89,7 +89,7 @@ Gardie-PUSH03-I_AM_TEKWALL4.wad
 Gardie-PUSH04-The_Platformer.wad
 Mystical-beammap.pk3
 TheUnrealRogue-PUSHMAP.wad
-UnholyPimpin-pushy1.wad (map01, map03)
+UnholyPimpin-pushy1.wad (map01)
 
 
 
@@ -97,6 +97,7 @@ Make sure the following maps have drones/projectile walls:
 - PUSH37
 - PUSH38
 - PUSH39
+- PUSH40
 
 
 New How2Play:
