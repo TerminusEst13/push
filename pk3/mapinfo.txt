@@ -270,6 +270,13 @@ map PUSH39 "Fusion Reactor - UnholyPimpin"
 
 map PUSH40 "Could'a Gotcha - UnholyPimpin"
 {
-	next = "PUSH01"
+	next = "PUSH41"
     music = "MPUSH40" // Andromeda & Evade - Goatage
+}
+
+map PUSH41 "Tritium Extractor - Guardsoul"
+{
+    next = "PUSH01"
+    music = "MPUSH41" // Crusader: No Regret - Main Theme
+    sky1 = "STSKY7"
 }

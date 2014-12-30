@@ -21,8 +21,9 @@ MAPS:
 
 - A new map, the XXX ImpBar by Mystical, has been added at Push37.
 - A new map, Ice Ice Baby by UniversalQuantifier, has been added at Push38.
-- A new map, Fusion Reactor by UnholyPimpin, has been added at Push38.
+- A new map, Fusion Reactor by UnholyPimpin, has been added at Push39.
 - A new map, Could'a Gotcha by UnholyPimpin, has been added at Push40.
+- A new map, Tritium Extractor by GuardSoul, has been added at Push41.
 
 POLISH:
 - Push10 was renamed to "Above the 8-Bit Freeway" and Push33 renamed to "Atlantis Highway", as per author request.
