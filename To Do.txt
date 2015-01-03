@@ -84,12 +84,6 @@ New:
 
 
 
-Make sure the following maps have drones/projectile walls:
-- PUSH37
-- PUSH43
-
-
-
 
 Push39's song doesn't loop.
 
