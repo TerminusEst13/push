@@ -265,7 +265,7 @@ map PUSH39 "Fusion Reactor - UnholyPimpin"
 {
 	next = "PUSH40"
     sky1 = "SKY2_2"
-    music = "MPUSH39" // Gilmore - Destructive
+    music = "MPUSH39" // Gilmore - Destructive (Slightly edited)
 }
 
 map PUSH40 "Could'a Gotcha - UnholyPimpin"
