@@ -109,7 +109,7 @@ map PUSH16 "Icon of Panic - Seryder"
     music = "MPUSH16" // M o O n W a l k e R - D00M2(Game oveR)
 }
 
-map PUSH17 "Pushy the Cacodemon - UnholyPimpin"
+map PUSH17 "We Found Hissy - UnholyPimpin"
 {
     next = "PUSH18"
     sky1 = "RSKY2"

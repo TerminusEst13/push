@@ -10,6 +10,7 @@ GAMEPLAY:
 - The Push laser speed has been increased from 400 to 450, and its radius increased from 3 to 4.
 - The Push laser now fires straight at the crosshair, rather than 8 units underneath.
 - A drawing utensil has been implemented as an extra key for the people who think of Push as a multiplayer MSPaint simulator.
+- The F1 help screen is no longer the best but now is much more informative.
 
 MAPS:
 - Absolutely nothing about Push28 was changed.
