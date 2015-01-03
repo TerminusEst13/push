@@ -6,6 +6,7 @@ GAMEPLAY:
 - The alt-fire of the gauntlet is now capable of reflecting shots away from the player.
 - Weapon switching is now a little under twice as fast.
 - Both weapons' alt-fires had their WRF_NOSWITCH times slashed in half, meaning players will be able to swap to a different weapon much faster.
+- The visor now tracks people better, updating its position in half the time as before.
 
 MAPS:
 - Absolutely nothing about Push28 was changed.
