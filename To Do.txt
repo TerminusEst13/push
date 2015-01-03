@@ -85,7 +85,6 @@ New:
 
 Make sure the following maps have drones/projectile walls:
 - PUSH37
-- PUSH38
 - PUSH39
 - PUSH40
 - PUSH41
