@@ -906,6 +906,70 @@ Texture NES5, 300, 301
 	Patch NES5, 0, 0
 }
 
+// Push42
+
+Sprite "RABFA0B0", 128, 128
+{
+	Offset 64, 64
+	Patch "SFX_01", 0, 0
+	{
+		Blend 255, 80, 30, 255
+	}
+}
+
+Sprite "RABFC0D0", 128, 128
+{
+	Offset 64, 64
+	Patch "SFX_01", 0, 0
+	{
+		Blend 255, 80, 30, 255
+		FlipY
+	}
+}
+
+Sprite "RABHA0", 128, 128
+{
+	Offset 64, 64
+	Patch "SFX_02", 0, 0
+	{
+		Blend 255, 110, 60, 255
+	}
+}
+
+Sprite "RABEA0", 128, 128
+{
+	Offset 64, 64
+	Patch "SFX_02", 0, 0
+	{
+		Style Add
+		Blend 255, 50, 30, 255
+	}
+	
+	Patch "SFX_02", 0, 0
+	{
+		Style Add
+		Blend 255, 50, 30, 255
+		XScale 2
+		YScale 2
+	}
+}
+
+Sprite "RABSA0", 215, 215
+{
+	Offset 107, 107
+	Patch "SFX_03", 3, 3
+	{
+		Style CopyAlpha
+		Blend 0, 0, 0, 255
+	}
+	
+	Patch "SFX_03", 0, 0
+	{
+		Style CopyAlpha
+		Blend 60, 50, 50, 255
+	}
+}
+
 // Push tipbox
 
 graphic pushtip0, 320, 200

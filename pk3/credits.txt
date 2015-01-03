@@ -23,10 +23,10 @@
  ^ PUSH14 textures by Agaures.
 - PUSH08 by Mike12.
 - PUSH10 by Darsycho.
-- PUSH11 by IdeIdoom.
+- PUSH11 and PUSH43 by IdeIdoom.
 - PUSH12 by Aquasa.
  ^ Skybox taken from Cybercrime 3.
-- PUSH15 and PUSH17 by UnholyPimpin.
+- PUSH15, PUSH17, PUSH39, PUSH40, and PUSH47 by UnholyPimpin.
 - PUSH16 by Seryder.
 - PUSH19 and PUSH32 by PresidentPeople.
  ^ Duke3D textures, water fountain and palm tree sprites from Realm 667.
@@ -43,7 +43,7 @@
 - PUSH26 by gaydad420.
  ^- Skybox from Sonic Advance 2.
  ^- Water from Metroid Fusion.
-- PUSH27 by Gothic.
+- PUSH27 and PUSH45 by Gothic.
  ^- Textures from Quake.
 - PUSH28 by Sgt. Shivers, Kyle873, Seryder, and TerminusEst13.
  ^- Textures from HacX.
@@ -63,3 +63,7 @@
  ^- Textures from Yume Nikki.
 - PUSH36 by Rofl25.
  ^- Textures from Smash Bros. N64.
+- PUSH37 and PUSH42 by Mystical.
+- PUSH38 by UniversalQuantifier.
+- PUSH41 by GuardSoul.
+- PUSH44, PUSH46, and PUSH48 by Gardevoir.
