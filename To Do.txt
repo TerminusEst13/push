@@ -23,6 +23,7 @@ In push17 (Caco), needs to play OM NOM NOM when someone enters his mouth.
 [06:28:34 pm] PresidentPeople: Heh, dialup
 
 
+
 [06:32:36 pm] PresidentPeople: Getting dunked should call and A_Quake on the victim
 [06:32:46 pm] PresidentPeople: for extra dunk feels
 
@@ -85,26 +86,12 @@ New:
 
 Make sure the following maps have drones/projectile walls:
 - PUSH37
-- PUSH39
-- PUSH40
-- PUSH41
-- PUSH42
 - PUSH43
-- PUSH44
-- PUSH45
-- PUSH46
-- PUSH47
-- PUSH48
 
 
 
 
-Push39's platforms should be larger, song doesn't loop.
-Push40's ghosts should be ghostier, arena boundaries widened, starting platforms widened.
-Reduce smokepuffs on PUSH41 by a bit, arena boundaries widened.
-push44's spawns need removed off the lowering platforms.
-push45's ceiling is way too low
-Push48 needs to be brighter
+Push39's song doesn't loop.
 
 
 
@@ -135,8 +122,6 @@ universal quantifier: Sure
 
 FOR LATER:
 ==============
-UnholyPimpin-pushy1.wad (map01 - Lags heavily on lower-end PCs)
-Gardie-PUSH03-I_AM_TEKWALL4.wad (ditto)
 TheUnrealRogue-PUSHMAP.wad (Needs a dramatic rehaul)
 shivers-Desert Track.wad (Ditto)
 Gardie-PUSH02-Welcome_To_Vinesauce.wad (ditto)

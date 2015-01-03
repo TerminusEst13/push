@@ -535,7 +535,7 @@ ACTOR GhostlyMastermind 15665
   Radius 60
   Height 128
   Renderstyle add 
-  Alpha 0.3
+  Alpha 0.15
   scale 2.5
   -SOLID
   +NOBLOCKMAP
@@ -554,7 +554,7 @@ ACTOR GhostlyCyberdemon 15666
   Radius 60
   Height 128
   Renderstyle add 
-  Alpha 0.3
+  Alpha 0.15
   scale 2.5
   -SOLID
   +NOBLOCKMAP
@@ -692,14 +692,14 @@ Height 110
 States
 {
 Spawn:
-SORC A -1
+SORC F -1
 }
 }
 
 actor BishopStatue 10003
 {
-Radius 16
-Height 48
+Radius 22
+Height 65
 +Solid
 States
 {
@@ -745,3 +745,122 @@ Radius 8
  }
  }
  
+ Actor BishopPush : Bishop
+ {
+Radius 22
+Height 65
+ Speed 10
+ PainChance 110
+  Monster
+  +FLOAT
+  +NOGRAVITY
+  +NOBLOOD
+  +TELESTOMP
+  +DONTOVERLAP
+  +NOTARGETSWITCH
+  }
+  
+  Actor BishopFX : DroneBall
+  { }
+ 
+ Actor CyberdemonPush : Cyberdemon
+ {
+ States
+ {
+ Missile:
+   CYBR E 6 A_FaceTarget
+   CYBR F 12 A_CustomMissile("CyberRocket",53,-43)
+   CYBR E 12 A_FaceTarget
+   CYBR F 12 A_CustomMissile("CyberRocket",53,-43)
+   CYBR E 12 A_FaceTarget
+   CYBR F 12 A_CustomMissile("CyberRocket",53,-43)
+   goto See
+   }
+   }
+   
+Actor CyberRocket
+{
+     Radius 11
+  Height 8
+    Projectile
+  +RANDOMIZE
+  +SEEKERMISSILE
+  +DEHEXPLOSION
+  +ROCKETTRAIL
+      Speed 35
+    Damage (10)
+    ReactionTime 50
+  DamageType "DroneDamage"
+  SeeSound "weapons/rocklf"
+  DeathSound "weapons/rocklx"
+   States
+   {
+   Spawn:
+        MISL AA 5 Bright A_SeekerMissile(10,15)
+        TNT1 A 0 A_Countdown
+        Loop
+    Death:
+	 MISL B 8 Bright
+     MISL C 6 Bright
+     MISL D 4 Bright
+        TNT1 A 0
+        TNT1 A 0 A_SpawnItemEx("DroneJumpage",0,0,0,0,0,0,0,32)
+        Stop
+    }
+}
+
+Actor HeresiarchPush
+{
+PainChance 10
+  Speed 16
+  Radius 40
+  Height 110
+    Monster
+  +FLOORCLIP
+   +MISSILEMORE
+   +MISSILEEVENMORE
+    +LOOKALLAROUND
+    +NOINFIGHTING
+  +DONTMORPH
+  +NOTARGET
+  +NOICEDEATH
+  +NOBLOOD
+  SeeSound "SorcererSight"
+  PainSound "SorcererPain"
+  DeathSound "SorcererDeathScream"
+  ActiveSound "SorcererActive"
+    States
+  {
+  Spawn:
+    SORC A 3
+	See:
+    SORC ABCD 5 A_Chase
+    Loop
+	  Pain:
+    SORC G 0 A_ClearTarget
+	SORC G 0 A_Wander
+    SORC G 8 A_Pain
+    Goto See
+    Wait
+	Missile:
+        SORC F 5 A_FaceTarget
+        SORC E 2 Bright A_CustomMissile("DroneBallBig",55,0,0,0,0)
+        SORC F 10
+        Goto See
+  Death:
+    SORC H 5 Bright
+    SORC I 5 Bright A_FaceTarget
+    SORC J 5 Bright A_Scream
+    SORC KLMNOPQRST 5 Bright
+    SORC U 5 Bright A_NoBlocking
+    SORC VWXY 5 Bright
+    SORC Z -1 Bright
+    Stop
+  }
+}
+
+Actor DroneBallBig : DroneBall
+{
+Speed 15
+Scale 2.0
+}

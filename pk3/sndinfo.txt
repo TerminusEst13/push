@@ -137,3 +137,26 @@ nes/startup           NES
 
 pushy/cacoward        cacoward // Taken from Viewtiful Joe; Red Hot Rumble
 pushy/caconope        caconope // Taken from Viewtiful Joe; Red Hot Rumble
+
+
+BishopSight             syab2d
+BishopActive            stb1d
+BishopPain              bshpn1
+BishopAttack            pop
+BishopDeath             bishdth1
+BishopMissileExplode    bshhit2
+BishopBlur              blur6
+
+spider/sight			spidhaha
+$random spider/active		{ spider/active1 spider/active2 }
+spider/active1			spidsurr
+spider/active2			spiddest
+spider/pain			spidaug
+spider/attack			spidfire
+spider/death			spidhaha
+spider/walk			dsempty
+
+SorcererSight           sorboss1
+SorcererActive          sorboss2
+SorcererPain            sorboss3
+SorcererDeathScream     sordie2
