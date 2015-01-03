@@ -7,6 +7,9 @@ GAMEPLAY:
 - Weapon switching is now a little under twice as fast.
 - Both weapons' alt-fires had their WRF_NOSWITCH times slashed in half, meaning players will be able to swap to a different weapon much faster.
 - The visor now tracks people better, updating its position in half the time as before.
+- The Push laser speed has been increased from 400 to 450, and its radius increased from 3 to 4.
+- The Push laser now fires straight at the crosshair, rather than 8 units underneath.
+- A drawing utensil has been implemented as an extra key for the people who think of Push as a multiplayer MSPaint simulator.
 
 MAPS:
 - Absolutely nothing about Push28 was changed.

@@ -20,6 +20,8 @@ actor GauntletHit : Boolean {}
 actor DoomedGuy : Counter { Inventory.MaxAmount 70 }
 actor LevelIsTooBright : Boolean {}
 actor CannotIntoWallhack : Boolean {}
+actor DrawingToolOn : Boolean {}
+actor DrawingToolReady : Boolean {}
 
 #include "decorate/player.dec"
 #include "decorate/weapon.dec"

@@ -75,6 +75,9 @@ gauntlet/pull         GANTPULL // Can't remember where this is from, sorry.
 gauntlet/smash        GANTSMSH // Taken from Smash Bros. Brawl
 gauntlet/shothit      GANTSHIT // Taken from Smash Bros. Brawl
 
+draw/switch           trigger  // Taken from Kamen Rider Battride War
+draw/draw             draw     // Taken from Kamen Rider Battride War
+
 
 // Maps
 // ===========

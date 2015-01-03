@@ -1,5 +1,8 @@
 clearplayerclasses
 addplayerclass PushPlayer
 
+AddKeySection "Push - Optional Keys" "pushoptional"
+AddMenuKey "Drawing Tool" +user1
+
 alias credits   "puke -280 1"
 alias changelog "puke -280 2"

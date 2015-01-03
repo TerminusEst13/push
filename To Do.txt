@@ -85,11 +85,6 @@ New:
 
 
 
-Push39's song doesn't loop.
-
-
-
-
 New How2Play:
 Panel 1: Launch enemies into the air with alt-fire, and push them off with primary fire.
 Panel 2: If you get launched off, recover! Use your double-jump and rocketjump off the killfloor to make it back!
