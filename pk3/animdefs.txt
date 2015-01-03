@@ -129,3 +129,22 @@ texture IMPB1
 
 // Push38
 WARP2 flat H2WAT2
+
+// Push43
+texture HEXSKU1
+
+pic 1 tics 3
+pic 2 tics 3
+pic 3 tics 12
+pic 2 tics 3
+pic 1 tics 12
+
+warp texture BLOODY
+
+// Push46
+WARP FLAT S_WATER1
+
+// Push48
+warp texture TEKWALWA
+warp2 texture TEKWALLV
+warp texture TEKWALPS

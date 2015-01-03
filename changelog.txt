@@ -24,6 +24,14 @@ MAPS:
 - A new map, Fusion Reactor by UnholyPimpin, has been added at Push39.
 - A new map, Could'a Gotcha by UnholyPimpin, has been added at Push40.
 - A new map, Tritium Extractor by GuardSoul, has been added at Push41.
+- A new map, Star Beam by Mystical, has been added at Push42.
+- A new map, Mandatory Void Tribute by IdeIdoom, has been added at Push43.
+- A new map, Sinking Feeling by Gardevoir, has been added at Push44.
+- A new map, The Future of the Year 2000 by Gothic, has been added at Push45.
+- A new map, Battlefield by Gardevoir, has been added at Push46.
+- A new map, Drown Your Sorrows by UnholyPimpin, has been added at Push47.
+- A new map, I am TEKWALL4 by Gardevoir, has been added at Push48.
+
 
 POLISH:
 - Push10 was renamed to "Above the 8-Bit Freeway" and Push33 renamed to "Atlantis Highway", as per author request.

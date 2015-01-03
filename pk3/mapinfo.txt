@@ -276,7 +276,52 @@ map PUSH40 "Could'a Gotcha - UnholyPimpin"
 
 map PUSH41 "Tritium Extractor - Guardsoul"
 {
-    next = "PUSH01"
+    next = "PUSH42"
     music = "MPUSH41" // Crusader: No Regret - Main Theme
     sky1 = "STSKY7"
+}
+
+map PUSH42 "Star Beam - Mystical"
+{
+    next = "PUSH43"
+    music = "MPUSH42" // DX Ball - Insatia
+}
+
+Map PUSH43 "Mandatory Void Tribute - IdeIdoom"
+{
+    next = "PUSH44"
+    music = "MPUSH43" // RibinaBJ - Liquid Crystal
+}
+
+Map PUSH44 "Sinking Feeling - Gardevoir"
+{
+    next = "PUSH45"
+    music = "MPUSH44" // of coz - :fate []
+    sky1 = "CC4SKY2", 0.35
+}
+
+map PUSH45 "The Future of the Year 2000 - Gothic"
+{
+    next = "PUSH46"
+    music = "MPUSH45" // Tempest 2000 - Mind's Eye
+    sky1 = "STSKY5"
+}
+
+map PUSH46 "Battlefield - Gardevoir"
+{
+    next = "PUSH47"
+    music = "MPUSH46" // laamaa - Flying Together
+}
+
+map PUSH47 "Drown Your Sorrows - Unholy Pimpin"
+{
+    next = "PUSH48"
+    music = "MPUSH47" // the Deviant - Drummaz
+}
+
+map PUSH48 "I am TEKWALL4 - Gardevoir"
+{
+    next = "PUSH01"
+    music = "MPUSH48" // Xaser - Voxelbuffer
+    Sky1 = "TEKPORN4", 2
 }

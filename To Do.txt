@@ -94,6 +94,8 @@ Make sure the following maps have drones/projectile walls:
 - PUSH44
 - PUSH45
 - PUSH46
+- PUSH47
+- PUSH48
 
 
 
@@ -101,9 +103,9 @@ Make sure the following maps have drones/projectile walls:
 Push39's platforms should be larger, song doesn't loop.
 Push40's ghosts should be ghostier, arena boundaries widened, starting platforms widened.
 Reduce smokepuffs on PUSH41 by a bit, arena boundaries widened.
-Push43 needs to be brighter
 push44's spawns need removed off the lowering platforms.
 push45's ceiling is way too low
+Push48 needs to be brighter
 
 
 
