@@ -11,6 +11,8 @@ GAMEPLAY:
 - The Push laser now fires straight at the crosshair, rather than 8 units underneath.
 - A drawing utensil has been implemented as an extra key for the people who think of Push as a multiplayer MSPaint simulator.
 - The F1 help screen is no longer the best but now is much more informative.
+- The Doom pistol is now removed from the player on map enter.
+
 
 MAPS:
 - Absolutely nothing about Push28 was changed.
@@ -44,6 +46,9 @@ POLISH:
 - The lollipops in PUSH31 are now transparent, and the alignments on the chocolate bar were fixed.
 - UnholyPimpin has added a nice little touch to PUSH17, in honor of our Cacoward. Thanks, mate!
 - PUSH34's skybox has been tweaked to look a little prettier.
+- The doublejump indicator now has text on it to identify that, yes, this is for double-jump.
+- The doublejump indicator now empties out when used instead of vanishing.
+
 
 WHY WE CAN'T HAVE NICE DETAIL:
 - PUSH06's lower platforms have been raised up to prevent people from camping there.

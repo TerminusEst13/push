@@ -1,17 +1,19 @@
-- Gun sprite drawn by Sgt. Shivers
+- Gun sprite drawn by Sgt. Shivers.
 - Laser trails by ijon tichy.
 - Double-jump system by ijon tichy.
-- Player sprites edited from Mars 3D.
+- Player sprites edited from Mars 3D and Strife.
 - Dunked smoke from Marathon.
 - Defense Drone sprites by Revae.
 - Push laser sprites by Eriance.
 - Force Gauntlet sprites by Riet.
-- Critical error code coded by Kyle873
+- Critical error code coded by Kyle873.
 - Push grenade sprites from Freedoom.
 - hudmessageonactor by Caligari87.
 - Pusher Cacodemon by IdeIdoom.
+- Meteors coded by KeksDose.
+- F1 help screen and intermission images drawn by Sgt. Shivers.
 
-- D_DM2INT is from Extreme Pinball
+- D_DM2INT is from Extreme Pinball.
 - Other music is credited in MapInfo.
 
 - PUSH02, PUSH04, and PUSH09 by Sgt. Shivers.

@@ -415,17 +415,6 @@ ACTOR DeskExplosive 13001
 
 // Push42
 
-// -----------------------------------------------------------------------------
-//
-// Burning deadly meteor projectiles
-//
-// Made by KeksDose 2 December 2013
-//
-// A meteor projectile that can be used for a variety of things, such as a
-// realistic simulation of British weather or a volcano eruption. Whatever. :P
-//
-// -----------------------------------------------------------------------------
-
 Actor KD_Meteor
 {
     Projectile
@@ -436,8 +425,8 @@ Actor KD_Meteor
     Scale 0.4
     Damage 4
     Speed 20
-    Radius 12
-    Height 24
+    Radius 16
+    Height 32
     SeeSound "Imp/Attack"
     DeathSound "Weapons/RockLX"
     DamageType "GrenadeDamage"

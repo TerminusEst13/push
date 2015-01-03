@@ -4,7 +4,6 @@ statusbar normal, forcescaled
 {
 InInventory ImAlive, 1
 {
-    DrawImage "HEMPTY", 151, 4;
     InInventory not EmergencyDodgeDone, 1
     {
         AspectRatio "4:3"
@@ -14,6 +13,15 @@ InInventory ImAlive, 1
         AspectRatio "16:9"
         { DrawImage "JUMPICON", -50, 170; }
     }
+    InInventory EmergencyDodgeDone, 1
+    {
+        AspectRatio "4:3"
+        { DrawImage "JUMPEMPT", 3, 170; }
+        AspectRatio "16:10"
+        { DrawImage "JUMPEMPT", -29, 170; }
+        AspectRatio "16:9"
+        { DrawImage "JUMPEMPT", -50, 170; }
+    }
     InInventory WallHackVision, 1 {drawimage "CYBTRG", 0, 0;}
 }
 }
@@ -22,7 +30,6 @@ statusbar fullscreen, forcescaled
 {
 InInventory ImAlive, 1
 {
-    DrawImage "HEMPTY", 151, 4;
     InInventory not EmergencyDodgeDone, 1
     {
         AspectRatio "4:3"
@@ -31,6 +38,15 @@ InInventory ImAlive, 1
         { DrawImage "JUMPICON", -29, 170; }
         AspectRatio "16:9"
         { DrawImage "JUMPICON", -50, 170; }
+    }
+    InInventory EmergencyDodgeDone, 1
+    {
+        AspectRatio "4:3"
+        { DrawImage "JUMPEMPT", 3, 170; }
+        AspectRatio "16:10"
+        { DrawImage "JUMPEMPT", -29, 170; }
+        AspectRatio "16:9"
+        { DrawImage "JUMPEMPT", -50, 170; }
     }
     InInventory WallHackVision, 1 {drawimage "CYBTRG", 0, 0;}
 }
