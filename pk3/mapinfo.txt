@@ -313,7 +313,7 @@ map PUSH46 "Battlefield - Gardevoir"
     music = "MPUSH46" // laamaa - Flying Together
 }
 
-map PUSH47 "Drown Your Sorrows - Unholy Pimpin"
+map PUSH47 "Drown Your Sorrows - UnholyPimpin"
 {
     next = "PUSH48"
     music = "MPUSH47" // the Deviant - Drummaz

@@ -628,7 +628,7 @@ actor PowerPlantSmokeGeneratorFX {
 	+NOINTERACTION
 	states {
 	Spawn: 
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 2 A_SpawnItemEx ("PowerPlantSmokePuff", random(-32,32), random(-32,32), 0, 0, 0, 3)
+		TNT1 AAAAAAAAAAAAAAAAAA 4 A_SpawnItemEx ("PowerPlantSmokePuff", random(-32,32), random(-32,32), 0, 0, 0, 3)
 		stop
 	}
 }
@@ -638,7 +638,7 @@ actor PowerPlantSmokeGeneratorSmall 24002 {
 	+NOINTERACTION
 	states {
 	Spawn:
-		TNT1 A 2 A_SpawnItemEx ("PowerPlantSmokePuffSmall", random(-32,32), random(-32,32), 0, 0, 0, 3)
+		TNT1 A 4 A_SpawnItemEx ("PowerPlantSmokePuffSmall", random(-32,32), random(-32,32), 0, 0, 0, 3)
 		loop
 	}
 }
@@ -666,7 +666,82 @@ actor PowerPlantSmokeGeneratorFX2 {
 	+NOINTERACTION
 	states {
 	Spawn: 
-		TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 2 A_SpawnItemEx ("PowerPlantSmokePuff", random(-32,32), random(-32,32), 0, 0, 0, -3)
+		TNT1 AAAAAAAAAAAAAAAAAA 4 A_SpawnItemEx ("PowerPlantSmokePuff", random(-32,32), random(-32,32), 0, 0, 0, -3)
 		stop
 	}
 }
+
+// Push43
+actor CyberStatue 10001
+{
+Radius 40
+Height 110
++SOLID
+States
+{
+Spawn:
+CYST A -1
+}
+}
+
+actor HeresiarchStatue 10002
+{
+Radius 40
+Height 110
++SOLID
+States
+{
+Spawn:
+SORC A -1
+}
+}
+
+actor BishopStatue 10003
+{
+Radius 16
+Height 48
++Solid
+States
+{
+Spawn:
+BISH A -1
+}
+}
+
+actor EvilPlayer 10004
+{
+Radius 16
+  Height 56
+ +Solid
+ States
+ {
+ Spawn:
+ EVIL a -1
+ }
+ }
+ 
+ Actor SpiderStatue 10005
+ {
+ Radius 60
+ Height 60
+ +SOLID
+ States
+ {
+ SPAWN:
+QUSP A -1
+ }
+ }
+ 
+ actor SmallPlayer 10006
+{
+Scale 0.5
+Radius 8
+  Height 28
+ +Solid
+ States
+ {
+ Spawn:
+ EVIL a -1
+ }
+ }
+ 
