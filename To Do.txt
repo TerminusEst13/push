@@ -44,8 +44,6 @@ Slow down ground on push08
 
 <PresidentPeople> Small issue on the StarTropics map.  There's a very tiny ledge behind Mike's portrait, but only on his left, strangely
 
-On push32, darken the lines on the edges.
-
 
 <Untitled> unless your map is very complex (lots of detail and whatnot), sheer size shouldn't be that deadly
 <PresidentPeople> I know people asked for big maps, but they're turning out to be hard to play on once the players dwindle away
