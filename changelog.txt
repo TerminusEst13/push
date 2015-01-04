@@ -27,6 +27,7 @@ MAPS:
 - PUSH30 has had the laggy pyramids removed, and many many more spawn points placed throughout the area.
 - PUSH34's silos have been expanded for more safe ground.
 - PUSH32's pillars now have black edges.
+- PUSH32's floor texture now has a noise filter for easier identification.
 
 - A new map, the XXX ImpBar by Mystical, has been added at Push37.
 - A new map, Ice Ice Baby by UniversalQuantifier, has been added at Push38.
