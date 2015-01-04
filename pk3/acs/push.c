@@ -2,6 +2,7 @@
 #library "push"
 
 world int 0:MaxJumpCount;
+global int 58:TimeExceeded;
 
 int IsServer;
 int FontX;
@@ -14,6 +15,7 @@ int FontCL[3] ={CR_DARKGREEN,CR_GREEN,CR_OLIVE};
 #include "push_funcs.h"
 #include "push_text.h"
 #include "push_jump.h"
+#include "push_dm.h"
 
 int lastShotBy[PLAYERMAX];
 int deathAssistedBy[PLAYERMAX];
@@ -156,12 +158,20 @@ script 532 ENTER
             GiveInventory("OnTheGround", 1);
             TakeInventory("EmergencyDodgeDone",1);
             TakeInventory("DoomedGuy",70);
-
-            deathAssistedBy[pln] = 0;
-            lastShotBy[pln] = 0;
+            /*if (CheckInventory("MaybedDoomedGuy") == 3)
+            { // Has the player been on the ground for 3 tics?
+                deathAssistedBy[pln] = 0;
+                lastShotBy[pln] = 0;
+            }
+            else // If not, count a tic.
+            { GiveInventory("MaybeDoomedGuy",1); }*/
+            
         }
         else
-          { TakeInventory("OnTheGround", 1); }
+        {
+            TakeInventory("OnTheGround", 1);
+            //TakeInventory("MaybeDoomedGuy",3);
+        }
 
         if (keyDown(BT_USER1)) { GiveInventory("DrawingToolOn",1); }
 
@@ -178,8 +188,8 @@ script 533 RESPAWN
 
 script 534 DEATH
 {
-    int pln = PlayerNumber();
-    Log(n:pln, s:" was thrown off by ", n:lastShotBy[pln]);
+    //int pln = PlayerNumber();
+    //Log(n:pln, s:" was thrown off by ", n:lastShotBy[pln]);
 
     TakeInventory("ImAlive",1);
     TakeInventory("LightAsAFeather",1);
@@ -187,6 +197,29 @@ script 534 DEATH
     TakeInventory("DrawingToolReady",1);
     Thing_ChangeTID(0,0);
 }
+
+/*Script 535 (void)
+{
+    int pln = PlayerNumber();
+    SetActivatorToTarget(0);
+    lastShotBy[pln] = PlayerNumber();
+}
+
+Script 536 ENTER
+{
+    int pln = PlayerNumber();
+
+	while (true)
+	{
+		if (GetActorZ(0) - GetActorFloorZ(0) == 0)
+		{
+			Delay(1);
+			deathAssistedBy[pln] = 0;
+			lastShotBy[pln] = 0;
+		}
+		Delay(1);
+	}
+}*/
 
 script 421 (int which)
 {

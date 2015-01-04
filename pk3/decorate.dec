@@ -17,11 +17,13 @@ actor EmergencyDodgeDone : Boolean {}
 actor LightAsAFeather : Boolean {}
 actor ImAlive : Boolean {}
 actor GauntletHit : Boolean {}
-actor DoomedGuy : Counter { Inventory.MaxAmount 70 }
 actor LevelIsTooBright : Boolean {}
 actor CannotIntoWallhack : Boolean {}
 actor DrawingToolOn : Boolean {}
 actor DrawingToolReady : Boolean {}
+
+actor DoomedGuy : Counter { Inventory.MaxAmount 70 }
+actor MaybeDoomedGuy : Counter { Inventory.MaxAmount 3 }
 
 #include "decorate/player.dec"
 #include "decorate/weapon.dec"

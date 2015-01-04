@@ -61,24 +61,29 @@ actor PushPlayer : DoomPlayer
     Pain.PushDamage:
         TNT1 A 0 A_SetBlend("Blue",0.25,5)
         TNT1 A 0 A_PlaySoundEx("push/hit","soundslot7",0,0)
+        //TNT1 A 0 ACS_ExecuteAlways(535,0,0,0,0)
         PLAY G 2 BRIGHT
         goto Spawn
     Pain.PushDamage2:
         TNT1 A 0 A_SetBlend("Green",0.25,5)
         TNT1 A 0 A_PlaySoundEx("push/hit","soundslot7",0,0)
+        //TNT1 A 0 ACS_ExecuteAlways(535,0,0,0,0)
         PLAY G 2 BRIGHT
         goto Spawn
     Pain.GrenadeDamage:
         TNT1 A 0 A_GiveInventory("GetDunkedNerd",1)
+        //TNT1 A 0 ACS_ExecuteAlways(535,0,0,0,0)
         PLAY G 2 BRIGHT
         goto Spawn
     Pain.GauntletDamage:
         TNT1 A 0 A_GiveInventory("ThrownTheGauntlet",1)
+        //TNT1 A 0 ACS_ExecuteAlways(535,0,0,0,0)
         PLAY G 2 BRIGHT
         goto Spawn
     Pain.HitlerDamage:
     Pain.DroneDamage:
         TNT1 A 0 ThrustThing(angle*256/360+random(1,256), random(20,60), 1, 0)
+        //TNT1 A 0 ACS_ExecuteAlways(535,0,0,0,0)
         PLAY G 2 BRIGHT
         goto Spawn
     Death:
