@@ -22,9 +22,11 @@ MAPS:
 - The center platform in PUSH04 has been raised so people can react easier to trips. The outer ring has been expanded so one simple nudge doesn't throw people off, but has lowered so getting thrown off requires more reaction.
 - PUSH35's main arena was made smaller, and the walls stretched further out. It should be easier to knock people off now.
 - PUSH36 has been dramatically ensmallened and now can actually be recovered from.
+- PUSH36 now has a defined ground texture.
 - PUSH17 has smaller walls to make it easier to recover and a few floating platforms for a little bit of Z-axis action.
 - PUSH30 has had the laggy pyramids removed, and many many more spawn points placed throughout the area.
 - PUSH34's silos have been expanded for more safe ground.
+- PUSH32's pillars now have black edges.
 
 - A new map, the XXX ImpBar by Mystical, has been added at Push37.
 - A new map, Ice Ice Baby by UniversalQuantifier, has been added at Push38.
