@@ -15,6 +15,9 @@ int FontCL[3] ={CR_DARKGREEN,CR_GREEN,CR_OLIVE};
 #include "push_text.h"
 #include "push_jump.h"
 
+int lastShotBy[PLAYERMAX];
+int deathAssistedBy[PLAYERMAX];
+
 int PlayerTIDs[PLAYERMAX];
 
 script 531 OPEN
@@ -153,6 +156,9 @@ script 532 ENTER
             GiveInventory("OnTheGround", 1);
             TakeInventory("EmergencyDodgeDone",1);
             TakeInventory("DoomedGuy",70);
+
+            deathAssistedBy[pln] = 0;
+            lastShotBy[pln] = 0;
         }
         else
           { TakeInventory("OnTheGround", 1); }
@@ -172,6 +178,9 @@ script 533 RESPAWN
 
 script 534 DEATH
 {
+    int pln = PlayerNumber();
+    Log(n:pln, s:" was thrown off by ", n:lastShotBy[pln]);
+
     TakeInventory("ImAlive",1);
     TakeInventory("LightAsAFeather",1);
     TakeInventory("DrawingToolOn",1);
