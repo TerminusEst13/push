@@ -55,6 +55,8 @@ POLISH:
 - PUSH34's skybox has been tweaked to look a little prettier.
 - The doublejump indicator now has text on it to identify that, yes, this is for double-jump.
 - The doublejump indicator now empties out when used instead of vanishing.
+- A new M_DOOM logo has been provided by Smoke_Fumus and MrSetharoo.
+- Menu browsing, chatting, and connecting now have their own unique sounds.
 
 
 WHY WE CAN'T HAVE NICE DETAIL:

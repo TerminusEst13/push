@@ -1,6 +1,16 @@
 // Player & System
 // ===================
 
+menu/activate       MENUUP   // Bring up the main menu. - Taken from Mega Man X6
+menu/clear          MENUDOWN // Close main menu. - Taken from Mega Man X6
+menu/choose         MENUYES  // Choose an item on the menu. - Taken from Unreal 2
+menu/backup         MENUNO   // Go back to previous menu. - Taken from Unreal 2
+menu/cursor         MENUSCRL // Move cursor up/down. - Taken from Unreal 2
+menu/change         MENUCHNG // Changing options around. - Taken from World of Warcraft
+menu/prompt         MENUQUIT // Are you sure you want to quit? - Taken from TimeSplitters 2
+menu/dismiss        MENUDSMS // Dismiss a prompt. - Taken from Silent Bomber
+menu/invalid        MENUFAIL // Menu not available. - Taken from Devil May Cry 3
+
 radar/on			radar_on // Taken from Mega Man X5
 radar/off			radaroff // Taken from Mega Man X5
 
