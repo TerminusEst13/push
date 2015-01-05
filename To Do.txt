@@ -66,8 +66,6 @@ Slow down ground on push08
 
 
 
-Make push10's flashing red/blue textures less frequent
-
 
 FOR v0.6:
 ===============
@@ -79,7 +77,15 @@ New:
 UPDATE CREDITS/CHANGELOG, INCORPORATE IN-GAME
 
 
+Push38's outside floor needs to kill.
+Push38's spawns need to be removed from the falling icefloor
+Raise ceiling on Push39
+Reduce smoke on Push41
+Push47 needs removed. Respawning doesn't work well with the rising water, and when the match ends the colored lighting fugs up.
 
+Tweak visor scanner HUD to fix off-center thing
+
+Make push10's flashing red/blue textures less frequent
 
 
 
