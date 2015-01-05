@@ -15,6 +15,7 @@
 - F1 help screen and intermission images drawn by Sgt. Shivers.
 - M_DOOM graphic by Mr. Setharoo and Smoke_Fumus.
 - D_DM2INT is from Extreme Pinball.
+- D_DM2TTL is Push & Pull by ((dynamic)).
 - Other music is credited in MapInfo.
 
 - PUSH02, PUSH04, and PUSH09 by Sgt. Shivers.
@@ -29,7 +30,7 @@
 - PUSH11 and PUSH43 by IdeIdoom.
 - PUSH12 by Aquasa.
  ^ Skybox taken from Cybercrime 3.
-- PUSH15, PUSH17, PUSH39, PUSH40, and PUSH47 by UnholyPimpin.
+- PUSH15, PUSH17, PUSH39, and PUSH40 by UnholyPimpin.
 - PUSH16 by Seryder.
 - PUSH19 and PUSH32 by PresidentPeople.
  ^ Duke3D textures, water fountain and palm tree sprites from Realm 667.
@@ -70,3 +71,4 @@
 - PUSH38 by UniversalQuantifier.
 - PUSH41 by GuardSoul.
 - PUSH44, PUSH46, and PUSH48 by Gardevoir.
+- PUSH47 by Smoke_Fumus.

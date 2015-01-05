@@ -313,10 +313,11 @@ map PUSH46 "Battlefield - Gardevoir"
     music = "MPUSH46" // laamaa - Flying Together
 }
 
-map PUSH47 "Drown Your Sorrows - UnholyPimpin"
+map PUSH47 "I Left the Faucet On - Smoke_Fumus"
 {
     next = "PUSH48"
-    music = "MPUSH47" // the Deviant - Drummaz
+    Sky1 = "SKY08", 0.1
+    music = "MPUSH47" // Sparkster - Submarine
 }
 
 map PUSH48 "I am TEKWALL4 - Gardevoir"
