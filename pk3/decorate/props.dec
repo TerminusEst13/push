@@ -745,6 +745,19 @@ Radius 8
  }
  }
  
+ Actor UpsideDownBishop 10007
+ {
+ Radius 22
+ Height 65
+ +SOLID
+ +NoGravity
+ States
+ {
+ Spawn:
+ BSTA A -1
+ }
+ }
+ 
  Actor BishopPush : Bishop
  {
 Radius 22
