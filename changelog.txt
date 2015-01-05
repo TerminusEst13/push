@@ -13,6 +13,7 @@ GAMEPLAY:
 - The F1 help screen is no longer the best but now is much more informative.
 - The Doom pistol is now removed from the player on map enter.
 - Deathmatch support has been implemented. It's a little wonky and isn't perfect until the engine can track who pushed who off, but it's a decent little timewaster in the meantime.
+- The lightamp of the wallhack visor worked in Software but didn't work in OpenGL. Not sure why. Until I can figure out why, it's been removed.
 
 
 MAPS:

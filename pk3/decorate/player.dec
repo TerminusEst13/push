@@ -302,7 +302,7 @@ actor DeathSpark
     }
 }
 
-actor WallHackVision : PowerLightAmp
+actor WallHackVision : Powerup
 {
     Powerup.Duration 0x7FFFFFFF
     //Powerup.Color InverseMap
