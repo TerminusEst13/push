@@ -92,7 +92,6 @@ New:
 UPDATE CREDITS/CHANGELOG, INCORPORATE IN-GAME
 Push25's southwest stack has some misaligned brown/black crates.
 "Please read, a personal appeal from TerminusEst13" ad for push25.
-Push28's easter egg doesn't work online
 Push42's meteors need removed and replaced with 3D floors through the area.
 
 
