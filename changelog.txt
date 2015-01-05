@@ -32,6 +32,7 @@ MAPS:
 - Several floating platforms on PUSH10 were removed and the buildings moved in closer, for a tighter arena.
 - The killfloor on PUSH10 has been brought up quite a bit for easier recovery.
 - PUSH10 is no longer a horrible lagfest on Software.
+- PUSH15 now has a visible floor.
 
 - A new map, the XXX ImpBar by Mystical, has been added at Push37.
 - A new map, Ice Ice Baby by UniversalQuantifier, has been added at Push38.
