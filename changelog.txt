@@ -59,6 +59,7 @@ POLISH:
 - A new M_DOOM logo has been provided by Smoke_Fumus and MrSetharoo.
 - Menu browsing, chatting, and connecting now have their own unique sounds.
 - If lms_allowedweapons is not 0, it will automatically be set to 0.
+- A few errant textures on PUSH18 have been fixed.
 
 
 WHY WE CAN'T HAVE NICE DETAIL:

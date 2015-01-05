@@ -76,14 +76,14 @@ New:
 
 UPDATE CREDITS/CHANGELOG, INCORPORATE IN-GAME
 Raise ceiling on Push39
-Reduce smoke on Push41
-Push47 needs removed. Respawning doesn't work well with the rising water, and when the match ends the colored lighting fugs up.
 Tweak visor scanner HUD to fix off-center thing
 Make push10's flashing red/blue textures less frequent
 Push25's southwest stack has some misaligned brown/black crates.
 Push18's northwest billards needs fixed textures.
 "Please read, a personal appeal from TerminusEst13" ad for push25.
 Push28's easter egg doesn't work online
+Push42's meteors need removed and replaced with 3D floors through the area.
+Push47's ceiling needs expanded, needs a player 1 start, needs projectile walls, needs drone spawn.
 
 
 

@@ -580,7 +580,7 @@ actor PuffSmoke
 	+CLIENTSIDEONLY
 	+WINDTHRUST
 	+NOINTERACTION
-	Renderstyle Add
+	Renderstyle Translucent
 	alpha 0.5
 	Scale 0.5
 	states
@@ -602,8 +602,8 @@ actor PuffSmoke
 	}
 }
 
-actor PowerPlantSmokePuff : PuffSmoke	{Scale 8.0}
-actor PowerPlantSmokePuffSmall : PuffSmoke{Scale 4.0}
+actor PowerPlantSmokePuff : PuffSmoke	{Scale 4.0}
+actor PowerPlantSmokePuffSmall : PuffSmoke {Scale 2.0}
 
 actor PowerPlantSmokeGenerator 21406 {
 	+NOGRAVITY
