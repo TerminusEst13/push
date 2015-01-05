@@ -66,6 +66,21 @@ Slow down ground on push08
 
 
 
+<playe> hey i have a terribad idea for push: you know the handicap option in DM, where you can give yourself less HP?
+<TerminusEst13> Aye.
+<playe> it might be interesting if there was a way of changing a player's mass so one shot could send them flying crazily
+<playe> obviously that comes with alot of problems too, which is why i preface it with "terribad"
+<playe> but i thought it would be interesting
+<TerminusEst13> Hmmmm.
+<TerminusEst13> I might need to experiment with this, because the idea is certainly interesting.
+<playe> i'm glad you think so
+<playe> if i was working on it i would approach the idea with caution
+<playe> because it could create some balance issues
+<playe> but a match with heavier vs lighter players seems interesting
+<TerminusEst13> I'll probably start it off as a global cvar that effects everybody, and then expand from there.
+
+
+
 
 FOR v0.6:
 ===============
@@ -75,11 +90,9 @@ New:
 
 
 UPDATE CREDITS/CHANGELOG, INCORPORATE IN-GAME
-Raise ceiling on Push39
 Tweak visor scanner HUD to fix off-center thing
 Make push10's flashing red/blue textures less frequent
 Push25's southwest stack has some misaligned brown/black crates.
-Push18's northwest billards needs fixed textures.
 "Please read, a personal appeal from TerminusEst13" ad for push25.
 Push28's easter egg doesn't work online
 Push42's meteors need removed and replaced with 3D floors through the area.
