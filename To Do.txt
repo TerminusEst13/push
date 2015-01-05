@@ -90,8 +90,6 @@ New:
 
 
 UPDATE CREDITS/CHANGELOG, INCORPORATE IN-GAME
-Tweak visor scanner HUD to fix off-center thing
-Make push10's flashing red/blue textures less frequent
 Push25's southwest stack has some misaligned brown/black crates.
 "Please read, a personal appeal from TerminusEst13" ad for push25.
 Push28's easter egg doesn't work online

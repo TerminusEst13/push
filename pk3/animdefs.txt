@@ -62,9 +62,9 @@ texture DWATER1
 range DWATER8
 tics 6
 
-texture PURPLE 
-PIC 1 TICS 1
-pic 0 tics 1 
+//texture PURPLE 
+//PIC 1 TICS 1
+//pic 0 tics 1 
 
 texture purpsht1
 pic 1 tics 1
