@@ -58,9 +58,11 @@ POLISH:
 - The doublejump indicator now has text on it to identify that, yes, this is for double-jump.
 - The doublejump indicator now empties out when used instead of vanishing.
 - A new M_DOOM logo has been provided by Smoke_Fumus and MrSetharoo.
+- We have a new D_DM2TTL song, Push & Pull by ((dynamic)).
 - Menu browsing, chatting, and connecting now have their own unique sounds.
 - If lms_allowedweapons is not 0, it will automatically be set to 0.
 - A few errant textures on PUSH18 have been fixed.
+- The scan visor has been edited to be centered.
 
 
 WHY WE CAN'T HAVE NICE DETAIL:

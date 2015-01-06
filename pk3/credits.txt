@@ -68,7 +68,9 @@
 - PUSH36 by Rofl25.
  ^- Textures from Smash Bros. N64.
 - PUSH37 and PUSH42 by Mystical.
+ ^- Textures taken from his big fat windy bottom.
 - PUSH38 by UniversalQuantifier.
 - PUSH41 by GuardSoul.
 - PUSH44, PUSH46, and PUSH48 by Gardevoir.
 - PUSH47 by Smoke_Fumus.
+ ^- Textures from Shadow Warrior and Duke Nukem 3D.

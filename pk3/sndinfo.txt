@@ -150,6 +150,7 @@ nes/startup           NES
 
 pushy/cacoward        cacoward // Taken from Viewtiful Joe; Red Hot Rumble
 pushy/caconope        caconope // Taken from Viewtiful Joe; Red Hot Rumble
+pushy/caconom         nomnom
 
 
 BishopSight             syab2d
@@ -173,3 +174,6 @@ SorcererSight           sorboss1
 SorcererActive          sorboss2
 SorcererPain            sorboss3
 SorcererDeathScream     sordie2
+
+gravity/down            gravdown // Taken from Phantasy Star Online
+gravity/up              gravup   // Taken from Phantasy Star Online

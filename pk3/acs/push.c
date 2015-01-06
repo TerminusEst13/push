@@ -50,8 +50,8 @@ script 531 OPEN
     if (!GetCvar("compat_clientssendfullbuttoninfo"))
         { ConsoleCommand("set compat_clientssendfullbuttoninfo 1"); }
 
-    if (GetCvar("lms_allowedweapons") != 0)
-        { ConsoleCommand("set lms_allowedweapons 0"); }
+    if (GetCvar("lmsallowedweapons") != 0)
+        { ConsoleCommand("set lmsallowedweapons 0"); }
 
     if (!GetCvar("sv_nocrouch"))
         { ConsoleCommand("set sv_nocrouch 1"); }
