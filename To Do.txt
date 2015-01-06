@@ -93,7 +93,6 @@ UPDATE CREDITS/CHANGELOG, INCORPORATE IN-GAME
 Push25's southwest stack has some misaligned brown/black crates.
 "Please read, a personal appeal from TerminusEst13" ad for push25.
 Cacoward wall on push17 needs darkening.
-More player spawns on push37
 On push40, increase the side pillar heights.
 On push15, find a better texture replacement.
 
