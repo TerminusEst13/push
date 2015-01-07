@@ -64,6 +64,7 @@ POLISH:
 - A few errant textures on PUSH18 have been fixed.
 - The scan visor has been edited to be centered.
 - The floor in Push13 is no longer bugged.
+- PUSH17's sides now are a different shade of red than the floor, for easier differentiation.
 
 
 WHY WE CAN'T HAVE NICE DETAIL:
