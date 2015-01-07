@@ -63,6 +63,7 @@ POLISH:
 - If lms_allowedweapons is not 0, it will automatically be set to 0.
 - A few errant textures on PUSH18 have been fixed.
 - The scan visor has been edited to be centered.
+- The floor in Push13 is no longer bugged.
 
 
 WHY WE CAN'T HAVE NICE DETAIL:
