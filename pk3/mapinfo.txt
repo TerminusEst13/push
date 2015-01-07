@@ -254,7 +254,7 @@ map PUSH37 "XXX ImpBar - Mystical"
     music = "MPUSH37" // Necros - CLICK
 }
 
-map PUSH38 "Ice Ice Baby - UniversalQuantifier"
+map PUSH38 "Insert Cool Pun Here - UniversalQuantifier"
 {
 	next = "PUSH39"
     music = "MPUSH38" // Alexander Brandon - Snowfall
@@ -322,7 +322,14 @@ map PUSH47 "I Left the Faucet On - Smoke_Fumus"
 
 map PUSH48 "I am TEKWALL4 - Gardevoir"
 {
-    next = "PUSH01"
+    next = "PUSH49"
     music = "MPUSH48" // Xaser - Voxelbuffer
     Sky1 = "TEKPORN4", 2
+}
+
+map PUSH49 "Ice Ice Baby - Infirnex"
+{
+    next = "PUSH01"
+    music = "MPUSH49" // Awesome - " Techn-o-logical "
+	Sky1 = KSKY
 }
