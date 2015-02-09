@@ -114,6 +114,10 @@ Make spawn protection a cl cvar.
 <playe> "please don't go, the drones need you, they look up to you"
 
 
+<Roman6a> hey TerminusEst13 i found a bug in push, on map push38 if you spend your doublejump and land on a tree, you will regain your doublejump but the image on your hud will not reflect this
+<Roman6a> dunno if it happens on other maps
+
+
 
 FOR v0.7:
 ===============
