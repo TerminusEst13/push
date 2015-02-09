@@ -118,6 +118,13 @@ Make spawn protection a cl cvar.
 <Roman6a> dunno if it happens on other maps
 
 
+universal quantifier: I also figured out why the sky looks all wrong on my previous map, there's another texture called ICESKY on Push43 which overrides the one on my map
+universal quantifier: Just rename either one and it should look as intended
+universal quantifier: as long as you remember to update mapinfo
+TerminusEst13: Ohhhhhhh. That would explain it.
+
+
+
 
 FOR v0.7:
 ===============
