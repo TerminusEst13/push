@@ -8,8 +8,6 @@ Push21 needs more buildings.
 
 THere needs to be a reason to use the teleporter in push03, at the moment it's only a trap.
 
-In push17 (Caco), needs to play OM NOM NOM when someone enters his mouth.
-
 
 [06:27:59 pm] playe: hey term
 [06:28:01 pm] TerminusEst13: Yo.
@@ -81,18 +79,98 @@ Slow down ground on push08
 
 
 
+<playe> so we're on push27 right now
+<playe> and police aren't spawning, and people are making a few suggestions
+<playe> a) widen the big ole hole in the center b) squeeze in the spokes/narrow the bridge part (so it's like four circles on a hub?? idk how to explain it) or c) perhaps make the map less safe somehow
+<playe> lastly d) maybe purdy it up some more by adding a crack/fissure running from the center to edges
 
-FOR v0.6:
+
+
+Push47 has a very blatant corner to hide in.
+
+People can slip into the area under PUSH42's center beam.
+
+<playe> reason you can't have nice detail reason #6661999: push41's pillars have little notches where players can hide in/behind
+
+
+
+Bottom-right white tusk on push17 is too low.
+
+
+
+Billboard in Push33 can be camped.
+
+
+Hard limit for alt-fire surfing--when in mid-air, each shot drains from a counter--after ten shots, they stop pushing you up. Landing on the floor restores the counter.
+
+
+
+Make spawn protection a cl cvar.
+
+
+
+<playe> now that's what i call bullshit suggestions vol 2: hey why doesn't the push quit message blurb say something like "please don't go, there's more demons to push"
+<TerminusEst13> Hahaha. I should probably include some custom Push quit messages.
+<playe> "please don't go, the drones need you, they look up to you"
+
+
+
+FOR v0.7:
 ===============
 New:
+ideidoom-push50.wad
+Gardie-PUSH05-DWANGO2015.wad
+Revae's CyDM03 map
+
+
+
+Updated:
+UniversalQuantifier-push_ice_v2v2.wad
+Mystical-PUSH42-redonegravity.wad
+Gardie-PUSH48_lightfix.wad
+pushmap-zombocom-edit-01-09-15.pk3
+infernex-PUSH49v2.wad
 
 
 
 
-UPDATE CREDITS/CHANGELOG, INCORPORATE IN-GAME
+
+
+
 Push25's southwest stack has some misaligned brown/black crates.
 "Please read, a personal appeal from TerminusEst13" ad for push24.
-Cacoward wall on push17 needs darkening.
+
+Incorporate the rest of the banners
+
+
+Tourney mode cvar that removes all hazards
+
+Terminator mode where one person gets a super-push Railgun
+
+Support for buckshot/instagib modes?
+
+
+One under-bridge waterfloor on push49 and outer-edge doesn't rise/lower.
+
+
+push30 doesn't have projectile-blocking walls or fun police spawn.
+ ^- Probably not push11, either.
+
+
+Spawns are broken on push35, so many spawn outside.
+
+
+Southwest corner on southeast building in push47 has an easily-campable spot.
+
+
+Account system integration to track stats?
+
+
+CL cvar to turn off flashing on hit.
+
+
+Push38 is incredibly easy to camp next to the torches and the house.
+
 
 
 
