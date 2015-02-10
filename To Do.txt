@@ -99,6 +99,7 @@ Bottom-right white tusk on push17 is too low.
 
 
 Billboard in Push33 can be camped.
+Roads need to be a bit tighter, rocks need much further out
 
 
 Hard limit for alt-fire surfing--when in mid-air, each shot drains from a counter--after ten shots, they stop pushing you up. Landing on the floor restores the counter.
@@ -125,6 +126,17 @@ TerminusEst13: Ohhhhhhh. That would explain it.
 
 
 
+Brighten up the player sprites.
+
+
+[push37]
+[03:44:29 pm] mumble: hey term, how about if you could on this map get thrown into the back room at the end of the catwalk, but go out of bounds
+[03:44:35 pm] mumble: and you hear girls screaming
+
+
+Pillars in push39 need to be lowered.
+
+
 
 FOR v0.7:
 ===============
@@ -132,6 +144,8 @@ New:
 ideidoom-push50.wad
 Gardie-PUSH05-DWANGO2015.wad
 Revae's CyDM03 map
+IdeIdoom-PushXX3.wad
+infirnex-PUSHER.wad
 
 
 
@@ -141,6 +155,7 @@ Mystical-PUSH42-redonegravity.wad
 Gardie-PUSH48_lightfix.wad
 pushmap-zombocom-edit-01-09-15.pk3
 infernex-PUSH49v2.wad
+ideidoom-PUSH43v2.wad
 
 
 
