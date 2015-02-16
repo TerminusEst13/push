@@ -145,8 +145,9 @@ ideidoom-push50.wad
 Gardie-PUSH05-DWANGO2015.wad
 Revae's CyDM03 map
 IdeIdoom-PushXX3.wad
-infirnex-PUSHER.wad
-
+RiverofFlame.wad (by Infirnex) / Unreal - WarLord.s3m
+ks_pushmiyajima_i.wad / Wadatsumi by DJ TOTTO
+sgtshivers-bullseye.wad
 
 
 Updated:
