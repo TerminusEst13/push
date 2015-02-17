@@ -148,6 +148,7 @@ IdeIdoom-PushXX3.wad
 RiverofFlame.wad (by Infirnex) / Unreal - WarLord.s3m
 ks_pushmiyajima_i.wad / Wadatsumi by DJ TOTTO
 sgtshivers-bullseye.wad
+uq-puship.wad / Jazz Jackrabbit 2 - Beach Bunny!.s3m
 
 
 Updated:
