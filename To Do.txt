@@ -156,7 +156,7 @@ Updated:
 UniversalQuantifier-push_ice_v2v2.wad
 Mystical-PUSH42-redonegravity.wad
 Gardie-PUSH48_lightfix.wad
-pushmap-zombocom-edit-01-09-15.pk3
+pushmap-zombocom-edit-02-14-15.pk3
 infernex-PUSH49v2.wad
 infirnex-PUSH34-v3.wad
 ideidoom-PUSH43v2.wad
