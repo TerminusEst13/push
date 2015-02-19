@@ -160,6 +160,7 @@ pushmap-zombocom-edit-02-14-15.pk3
 infernex-PUSH49v2.wad
 infirnex-PUSH34-v3.wad
 ideidoom-PUSH43v2.wad
+pushmap-deserthotel-edit-02-19-15.pk3
 
 
 
