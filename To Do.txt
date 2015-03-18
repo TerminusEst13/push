@@ -151,7 +151,8 @@ sgtshivers-bullseye.wad
 uq-puship.wad / Jazz Jackrabbit 2 - Beach Bunny!.s3m
 pushmap-dunkindonuts-02-14-15.pk3 / by PresidentPeople
 mk-tsppush.pk3 // ModArchive - Cirdan - Starscreamer.xm
-pushmap-prplsky.pk3 / by PresidentPeople
+untitled-pushxx.wad
+pushmap-castleofgriefing-test.pk3 // Talk to Pres about A_PrintBold
 
 
 Updated:
@@ -163,6 +164,7 @@ infernex-PUSH49v2.wad
 infirnex-PUSH34-v3.wad
 ideidoom-PUSH43v2.wad
 pushmap-deserthotel-edit-02-19-15.pk3
+Push30+3-4-2015.wad
 
 
 
@@ -212,6 +214,8 @@ Push38 is incredibly easy to camp next to the torches and the house.
 uq-pushmap.wad (Save for Zandro 2.0)
 TerminusEst13: Would you be all right with it if I moved the pillars on the east and the west back a little bit to the edge of the platforms? I can already see players wanting to hide behind them to let everyone else fight it out.
 universal quantifier: Sure
+
+pushmap-prplsky.pk3 / by PresidentPeople (Save for Zandro 2.0)
 
 
 
