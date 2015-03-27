@@ -449,6 +449,32 @@ States
 	}
 }
 
+// Push34
+ACTOR RainDrop
+{
+
+	+NOBLOCKMAP 
+	+DROPOFF 
+	+MISSILE 
+	+NOTELEPORT
+	+DontSplash
+	+CLIENTSIDEONLY
+	RenderStyle Add
+	Alpha .5
+	xscale 0.25
+	yscale 1.25
+	states
+	{
+	Spawn:
+		RAIN A 1
+		Loop
+	Death:
+		TNT1 A 1
+		Stop
+	}
+
+}
+
 // Push37
 
 actor ImpGirl 29901

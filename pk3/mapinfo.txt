@@ -232,6 +232,7 @@ map PUSH34 "The Dreadmill - Infirnex"
 {
     next = "PUSH35"
     music = "MPUSH34" // Teque - Resist
+    Lightning
 }
 
 map PUSH35 "The Nexus - Madokage"

@@ -155,10 +155,13 @@ msg19                 ILMNTI19
 msg20                 ILMNTI20
 
 // Push30
-nes/startup           NES
+nes/startup             NES
 
 // Push31
-zombo/intro           zombo // Recorded off Zombocom
+zombo/intro             zombo // Recorded off Zombocom
+
+// Push34
+world/thunder		    THNDR1 // Taken from Hexen
 
 // Push42
 gravity/down            gravdown // Taken from Phantasy Star Online

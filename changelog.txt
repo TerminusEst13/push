@@ -3,6 +3,8 @@ FROM V0.6 TO V0.7:
 GAMEPLAY:
 
 MAPS:
+- Push34's platforms have been trimmed and the belts sped up.
+- PUsh34 has many more spawnpoints now.
 - Push46's skybox is no longer obscenely fuckhuge filesize.
 - Push49's boundaries have been shortened and the main layout has been expanded.
 - Push49 no longer has the water bobbing up and down.
@@ -13,6 +15,7 @@ MAPS:
 
 POLISH:
 - All SNDINFO entries have been separated by map.
+- Push34 now has rain and lightning.
 
 WHY WE CAN'T HAVE NICE DETAIL:
 
