@@ -329,7 +329,14 @@ map PUSH48 "I am TEKWALL4 - Gardevoir"
 
 map PUSH49 "Ice Ice Baby - Infirnex"
 {
-    next = "PUSH01"
+    next = "PUSH50"
     music = "MPUSH49" // Awesome - " Techn-o-logical "
 	Sky1 = "SNOWSKY"
+}
+
+map PUSH50 "Ichikishimahime Says Keep Your Water Clean - Kurashiki"
+{
+    next = "PUSH51"
+    music = "MPUSH50" // DJ TOTTO - Wadatsumi
+	sky1 = "twilite"
 }

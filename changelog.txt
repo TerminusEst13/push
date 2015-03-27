@@ -7,6 +7,8 @@ MAPS:
 - Push49's boundaries have been shortened and the main layout has been expanded.
 - Push49 no longer has the water bobbing up and down.
 
+- A new map, Ichikishimahime Says Keep Your Water Clean by Kurashiki, has been added at Push50.
+
 POLISH:
 
 WHY WE CAN'T HAVE NICE DETAIL:
