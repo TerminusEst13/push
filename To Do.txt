@@ -40,9 +40,6 @@ Slow down ground on push08
 <PresidentPeople> That is, a slope to a slightly higher shelf
 
 
-<PresidentPeople> Small issue on the StarTropics map.  There's a very tiny ledge behind Mike's portrait, but only on his left, strangely
-
-
 <Untitled> unless your map is very complex (lots of detail and whatnot), sheer size shouldn't be that deadly
 <PresidentPeople> I know people asked for big maps, but they're turning out to be hard to play on once the players dwindle away
 <TerminusEst13> Yeah.
@@ -54,13 +51,6 @@ Slow down ground on push08
 <TerminusEst13> It'll take revising and rebuilding every single big map available, but it's possible with GetPlayerCount.
 <WaTaKiD> gl hf
 <WaTaKiD> if that idea causes more trouble than its worth in the end, my apologies lol
-
-
-
-<DRL333> Speaking of faces, I know why the face texture in Push13 doesn't look right in software
-<DRL333> The texture's resoulution is causing it to bork in software
-<DRL333> It's the same thing that's happening to the NES is Seth's map
-<DRL333> Changing the resoultion to something like 256 x 256 should fix it
 
 
 
@@ -134,7 +124,20 @@ Brighten up the player sprites.
 [03:44:35 pm] mumble: and you hear girls screaming
 
 
-Pillars in push39 need to be lowered.
+Center pillars in push39 need to be lowered, hole in center needs removed.
+
+
+
+
+All maps need more police spawns, police need +NOCLIP on their shots.
+
+
+
+Alt-firing takes away from an invisible counter. When counter is hit (default 20), balls no longer thrust player.
+Value can be adjusted via cvar.
+
+
+Reduce boundaries in push20.
 
 
 
@@ -151,7 +154,7 @@ sgtshivers-bullseye.wad
 uq-puship.wad / Jazz Jackrabbit 2 - Beach Bunny!.s3m
 pushmap-dunkindonuts-02-14-15.pk3 / by PresidentPeople
 mk-tsppush.pk3 // ModArchive - Cirdan - Starscreamer.xm
-untitled-pushxx.wad
+untitled-pushxx.wad // Push-Mortem
 pushmap-castleofgriefing-test.pk3 // Talk to Pres about A_PrintBold
 
 
@@ -165,6 +168,7 @@ infirnex-PUSH34-v3.wad
 ideidoom-PUSH43v2.wad
 pushmap-deserthotel-edit-02-19-15.pk3
 Push30+3-4-2015.wad
+pp-push28-edit.pk3
 
 
 

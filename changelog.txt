@@ -1,3 +1,15 @@
+FROM V0.6 TO V0.7:
+==================
+GAMEPLAY:
+
+MAPS:
+- Push46's skybox is no longer obscenely fuckhuge filesize.
+
+POLISH:
+
+WHY WE CAN'T HAVE NICE DETAIL:
+
+
 FROM V0.5 TO V0.6:
 ==================
 GAMEPLAY:
