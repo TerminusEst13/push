@@ -1,6 +1,6 @@
 gameinfo
 {
-    infopage = "PUSHTIP0", "CREDIT0"
+    infopage = "PUSHTIP0"
 }
 
 map PUSH01 "The Original - TE13"
@@ -331,5 +331,5 @@ map PUSH49 "Ice Ice Baby - Infirnex"
 {
     next = "PUSH01"
     music = "MPUSH49" // Awesome - " Techn-o-logical "
-	Sky1 = KSKY
+	Sky1 = "SNOWSKY"
 }

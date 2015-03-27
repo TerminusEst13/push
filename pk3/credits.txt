@@ -63,7 +63,8 @@
  ^- Sky texture taken from Odamex CTF.
  ^- owall and oconcr taken from Ola Bjorling's Darkening E2).
  ^- Vegetation taken from Exhumed, Captain Toenail, and didy.
-- PUSH34 by Infirnex.
+- PUSH34 and PUSH49 by Infirnex.
+ ^- Ice textures taken from Mageslayer.
 - PUSH35 by Madokage.
  ^- Textures from Yume Nikki.
 - PUSH36 by Rofl25.

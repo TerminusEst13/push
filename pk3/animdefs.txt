@@ -151,3 +151,10 @@ WARP FLAT S_WATER1
 warp texture TEKWALWA
 warp2 texture TEKWALLV
 warp texture TEKWALPS
+
+// Push49
+texture LKFAL1
+pic LKFAL1 tics 6
+pic LKFAL2 tics 6
+pic LKFAL3 tics 6
+pic LKFAL4 tics 6

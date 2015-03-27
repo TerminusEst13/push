@@ -4,6 +4,8 @@ GAMEPLAY:
 
 MAPS:
 - Push46's skybox is no longer obscenely fuckhuge filesize.
+- Push49's boundaries have been shortened and the main layout has been expanded.
+- Push49 no longer has the water bobbing up and down.
 
 POLISH:
 
