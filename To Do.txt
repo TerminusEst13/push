@@ -150,16 +150,16 @@ Revae's CyDM03 map
 IdeIdoom-PushXX3.wad
 RiverofFlame.wad (by Infirnex) / Unreal - WarLord.s3m
 sgtshivers-bullseye.wad
-uq-puship.wad / Jazz Jackrabbit 2 - Beach Bunny!.s3m
-pushmap-dunkindonuts-02-14-15.pk3 / by PresidentPeople
 mk-tsppush.pk3 // ModArchive - Cirdan - Starscreamer.xm
 untitled-pushxx.wad // Push-Mortem
 pushmap-castleofgriefing-test.pk3 // Talk to Pres about A_PrintBold
 
 
-//// ks_pushmiyajima_i.wad
+//// 50: ks_pushmiyajima_i.wad
   ^- Needs drone spawns and projectile-blocking walls.
   ^- Flames in front of the shrine are campable.
+//// 51: pushmap-dunkindonuts-02-14-15.pk3 / by PresidentPeople
+//// 52: uq-puship.wad / Jazz Jackrabbit 2 - Beach Bunny!.s3m
 
 
 Updated:

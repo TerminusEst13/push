@@ -347,3 +347,10 @@ map PUSH51 "Coffee Break - PresidentPeople"
     music = "MPUSH51" // joule - littlewe kladdcakes
 	sky1 = "DD_GRADI"
 }
+
+map PUSH52 "Ship of Fools - UniversalQuantifier"
+{
+    next = "PUSH53"
+    music = "MPUSH52" // Jazz Jackrabbit - Beach Bunny
+    sky1 = "SHIPSKY"
+}

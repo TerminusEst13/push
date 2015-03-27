@@ -9,6 +9,7 @@ MAPS:
 
 - A new map, Ichikishimahime Says Keep Your Water Clean by Kurashiki, has been added at Push50.
 - A new map, Coffee Break by PresidentPeople, has been added at Push51.
+- A new map, Ship of Fools by UniversalQuantifier, has been added at Push52.
 
 POLISH:
 - All SNDINFO entries have been separated by map.
