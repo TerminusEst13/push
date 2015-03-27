@@ -671,6 +671,55 @@ actor PowerPlantSmokeGeneratorFX2 {
 	}
 }
 
+// Push42
+
+Actor KD_Meteor
+{
+    Projectile
+    +CLIENTSIDEONLY
+    +FORCEXYBILLBOARD
+    Scale 0.4
+    //Damage 4
+    Speed 20
+    Radius 16
+    Height 32
+    //SeeSound "Imp/Attack"
+    //DeathSound "Weapons/RockLX"
+    //DamageType "GrenadeDamage"
+    //Decal "Scorch"
+    States
+    {
+        Spawn:
+            STAR A 1 Bright A_SpawnItemEx("KD_MeteorFlame", random(-400,400)/100.00, random(-400,400)/100.00, random(-400,400)/100.00, Random(0,4)/10.0 * MomX, Random(0,4)/10.0 * MomY, Random(8, 10)/10.0 * 2.0, 0, SXF_CLIENTSIDE | SXF_ABSOLUTEMOMENTUM, 30)
+            TNT1 A 0 A_SpawnItemEx("KD_MeteorFlame", random(-400,400)/100.00, random(-400,400)/100.00, random(-400,400)/100.00, Random(0,4)/10.0 * MomX, Random(0,4)/10.0 * MomY, Random(8, 10)/10.0 * 2.0, 0, SXF_CLIENTSIDE | SXF_ABSOLUTEMOMENTUM, 30)
+            Loop
+        Death:
+            TNT1 A 2
+            Stop
+    }
+}
+
+Actor KD_MeteorFlame
+{
+    +NOINTERACTION
+    +FORCEXYBILLBOARD
+    
+    RenderStyle Translucent
+    Scale 0.5
+    Alpha 0.0
+    States
+    {
+        Spawn:
+            STAR B 1 Bright A_FadeIn(0.2)
+            TNT1 A 0 A_JumpIf(Alpha >= 0.8, "Out")
+            Loop
+        Out:
+            STAR B 1 Bright A_FadeOut(random(5,10)/10.00)
+            TNT1 A 0 A_ChangeVelocity(MomX * 0.98, MomY * 0.98, MomZ + Random(5,15)/100.00, CVF_REPLACE)
+            Loop
+    }
+}
+
 // Push43
 actor CyberStatue 10001
 {
@@ -877,3 +926,143 @@ Actor DroneBallBig : DroneBall
 Speed 15
 Scale 2.0
 }
+
+
+
+// Push51
+// Dunkin' Donuts
+ACTOR CoffeeSplash
+{
+   +NOCLIP
+   -SOLID
+   +DONTSPLASH
+   States
+   {
+      Spawn:
+       TNT1 A 5
+        stop
+   }
+}
+
+ACTOR CoffeeSteamSpawner 13030
+{
+   +NOGRAVITY
+   +NOINTERACTION
+   States
+   {
+      Spawn: 
+       SMK1 G 0
+       TNT1 AAAAAAAAAAAAAAAAAAAA 3 A_Jump(16,"Steam")
+      Steam:
+       TNT1 A 50 A_SpawnItemEx("CoffeeSteam",0,0,0,random(-5,5),random(-5,5),random(7,14),0,128)
+       TNT1 A 0 A_Jump(64,"Spawn")
+       TNT1 A 85
+		loop
+   }
+}
+
+ACTOR CoffeeSteam : PuffSmoke
+{
+   +NOINTERACTION
+   +FORCEXYBILLBOARD
+   +CLIENTSIDEONLY
+   -WINDTHRUST
+   +NOINTERACTION
+   Renderstyle Add
+   Alpha 0.15
+   Scale 12.0
+   States
+   {
+      Spawn:
+       TNT1 A 1
+       TNT1 A 0 A_Jump(128,"Spawn2","Spawn3","Spawn4")
+       SMK1 ABCDEFGHIJKLMNOP 2 bright A_FadeOut(0.01)
+		stop
+      Spawn2:
+       SMK2 ABCDEFGHIJKLMNOP 2 bright A_FadeOut(0.01)
+        stop
+      Spawn3:
+       SMK3 ABCDEFGHIJKLMNOP 2 bright A_FadeOut(0.01)
+        stop
+      Spawn4:
+       SMK4 ABCDEFGHIJKLMNOP 2 bright A_FadeOut(0.01)
+        stop
+   }
+}
+
+ACTOR VanillaCrumbRandom 13031
+{
+   Scale 3.0
+   -SOLID
+   +NOINTERACTION
+   States
+   {
+      Spawn:
+       CRUM A 0
+       CRUM A 1 A_Jump(256,1,2,3,4,5,6,7)
+       CRUM A -1 // Large
+        stop
+       CRUM B -1 // Medium
+        stop
+       CRUM B -1 // Medium
+        stop
+       CRUM C -1 // Small
+        stop
+       CRUM C -1 // Small
+        stop
+       CRUM C -1 // Small
+        stop
+       CRUM C -1 // Small
+        stop
+   }
+}
+
+ACTOR ChocolateCrumbRandom : VanillaCrumbRandom 13032
+{
+   States
+   {
+      Spawn:
+       CRU2 A 0
+       CRU2 A 1 A_Jump(256,1,2,3,4,5,6,7)
+       CRU2 A -1 // Large
+        stop
+       CRU2 B -1 // Medium
+        stop
+       CRU2 B -1 // Medium
+        stop
+       CRU2 C -1 // Small
+        stop
+       CRU2 C -1 // Small
+        stop
+       CRU2 C -1 // Small
+        stop
+       CRU2 C -1 // Small
+        stop
+   }
+}
+
+ACTOR CinnamonCrumbRandom : VanillaCrumbRandom 13033
+{
+   States
+   {
+      Spawn:
+       CRU3 A 0
+       CRU3 A 1 A_Jump(256,1,2,3,4,5,6,7)
+       CRU3 A -1 // Large
+        stop
+       CRU3 B -1 // Medium
+        stop
+       CRU3 B -1 // Medium
+        stop
+       CRU3 C -1 // Small
+        stop
+       CRU3 C -1 // Small
+        stop
+       CRU3 C -1 // Small
+        stop
+       CRU3 C -1 // Small
+        stop
+   }
+}
+
+

@@ -98,6 +98,24 @@ drosee1               DRONSEE1
 drosee2               DRONSEE2
 drosee3               DRONSEE3
 
+SHIFTN                SHIFTN   // Unknown source.
+SHIFTY                SHIFTY   // Same.
+
+HEDAT1	HEDAT1
+
+suddendeath/alarm     TIMEALRM // Taken from Doom 3
+
+// Push04
+hitler/awake          DSHR1SIT // Taken from Wolfenstein 3D
+
+// Push09
+FlameJet/Torch        E_FJET   // Taken from Rise of the Triad
+
+// Push17
+pushy/cacoward        cacoward // Taken from Viewtiful Joe; Red Hot Rumble
+pushy/caconope        caconope // Taken from Viewtiful Joe; Red Hot Rumble
+pushy/caconom         nomnom
+
 $random babbycaco/see { cacsee1 cacsee2 } // All babby Caco sounds by Scroton.
 cacsee1               CACOSEE1
 cacsee2               CACOSEE2
@@ -110,16 +128,10 @@ $random babbycaco/pain { cacpain1 cacpain2 }
 cacpain1              CACODTH1
 cacpain2              CACODTH2
 
-FlameJet/Torch        E_FJET   // Taken from Rise of the Triad
-hitler/awake          DSHR1SIT // Taken from Wolfenstein 3D
+// Push24
+world/jumppad1        JUMPPAD1 // Taken from Smash Bros. Brawl
 
-SHIFTN                SHIFTN   // Unknown source.
-SHIFTY                SHIFTY   // Same.
-
-suddendeath/alarm     TIMEALRM // Taken from Doom 3
-
-HEDAT1	HEDAT1
-
+// Push28
 $random hidden/message { msg1 msg2 msg3 msg4 msg5 msg6 msg7 msg8 msg9 msg10 msg11 msg12 msg13 msg14 msg15 msg16 msg17 msg18 msg19 msg20 }
 msg1                  ILMNTI01
 msg2                  ILMNTI02
@@ -142,17 +154,17 @@ msg18                 ILMNTI18
 msg19                 ILMNTI19
 msg20                 ILMNTI20
 
-world/jumppad1        JUMPPAD1 // Taken from Smash Bros. Brawl
-
-zombo/intro           zombo
-
+// Push30
 nes/startup           NES
 
-pushy/cacoward        cacoward // Taken from Viewtiful Joe; Red Hot Rumble
-pushy/caconope        caconope // Taken from Viewtiful Joe; Red Hot Rumble
-pushy/caconom         nomnom
+// Push31
+zombo/intro           zombo // Recorded off Zombocom
 
+// Push42
+gravity/down            gravdown // Taken from Phantasy Star Online
+gravity/up              gravup   // Taken from Phantasy Star Online
 
+// Push43
 BishopSight             syab2d
 BishopActive            stb1d
 BishopPain              bshpn1
@@ -175,5 +187,6 @@ SorcererActive          sorboss2
 SorcererPain            sorboss3
 SorcererDeathScream     sordie2
 
-gravity/down            gravdown // Taken from Phantasy Star Online
-gravity/up              gravup   // Taken from Phantasy Star Online
+// Push51
+Coffee/SplashSmall        COFFSPL1 // Both from Marathon 2
+Coffee/SplashLarge        COFFSPL2

@@ -340,3 +340,10 @@ map PUSH50 "Ichikishimahime Says Keep Your Water Clean - Kurashiki"
     music = "MPUSH50" // DJ TOTTO - Wadatsumi
 	sky1 = "twilite"
 }
+
+map PUSH51 "Coffee Break - PresidentPeople"
+{
+    next = "PUSH52"
+    music = "MPUSH51" // joule - littlewe kladdcakes
+	sky1 = "DD_GRADI"
+}

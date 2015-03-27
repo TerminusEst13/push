@@ -1,0 +1,26 @@
+// Push51
+Splash Coffee
+{
+	SmallClass		CoffeeSplash
+	SmallClip		9
+	SmallSound		Coffee/SplashSmall
+
+	BaseClass		CoffeeSplash
+	ChunkClass		CoffeeSplash
+	Sound			Coffee/SplashSmall //Coffee/SplashLarge
+	NoAlert
+}
+
+Terrain Coffee
+{
+    Splash          Coffee
+    Footclip        9
+    Liquid
+}
+
+Floor DD_COFF1 Coffee
+Floor DD_COFF2 Coffee
+Floor DD_COFF3 Coffee
+Floor DD_COFF4 Coffee
+
+

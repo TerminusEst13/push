@@ -158,3 +158,11 @@ pic LKFAL1 tics 6
 pic LKFAL2 tics 6
 pic LKFAL3 tics 6
 pic LKFAL4 tics 6
+
+// Push51
+Texture DD_COFF1
+pic 1 tics 10
+pic 2 tics 10
+pic 3 tics 10
+pic 4 tics 10
+

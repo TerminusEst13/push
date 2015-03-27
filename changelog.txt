@@ -8,8 +8,10 @@ MAPS:
 - Push49 no longer has the water bobbing up and down.
 
 - A new map, Ichikishimahime Says Keep Your Water Clean by Kurashiki, has been added at Push50.
+- A new map, Coffee Break by PresidentPeople, has been added at Push51.
 
 POLISH:
+- All SNDINFO entries have been separated by map.
 
 WHY WE CAN'T HAVE NICE DETAIL:
 
