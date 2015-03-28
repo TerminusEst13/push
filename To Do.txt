@@ -148,22 +148,22 @@ gothic-serp.wad
 
 
 Updated:
-UniversalQuantifier-push_ice_v2v2.wad
-Gardie-PUSH48_lightfix.wad
 
 
 //// infernex-PUSH49v4.wad
+   ^- Check for Drone Spawn
 //// infirnex-PUSH34-v4.wad
+   ^- Check for Drone Spawn
 //// Push30+3-4-2015.wad
-   ^- Check for drone spawn
 //// ideidoom-PUSH43v2.wad
 //// pp-push28-edit.pk3
 //// pushmap-zombocom-edit-02-14-15.pk3
 //// pushmap-deserthotel-edit-02-19-15.pk3
+//// UniversalQuantifier-push_ice_v2v2.wad
+//// Gardie-PUSH48_lightfix.wad
 
 
 
-Check for drone spawn/projectile walls in push11
 Check for drone spawn in push27
 
 
