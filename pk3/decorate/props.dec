@@ -1571,6 +1571,73 @@ ACTOR GriefSuitArmor 13073
    }
 }
 
+ACTOR GriefBannerCrimson 13074
+{
+   -SOLID
+   +NOINTERACTION
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       OBNR A -1
+        stop
+   }
+}
+
+ACTOR GriefBannerForest 13075
+{
+   -SOLID
+   +NOINTERACTION
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       OBNR B -1
+        stop
+   }
+}
+
+ACTOR GriefBannerViolet 13076
+{
+   -SOLID
+   +NOINTERACTION
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       OBNR C -1
+        stop
+   }
+}
+
+ACTOR GriefBannerGold 13077
+{
+   -SOLID
+   +NOINTERACTION
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       OBNR D -1
+        stop
+   }
+}
+
+ACTOR GriefBannerCyan 13078
+{
+   -SOLID
+   +NOINTERACTION
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       OBNR E -1
+        stop
+   }
+}
+
+
+
 // Push62
 
 Actor BrassTorchPUSH : BrassTorch 30010 {}
