@@ -7,6 +7,7 @@ MAPS:
 - Push20's boundaries have been shortened by 2056 units.
 - Absolutely nothing was changed about Push28.
 - Push30 no longer can teleport lasers into infinity.
+- Push32 now has darker borders around the circles to indicate position.
 - Push34's platforms have been trimmed and the belts sped up.
 - Push34 has many more spawnpoints now.
 - Push35 no longer has player spawns outside of the play boundary.
