@@ -164,7 +164,6 @@ InfirnexForest.wad
 
 Updated:
 UniversalQuantifier-push_ice_v2v2.wad
-Mystical-PUSH42-redonegravity.wad
 Gardie-PUSH48_lightfix.wad
 pushmap-zombocom-edit-02-14-15.pk3
 ideidoom-PUSH43v2.wad

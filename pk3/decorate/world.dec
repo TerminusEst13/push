@@ -424,6 +424,7 @@ actor DroneBall : ArachnotronPlasma
     DamageType "DroneDamage"
     +SEEKERMISSILE
     +FORCEXYBILLBOARD
+    +NOCLIP
     States
     {
     Spawn:
