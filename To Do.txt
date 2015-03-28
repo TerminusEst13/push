@@ -163,7 +163,8 @@ pp-push28-edit.pk3
 
 
 
-Check for drone spawn/projectile walls in push12 and push11
+Check for drone spawn/projectile walls in push11
+Check for drone spawn in push27
 
 
 
