@@ -17,6 +17,7 @@ MAPS:
 - Push34's platforms have been trimmed and the belts sped up.
 - Push34 has many more spawnpoints now.
 - Push35 no longer has player spawns outside of the play boundary.
+- Push38's layout has been squeezed in a slight bit, for easier mobility.
 - Push43's killfloor has had its depth increased, so it's no longer as easy to trip into it.
 - Push46's skybox is no longer obscenely fuckhuge filesize.
 - Push47's camp spots have been removed.
@@ -35,10 +36,13 @@ POLISH:
 - Push31's HOMs behind the banner has been removed.
 - Push34 now has rain and lightning.
 - Push30 now has a Startropics enemy wandering about.
+- Push38 has been given its proper skybox.
 - Several misaligned sectors in Push43 have been re-aligned. Not all of them, but quite a few.
 
 WHY WE CAN'T HAVE NICE DETAIL:
 - The edges of Push31's banner have been pushed against the cake.
+- It's no longer possible to hide behind the house in Push38.
+- The torches in the house's corner have been brought in, to keep people from butthugging the corner.
 
 
 FROM V0.5 TO V0.6:
