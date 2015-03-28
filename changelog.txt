@@ -20,6 +20,7 @@ MAPS:
 
 POLISH:
 - All SNDINFO entries have been separated by map.
+- Push24 now has over double the banners. Thanks to everyone for submitting!
 - Push31's HOMs behind the banner has been removed.
 - Push34 now has rain and lightning.
 

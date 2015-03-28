@@ -181,17 +181,19 @@ pp-push28-edit.pk3
 
 
 
+Turn the surfing limit into an adjustable cvar.
+
 Push25's southwest stack has some misaligned brown/black crates.
 "Please read, a personal appeal from TerminusEst13" ad for push24.
 
 Incorporate the rest of the banners
-
 
 Tourney mode cvar that removes all hazards
 
 Terminator mode where one person gets a super-push Railgun
 
 Support for buckshot/instagib modes?
+
 
 
 One under-bridge waterfloor on push49 and outer-edge doesn't rise/lower.
