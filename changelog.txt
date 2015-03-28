@@ -5,6 +5,7 @@ GAMEPLAY:
 - Surfing is no longer as obscenely exploitable as before--when a player bounces repeatedly in mid-air without landing, he will eventually stop bouncing and will just plummet.
 
 MAPS:
+- Push30 no longer can teleport lasers into infinity.
 - Push34's platforms have been trimmed and the belts sped up.
 - Push34 has many more spawnpoints now.
 - Push35 no longer has player spawns outside of the play boundary.
@@ -23,6 +24,7 @@ POLISH:
 - Push24 now has over double the banners. Thanks to everyone for submitting!
 - Push31's HOMs behind the banner has been removed.
 - Push34 now has rain and lightning.
+- Push30 now has a Startropics enemy wandering about.
 
 WHY WE CAN'T HAVE NICE DETAIL:
 - The edges of Push31's banner have been pushed against the cake.
