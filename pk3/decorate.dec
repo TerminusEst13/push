@@ -24,6 +24,7 @@ actor DrawingToolReady : Boolean {}
 
 actor DoomedGuy : Counter { Inventory.MaxAmount 70 }
 actor MaybeDoomedGuy : Counter { Inventory.MaxAmount 3 }
+actor SurfingCounter : Counter { Inventory.MaxAmount 15 }
 
 #include "decorate/player.dec"
 #include "decorate/weapon.dec"

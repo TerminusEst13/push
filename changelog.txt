@@ -2,6 +2,7 @@ FROM V0.6 TO V0.7:
 ==================
 GAMEPLAY:
 - Drone shots now noclip through the environment.
+- Surfing is no longer as obscenely exploitable as before--when a player bounces repeatedly in mid-air without landing, he will eventually stop bouncing and will just plummet.
 
 MAPS:
 - Push34's platforms have been trimmed and the belts sped up.

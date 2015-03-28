@@ -161,6 +161,7 @@ script 532 ENTER
             GiveInventory("OnTheGround", 1);
             TakeInventory("EmergencyDodgeDone",1);
             TakeInventory("DoomedGuy",70);
+            TakeInventory("SurfingCounter",15);
             /*if (CheckInventory("MaybedDoomedGuy") == 3)
             { // Has the player been on the ground for 3 tics?
                 deathAssistedBy[pln] = 0;
