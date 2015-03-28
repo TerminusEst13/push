@@ -91,9 +91,6 @@ Billboard in Push33 can be camped.
 Roads need to be a bit tighter, rocks need much further out
 
 
-Hard limit for alt-fire surfing--when in mid-air, each shot drains from a counter--after ten shots, they stop pushing you up. Landing on the floor restores the counter.
-
-
 
 Make spawn protection a cl cvar.
 
@@ -106,12 +103,6 @@ Make spawn protection a cl cvar.
 
 <Roman6a> hey TerminusEst13 i found a bug in push, on map push38 if you spend your doublejump and land on a tree, you will regain your doublejump but the image on your hud will not reflect this
 <Roman6a> dunno if it happens on other maps
-
-
-universal quantifier: I also figured out why the sky looks all wrong on my previous map, there's another texture called ICESKY on Push43 which overrides the one on my map
-universal quantifier: Just rename either one and it should look as intended
-universal quantifier: as long as you remember to update mapinfo
-TerminusEst13: Ohhhhhhh. That would explain it.
 
 
 
@@ -129,14 +120,7 @@ Center pillars in push39 need to be lowered, hole in center needs removed.
 
 
 All maps need more police spawns, police need +NOCLIP on their shots.
-
-
-
-Alt-firing takes away from an invisible counter. When counter is hit (default 20), balls no longer thrust player.
-Value can be adjusted via cvar.
-
-
-Reduce boundaries in push20.
+ ^- Don't +NOCLIP their shots, it keeps them from hitting players.
 
 
 
@@ -153,6 +137,7 @@ mk-tsppush.pk3 // ModArchive - Cirdan - Starscreamer.xm
 untitled-pushxx.wad // Push-Mortem
 pushmap-castleofgriefing-test.pk3 // Talk to Pres about A_PrintBold
 InfirnexForest.wad
+gothic-serp.wad
 
 
 //// 50: ks_pushmiyajima_i.wad
@@ -174,10 +159,11 @@ pp-push28-edit.pk3
 //// infernex-PUSH49v4.wad
 //// infirnex-PUSH34-v4.wad
 //// Push30+3-4-2015.wad
+   ^- Check for drone spawn
 
 
 
-
+Check for drone spawn/projectile walls in push12 and push11
 
 
 
