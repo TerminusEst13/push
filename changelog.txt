@@ -18,9 +18,11 @@ MAPS:
 
 POLISH:
 - All SNDINFO entries have been separated by map.
+- Push31's HOMs behind the banner has been removed.
 - Push34 now has rain and lightning.
 
 WHY WE CAN'T HAVE NICE DETAIL:
+- The edges of Push31's banner have been pushed against the cake.
 
 
 FROM V0.5 TO V0.6:
