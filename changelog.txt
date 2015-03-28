@@ -38,11 +38,12 @@ POLISH:
 - Push30 now has a Startropics enemy wandering about.
 - Push38 has been given its proper skybox.
 - Several misaligned sectors in Push43 have been re-aligned. Not all of them, but quite a few.
+- Push48 has been given more even lighting across the board.
 
 WHY WE CAN'T HAVE NICE DETAIL:
 - The edges of Push31's banner have been pushed against the cake.
 - It's no longer possible to hide behind the house in Push38.
-- The torches in the house's corner have been brought in, to keep people from butthugging the corner.
+- The torches in the Push38 house's corner have been brought in, to keep people from butthugging the corner.
 
 
 FROM V0.5 TO V0.6:
