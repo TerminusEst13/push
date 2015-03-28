@@ -153,21 +153,7 @@ Actor LavaBallSpawner 10000
   {
   Spawn:
   Active:
-    TNT1 A 0
-    TNT1 A 0 A_JumpIf(Waterlevel == 0, "StopState")
-    TNT1 A 0 A_JumpIf(Waterlevel > 0, "LiftState")
-    TNT1 A 0 A_JumpIf(Args[1] > 0, "Circle")
-  Spawning:
-    TNT1 A 0 A_JumpIf(Args[3] > 0, 2)
-    TNT1 A 2 A_SpawnItemEx("LavaBall", Random(-Args[0], Args[0]), Random(-Args[0], Args[0]), 0, Random(Args[4]/8, Args[4]/4), 0, Random(Args[4]/6, Args[4]), Random(0,360), 1, Args[2]) 
-    Loop
     TNT1 A 2 A_SpawnItemEx("LavaBallNoDamage", Random(-Args[0], Args[0]), Random(-Args[0], Args[0]), 0, Random(Args[4]/8, Args[4]/4), 0, Random(Args[4]/6, Args[4]), Random(0,360), 129, Args[2]) 
-    Loop
-  Circle:
-    TNT1 A 0 A_JumpIf(Args[3] > 0, 2)
-    TNT1 A 2 A_SpawnItemEx("LavaBall", Random(-Args[0], Args[0]), 0, 0, Random(Args[4]/8, Args[4]/4), 0, Random(Args[4]/6, Args[4]), Random(0,360), 1, Args[2])
-    Loop
-    TNT1 A 2 A_SpawnItemEx("LavaBallNoDamage", Random(-Args[0], Args[0]), 0, 0, Random(Args[4]/8, Args[4]/4), 0, Random(Args[4]/6, Args[4]), Random(0,360), 129, Args[2])
     Loop
   StopState:
     TNT1 A 1 A_Stop
@@ -1091,4 +1077,518 @@ ACTOR CinnamonCrumbRandom : VanillaCrumbRandom 13033
    }
 }
 
+// Push55
+actor LavaBallSpawner2 : LavaBallSpawner 11462 {}
 
+// Push56
+Actor FANJJ2 13245
+{
+Height 64
+Radius 24
++SOLID
+States
+{
+Spawn:
+FAN1 A 2
+FAN1 B 2
+FAN1 C 2
+FAN1 D 2
+FAN1 E 2
+Loop
+}
+}
+
+Actor Pipe 13244
+{
+Height 128
+radius 48
++Solid
++NOGRAVITY
++SpawnCeiling
+States
+{
+Spawn:
+PIP1 A -1
+}
+}
+
+// Push61
+ACTOR GriefTeleFog //: TeleportFog
+{
+   +NOBLOCKMAP
+   +NOTELEPORT
+   +NOGRAVITY
+   +CLIENTSIDEONLY
+   +NOINTERACTION
+   States
+   {
+      Spawn:
+       TNT1 A 0
+       TELE A 0 A_PlaySound("griefing/teleport")
+       TELE ABCDEFGHGFEDC 6 Bright
+        stop
+   }
+}
+
+ACTOR GriefBanner 13050
+{
+   -SOLID
+   +NOINTERACTION
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       BNR1 A -1
+        stop
+   }
+}
+
+ACTOR GriefWallTorch 13051
+{
+   -SOLID
+   +NOINTERACTION
+   +NOGRAVITY
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       WLTR ABCDEFGH 5 Bright
+        loop
+   }
+}
+
+ACTOR GriefTwinedTorch 13052
+{
+   -SOLID
+   +NOINTERACTION
+   +NOGRAVITY
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       TWTR ABCDEFGH 4 Bright
+        loop
+   }
+}
+
+ACTOR GriefClockTick 13053
+{
+   -SOLID
+   +NOCLIP
+   +NOGRAVITY
+   +NOINTERACTION
+   States
+   {
+      Spawn:
+       TNT1 A 0
+       TNT1 A 35
+      Tick:
+       TNT1 A 35 A_PlaySound("griefing/clocktick")
+        loop
+   }
+}
+
+ACTOR GriefBell 13054
+{
+   -SOLID
+   +NOCLIP
+   +NOGRAVITY
+   +NOINTERACTION
+   //+FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       BBLL E 0
+       BBLL E 2275
+      Chime:
+       BBLL F 6 A_PlaySound("griefing/clockchime",0,1.0,0,ATTN_NONE)
+       BBLL G 7
+       BBLL FEABC 6
+       BBLL B 8
+       BBLL A 10
+       BBLL E 2177
+        loop
+   }
+}
+
+ACTOR GriefSpearedCorpse 13057
+{
+   -SOLID
+   +NOINTERACTION
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       CPS1 A -1
+        stop
+   }
+}
+
+ACTOR GriefSittingCorpseRandom 13058
+{
+   -SOLID
+   +NOINTERACTION
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       CPS6 A 0
+       CPS2 A 1 A_Jump(256,1,2)
+       CPS2 A -1
+        stop
+       CPS6 A -1
+        stop
+   }
+}
+
+ACTOR GriefHangingCorpseRandom 13059
+{
+   -SOLID
+   +NOGRAVITY
+   +NOINTERACTION
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       CPS4 A 0
+       CPS3 A 1 A_Jump(256,1,2,3)
+       CPS3 A -1
+        stop
+       CPS4 A -1
+        stop
+       CPS5 A -1
+        stop
+   }
+}
+
+ACTOR GriefCage 13060 // Did nooot wanna have to resort to these
+{
+   Radius 16
+   Height 127
+   +SOLID
+   +NOGRAVITY
+   +GHOST
+   States
+   {
+      Spawn:
+       TNT1 A -1
+        stop
+   }
+}
+
+ACTOR GriefGem 13061
+{
+   +FLOATBOB
+   -SOLID
+   +NOGRAVITY
+   //+NOINTERACTION
+   //+FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       ABGM A 35 A_Jump(64,"Sparkle")
+        loop
+      Sparkle:
+       ABGM A 35 A_SpawnItemEx("GriefGemSpark",random(8,-8),random(8,-8),random(-3,13),0,0,0,0,160)
+        goto Spawn
+   }
+}
+
+ACTOR GriefGemSpark
+{
+   Alpha 0.9
+   RenderStyle Add
+   -SOLID
+   +NOGRAVITY
+   +CLIENTSIDEONLY
+   +NOINTERACTION
+   States
+   {
+      Spawn:
+       TNT1 A 0
+       OSPK F 1 Bright A_FadeOut(0.05)
+	    loop
+   }
+}
+
+ACTOR GriefCastleOrb 13062
+{
+   +FLOATBOB
+   -SOLID
+   +NOGRAVITY
+   //+NOINTERACTION
+   //+FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       KORB A 8 A_SpawnItemEx("GriefCastleSpark",random(10,-10),random(10,-10),-5,random(1,-1),random(1,-1),random(-1,-2),0,160)
+        loop
+   }
+}
+
+ACTOR GriefCastleSpark
+{
+   Alpha 0.9
+   RenderStyle Add
+   -SOLID
+   +NOGRAVITY
+   +CLIENTSIDEONLY
+   +NOINTERACTION
+   States
+   {
+      Spawn:
+       TNT1 A 0
+       OSPK E 0 Bright A_ChangeVelocity(momx*0.8,momy*0.8,momz+0.5,2)
+       OSPK E 3 Bright A_FadeOut(0.02)
+	    loop
+   }
+}
+
+ACTOR GriefFireOrb : GriefCastleOrb 13063
+{
+   States
+   {
+      Spawn:
+       KORB B 8 A_SpawnItemEx("GriefFireSpark",random(10,-10),random(10,-10),-5,random(1,-1),random(1,-1),random(-1,-2),0,160)
+        loop
+   }
+}
+
+ACTOR GriefFireSpark : GriefCastleSpark
+{
+   States
+   {
+      Spawn:
+       TNT1 A 0
+       OSPK A 0 Bright A_ChangeVelocity(momx*0.8,momy*0.8,momz+0.5,2)
+       OSPK A 3 Bright A_FadeOut(0.02)
+	    loop
+   }
+}
+
+ACTOR GriefEmeraldOrb : GriefCastleOrb 13064
+{
+   States
+   {
+      Spawn:
+       KORB C 8 A_SpawnItemEx("GriefEmeraldSpark",random(10,-10),random(10,-10),-5,random(1,-1),random(1,-1),random(-1,-2),0,160)
+        loop
+   }
+}
+
+ACTOR GriefEmeraldSpark : GriefCastleSpark
+{
+   States
+   {
+      Spawn:
+       TNT1 A 0
+       OSPK C 0 Bright A_ChangeVelocity(momx*0.8,momy*0.8,momz+0.5,2)
+       OSPK C 3 Bright A_FadeOut(0.02)
+	    loop
+   }
+}
+
+ACTOR GriefSteelOrb : GriefCastleOrb 13065
+{
+   States
+   {
+      Spawn:
+       KORB D 8 A_SpawnItemEx("GriefSteelSpark",random(10,-10),random(10,-10),-5,random(1,-1),random(1,-1),random(-1,-2),0,160)
+        loop
+   }
+}
+
+ACTOR GriefSteelSpark : GriefCastleSpark
+{
+   States
+   {
+      Spawn:
+       TNT1 A 0
+       OSPK D 0 Bright A_ChangeVelocity(momx*0.8,momy*0.8,momz+0.5,2)
+       OSPK D 3 Bright A_FadeOut(0.02)
+	    loop
+   }
+}
+
+ACTOR GriefSilverOrb : GriefCastleOrb 13066
+{
+   States
+   {
+      Spawn:
+       KORB E 8 A_SpawnItemEx("GriefSilverSpark",random(10,-10),random(10,-10),-5,random(1,-1),random(1,-1),random(-1,-2),0,160)
+        loop
+   }
+}
+
+ACTOR GriefSilverSpark : GriefCastleSpark
+{
+   States
+   {
+      Spawn:
+       TNT1 A 0
+       OSPK B 0 Bright A_ChangeVelocity(momx*0.8,momy*0.8,momz+0.5,2)
+       OSPK B 3 Bright A_FadeOut(0.02)
+	    loop
+   }
+}
+
+ACTOR GriefCliffRockRandom 13067
+{
+   Scale 3.0
+   -SOLID
+   +NOINTERACTION
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       RKBL A 0
+       RKBL A 1 A_Jump(256,1,2)
+       RKBL A -1
+        stop
+       RKBS A -1
+        stop
+   }
+}
+
+ACTOR GriefMessageRandom 13068
+{
+   -SOLID
+   +NOCLIP
+   +NOGRAVITY
+   +NOINTERACTION
+   States
+   {
+      Spawn:
+       TNT1 A 0
+       TNT1 A 35
+       TNT1 A 280
+       TNT1 A 0 A_Jump(6,"SOLVED")
+        goto Spawn+2
+      SOLVED:
+       TNT1 A 0 A_PlaySound("griefing/SOLVED",0,0.5,0,ATTN_NONE)
+       TNT1 A 0 //A_Jump(256,1,3,4,5,6,7,9,11)
+       TNT1 A 105 //A_PrintBold("\cfONE SIXTH OF THE PUZZLE HAS BEEN SOLVED",3)
+       TNT1 A 105 /*A_PrintBold("\cfON THE SHADOW WOOD",3)
+        goto Waiting
+       TNT1 A 210 A_PrintBold("\cfA DOOR OPENED ON THE FORSAKEN OUTPOST",3)
+        goto Waiting
+       TNT1 A 210 A_PrintBold("\cfSTONES GRIND ON THE SEVEN PORTALS",3)
+        goto Waiting
+       TNT1 A 210 A_PrintBold("\cfTHE IMPOSSIBLE IS ACHIEVED AT ZOMBO.COM",3)
+        goto Waiting
+       TNT1 A 210 A_PrintBold("\cfA SECRET HAS BEEN REVEALED ON PUSH28",3)
+        goto Waiting
+       TNT1 A 105 A_PrintBold("\cfA FEATURE REQUEST HAS BEEN CLOSED",3)
+       TNT1 A 105 A_PrintBold("\cfON ZDOOM FORUMS",3)
+        goto Waiting
+       TNT1 A 105 A_PrintBold("\cfAN A_PRINTBOLD HAS BEEN SUMMONED",3)
+       TNT1 A 105 A_PrintBold("\cfON CASTLE OF GRIEFING",3)
+        goto Waiting
+       TNT1 A 105 A_PrintBold("\cfINACTIVE SERVERS HAVE BEEN KILLED",3)
+       TNT1 A 105 A_PrintBold("\cfON #BESTEVER",3)*/
+        goto Waiting
+      Waiting:
+       TNT1 A 350
+        goto Spawn+2
+   }
+}
+
+ACTOR GriefDeadTree 13069
+{
+   -SOLID
+   +NOINTERACTION
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       TRE1 A -1
+        stop
+   }
+}
+
+ACTOR GriefSpike 13070
+{
+   -SOLID
+   +NOBLOCKMAP
+   +FORCEYBILLBOARD
+   +FLOORCLIP
+   -NOGRAVITY
+   States
+   {
+      Spawn:
+       WSPK A 0
+       WSPK N 280
+       WSPK N 140 A_Jump(128,"SpikeRaise")//32
+        loop
+
+      SpikeRaised:
+       WSPK A 280
+       WSPK A 140 A_Jump(128,"SpikeLower")//32
+        loop
+
+      SpikeRaise:
+	   TNT1 A 0 A_Playsound("griefing/spikeraise",4,1.0)
+       WSPK ML 4
+	   TNT1 A 0 A_Playsound("griefing/spikesurface",2,0.7)
+       WSPK KJIHGFEDCB 4
+       WSPK A 92
+        goto SpikeRaised
+
+      SpikeLower:
+	   TNT1 A 0 A_Playsound("griefing/spikelower",4,1.0)
+       WSPK BCDEFGHIJK 4
+	   TNT1 A 0 A_Playsound("griefing/spikesubmerge",2,0.7)
+       WSPK LM 4
+       WSPK N 92
+        goto Spawn
+   }
+}
+
+ACTOR GriefCandles 13072
+{
+   -SOLID
+   +NOINTERACTION
+   +NOGRAVITY
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       CNDL ABC 5 Bright
+        loop
+   }
+}
+
+ACTOR GriefSuitArmor 13073
+{
+   -SOLID
+   +NOINTERACTION
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       SUIT A -1
+        stop
+   }
+}
+
+// Push62
+
+Actor BrassTorchPUSH : BrassTorch 30010 {}
+Actor FireBrazierPUSH : FireBrazier 30012 {}
+Actor ZStalagmiteMediumPUSH : ZStalagmiteMedium 30015 {}
+Actor ZCorpseKabobPUSH : ZCorpseKabob 30017 {}
+Actor ZBannerTatteredPUSH : ZBannerTattered 30018 {}
+
+Actor ChaosSphere 30011 //Sprites by ETTiNGRiNDER
+{
+//$Category "Chaos Stuff"
+Radius 30
+Height 70
++SOLID
+States
+{
+Spawn:
+	CHAO ABCDEFGH 5 Bright
+	Loop
+}
+}

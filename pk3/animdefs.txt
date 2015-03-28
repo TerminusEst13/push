@@ -168,3 +168,78 @@ pic 4 tics 10
 
 // Push52
 WARP flat WATER04
+
+// Push54
+texture	WFALL1 range WFALL4 tics 8
+
+// Push56
+texture LGTSQ1
+
+pic 1 tics 3
+pic 2 tics 3
+pic 3 tics 3
+pic 4 tics 12
+pic 3 tics 3
+pic 2 tics 3
+pic 1 tics 3
+
+warp texture lavajj
+
+Texture BOOM1
+Pic 1 tics 3
+pic 2 tics 3
+pic 3 tics 3
+pic 4 tics 6
+Pic 5 tics 3
+pic 6 tics 3
+pic 7 tics 3
+pic 8 tics 6
+pic 9 tics 3
+pic 10 tics 6
+
+// Push61
+texture W_284 // "minute" hand
+pic 1 tics 35
+pic 2 tics 35
+pic 3 tics 35
+pic 4 tics 35
+pic 5 tics 35
+pic 6 tics 35
+pic 7 tics 35
+pic 8 tics 35
+
+texture W_276 // "hour" hand
+pic 1 tics 280
+pic 2 tics 280
+pic 3 tics 280
+pic 4 tics 280
+pic 5 tics 280
+pic 6 tics 280
+pic 7 tics 280
+pic 8 tics 280
+
+texture F_084
+pic 1 tics 6
+pic 2 tics 6
+pic 3 tics 6
+pic 4 tics 6
+pic 5 tics 6
+
+texture X_001
+pic 1 tics 6
+pic 2 tics 6
+pic 3 tics 6
+pic 4 tics 6
+
+texture X_005
+pic 1 tics 6
+pic 2 tics 6
+pic 3 tics 6
+pic 4 tics 6
+
+// Push62
+Texture HLAV01
+Pic HLAV01 Tics 8
+Pic HLAV02 Tics 8
+Pic HLAV03 Tics 8
+Pic HLAV04 Tics 8

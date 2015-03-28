@@ -1,7 +1,6 @@
 // Hazards go here.
 
  // Push04
-
 actor HitlerShooter 30004
 {
     Radius 8
@@ -308,7 +307,6 @@ ACTOR HitlerJumpage
 }
 
 // Push09
-
 ACTOR FlameJet 30001 //YOU GOT THE TORCH, YOU GOT THE POWER! YEAH!
 {
     Radius 8
@@ -333,7 +331,6 @@ ACTOR FlameJet 30001 //YOU GOT THE TORCH, YOU GOT THE POWER! YEAH!
 }
 
 // Push 17
-
 Actor Cacopusher : Cacodemon
 {
     Radius 24
@@ -398,7 +395,6 @@ actor RedDeathSpark : DeathSpark
 }
 
 // Push 19
-
 ACTOR DeskExplosive 13001
 {
    Radius 128
@@ -413,9 +409,383 @@ ACTOR DeskExplosive 13001
    }
 }
 
+// Push61
+ACTOR GriefStalkerButt : Serpent 13071
+{
+   ClearFlags
+   Skip_Super
+   Health 0x7fffffff
+   Speed 12
+   Radius 32
+   Height 70
+   Mass 0x7fffffff
+   Monster
+   -SHOOTABLE
+   -SOLID
+   +NOBLOCKMAP
+   +NOBLOOD
+   +DONTSPLASH
+   +CANTLEAVEFLOORPIC
+   Obituary "%o somehow got #DUNKT by a butt"
+   States
+   {
+      Spawn:
+       SSPT E 0
+       TNT1 A 10 A_Look
+        loop
+
+      See:
+       TNT1 AA 1 A_Wander
+       TNT1 A 2 A_Jump(2.55,"Schloop")
+        loop
+
+      Pain:
+       TNT1 A 70
+        goto Spawn
+
+      Schloop:
+       TNT1 A 0 A_PlaySound("griefing/stalker",4)
+       SSPT H 3 A_SerpentUnHide
+       SSPT EFGEF 3 A_SerpentRaiseHump
+       SSPT GEF 3
+       SSPT GEFGE 3 A_SerpentLowerHump
+       SSPT F 3 A_SerpentHide
+        goto See
+   }
+}
+
+ACTOR GriefSerpentSpawner 13055
+{
+   Radius 48
+   Height 127
+   -SOLID
+   +NOGRAVITY
+   +NOINTERACTION
+   States
+   {
+      Spawn:
+       DEMN G 0
+       TNT1 A 35
+      HourlyUpdate:
+       TNT1 A 2240 A_SpawnItemEx("GriefSerpent")
+        loop
+   }
+}
+
+ACTOR GriefSerpent //: Demon1
+{
+   Health 250
+   PainChance 50
+   Speed 13
+   Radius 32
+   Height 64
+   Mass 220
+   Monster
+   +NOBLOOD
+   +MISSILEMORE
+   +MISSILEEVENMORE
+   +FLOORCLIP
+   +LOOKALLAROUND
+   +NOINFIGHTING
+   +QUICKTORETALIATE
+   SeeSound "griefing/chaosspawn"
+   AttackSound "griefing/chaosmissile"
+   PainSound "griefing/chaospain"
+   DeathSound "griefing/chaosdeath"
+   ActiveSound "griefing/chaosspawn"
+   Obituary "%o got #DUNKT by a Chaos Serpent"
+   States
+   {
+      Spawn:
+       DEMN A 0 
+       DEMN A 0 A_SpawnItemEx("GriefTeleFog",0,0,24,0,0,0,0,160)
+      Idle:
+       DEMN AA 10 A_Look
+        loop
+      See:
+       DEMN ABCD 4 A_Chase
+        loop
+      Pain:
+       DEMN E 4
+       DEMN E 4 A_Pain
+        goto See
+      Missile:
+       DEMN E 5 A_FaceTarget
+       DEMN F 6 A_FaceTarget
+       DEMN G 5 A_CustomMissile("GriefSerpentFireball", 62, 0)
+        goto See
+      Death:
+       DEMN I 2 A_FaceTarget
+       TNT1 A 0 A_Scream
+       TNT1 A 0 A_NoBlocking
+       TNT1 AAAAAAAAAAAAAAA 0 A_SpawnItemEx("RedDeathSpark",random(-10,10),random(-10,10),random(24,42),random(-150,150)/100.0,random(-150,150)/100.0,random(100,300)/300.0,random(-180,180),161)
+       TNT1 AAAAAAAAA 0 A_SpawnItemEx("Binary0",random(-10,10),random(-10,10),random(24,42),random(-100,100)/150.0,random(-100,100)/150.0,random(100,300)/250.0,random(-180,180),160)
+       TNT1 AAAAAAAAA 0 A_SpawnItemEx("Binary1",random(-10,10),random(-10,10),random(24,42),random(-100,100)/150.0,random(-100,100)/150.0,random(100,300)/250.0,random(-180,180),160)
+       DEMN III 2 A_FadeOut(0.1)
+       DEMN III 2 A_FadeOut(0.1)
+       DEMN III 2 A_FadeOut(0.1)
+        stop
+   }
+}
+
+ACTOR GriefSerpentFireball //: Demon1FX1
+{
+   Speed 15
+   Radius 10
+   Height 6
+   Damage 5
+   Projectile
+   +SPAWNSOUNDSOURCE
+   +THRUGHOST
+   SeeSound "griefing/chaosmissile"
+   DeathSound "griefing/chaosmissilehit"
+   States
+   {
+      Spawn:
+       DMFX ABC 4 Bright A_ChangeVelocity(momx*1.2,momy*1.2,momz*1.2,2)
+        loop
+      Death:
+       TNT1 A 0 A_SpawnItemEx("HitlerJumpage",0,0,0,0,0,0,0,32)
+       DMFX DE 4 Bright
+       DMFX FGH 3 Bright
+        stop
+   }
+}
+
+ACTOR GriefAfritSpawner 13056
+{
+   Radius 48
+   Height 128
+   -SOLID
+   +NOGRAVITY
+   +NOINTERACTION
+   States
+   {
+      Spawn:
+       FDMN I 0
+       TNT1 A 2275
+      HourlyUpdate:
+       TNT1 A 2240 A_SpawnItemEx("GriefAfrit")
+        loop
+   }
+}
+
+ACTOR GriefAfrit //: FireDemon
+{
+   Health 80
+   ReactionTime 8
+   PainChance 0
+   Speed 13
+   Radius 20
+   Height 68
+   Mass 75
+   Damage 1
+   Monster
+   +NOBLOCKMONST
+   +NOBLOOD
+   +DROPOFF
+   +NOGRAVITY
+   +MISSILEMORE
+   +MISSILEEVENMORE
+   +FLOAT
+   +FLOORCLIP
+   +INVULNERABLE
+   +LOOKALLAROUND
+   +NOINFIGHTING
+   +QUICKTORETALIATE
+   SeeSound "griefing/afritspawn"
+   AttackSound "griefing/afritmissile"
+   DeathSound "griefing/afritdeath"
+   ActiveSound "griefing/afritactive"
+   Obituary "%o got #DUNKT by an Afrit"
+   States
+   {
+      Spawn:
+       FDMN X 0
+       FDMN X 0 A_SpawnItemEx("GriefTeleFog",0,0,24,0,0,0,0,160)
+      Idle:
+       FDMN X 5 Bright
+       FDMN EFG 10 Bright A_Look
+        goto Idle+1
+
+      See:
+       FDMN E 8 Bright
+       FDMN F 6 Bright
+       FDMN G 5 Bright
+       FDMN F 8 Bright
+       FDMN E 6 Bright
+       FDMN G 7 Bright A_ChangeFlag("JUSTATTACKED",0) //A_FiredRocks
+       FDMN HI 5 Bright
+       FDMN J 5 Bright A_UnSetInvulnerable
+      Chase:
+       FDMN ABC 5 Bright A_FastChase //A_FireDChase
+        loop
+
+      Pain:
+       FDMN D 0 Bright A_UnSetInvulnerable
+       FDMN D 6 Bright A_Pain
+        goto Chase
+
+      Missile:
+       FDMN K 3 Bright A_FaceTarget
+       FDMN KKK 5 Bright A_CustomMissile("GriefAfritMissile") //A_FiredAttack
+        goto Chase
+
+      Death:
+       FDMN D 2 Bright A_FaceTarget
+       TNT1 A 0 A_Scream
+       TNT1 A 0 A_NoBlocking
+       TNT1 AAAAAAAAAAAAAAA 0 A_SpawnItemEx("RedDeathSpark",random(-10,10),random(-10,10),random(24,42),random(-150,150)/100.0,random(-150,150)/100.0,random(100,300)/300.0,random(-180,180),161)
+       TNT1 AAAAAAAAA 0 A_SpawnItemEx("Binary0",random(-10,10),random(-10,10),random(24,42),random(-100,100)/150.0,random(-100,100)/150.0,random(100,300)/250.0,random(-180,180),160)
+       TNT1 AAAAAAAAA 0 A_SpawnItemEx("Binary1",random(-10,10),random(-10,10),random(24,42),random(-100,100)/150.0,random(-100,100)/150.0,random(100,300)/250.0,random(-180,180),160)
+       FDMN DDD 2 Bright A_FadeOut(0.1)
+       FDMN DDD 2 Bright A_FadeOut(0.1)
+       FDMN DDD 2 Bright A_FadeOut(0.1)
+        stop
+   }
+}
+
+ACTOR GriefAfritMissile //: FireDemonMissile
+{
+   Health 1000
+   ReactionTime 8
+   Speed 10
+   Radius 10
+   Height 6
+   Mass 5
+   Damage 1
+   Projectile
+   +SPAWNSOUNDSOURCE
+   SeeSound "griefing/afritmissile"
+   DeathSound "griefing/afritmissilehit"
+   States
+   {
+      Spawn:
+       FDMB A 5 Bright A_ChangeVelocity(momx*1.2,momy*1.2,momz*1.2,2)
+        loop
+      Death:
+       TNT1 A 0 A_SpawnItemEx("HitlerJumpage",0,0,0,0,0,0,0,32)
+       FDMB BCDE 5 Bright
+        stop
+   }
+}
+
+// Push62
+Actor ChaosGenerator : SwitchableDecoration 30019
+{
+//$Category "Chaos Stuff"
++NoBlockMap +NoGravity +NoInteraction +NoClip -Solid
+DamageType "NoDamage"
+Radius 30
+Height 30
+States
+{
+Spawn:
+Active:
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,0,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,10,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,20,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,30,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,40,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,50,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,60,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,70,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,80,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,90,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,100,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,110,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,120,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,130,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,140,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,150,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,160,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,170,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,180,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,190,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,200,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,210,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,220,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,230,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,240,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,250,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,260,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,270,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,280,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,290,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,300,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,310,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,320,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,330,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,340,CMF_AIMDIRECTION,0)
+	TNT1 A 3 A_CustomMissile("Thunder_Shot",5,0,350,CMF_AIMDIRECTION,0)
+	Loop
+Inactive:
+	TNT1 A 1 A_Explode(1000,60)
+	Loop
+}
+}
+
+Actor Thunder_Shot
+{
+Radius 32
+Height 20
+Damage 0
+Speed 25
+DamageType "NoDamage"
+PROJECTILE
++RIPPER
+SeeSound "ThunShot/Fire"
+DeathSound "ThunShot/Impact"
+States
+{
+Spawn:
+	TNT1 A 0 A_RadiusThrust(2000,100,0)
+	ZAP6 A 2 Bright A_Explode(1000,100)
+	TNT1 A 0 A_RadiusThrust(2000,100,0)
+	ZAP6 A 2 Bright A_Explode(1000,100)
+	TNT1 A 0 A_RadiusThrust(2000,100,0)
+	ZAP6 B 2 Bright A_Explode(1000,100)
+	TNT1 A 0 A_RadiusThrust(2000,100,0)
+	ZAP6 B 2 Bright A_Explode(1000,100)
+	TNT1 A 0 A_RadiusThrust(2000,100,0)
+	ZAP6 C 2 Bright A_Explode(1000,100)
+	TNT1 A 0 A_RadiusThrust(2000,100,0)
+	ZAP6 C 2 Bright A_Explode(1000,100)
+	Loop
+Death:
+	ZAP7 ABCDE 3 Bright
+	ZAP7 ABCDEABCDEABCDEABCDEABCDEABCDE 3 Bright A_FadeOut(0.1)
+	Stop
+}
+}
+
+actor Thunder_GeneratorWhite : SwitchableDecoration 3199//Removed super fancy sfx since I don't need them.
+{
++NoBlockMap +NoGravity +NoInteraction +NoClip -Solid +CLIENTSIDEONLY
+Renderstyle Add
+Height 1
+Radius 1
+Alpha 0.2
+Scale 4.0
+states
+{
+Spawn:
+Active:
+	TNT1 A 0
+	TNT1 A 0 A_PlaySoundEx("thunder/hit", "Voice", 0, 2)
+	THND AAAA 1 Bright A_FadeIn(0.2)
+	THND AAAA 2 Bright A_FadeOut(0.2)
+	TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1  Bright
+	Goto Inactive
+Inactive:
+	TNT1 A 1
+	Loop
+}
+}
+
+
 
 // Global
-
 actor DroneBall : ArachnotronPlasma
 {
     Speed 35
@@ -424,7 +794,6 @@ actor DroneBall : ArachnotronPlasma
     DamageType "DroneDamage"
     +SEEKERMISSILE
     +FORCEXYBILLBOARD
-    +NOCLIP
     States
     {
     Spawn:

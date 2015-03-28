@@ -24,3 +24,52 @@ Floor DD_COFF3 Coffee
 Floor DD_COFF4 Coffee
 
 
+// Push61
+
+Splash HeXenWaterSplash
+{
+	SmallClass		WaterSplash
+	SmallClip		8
+	SmallSound		griefing/watersplash
+
+	BaseClass		WaterSplashBase
+	ChunkClass		WaterSplash
+	ChunkZVelShift	9
+	Sound			griefing/watersplash
+	NoAlert
+}
+
+Terrain HeXenWater
+{
+    Splash          HeXenWaterSplash
+    Footclip        8
+    Liquid
+}
+
+Splash HeXenLavaSplash
+{
+	SmallClass		LavaSmoke
+	SmallClip		8
+	SmallSound		griefing/lavasplash
+
+	BaseClass		LavaSplash
+	ChunkClass		LavaSmoke
+	Sound			griefing/lavasplash
+	NoAlert
+}
+
+Terrain HeXenLava
+{
+    Splash          HeXenLavaSplash
+    Footclip        8
+    Liquid
+}
+
+Floor X_001 HeXenLava
+Floor X_002 HeXenLava
+Floor X_003 HeXenLava
+Floor X_004 HeXenLava
+Floor X_005 HeXenWater
+Floor X_006 HeXenWater
+Floor X_007 HeXenWater
+Floor X_008 HeXenWater

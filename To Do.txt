@@ -146,8 +146,8 @@ New:
 ideidoom-push50.wad
 Gardie-PUSH05-DWANGO2015.wad
 Revae's CyDM03 map
-IdeIdoom-PushXX3.wad
 RiverofFlame.wad (by Infirnex) / Unreal - WarLord.s3m
+IdeIdoom-PushXX3.wad
 sgtshivers-bullseye.wad
 mk-tsppush.pk3 // ModArchive - Cirdan - Starscreamer.xm
 untitled-pushxx.wad // Push-Mortem

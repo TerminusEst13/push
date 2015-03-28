@@ -355,3 +355,75 @@ map PUSH52 "Ship of Fools - UniversalQuantifier"
     music = "MPUSH52" // Jazz Jackrabbit - Beach Bunny
     sky1 = "SHIPSKY"
 }
+
+map PUSH53 "Samhara Trench - IdeIdoom"
+{
+    next = "PUSH54"
+    music = "MPUSH53"
+    sky1 = "sky02", 0.8
+}
+
+Map PUSH54 "Dwango 2015 - Gardevoir"
+{
+    next = "PUSH55"
+    music = "MPUSH54" // Unknown artist. But boy is it iconic.
+    Sky1 = "SKY2", 0
+}
+
+map PUSH55 "Burn Baby Burn - Infirnex"
+{
+    next = "PUSH56"
+    music = "MPUSH55" // Unreal - Chizra (Shareware)
+}
+
+map PUSH56 "Jazzy Nostalgia - IdeIdoom"
+{
+    next = "PUSH57"
+    music = "MPUSH56" // Jazz Jackrabbit 2 - Tubelectric
+    sky1 = "sky1"
+}
+
+map PUSH57 "Bullseye - Sgt. Shivers"
+{
+    next = "PUSH58"
+    music = "MPUSH57" // El Blanco - Aurielis (lfbox mix)
+    sky1 = "sky2"
+}
+
+map PUSH58 "Heifong Virtual Arena - Marty Kirra"
+{
+    next = "PUSH59"
+    music = "MPUSH58" // Cirdan - Starscreamer
+    sky1 = "CC4SKY2", -0.1
+}
+
+map PUSH59 "Push-Mortem - Untitled"
+{
+    next = "PUSH60"
+    music = "MPUSH59" // SlayeR - Industrial
+    sky1 = "RSKY1"
+}
+
+map PUSH60 "Bog It - Infirnex"
+{
+    next = "PUSH61"
+    music = "MPUSH60" // Jazz Jackrabbit 2 - Medieval Jam
+	Sky1 = "FSTSKY"
+}
+
+Map PUSH61 "Castle of Griefing - PresidentPeople"
+{
+   next = "PUSH62"
+   Music = "MPUSH61" // Venture - Kermator
+   Sky1 = "HSKY2", 0.2
+   Sky2 = "HSKY2A", 0.2
+   Lightning
+   SmoothLighting
+}
+
+map PUSH62 "Serpent Riders' Playhouse - Gothic"
+{
+	next = "PUSH01"
+	music = "MPUSH62" // Tim McFarland - KORAX (from Ressurection of Chaos)
+	sky1 = "RSKY1"
+}

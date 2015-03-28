@@ -7,3 +7,175 @@ skybox Cus3
     PLU3_T
     PLU3_B
 }
+
+// Push61
+flickerlight2 HCANDLES
+{
+    color 1.0 1.0 0.0
+    size 16
+    secondarySize 20
+    interval 0.01
+}
+
+object GriefCandles
+{
+    frame CNDL { light HCANDLES }
+}
+
+flickerlight2 TWINETORCH
+{
+    color 1.0 0.7 0.0
+    size 46
+    secondarySize 52
+    interval 0.01
+    offset 0 64 0
+}
+
+object GriefTwinedTorch
+{
+    frame TWTRA { light TWINETORCH }
+    frame TWTRB { light TWINETORCH }
+    frame TWTRC { light TWINETORCH }
+    frame TWTRD { light TWINETORCH }
+    frame TWTRE { light TWINETORCH }
+    frame TWTRF { light TWINETORCH }
+    frame TWTRG { light TWINETORCH }
+    frame TWTRH { light TWINETORCH }
+}
+
+flickerlight2 WALLTORCH2
+{
+    color 1.0 0.7 0.0
+    size 24
+    secondarySize 28
+    interval 0.01
+    offset 0 24 0
+}
+
+object GriefWallTorch
+{
+    frame WLTRA { light WALLTORCH2 }
+    frame WLTRB { light WALLTORCH2 }
+    frame WLTRC { light WALLTORCH2 }
+    frame WLTRD { light WALLTORCH2 }
+    frame WLTRE { light WALLTORCH2 }
+    frame WLTRF { light WALLTORCH2 }
+    frame WLTRG { light WALLTORCH2 }
+    frame WLTRH { light WALLTORCH2 }
+}
+
+flickerlight SERPENTBALL
+{
+    color 1.0 0.95 0.0
+    size 56
+    secondarySize 64
+    chance 0.5
+}
+
+flickerlight SERPENTBALL_X1
+{
+    color 1.0 0.95 0.0
+    size 64
+    secondarySize 72
+    chance 0.5
+}
+
+flickerlight SERPENTBALL_X2
+{
+    color 0.8 0.8 0.0
+    size 72
+    secondarySize 80
+    chance 0.5
+}
+
+flickerlight SERPENTBALL_X3
+{
+    color 0.5 0.5 0.0
+    size 88
+    secondarySize 96
+    chance 0.5
+}
+
+flickerlight SERPENTBALL_X4
+{
+    color 0.2 0.2 0.0
+    size 96
+    secondarySize 104
+    chance 0.5
+}
+
+object GriefSerpentFireball
+{
+    frame DMFXA { light SERPENTBALL }
+    frame DMFXB { light SERPENTBALL }
+    frame DMFXC { light SERPENTBALL }
+
+    frame DMFXD { light SERPENTBALL_X1 }
+    frame DMFXE { light SERPENTBALL_X2 }
+    frame DMFXF { light SERPENTBALL_X3 }
+    frame DMFXG { light SERPENTBALL_X4 }
+    frame DMFXH { light SERPENTBALL_X4 }
+}
+
+flickerlight FGARG
+{
+    color 1.0 1.0 0.0
+    size 40
+    secondarySize 48
+    chance 0.4
+}
+
+flickerlight FGARGATK
+{
+    color 1.0 1.0 0.0
+    size 56
+    secondarySize 64
+    chance 0.4
+}
+
+flickerlight FGARGBALL_X1
+{
+    color 0.8 0.8 0.0
+    size 56
+    secondarySize 64
+    chance 0.4
+}
+
+flickerlight FGARGBALL_X2
+{
+    color 0.5 0.5 0.0
+    size 50
+    secondarySize 54
+    chance 0.4
+}
+
+flickerlight FGARGBALL_X3
+{
+    color 0.2 0.2 0.0
+    size 44
+    secondarySize 48
+    chance 0.4
+}
+
+object GriefAfrit
+{
+    frame FDMNA { light FGARG }
+    frame FDMNB { light FGARG }
+    frame FDMNC { light FGARG }
+    frame FDMND { light FGARG }
+    frame FDMNH { light FGARG }
+    frame FDMNI { light FGARG }
+    frame FDMNJ { light FGARG }
+
+    frame FDMNK { light FGARGATK }
+}
+
+object GriefAfritMissile
+{
+    frame FDMBA { light FGARG }
+
+    frame FDMBB { light FGARGBALL_X1 }
+    frame FDMBC { light FGARGBALL_X2 }
+    frame FDMBD { light FGARGBALL_X3 }
+}
+
