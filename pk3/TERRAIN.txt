@@ -1,3 +1,28 @@
+// Push19
+Splash HotelPool
+{
+	SmallClass		HotelPoolSplash
+	SmallClip		8
+	SmallSound		HotelPool/Splash
+
+	BaseClass		HotelPoolSplash
+	ChunkClass		HotelPoolSplash
+	Sound			HotelPool/Splash
+	NoAlert
+}
+
+Terrain HotelPool
+{
+    Splash          HotelPool
+    Footclip        8
+    Liquid
+}
+
+Floor TAJ_WTR1 HotelPool
+Floor TAJ_WTR2 HotelPool
+Floor TAJ_WTR3 HotelPool
+Floor TAJ_WTR4 HotelPool
+
 // Push51
 Splash Coffee
 {

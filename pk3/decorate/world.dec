@@ -394,21 +394,6 @@ actor RedDeathSpark : DeathSpark
     Translation "112:127=168:183"
 }
 
-// Push 19
-ACTOR DeskExplosive 13001
-{
-   Radius 128
-   Height 128
-   Obituary "%o fell out of bounds."
-   Damagetype "Massacre"
-   States
-   {
-      Spawn:
-       TNT1 A 35 A_Explode(10000,128)
-        loop
-   }
-}
-
 // Push61
 ACTOR GriefStalkerButt : Serpent 13071
 {

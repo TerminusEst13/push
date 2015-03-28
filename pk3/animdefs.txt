@@ -35,30 +35,6 @@ pic 6 tics 4
 texture HEXFIRE1 range HEXFIRE4 tics 5
 warp texture QLAVA
 
-texture GYRO2FNF
-	pic GYRO2FN0 tics 2
-	pic GYRO2FN1 tics 2
-	pic GYRO2FN2 tics 2
-	pic GYRO2FN3 tics 2
-	
-texture GYRO2FNB
-	pic GYRO2FN3 tics 2
-	pic GYRO2FN2 tics 2
-	pic GYRO2FN1 tics 2
-	pic GYRO2FN0 tics 2
-	
-texture GYROFAX1
-    allowdecals
-    pic GYROFAN1 tics 4
-	pic GYROFAN2 tics 4
-	pic GYROFAN3 tics 4
-
-texture GYROFAX2
-    allowdecals
-    pic GYROFAN5 tics 4
-	pic GYROFAN6 tics 4
-	pic GYROFAN7 tics 4
-
 Warp Texture KSBLU_FB
 
 texture DWATER1
@@ -117,6 +93,46 @@ TEXTURE yellblu1
 
 pic 1 tics 5
 pic 2 tics 5
+
+// Push19
+Texture TAJ_NEO1
+   pic 1 tics 25
+   pic 2 tics 25
+
+Texture TAJ_BAK1
+   pic 1 tics 25
+   pic 2 tics 25
+
+Texture TAJ_WTR1
+   pic 1 tics 10
+   pic 2 tics 10
+   pic 3 tics 10
+   pic 4 tics 10
+
+// Push29
+texture GYRO2FNF
+	pic GYRO2FN0 tics 2
+	pic GYRO2FN1 tics 2
+	pic GYRO2FN2 tics 2
+	pic GYRO2FN3 tics 2
+	
+texture GYRO2FNB
+	pic GYRO2FN3 tics 2
+	pic GYRO2FN2 tics 2
+	pic GYRO2FN1 tics 2
+	pic GYRO2FN0 tics 2
+	
+texture GYROFAX1
+    allowdecals
+    pic GYROFAN1 tics 4
+	pic GYROFAN2 tics 4
+	pic GYROFAN3 tics 4
+
+texture GYROFAX2
+    allowdecals
+    pic GYROFAN5 tics 4
+	pic GYROFAN6 tics 4
+	pic GYROFAN7 tics 4
 
 // Push37
 texture IMPB1

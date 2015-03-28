@@ -4,6 +4,12 @@ GAMEPLAY:
 - Surfing is no longer as obscenely exploitable as before--when a player bounces repeatedly in mid-air without landing, he will eventually stop bouncing and will just plummet.
 
 MAPS:
+- Push19's been given the Presidential Treatment:
+ ^ More efficient method of keeping players off the counter (an invisible 3D floor) end
+ ^ Fixed the alignment of some pyramid light textures
+ ^ Blue ring platforms are now fully lit and 125% wider
+ ^ Raised ceilings above some 3D floors slightly, so they appear on the automap
+ ^ Filled the large window in with glass.  The center pane remains open
 - Push20's boundaries have been shortened by 2056 units.
 - Absolutely nothing was changed about Push28.
 - Push30 no longer can teleport lasers into infinity.
@@ -24,6 +30,7 @@ MAPS:
 
 POLISH:
 - All SNDINFO entries have been separated by map.
+- Push19 had had a massive wipe of polish across the entire board, with more effects, prettier textures, and some new additions.
 - Push24 now has over double the banners. Thanks to everyone for submitting!
 - Push31's HOMs behind the banner has been removed.
 - Push34 now has rain and lightning.

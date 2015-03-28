@@ -75,6 +75,22 @@ ACTOR RomeroHead 12999
 
 // Push19
 
+ACTOR HotelPoolSplash
+{
+   Scale 0.8
+   RenderStyle Translucent
+   Alpha 0.75
+   +NOCLIP
+   -SOLID
+   +DONTSPLASH
+   States
+   {
+      Spawn:
+       TAJW ABCDE 3
+        stop
+   }
+}
+
 ACTOR FountainWater 13000 //R667 LiquidFountains.wad
 {
   Radius 2
@@ -319,6 +335,31 @@ Spawn:
 CRC8 A -1
 stop
 }
+}
+
+// Push30
+ACTOR SkullClucker 7896
+{
+  Game Doom
+  SpawnID 25
+  Health 9999999999
+  PainChance 9999
+  Speed 17
+  Radius 30
+  Height 186
+  Mass 400
+  Monster
+  +FLOORCLIP
+
+  States
+  {
+  Spawn:
+    STAR AB 6 A_Wander
+    Loop
+  See:
+    STAR AB 6 A_Wander
+    Loop
+  }
 }
 
 // Push33

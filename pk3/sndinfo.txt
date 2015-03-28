@@ -128,6 +128,9 @@ $random babbycaco/pain { cacpain1 cacpain2 }
 cacpain1              CACODTH1
 cacpain2              CACODTH2
 
+// Push19
+HotelPool/Splash        POOLSPLA // From Marathon 2
+
 // Push24
 world/jumppad1        JUMPPAD1 // Taken from Smash Bros. Brawl
 

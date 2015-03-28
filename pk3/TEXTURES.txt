@@ -263,6 +263,28 @@ Texture GRESKY1, 1024, 128
 	Patch GRESKY1D, 512, 0
 }
 
+// Push19
+
+Texture TAJ_WTR1, 64, 64
+{
+	Patch FWATER1, 0, 0
+}
+
+Texture TAJ_WTR2, 64, 64
+{
+	Patch FWATER2, 0, 0
+}
+
+Texture TAJ_WTR3, 64, 64
+{
+	Patch FWATER3, 0, 0
+}
+
+Texture TAJ_WTR4, 64, 64
+{
+	Patch FWATER4, 0, 0
+}
+
 // Push 22
 
 Texture STARTAN1, 64, 128

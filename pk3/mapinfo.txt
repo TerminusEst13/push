@@ -126,7 +126,7 @@ map PUSH18 "Come On and Slam - Dewce"
 map PUSH19 "Pushin' on the Ritz - PresidentPeople"
 {
     next = "PUSH20"
-    Sky1 = "SKY08"
+    Sky1 = "SKY08", 0.01
     music = "MPUSH19" // tjoa - indiaspecial
 }
 
