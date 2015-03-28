@@ -114,9 +114,6 @@ Brighten up the player sprites.
 [03:44:35 pm] mumble: and you hear girls screaming
 
 
-Center pillars in push39 need to be lowered, hole in center needs removed.
-
-
 
 
 All maps need more police spawns, police need +NOCLIP on their shots.
@@ -164,7 +161,6 @@ Updated:
 
 
 
-Check for drone spawn in push27
 
 
 
@@ -182,27 +178,11 @@ Terminator mode where one person gets a super-push Railgun
 Support for buckshot/instagib modes?
 
 
-
-One under-bridge waterfloor on push49 and outer-edge doesn't rise/lower.
-
-
-push30 doesn't have projectile-blocking walls or fun police spawn.
- ^- Probably not push11, either.
-
-
-Spawns are broken on push35, so many spawn outside.
-
-
-Southwest corner on southeast building in push47 has an easily-campable spot.
-
-
 Account system integration to track stats?
 
 
 CL cvar to turn off flashing on hit.
 
-
-Push38 is incredibly easy to camp next to the torches and the house.
 
 
 

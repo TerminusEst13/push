@@ -20,6 +20,7 @@ MAPS:
 - Push34 has many more spawnpoints now.
 - Push35 no longer has player spawns outside of the play boundary.
 - Push38's layout has been squeezed in a slight bit, for easier mobility.
+- The hole in the center of Push39 has been risen up, and the pillars pulled back.
 - Push43's killfloor has had its depth increased, so it's no longer as easy to trip into it.
 - Push46's skybox is no longer obscenely fuckhuge filesize.
 - Push47's camp spots have been removed.
