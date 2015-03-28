@@ -20,7 +20,6 @@ MAPS:
 - Push34 has many more spawnpoints now.
 - Push35 no longer has player spawns outside of the play boundary.
 - Push38's layout has been squeezed in a slight bit, for easier mobility.
-- The hole in the center of Push39 has been risen up, and the pillars pulled back.
 - Push43's killfloor has had its depth increased, so it's no longer as easy to trip into it.
 - Push46's skybox is no longer obscenely fuckhuge filesize.
 - Push47's camp spots have been removed.
@@ -44,9 +43,11 @@ POLISH:
 - Push48 has been given more even lighting across the board.
 
 WHY WE CAN'T HAVE NICE DETAIL:
+- It's no longer possible to dive into the Cacodemon's mouth in Push17 and hide there.
 - The edges of Push31's banner have been pushed against the cake.
 - It's no longer possible to hide behind the house in Push38.
 - The torches in the Push38 house's corner have been brought in, to keep people from butthugging the corner.
+- The hole in the center of Push39 has been risen up, and the pillars pulled back.
 
 
 FROM V0.5 TO V0.6:
