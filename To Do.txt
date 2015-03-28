@@ -153,6 +153,7 @@ sgtshivers-bullseye.wad
 mk-tsppush.pk3 // ModArchive - Cirdan - Starscreamer.xm
 untitled-pushxx.wad // Push-Mortem
 pushmap-castleofgriefing-test.pk3 // Talk to Pres about A_PrintBold
+InfirnexForest.wad
 
 
 //// 50: ks_pushmiyajima_i.wad
