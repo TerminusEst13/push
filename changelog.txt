@@ -33,6 +33,7 @@ MAPS:
 - A new map, Ship of Fools by UniversalQuantifier, has been added at Push52.
 
 POLISH:
+- Sgt. Shivers has provided the best titlepic.
 - All SNDINFO entries have been separated by map.
 - Push19 had had a massive wipe of polish across the entire board, with more effects, prettier textures, and some new additions.
 - Push24 now has over double the banners. Thanks to everyone for submitting!
