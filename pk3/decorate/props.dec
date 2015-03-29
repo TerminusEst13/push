@@ -1700,3 +1700,90 @@ Spawn:
 	Loop
 }
 }
+
+// Push63
+ACTOR RetreatSplash
+{
+   Scale 0.55
+   RenderStyle Add
+   Alpha 0.1563
+   +NOCLIP
+   -SOLID
+   +DONTSPLASH
+   States
+   {
+      Spawn:
+       PRPW ABCDEF 3
+        stop
+   }
+}
+
+ACTOR RetreatTrunkLarge 13040
+{
+   Height 128
+   Radius 21
+   Scale 2.5
+   +SOLID
+   +FORCEYBILLBOARD
+   States
+   {
+      Spawn:
+       TRE1 A -1 //TREE B -1
+        stop
+   }
+}
+
+ACTOR RetreatBush 13041
+{
+   Scale 1.2
+   -SOLID
+   +FORCEYBILLBOARD
+   +NOINTERACTION
+   States
+   {
+      Spawn:
+       BUSH A -1
+        stop
+   }
+}
+
+ACTOR RetreatBucket 13042
+{
+   -SOLID
+   +FORCEYBILLBOARD
+   +NOINTERACTION
+   States
+   {
+      Spawn:
+       BCKT B -1
+        stop
+   }
+}
+
+ACTOR RetreatBlueOrb 13043
+{
+   Scale 3.0
+   -SOLID
+   +NOINTERACTION
+   States
+   {
+      Spawn:
+       PORB A -1
+        stop
+   }
+}
+
+ACTOR RetreatTreePot 13044
+{
+   Scale 1.2
+   -SOLID
+   +FORCEYBILLBOARD
+   +NOINTERACTION
+   States
+   {
+      Spawn:
+       TREE C -1
+        stop
+   }
+}
+
