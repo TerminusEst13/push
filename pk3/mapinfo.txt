@@ -259,7 +259,7 @@ map PUSH38 "Insert Cool Pun Here - UniversalQuantifier"
 {
 	next = "PUSH39"
     music = "MPUSH38" // Alexander Brandon - Snowfall
-    sky1 = "ICESKY"
+    sky1 = "ICESKYZ"
 }
 
 map PUSH39 "Fusion Reactor - UnholyPimpin"
@@ -400,7 +400,7 @@ map PUSH58 "Heifong Virtual Arena - Marty Kirra"
 map PUSH59 "Push-Mortem - Untitled"
 {
     next = "PUSH60"
-    music = "MPUSH59" // SlayeR - Industrial
+    music = "MPUSH59" // DreamMaster - The Age of Dragons
     sky1 = "RSKY1"
 }
 
