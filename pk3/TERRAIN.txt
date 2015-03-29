@@ -98,3 +98,27 @@ Floor X_005 HeXenWater
 Floor X_006 HeXenWater
 Floor X_007 HeXenWater
 Floor X_008 HeXenWater
+
+// Push63
+Splash RetreatWater
+{
+	SmallClass		RetreatSplash
+	SmallClip		8
+	SmallSound		Retreat/Splash
+
+	BaseClass		RetreatSplash
+	ChunkClass		RetreatSplash
+	Sound			Retreat/Splash
+	NoAlert
+}
+
+Terrain RetreatWater
+{
+    Splash          RetreatWater
+    Footclip        8
+    Liquid
+}
+
+Floor PRP_WATR RetreatWater
+
+

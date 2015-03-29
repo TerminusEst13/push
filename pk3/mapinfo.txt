@@ -423,7 +423,14 @@ Map PUSH61 "Castle of Griefing - PresidentPeople"
 
 map PUSH62 "Serpent Riders' Playhouse - Gothic"
 {
-	next = "PUSH01"
+	next = "PUSH63"
 	music = "MPUSH62" // Tim McFarland - KORAX (from Ressurection of Chaos)
 	sky1 = "RSKY1"
+}
+
+map PUSH63 "Island Retreat - PresidentPeople"
+{
+	next = "PUSH01"
+    music = "MPUSH63" // Xerion - PurpleSky II
+	sky1 = "PRP_SKY3"
 }
