@@ -16,6 +16,7 @@ MAPS:
 - Absolutely nothing was changed about Push28.
 - Push30 no longer can teleport lasers into infinity.
 - Push32 now has darker borders around the circles to indicate position.
+- Push33's center mountains have been removed, and the mountains have been moved to the outer portion of the map. To address camping, there is now an ocean drift on the outside of the map--get thrown out there, and you'll start drifting away!
 - Push34's platforms have been trimmed and the belts sped up.
 - Push34 has many more spawnpoints now.
 - Push35 no longer has player spawns outside of the play boundary.
