@@ -354,10 +354,10 @@ ACTOR SkullClucker 7896
   States
   {
   Spawn:
-    STAR AB 6 A_Wander
+    SKCL AB 6 A_Wander
     Loop
   See:
-    STAR AB 6 A_Wander
+    SKCL AB 6 A_Wander
     Loop
   }
 }
