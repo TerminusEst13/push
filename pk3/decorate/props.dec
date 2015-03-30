@@ -1728,7 +1728,7 @@ ACTOR RetreatTrunkLarge 13040
    States
    {
       Spawn:
-       TRE1 A -1 //TREE B -1
+       STRE A -1 //TREE B -1
         stop
    }
 }

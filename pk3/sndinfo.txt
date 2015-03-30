@@ -197,6 +197,23 @@ SorcererDeathScream     sordie2
 Coffee/SplashSmall        COFFSPL1 // Both from Marathon 2
 Coffee/SplashLarge        COFFSPL2
 
+// Push53
+skeletor/laugh1 skeleto2
+skeletor/laugh2 skeleto3
+skeletor/evil skeletor
+skeletor/beastman skeleto7
+skeletor/anotherway skeleto6
+skeletor/remembeme skeleto5
+skeletor/crystal skeleto4
+
+$ambient 1 skeletor/laugh1 point 0.1 continuous 0.75
+$ambient 2 skeletor/laugh2 point 0.1 continuous 0.9
+$ambient 3 skeletor/evil point 0.1 continuous 1.0
+$ambient 4 skeletor/beastman point 0.1 continuous 1.0
+$ambient 5 skeletor/anotherway point 0.1 continuous 1.0
+$ambient 6 skeletor/remembeme point 0.1 continuous 1.0
+$ambient 7 skeletor/crystal point 0.1 continuous 1.0
+
 // Push61
 griefing/clockchime			BELLRNG
 griefing/clocktick			TICTOC

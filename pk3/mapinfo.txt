@@ -255,7 +255,7 @@ map PUSH37 "XXX ImpBar - Mystical"
     music = "MPUSH37" // Necros - CLICK
 }
 
-map PUSH38 "Insert Cool Pun Here - UniversalQuantifier"
+map PUSH38 "Northern Lights - UniversalQuantifier"
 {
 	next = "PUSH39"
     music = "MPUSH38" // Alexander Brandon - Snowfall
@@ -359,8 +359,8 @@ map PUSH52 "Ship of Fools - UniversalQuantifier"
 map PUSH53 "Samhara Trench - IdeIdoom"
 {
     next = "PUSH54"
-    music = "MPUSH53"
-    sky1 = "sky02", 0.8
+    music = "MPUSH53" // Jazz Jackrabbit - Deserto
+    sky1 = "SKYJJ", 0.8
 }
 
 Map PUSH54 "Dwango 2015 - Gardevoir"
@@ -380,7 +380,7 @@ map PUSH56 "Jazzy Nostalgia - IdeIdoom"
 {
     next = "PUSH57"
     music = "MPUSH56" // Jazz Jackrabbit 2 - Tubelectric
-    sky1 = "sky1"
+    sky1 = "BOOMSKY"
 }
 
 map PUSH57 "Bullseye - Sgt. Shivers"
