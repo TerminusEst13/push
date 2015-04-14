@@ -1,6 +1,21 @@
+clearskills
+
+skill normal
+{
+	ACSReturn = 0
+	SpawnFilter = Hard
+	Name = "oh no you found a text"
+    TextColor = white
+}
+
 gameinfo
 {
     infopage = "PUSHTIP0"
+}
+
+episode PUSH01
+{
+    name = "Push"
 }
 
 map PUSH01 "The Original - TE13"

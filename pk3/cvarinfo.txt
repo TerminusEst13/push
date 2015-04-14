@@ -1,5 +1,8 @@
-server int p_suddendeath   = 1;
-server int p_jumpcount     = 2;
-server int p_timelimit     = 4;
-server int p_punchdrunk    = 0;
-server int p_triggerhappy  = 0;
+server int p_runninginzandro = 0;
+server int p_runninginzdoom  = 0;
+
+server int p_suddendeath     = 1;
+server int p_jumpcount       = 2;
+server int p_timelimit       = 4;
+server int p_punchdrunk      = 0;
+server int p_triggerhappy    = 0;
