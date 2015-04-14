@@ -16,6 +16,7 @@ GAMEPLAY:
  ^- Push31
 - Changing/swapping maps while in non-DM modes no longer renders the players invulnerable.
 - Sudden death drones now only show up in Last Man Standing/Team Last Man Standing.
+- Push is now compatible with and playable in ZDoom/GZDoom! I don't know WHY you'd want to, but there you have it!
 
 MAPS:
 - Push11 now has both drone spawns and projectile blocking boundaries.

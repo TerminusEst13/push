@@ -26,19 +26,43 @@ script 531 OPEN
 {
     IsServer = 1;
     int cjumps, oldcjumps;
+    int s = unusedTID(37000, 47000);
+
+    /*if (Spawn("Doomsphere",0,0,0,s)) // Attempt to spawn a Doomsphere, a Zandronum-exclusive item.
+    {
+        Thing_Remove(s);
+        SetCVar("p_runninginzandro",1);
+        SetCVar("p_runninginzdoom",0);
+    }*/
+    // This didn't work because the Spawn would choose to not work at various times, because of collision.
+    // If there is no room for an actor to exist, it simply won't spawn.
+    // To get around this, instead I'm doing it the opposite way, using SpawnForced to spawn a ZDoom-exclusive item.
+    // This is not a future-proof method at all; if Zandronum catches up with ZDoom (hahahaha), it'll spawn this item as well and read as ZDoom.
+    // If we ever reach that point and I am either dead or have moved on from Doom, simply replace the script with the uncommented above script and change it to SpawnForced.
+    if (SpawnForced("SpeakerIcon",0,0,0,s,0))
+    { // Other ZDoom-exclusive items include PowerBuddha (not in GZDoom 1.9), CajunTrace, CajunBodyNode, ArtiPoisonBagShooter, ArtiPoisonBagGiver, and AmbientSoundNoGravity.
+        Thing_Remove(s);
+        SetCVar("p_runninginzandro",0);
+        SetCVar("p_runninginzdoom",1);
+    }
+    else
+    {
+        SetCVar("p_runninginzandro",1);
+        SetCVar("p_runninginzdoom",0);
+    }
 
     while (1)
     {
 
     SetAirControl(0.01);
 
-    if (!GetCvar("compat_clientssendfullbuttoninfo"))
+    if (!GetCvar("compat_clientssendfullbuttoninfo") && GetCvar("p_runninginzandro") == 1)
         { ConsoleCommand("set compat_clientssendfullbuttoninfo 1"); }
 
-    if (GetCvar("lmsallowedweapons") != 0)
+    if (GetCvar("lmsallowedweapons") != 0 && GetCvar("p_runninginzandro") == 1)
         { ConsoleCommand("set lmsallowedweapons 0"); }
 
-    if (!GetCvar("sv_nocrouch"))
+    if (!GetCvar("sv_nocrouch") && GetCvar("p_runninginzandro") == 1)
         { ConsoleCommand("set sv_nocrouch 1"); }
 
         oldcjumps = cjumps;
