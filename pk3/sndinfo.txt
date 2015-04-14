@@ -215,7 +215,7 @@ $ambient 5 skeletor/anotherway point 0.1 continuous 1.0
 $ambient 6 skeletor/remembeme point 0.1 continuous 1.0
 $ambient 7 skeletor/crystal point 0.1 continuous 1.0
 
-// Push61
+// Push60
 griefing/clockchime			BELLRNG
 griefing/clocktick			TICTOC
 griefing/watersplash		GLOOP1
@@ -240,7 +240,7 @@ griefing/afritdeath			FIRED2
 griefing/afritmissile		SPIT6
 griefing/afritmissilehit	FIREDHIT
 
-// Push62
+// Push61
 thunder/hit		THNDS01
 
 $Ambient 11 ORBPULSE Point Continuous 1.0
@@ -254,6 +254,9 @@ $limit ThunShot/Fire 0
 ThunShot/Impact		GNTACT1
 $limit ThunShot/Impact 0
 
-// Push63
+// Push62
 Retreat/Splash        PRP_SPLA // From Marathon 2
 
+// Push63
+wind/howl             CANYWIND // From the General Series 6000
+wind/change           CANYWNCH // From the General Series 6000

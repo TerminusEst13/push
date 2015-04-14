@@ -152,7 +152,7 @@ Updated:
 //// Gardie-PUSH48_lightfix.wad
 
 
-InfirnexCanyon-v2.wad
+
 Guardsoul-PushMap2.wad
 Gardie-PUSH06-Welcome_To_Hell.wad
 

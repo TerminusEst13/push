@@ -394,6 +394,33 @@ actor RedDeathSpark : DeathSpark
     Translation "112:127=168:183"
 }
 
+// Push19
+ACTOR FountainWaterLauncher 13000 //R667 LiquidFountains.wad
+{
+  Radius 8
+  Height 15
+  Scale 0.75
+  RenderStyle Translucent
+  Alpha 0.75
+  Mass 0x7FFFFFF
+  -PUSHABLE
+  +NOBLOCKMAP
+  +DONTSPLASH
+  +MOVEWITHSECTOR
+  DamageType "NoDamage"
+  States
+  {
+  Spawn:
+    WFOU A 0
+    WFOU D 3 A_PlaySound("HotelPool/Fountain",4,0.20,1)
+  Sploosh:
+    WFOU AAABBBCCCDDD 1 A_Explode(176,64)
+    Loop
+  }
+}
+
+
+
 // Push61
 ACTOR GriefStalkerButt : Serpent 13071
 {

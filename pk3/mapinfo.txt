@@ -438,7 +438,14 @@ map PUSH61 "Serpent Riders' Playhouse - Gothic"
 
 map PUSH62 "Island Retreat - PresidentPeople"
 {
-	next = "PUSH01"
+	next = "PUSH63"
     music = "MPUSH62" // Xerion - PurpleSky II
 	sky1 = "PRP_SKY3"
+}
+
+map PUSH63 "Wild is the Wind - Infirnex"
+{
+	next = "PUSH01"
+    music = "MPUSH63" // Xaser - Nosotros
+	sky1 = "CNYNSKY"
 }
