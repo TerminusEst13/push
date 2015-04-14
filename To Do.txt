@@ -181,10 +181,6 @@ push57 is a target shooting bullseye, flying shotguns fly around and spew around
 
 Integrate push43 fixes
 
-<Kurashiki> Did anyone find hom floors in push22? there are 2 homs.
-<Kurashiki> kore https://www.dropbox.com/s/kmax16hm8r9x1oc/Screenshot_Doom_20150403_002118.png?dl=0
-<iSpook> http://i.imgur.com/npVUm8m.png Oh look, another one.
-
 
 
 
