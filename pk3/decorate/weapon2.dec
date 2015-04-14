@@ -83,6 +83,7 @@ actor "Force Gauntlet" : Weapon
     DrawFire:
         TNT1 A 0 A_PlayWeaponSound("draw/draw")
         TNT1 A 0 A_FireCustomMissile("DrawBullet",0,0,0,8)
+        TNT1 A 0 A_GunFlash
         PGUN B 1 Bright A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
         TNT1 A 0 A_Refire
         PGUN CDA 1 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
@@ -94,7 +95,7 @@ actor GauntletAttack : FastProjectile
 {
     Radius 2
     Height 2
-    Damage (10)
+    Damage (200)
     Speed 80
     RenderStyle Add
     Alpha 0.6

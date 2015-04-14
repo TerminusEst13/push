@@ -27,21 +27,6 @@ script 531 OPEN
     IsServer = 1;
     int cjumps, oldcjumps;
 
-    if (!GetCvar("p_suddendeath"))
-        { ConsoleCommand("set p_suddendeath 1"); ConsoleCommand("archivecvar p_suddendeath"); }
-
-    if (!GetCvar("p_jumpcount"))
-        { ConsoleCommand("set p_jumpcount 2"); ConsoleCommand("archivecvar p_jumpcount"); }
-
-    if (!GetCvar("p_timelimit"))
-        { ConsoleCommand("set p_timelimit 4"); ConsoleCommand("archivecvar p_timelimit"); }
-
-    if (!GetCvar("p_punchdrunk"))
-        { ConsoleCommand("set p_punchdrunk 0"); ConsoleCommand("archivecvar p_punchdrunk"); }
-
-    if (!GetCvar("p_triggerhappy"))
-        { ConsoleCommand("set p_triggerhappy 0"); ConsoleCommand("archivecvar p_triggerhappy"); }
-
     while (1)
     {
 
@@ -116,14 +101,6 @@ script 532 ENTER
     GiveInventory("SetUnshootable",1);
     GiveInventory("PowerRespawnProtection",1);
     TakeInventory("LightAsAFeather",1);
-    TakeInventory("Fist",1);
-    TakeInventory("Pistol",1);
-    TakeInventory("Shotgun",1);
-    TakeInventory("SuperShotgun",1);
-    TakeInventory("Chaingun",1);
-    TakeInventory("PlasmaRifle",1);
-    TakeInventory("BFG9000",1);
-    TakeInventory("Chainsaw",1);
     TakeInventory("EmergencyDodgeDone",1);
     TakeInventory("DrawingToolOn",1);
     TakeInventory("DrawingToolReady",1);
@@ -131,6 +108,16 @@ script 532 ENTER
 
     while (1)
     {
+        TakeInventory("Fist",1);
+        TakeInventory("Pistol",1);
+        TakeInventory("Shotgun",1);
+        TakeInventory("SuperShotgun",1);
+        TakeInventory("Chaingun",1);
+        TakeInventory("PlasmaRifle",1);
+        TakeInventory("BFG9000",1);
+        TakeInventory("Chainsaw",1);
+        // Just in case lms_allowedweapons 0 doesn't take or just in case someone decides to give weapons or whatever.
+
         tid = defaultTID(-1);
         PlayerTIDs[pln] = tid;
 

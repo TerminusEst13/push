@@ -783,6 +783,7 @@ actor DroneBall : ArachnotronPlasma
     {
     Spawn:
         APLS AB 5 Bright A_SeekerMissile(10,15)
+        TNT1 A 0 A_ScaleVelocity(1.01)
         TNT1 A 0 A_Countdown
         Loop
     Death:
@@ -820,7 +821,7 @@ ACTOR SuddenDeathDrone
     Height 56
     Mass 200
     PainChance 255
-    Speed 20
+    Speed 25
     Monster
     +FLOAT
     +NOGRAVITY
@@ -829,6 +830,7 @@ ACTOR SuddenDeathDrone
     +MISSILEEVENMORE
     +LOOKALLAROUND
     +NOINFIGHTING
+    MinMissileChance 3
     SeeSound "drone/see"
     ActiveSound "drone/idle"
     Obituary "%o shouldn't have died to this."
@@ -837,12 +839,12 @@ ACTOR SuddenDeathDrone
     Spawn:
         DRON A 5
     Spawn2:
-        DRON A 3 A_Wander
+        DRON A 2 A_Wander
         TNT1 A 0 A_Look
         Loop
     See:
-        DRON A 3 A_Chase
-        DRON A 3 A_FastChase
+        DRON A 2 A_Chase
+        DRON A 2 A_FastChase
         TNT1 A 0 A_Jump(16,"ClearTarget")
         Loop
     Missile:
