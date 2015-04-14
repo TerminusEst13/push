@@ -170,11 +170,6 @@ universal quantifier: Sure
 
 
 
-
-<universal-quantifier> Looking at the Castle of Grief map, I think the monsters should spawn less frequently
-
-
-
 Push55's rightmost lava pit doesn't kill.
 
 push57 is a target shooting bullseye, flying shotguns fly around and spew around that shoot players?

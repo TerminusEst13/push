@@ -452,7 +452,7 @@ ACTOR GriefSerpentSpawner 13055
        TNT1 G 0
        TNT1 A 35
       HourlyUpdate:
-       TNT1 A 2100 A_SpawnItemEx("GriefSerpent")
+       TNT1 A 2240 A_SpawnItemEx("GriefSerpent")
         loop
    }
 }
@@ -548,9 +548,9 @@ ACTOR GriefAfritSpawner 13056
    {
       Spawn:
        TNT1 A 0
-       TNT1 A 2100
+       TNT1 A 2275
       HourlyUpdate:
-       TNT1 A 2100 A_SpawnItemEx("GriefAfrit")
+       TNT1 A 2240 A_SpawnItemEx("GriefAfrit")
         loop
    }
 }
