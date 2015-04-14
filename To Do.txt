@@ -72,7 +72,6 @@ Slow down ground on push08
 
 
 
-People can slip into the area under PUSH42's center beam.
 
 <playe> reason you can't have nice detail reason #6661999: push41's pillars have little notches where players can hide in/behind
 
@@ -87,12 +86,10 @@ Make spawn protection a cl cvar.
 <playe> "please don't go, the drones need you, they look up to you"
 
 
+
 <Roman6a> hey TerminusEst13 i found a bug in push, on map push38 if you spend your doublejump and land on a tree, you will regain your doublejump but the image on your hud will not reflect this
 <Roman6a> dunno if it happens on other maps
 
-
-
-Brighten up the player sprites.
 
 
 [push37]
@@ -163,9 +160,6 @@ uq-pushmap.wad (Save for Zandro 2.0)
 TerminusEst13: Would you be all right with it if I moved the pillars on the east and the west back a little bit to the edge of the platforms? I can already see players wanting to hide behind them to let everyone else fight it out.
 universal quantifier: Sure
 
-
-
-Push55's rightmost lava pit doesn't kill.
 
 push57 is a target shooting bullseye, flying shotguns fly around and spew around that shoot players?
 
