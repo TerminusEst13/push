@@ -174,12 +174,8 @@ universal quantifier: Sure
 <universal-quantifier> Looking at the Castle of Grief map, I think the monsters should spawn less frequently
 
 
-Push52 has no kill around the edge of the border.
- Expand out borders.
 
 Push55's rightmost lava pit doesn't kill.
-
-Push58 has spawnpoints on the kill floor.
 
 push57 is a target shooting bullseye, flying shotguns fly around and spew around that shoot players?
 
