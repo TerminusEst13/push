@@ -130,6 +130,7 @@ cacpain2              CACODTH2
 
 // Push19
 HotelPool/Splash        POOLSPLA // From Marathon 2
+HotelPool/Fountain        H2OGRGL2 // From Duke Nukem 3D
 
 // Push24
 world/jumppad1        JUMPPAD1 // Taken from Smash Bros. Brawl

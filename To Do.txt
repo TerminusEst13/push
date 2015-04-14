@@ -155,11 +155,6 @@ Updated:
 //// Gardie-PUSH48_lightfix.wad
 
 
-Ideidoom-PUSH56-v3.wad
-infirnex-PUSH55-v2.wad
-pushmap-deserthotel-edit-3.pk3
-ks-PUSH50_re.wad
-
 InfirnexCanyon-v2.wad
 Guardsoul-PushMap2.wad
 Gardie-PUSH06-Welcome_To_Hell.wad
@@ -173,8 +168,6 @@ universal quantifier: Sure
 Push55's rightmost lava pit doesn't kill.
 
 push57 is a target shooting bullseye, flying shotguns fly around and spew around that shoot players?
-
-Integrate push43 fixes
 
 
 

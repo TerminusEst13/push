@@ -26,6 +26,7 @@ MAPS:
  ^ Blue ring platforms are now fully lit and 125% wider
  ^ Raised ceilings above some 3D floors slightly, so they appear on the automap
  ^ Filled the large window in with glass.  The center pane remains open
+ ^ Fountains now launch players up
 - Push20's boundaries have been shortened by 2056 units.
 - Push27 now has a drone spawn.
 - Absolutely nothing was changed about Push28.
@@ -73,6 +74,7 @@ POLISH:
 - The gauntlet now deals 100 damage, for those that insist on playing Push in co-op.
 - Difficulty settings have been removed.
 - For singleplayer (why?) purposes, Push maps now have their own episode entry.
+- Push43 has had a LOT of texture alignment.
 
 WHY WE CAN'T HAVE NICE DETAIL:
 - It's no longer possible to dive into the Cacodemon's mouth in Push17 and hide there.

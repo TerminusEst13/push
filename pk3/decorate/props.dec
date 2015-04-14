@@ -91,24 +91,6 @@ ACTOR HotelPoolSplash
    }
 }
 
-ACTOR FountainWater 13000 //R667 LiquidFountains.wad
-{
-  Radius 2
-  Height 2
-  Scale 0.75
-  RenderStyle Translucent
-  Alpha 0.75
-  +NOBLOCKMAP
-  +MOVEWITHSECTOR
-  +FORCEYBILLBOARD
-  States
-  {
-  Spawn:
-    WFOU ABCD 3
-    Loop
-  }
-}
-
 ACTOR PalmTree4 10603 //R667 PalmTrees.wad
 {
   Radius 16
