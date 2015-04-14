@@ -129,6 +129,7 @@ script 532 ENTER
     TakeInventory("DrawingToolOn",1);
     TakeInventory("DrawingToolReady",1);
     GiveInventory("ImAlive",1);
+    //SetPlayerProperty(0,1,PROP_BUDDHA);
 
     while (1)
     {

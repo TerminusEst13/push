@@ -2,6 +2,7 @@ height 0;
 
 statusbar normal, forcescaled
 {
+//DrawNumber 3, BigFont, white, Health, 160, 180;
 InInventory ImAlive, 1
 {
     InInventory not EmergencyDodgeDone, 1

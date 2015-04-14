@@ -71,7 +71,6 @@ POLISH:
 - All cvars have been changed to properly accomodate cvarinfo. Note that their prefix has been changed from push_* to p_*!
 - The Push Gun now has A_GunFlash in both of its states, so as to accomodate skins with custom firing sprites.
 - The gauntlet now deals 100 damage, for those that insist on playing Push in co-op.
-- Player actors now have 100 health instead of 500 health, but have Buddha mode turned on.
 - Difficulty settings have been removed.
 - For singleplayer (why?) purposes, Push maps now have their own episode entry.
 
