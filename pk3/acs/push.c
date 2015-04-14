@@ -27,20 +27,20 @@ script 531 OPEN
     IsServer = 1;
     int cjumps, oldcjumps;
 
-    if (!GetCvar("push_suddendeath"))
-        { ConsoleCommand("set push_suddendeath 1"); ConsoleCommand("archivecvar push_suddendeath"); }
+    if (!GetCvar("p_suddendeath"))
+        { ConsoleCommand("set p_suddendeath 1"); ConsoleCommand("archivecvar p_suddendeath"); }
 
-    if (!GetCvar("push_jumpcount"))
-        { ConsoleCommand("set push_jumpcount 2"); ConsoleCommand("archivecvar push_jumpcount"); }
+    if (!GetCvar("p_jumpcount"))
+        { ConsoleCommand("set p_jumpcount 2"); ConsoleCommand("archivecvar p_jumpcount"); }
 
-    if (!GetCvar("push_timelimit"))
-        { ConsoleCommand("set push_timelimit 4"); ConsoleCommand("archivecvar push_timelimit"); }
+    if (!GetCvar("p_timelimit"))
+        { ConsoleCommand("set p_timelimit 4"); ConsoleCommand("archivecvar p_timelimit"); }
 
-    if (!GetCvar("push_punchdrunk"))
-        { ConsoleCommand("set push_punchdrunk 0"); ConsoleCommand("archivecvar push_punchdrunk"); }
+    if (!GetCvar("p_punchdrunk"))
+        { ConsoleCommand("set p_punchdrunk 0"); ConsoleCommand("archivecvar p_punchdrunk"); }
 
-    if (!GetCvar("push_triggerhappy"))
-        { ConsoleCommand("set push_triggerhappy 0"); ConsoleCommand("archivecvar push_triggerhappy"); }
+    if (!GetCvar("p_triggerhappy"))
+        { ConsoleCommand("set p_triggerhappy 0"); ConsoleCommand("archivecvar p_triggerhappy"); }
 
     while (1)
     {
@@ -57,7 +57,7 @@ script 531 OPEN
         { ConsoleCommand("set sv_nocrouch 1"); }
 
         oldcjumps = cjumps;
-        cjumps = GetCVar("push_jumpcount");
+        cjumps = GetCVar("p_jumpcount");
         if (cjumps != oldcjumps) { MaxJumpCount = cjumps; }
 
         delay(1);
@@ -71,19 +71,19 @@ Script 530 OPEN
 
     delay(5);
 
-    if (GetCvar("push_suddendeath") == 1)
+    if (GetCvar("p_suddendeath") == 1 && isLMS()) // Doesn't show up in other game modes because there's no real need to end a match fast, is there?
     {
-        while(GetCvar("push_timelimit") >= TimeUntilSuddenDeath)
+        while(GetCvar("p_timelimit") >= TimeUntilSuddenDeath)
         {
             delay(2100);
             //PrintBold(s:"2100 tics have passed.");
             TimeUntilSuddenDeath++;
         }
-        if (GetCvar("push_timelimit") <= 0) { delay(2100); }
+        if (GetCvar("p_timelimit") <= 0) { delay(2100); }
 
         //PrintBold(s:"Preparing for sudden death.");
 
-        if (RealPlayerCount() > 1 && GetCvar("push_suddendeath") == 1)
+        if (RealPlayerCount() > 1 && GetCvar("p_suddendeath") == 1)
         {
             AmbientSound("suddendeath/alarm",127);
             SetFont("smallfont");
@@ -136,11 +136,11 @@ script 532 ENTER
 
         GiveInventory("500Health",500);
 
-        if (GetCvar("push_punchdrunk") == 1)
+        if (GetCvar("p_punchdrunk") == 1)
           { TakeInventory("Push Gun",1); }
         else
           { GiveInventory("Push Gun",1); }
-        if (GetCvar("push_triggerhappy") == 1)
+        if (GetCvar("p_triggerhappy") == 1)
           { TakeInventory("Force Gauntlet",1); }
         else
           { GiveInventory("Force Gauntlet",1); }
@@ -163,19 +163,11 @@ script 532 ENTER
             TakeInventory("EmergencyDodgeDone",1);
             TakeInventory("DoomedGuy",70);
             TakeInventory("SurfingCounter",15);
-            /*if (CheckInventory("MaybedDoomedGuy") == 3)
-            { // Has the player been on the ground for 3 tics?
-                deathAssistedBy[pln] = 0;
-                lastShotBy[pln] = 0;
-            }
-            else // If not, count a tic.
-            { GiveInventory("MaybeDoomedGuy",1); }*/
             
         }
         else
         {
             TakeInventory("OnTheGround", 1);
-            //TakeInventory("MaybeDoomedGuy",3);
         }
 
         if (keyDown(BT_USER1)) { GiveInventory("DrawingToolOn",1); }
@@ -202,29 +194,6 @@ script 534 DEATH
     TakeInventory("DrawingToolReady",1);
     Thing_ChangeTID(0,0);
 }
-
-/*Script 535 (void)
-{
-    int pln = PlayerNumber();
-    SetActivatorToTarget(0);
-    lastShotBy[pln] = PlayerNumber();
-}
-
-Script 536 ENTER
-{
-    int pln = PlayerNumber();
-
-	while (true)
-	{
-		if (GetActorZ(0) - GetActorFloorZ(0) == 0)
-		{
-			Delay(1);
-			deathAssistedBy[pln] = 0;
-			lastShotBy[pln] = 0;
-		}
-		Delay(1);
-	}
-}*/
 
 script 421 (int which)
 {

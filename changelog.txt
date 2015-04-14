@@ -15,6 +15,7 @@ GAMEPLAY:
  ^- Push24
  ^- Push31
 - Changing/swapping maps while in non-DM modes no longer renders the players invulnerable.
+- Sudden death drones now only show up in Last Man Standing/Team Last Man Standing.
 
 MAPS:
 - Push11 now has both drone spawns and projectile blocking boundaries.
@@ -66,6 +67,7 @@ POLISH:
 - Push38 has been given its proper skybox.
 - Several misaligned sectors in Push43 have been re-aligned. Not all of them, but quite a few.
 - Push48 has been given more even lighting across the board.
+- All cvars have been changed to properly accomodate cvarinfo. Note that their prefix has been changed from push_* to p_*!
 
 WHY WE CAN'T HAVE NICE DETAIL:
 - It's no longer possible to dive into the Cacodemon's mouth in Push17 and hide there.

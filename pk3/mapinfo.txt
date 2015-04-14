@@ -404,33 +404,26 @@ map PUSH59 "Push-Mortem - Untitled"
     sky1 = "RSKY1"
 }
 
-map PUSH60 "Bog It - Infirnex"
+Map PUSH60 "Castle of Griefing - PresidentPeople"
 {
-    next = "PUSH61"
-    music = "MPUSH60" // Jazz Jackrabbit 2 - Medieval Jam
-	Sky1 = "FSTSKY"
-}
-
-Map PUSH61 "Castle of Griefing - PresidentPeople"
-{
-   next = "PUSH62"
-   Music = "MPUSH61" // Venture - Kermator
+   next = "PUSH61"
+   Music = "MPUSH60" // Venture - Kermator
    Sky1 = "HSKY2", 0.2
    Sky2 = "HSKY2A", 0.2
    Lightning
    SmoothLighting
 }
 
-map PUSH62 "Serpent Riders' Playhouse - Gothic"
+map PUSH61 "Serpent Riders' Playhouse - Gothic"
 {
-	next = "PUSH63"
-	music = "MPUSH62" // Tim McFarland - KORAX (from Ressurection of Chaos)
+	next = "PUSH62"
+	music = "MPUSH61" // Tim McFarland - KORAX (from Ressurection of Chaos)
 	sky1 = "RSKY1"
 }
 
-map PUSH63 "Island Retreat - PresidentPeople"
+map PUSH62 "Island Retreat - PresidentPeople"
 {
 	next = "PUSH01"
-    music = "MPUSH63" // Xerion - PurpleSky II
+    music = "MPUSH62" // Xerion - PurpleSky II
 	sky1 = "PRP_SKY3"
 }

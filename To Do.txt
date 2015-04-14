@@ -191,6 +191,9 @@ Push33 has a giant hom? Check in software.
 
 
 
+Push27 needs its damage floor checked, for some reason it's not an instant kill.
+
+
 Turn the surfing limit into an adjustable cvar.
 
 Push25's southwest stack has some misaligned brown/black crates.
