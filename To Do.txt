@@ -1,7 +1,3 @@
-<topsrs> is dwango5 map01 a map choice
-<topsrs> failing that, just plain map01
-<TerminusEst13> Actually a Push-ified Dwango5 Map01 would be really cool. I guess I'll do that for my third map.
-
 Push push20's insta-kill-when-lower code on push16's platforms.
 
 Push21 needs more buildings.
@@ -18,19 +14,18 @@ THere needs to be a reason to use the teleporter in push03, at the moment it's o
 
 
 
-[06:32:36 pm] PresidentPeople: Getting dunked should call and A_Quake on the victim
-[06:32:46 pm] PresidentPeople: for extra dunk feels
-
-
 <Marcaek> TerminusEst13, perhaps some kind of less random mode to spawn in a drone every X intervals?
 <Marcaek> or wait
 <Marcaek> random spawn point :?
 <TerminusEst13> That's a good idea. I'll go with that, thanks.
 <Marcaek> oooh
 
+
 Replace teleport fog. Reverse version of the player deaths?
 
+
 Push20 and push34 needs one player 1 start.
+
 
 Slow down ground on push08
 
@@ -83,12 +78,6 @@ People can slip into the area under PUSH42's center beam.
 
 
 
-
-Billboard in Push33 can be camped.
-Roads need to be a bit tighter, rocks need much further out
-
-
-
 Make spawn protection a cl cvar.
 
 
@@ -121,24 +110,33 @@ All maps need more police spawns, police need +NOCLIP on their shots.
 FOR v0.7:
 ===============
 New:
-ideidoom-push50.wad
-Gardie-PUSH05-DWANGO2015.wad
 Revae's CyDM03 map
-RiverofFlame.wad (by Infirnex) / Unreal - WarLord.s3m
-IdeIdoom-PushXX3.wad
-sgtshivers-bullseye.wad
-mk-tsppush.pk3 // ModArchive - Cirdan - Starscreamer.xm
-untitled-pushxx.wad // Push-Mortem
-pushmap-castleofgriefing-test.pk3 // Talk to Pres about A_PrintBold
-InfirnexForest.wad
-gothic-serp.wad
 
 
 //// 50: ks_pushmiyajima_i.wad
-  ^- Needs drone spawns and projectile-blocking walls.
-  ^- Flames in front of the shrine are campable.
 //// 51: pushmap-dunkindonuts-02-14-15.pk3 / by PresidentPeople
 //// 52: uq-puship.wad / Jazz Jackrabbit 2 - Beach Bunny!.s3m
+//// 53: ideidoom-push50.wad
+//// 54: Gardie-PUSH05-DWANGO2015.wad
+//// 55: RiverofFlame.wad (by Infirnex)
+  ^- Drone spawn
+  ^- Replace fireballs with lighter/dunker versions
+//// 56: IdeIdoom-PushXX3.wad
+  ^- Drone spawn? Is it there?
+//// 57: sgtshivers-bullseye.wad
+  ^- Drone spawn
+  ^- Decorate/polish up
+//// 58: mk-tsppush.pk3 // ModArchive - Cirdan - Starscreamer.xm
+  ^- Drone spawn
+  ^- Outside area can be flown to and is not a killfloor
+  ^- Walkways need expanded a LOT
+//// 59: untitled-pushxx.wad // Push-Mortem
+  ^- Drone spawn
+  ^- Can hide behind demon face walls.
+  ^- Drone spawn
+//// 60: pushmap-castleofgriefing-test.pk3 // Talk to Pres about A_PrintBold
+//// 61: gothic-serp.wad
+//// 62: Purple sky by Pres
 
 
 Updated:
@@ -157,7 +155,39 @@ Updated:
 //// Gardie-PUSH48_lightfix.wad
 
 
+Ideidoom-PUSH56-v3.wad
+infirnex-PUSH55-v2.wad
+pushmap-deserthotel-edit-3.pk3
+ks-PUSH50_re.wad
 
+InfirnexCanyon-v2.wad
+Guardsoul-PushMap2.wad
+Gardie-PUSH06-Welcome_To_Hell.wad
+
+
+
+
+<universal-quantifier> Looking at the Castle of Grief map, I think the monsters should spawn less frequently
+
+
+Push52 has no kill around the edge of the border.
+ Expand out borders.
+
+Push55's rightmost lava pit doesn't kill.
+
+Push58 has spawnpoints on the kill floor.
+
+push57 is a target shooting bullseye, flying shotguns fly around and spew around that shoot players?
+
+Integrate push43 fixes
+
+<Kurashiki> Did anyone find hom floors in push22? there are 2 homs.
+<Kurashiki> kore https://www.dropbox.com/s/kmax16hm8r9x1oc/Screenshot_Doom_20150403_002118.png?dl=0
+<iSpook> http://i.imgur.com/npVUm8m.png Oh look, another one.
+
+
+Push33 has a giant hom? Check in software.
+  ^- Few areas that push you around.
 
 
 

@@ -79,82 +79,80 @@ int PushCredits =
  ^- Textures from Shadow Warrior and Duke Nukem 3D.";
 
 int PushChangelog =
-"FROM V0.5 TO V0.6:\n\
+"FROM V0.6 TO V0.7:\n\
 ==================\n\
 GAMEPLAY:\n\
-- Cacodemons on Push17 are easier to hit and no longer so stupidly aggressive.\n\
-- The explosion radius of the grenade has been increased by 16 units, for slightly easier recoveries.\n\
-- The alt-fire of the gauntlet is now capable of reflecting shots away from the player. It's not graphically visible until a Zandronum bug is fixed, but it's an actual thing now nonetheless.\n\
-- Weapon switching is now a little under twice as fast.\n\
-- Both weapons' alt-fires had their WRF_NOSWITCH times slashed in half, meaning players will be able to swap to a different weapon much faster.\n\
-- The visor now tracks people better, updating its position in half the time as before.\n\
-- The Push laser speed has been increased from 400 to 450, and its radius increased from 3 to 4.\n\
-- The Push laser now fires straight at the crosshair, rather than 8 units underneath.\n\
-- A drawing utensil has been implemented as an extra key for the people who think of Push as a multiplayer MSPaint simulator.\n\
-- The F1 help screen is no longer the best but now is much more informative.\n\
-- The Doom pistol is now removed from the player on map enter.\n\
-- Deathmatch support has been implemented. It's a little wonky and isn't perfect until the engine can track who pushed who off, but it's a decent little timewaster in the meantime.\n\
-- The lightamp of the wallhack visor worked in Software but didn't work in OpenGL. Not sure why. Until I can figure out why, it's been removed.\n\
-\n\
+- Surfing is no longer as obscenely exploitable as before--when a player bounces repeatedly in mid-air without landing, he will eventually stop bouncing and will just plummet.\n\
+- Players are now always bright, for ease of visibility at longer ranges.\n\
+- Drones are now faster, fire faster, and their shots speed up. There are also more drone spawns on certain maps.\n\
+ ^- Push08\n\
+ ^- Push19\n\
+ ^- Push10\n\
+ ^- Push11\n\
+ ^- Push15\n\
+ ^- Push18\n\
+ ^- Push21\n\
+ ^- Push22\n\
+ ^- Push24\n\
+ ^- Push31\n\
 \n\
 MAPS:\n\
-- Absolutely nothing about Push28 was changed.\n\
-- The teleporters on Push11 have been lowered and their textures changed, for easier jumping-into and location differentiation.\n\
-- Push33's amount of actors has been dramatically cut down to a third of what it was, and filesize was reduced from over three megabytes to barely 1.6. This should help make the map less laggy.\n\
-- Push27 has been expanded and the center arena filled in. This should make the arena more difficult to recover from, and slightly more difficult to get knocked off.\n\
-- The center platform in PUSH04 has been raised so people can react easier to trips. The outer ring has been expanded so one simple nudge doesn't throw people off, but has lowered so getting thrown off requires more reaction.\n\
-- PUSH35's main arena was made smaller, and the walls stretched further out. It should be easier to knock people off now.\n\
-- PUSH36 has been dramatically ensmallened and now can actually be recovered from.\n\
-- PUSH36 now has a defined ground texture.\n\
-- PUSH17 has smaller walls to make it easier to recover and a few floating platforms for a little bit of Z-axis action.\n\
-- PUSH30 has had the laggy pyramids removed, and many many more spawn points placed throughout the area.\n\
-- PUSH30 now has many more platforms spread out and about.\n\
-- PUSH34's silos have been expanded for more safe ground.\n\
-- PUSH32's pillars now have black edges.\n\
-- PUSH32's floor texture now has a noise filter for easier identification.\n\
-- Several floating platforms on PUSH10 were removed and the buildings moved in closer, for a tighter arena.\n\
-- The killfloor on PUSH10 has been brought up quite a bit for easier recovery.\n\
-- PUSH10 is no longer a horrible lagfest on Software.\n\
-- PUSH15 now has a visible floor.\n\
+- Push11 now has both drone spawns and projectile blocking boundaries.\n\
+- Push19's been given the Presidential Treatment:\n\
+ ^ More efficient method of keeping players off the counter (an invisible 3D floor) end\n\
+ ^ Fixed the alignment of some pyramid light textures\n\
+ ^ Blue ring platforms are now fully lit and 125% wider\n\
+ ^ Raised ceilings above some 3D floors slightly, so they appear on the automap\n\
+ ^ Filled the large window in with glass.  The center pane remains open\n\
+- Push20's boundaries have been shortened by 2056 units.\n\
+- Push27 now has a drone spawn.\n\
+- Absolutely nothing was changed about Push28.\n\
+- Push30 no longer can teleport lasers into infinity.\n\
+- Push32 now has darker borders around the circles to indicate position.\n\
+- Push33's center mountains have been removed, and the mountains have been moved to the outer portion of the map. To address camping, there is now an ocean drift on the outside of the map--get thrown out there, and you'll start drifting away!\n\
+- Push34's platforms have been trimmed and the belts sped up.\n\
+- Push34 has many more spawnpoints now.\n\
+- Push35 no longer has player spawns outside of the play boundary.\n\
+- Push38's layout has been squeezed in a slight bit, for easier mobility.\n\
+- Push43's killfloor has had its depth increased, so it's no longer as easy to trip into it.\n\
+- Push46's skybox is no longer obscenely fuckhuge filesize.\n\
+- Push47's camp spots have been removed.\n\
+- Push47's miscolored water has been colored properly.\n\
+- Push49's boundaries have been shortened and the main layout has been expanded.\n\
+- Push49 no longer has the water bobbing up and down.\n\
 \n\
-- A new map, the XXX ImpBar by Mystical, has been added at Push37.\n\
-- A new map, Insert Cool Pun Here by UniversalQuantifier, has been added at Push38.\n\
-- A new map, Fusion Reactor by UnholyPimpin, has been added at Push39.\n\
-- A new map, Could'a Gotcha by UnholyPimpin, has been added at Push40.\n\
-- A new map, Tritium Extractor by GuardSoul, has been added at Push41.\n\
-- A new map, Star Beam by Mystical, has been added at Push42.\n\
-- A new map, 'Void the Colors by IdeIdoom, has been added at Push43.\n\
-- A new map, Sinking Feeling by Gardevoir, has been added at Push44.\n\
-- A new map, The Future of the Year 2000 by Gothic, has been added at Push45.\n\
-- A new map, Battlefield by Gardevoir, has been added at Push46.\n\
-- A new map, I Left the Faucet On by Smoke_Fumus, has been added at Push47.\n\
-- A new map, I am TEKWALL4 by Gardevoir, has been added at Push48.\n\
-- A new map, Ice Ice Baby by Infirnex, has been added at Push49.\n\
-\n\
+- A new map, Ichikishimahime Says Keep Your Water Clean by Kurashiki, has been added at Push50.\n\
+- A new map, Coffee Break by PresidentPeople, has been added at Push51.\n\
+- A new map, Ship of Fools by UniversalQuantifier, has been added at Push52.\n\
+- A new map, Samhara Trench by IdeIdoom, has been added at Push53.\n\
+- A new map, Dwango 2015 by Gardevoir, has been added at Push54.\n\
+- A new map, Burn Baby Burn by Infirnex, has been added at Push55.\n\
+- A new map, Jazzy Nostalgia by IdeIdoom, has been added at Push56.\n\
+- A new map, Bullseye by Sgt. Shivers, has been added at Push57.\n\
+- A new map, Heifong Virtual Arena by Marty Kirra, has been added at Push58.\n\
+- A new map, Push-Mortem by Untitled, has been added at Push59.\n\
+- A new map, Castle of Griefing by PresidentPeople, has been added at Push60.\n\
+- A new map, Serpent Riders' Playhouse by Gothic, has been added at Push61.\n\
+- A new map, Island Retreat by PresidentPeople, has been added at Push62.\n\
 \n\
 POLISH:\n\
-- Push10 was renamed to 'Above the 8-Bit Freeway' and Push33 renamed to 'Atlantis Highway', as per author request.\n\
-- Push27 now has lava balls spurting up every now and then.\n\
-- The lollipops in PUSH31 are now transparent, and the alignments on the chocolate bar were fixed.\n\
-- UnholyPimpin has added a nice little touch to PUSH17, in honor of our Cacoward. Thanks, mate!\n\
-- PUSH34's skybox has been tweaked to look a little prettier.\n\
-- The doublejump indicator now has text on it to identify that, yes, this is for double-jump.\n\
-- The doublejump indicator now empties out when used instead of vanishing.\n\
-- A new M_DOOM logo has been provided by Smoke_Fumus and MrSetharoo.\n\
-- We have a new D_DM2TTL song, Push & Pull by ((dynamic)).\n\
-- Menu browsing, chatting, and connecting now have their own unique sounds.\n\
-- If lms_allowedweapons is not 0, it will automatically be set to 0.\n\
-- A few errant textures on PUSH18 have been fixed.\n\
-- The scan visor has been edited to be centered.\n\
-- The floor in Push13 is no longer bugged.\n\
-- PUSH17's sides now are a different shade of red than the floor, for easier differentiation.\n\
-\n\
+- Sgt. Shivers has provided the best titlepic.\n\
+- All SNDINFO entries have been separated by map.\n\
+- Push19 had had a massive wipe of polish across the entire board, with more effects, prettier textures, and some new additions.\n\
+- Push24 now has over double the banners. Thanks to everyone for submitting!\n\
+- Push31's HOMs behind the banner has been removed.\n\
+- Push34 now has rain and lightning.\n\
+- Push30 now has a Startropics enemy wandering about.\n\
+- Push38 has been given its proper skybox.\n\
+- Several misaligned sectors in Push43 have been re-aligned. Not all of them, but quite a few.\n\
+- Push48 has been given more even lighting across the board.\n\
 \n\
 WHY WE CAN'T HAVE NICE DETAIL:\n\
-- PUSH06's lower platforms have been raised up to prevent people from camping there.\n\
-- The mushroom platform in PUSH10 has been removed.\n\
-- People were camping in the corners around Push30's stairs. These have been replaced with bottomless pits.\n\
-- The ledge behind PUSH30's Mike portrait has been removed, as people were hiding there.";
+- It's no longer possible to dive into the Cacodemon's mouth in Push17 and hide there.\n\
+- The edges of Push31's banner have been pushed against the cake.\n\
+- It's no longer possible to hide behind the house in Push38.\n\
+- The torches in the Push38 house's corner have been brought in, to keep people from butthugging the corner.\n\
+- The hole in the center of Push39 has been risen up, and the pillars pulled back.";
 
 script 280 (int changelogshit2) NET CLIENTSIDE
 {

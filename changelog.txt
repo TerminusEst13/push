@@ -2,6 +2,19 @@ FROM V0.6 TO V0.7:
 ==================
 GAMEPLAY:
 - Surfing is no longer as obscenely exploitable as before--when a player bounces repeatedly in mid-air without landing, he will eventually stop bouncing and will just plummet.
+- Players are now always bright, for ease of visibility at longer ranges.
+- Drones are now faster, fire faster, and their shots speed up. There are also more drone spawns on certain maps.
+ ^- Push08
+ ^- Push19
+ ^- Push10
+ ^- Push11
+ ^- Push15
+ ^- Push18
+ ^- Push21
+ ^- Push22
+ ^- Push24
+ ^- Push31
+- Changing/swapping maps while in non-DM modes no longer renders the players invulnerable.
 
 MAPS:
 - Push11 now has both drone spawns and projectile blocking boundaries.
@@ -31,6 +44,16 @@ MAPS:
 - A new map, Ichikishimahime Says Keep Your Water Clean by Kurashiki, has been added at Push50.
 - A new map, Coffee Break by PresidentPeople, has been added at Push51.
 - A new map, Ship of Fools by UniversalQuantifier, has been added at Push52.
+- A new map, Samhara Trench by IdeIdoom, has been added at Push53.
+- A new map, Dwango 2015 by Gardevoir, has been added at Push54.
+- A new map, Burn Baby Burn by Infirnex, has been added at Push55.
+- A new map, Jazzy Nostalgia by IdeIdoom, has been added at Push56.
+- A new map, Bullseye by Sgt. Shivers, has been added at Push57.
+- A new map, Heifong Virtual Arena by Marty Kirra, has been added at Push58.
+- A new map, Push-Mortem by Untitled, has been added at Push59.
+- A new map, Castle of Griefing by PresidentPeople, has been added at Push60.
+- A new map, Serpent Riders' Playhouse by Gothic, has been added at Push61.
+- A new map, Island Retreat by PresidentPeople, has been added at Push62.
 
 POLISH:
 - Sgt. Shivers has provided the best titlepic.

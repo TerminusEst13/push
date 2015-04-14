@@ -115,6 +115,7 @@ script 532 ENTER
 
     GiveInventory("SetUnshootable",1);
     GiveInventory("PowerRespawnProtection",1);
+    TakeInventory("LightAsAFeather",1);
     TakeInventory("Fist",1);
     TakeInventory("Pistol",1);
     TakeInventory("Shotgun",1);
