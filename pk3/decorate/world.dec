@@ -449,10 +449,10 @@ ACTOR GriefSerpentSpawner 13055
    States
    {
       Spawn:
-       DEMN G 0
+       TNT1 G 0
        TNT1 A 35
       HourlyUpdate:
-       TNT1 A 2240 A_SpawnItemEx("GriefSerpent")
+       TNT1 A 2100 A_SpawnItemEx("GriefSerpent")
         loop
    }
 }
@@ -467,8 +467,8 @@ ACTOR GriefSerpent //: Demon1
    Mass 220
    Monster
    +NOBLOOD
-   +MISSILEMORE
-   +MISSILEEVENMORE
+   //+MISSILEMORE
+   //+MISSILEEVENMORE
    +FLOORCLIP
    +LOOKALLAROUND
    +NOINFIGHTING
@@ -547,10 +547,10 @@ ACTOR GriefAfritSpawner 13056
    States
    {
       Spawn:
-       FDMN I 0
-       TNT1 A 2275
+       TNT1 A 0
+       TNT1 A 2100
       HourlyUpdate:
-       TNT1 A 2240 A_SpawnItemEx("GriefAfrit")
+       TNT1 A 2100 A_SpawnItemEx("GriefAfrit")
         loop
    }
 }
@@ -570,8 +570,8 @@ ACTOR GriefAfrit //: FireDemon
    +NOBLOOD
    +DROPOFF
    +NOGRAVITY
-   +MISSILEMORE
-   +MISSILEEVENMORE
+   //+MISSILEMORE
+   //+MISSILEEVENMORE
    +FLOAT
    +FLOORCLIP
    +INVULNERABLE
