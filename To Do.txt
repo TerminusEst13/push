@@ -164,6 +164,10 @@ InfirnexCanyon-v2.wad
 Guardsoul-PushMap2.wad
 Gardie-PUSH06-Welcome_To_Hell.wad
 
+uq-pushmap.wad (Save for Zandro 2.0)
+TerminusEst13: Would you be all right with it if I moved the pillars on the east and the west back a little bit to the edge of the platforms? I can already see players wanting to hide behind them to let everyone else fight it out.
+universal quantifier: Sure
+
 
 
 
@@ -186,12 +190,6 @@ Integrate push43 fixes
 <iSpook> http://i.imgur.com/npVUm8m.png Oh look, another one.
 
 
-Push33 has a giant hom? Check in software.
-  ^- Few areas that push you around.
-
-
-
-Push27 needs its damage floor checked, for some reason it's not an instant kill.
 
 
 Turn the surfing limit into an adjustable cvar.
@@ -218,12 +216,6 @@ CL cvar to turn off flashing on hit.
 
 
 
-
-uq-pushmap.wad (Save for Zandro 2.0)
-TerminusEst13: Would you be all right with it if I moved the pillars on the east and the west back a little bit to the edge of the platforms? I can already see players wanting to hide behind them to let everyone else fight it out.
-universal quantifier: Sure
-
-pushmap-prplsky.pk3 / by PresidentPeople (Save for Zandro 2.0)
 
 
 
