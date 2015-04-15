@@ -1775,7 +1775,7 @@ ACTOR RetreatTreePot 13044
 }
 
 // Push63
-ACTOR SoundWind 23142
+ACTOR CanyonSoundWind 23142
 {
   +NOBLOCKMAP
   +NOSECTOR

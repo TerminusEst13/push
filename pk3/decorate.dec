@@ -21,6 +21,7 @@ actor LevelIsTooBright : Boolean {}
 actor CannotIntoWallhack : Boolean {}
 actor DrawingToolOn : Boolean {}
 actor DrawingToolReady : Boolean {}
+actor IsADrone : Boolean {}
 
 actor DoomedGuy : Counter { Inventory.MaxAmount 70 }
 actor MaybeDoomedGuy : Counter { Inventory.MaxAmount 3 }
@@ -29,6 +30,7 @@ actor SurfingCounter : Counter { Inventory.MaxAmount 15 }
 #include "decorate/player.dec"
 #include "decorate/weapon.dec"
 #include "decorate/weapon2.dec"
+#include "decorate/weapon3.dec"
 #include "decorate/world.dec"
 #include "decorate/props.dec"
 #include "decorate/parkmore.dec"

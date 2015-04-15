@@ -5,6 +5,8 @@ statusbar normal, forcescaled
 //DrawNumber 3, BigFont, white, Health, 160, 180;
 InInventory ImAlive, 1
 {
+  InInventory not IsADrone, 1
+  {
     InInventory not EmergencyDodgeDone, 1
     {
         AspectRatio "4:3"
@@ -23,7 +25,8 @@ InInventory ImAlive, 1
         AspectRatio "16:9"
         { DrawImage "JUMPEMPT", -50, 170; }
     }
-    InInventory WallHackVision, 1 {drawimage "CYBTRG", 0, 0;}
+  }
+  InInventory WallHackVision, 1 {drawimage "CYBTRG", 0, 0;}
 }
 }
 
@@ -31,6 +34,8 @@ statusbar fullscreen, forcescaled
 {
 InInventory ImAlive, 1
 {
+  InInventory not IsADrone, 1
+  {
     InInventory not EmergencyDodgeDone, 1
     {
         AspectRatio "4:3"
@@ -49,7 +54,8 @@ InInventory ImAlive, 1
         AspectRatio "16:9"
         { DrawImage "JUMPEMPT", -50, 170; }
     }
-    InInventory WallHackVision, 1 {drawimage "CYBTRG", 0, 0;}
+  }
+  InInventory WallHackVision, 1 {drawimage "CYBTRG", 0, 0;}
 }
 }
 

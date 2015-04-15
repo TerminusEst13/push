@@ -134,6 +134,8 @@ script PUSH_ENTER ENTER
 
     while (1)
     {
+      if (CheckInventory("IsADrone") == 0)
+      {
         TakeInventory("Fist",1);
         TakeInventory("Pistol",1);
         TakeInventory("Shotgun",1);
@@ -176,7 +178,6 @@ script PUSH_ENTER ENTER
             TakeInventory("EmergencyDodgeDone",1);
             TakeInventory("DoomedGuy",70);
             TakeInventory("SurfingCounter",15);
-            
         }
         else
         {
@@ -185,9 +186,26 @@ script PUSH_ENTER ENTER
 
         if (keyDown(BT_USER1)) { GiveInventory("DrawingToolOn",1); }
 
+        if (GetCvar("p_runninginzandro") == 1)
+        {
+          if (GetCvar("sv_maxlives") > 1 && GetCvar("p_playerdrones") == 1 && GetPlayerLivesLeft(pln) == 0 && PlayerIsSpectator(pln) == 0 && isLMS()) // Bloody hell that's a lot of checks.
+          { 
+            MorphActor(0, "DronePlayer", "", 0x7FFFFFFF, 194, "TeleportFog", "TeleportFog");
+            TakeInventory("Push Gun",1);
+            TakeInventory("Force Gauntlet",1);
+            GiveInventory("IsADrone",1);
+          }
+        }
         if (isDead(0)) { terminate; }
 
         delay(1);
+      }
+      else if (CheckInventory("IsADrone") == 1)
+      {
+        GiveInventory("PowerPermaFlight",1);
+        if (isDead(0)) { terminate; }
+        delay(1);
+      }
     }
 }
 
@@ -212,7 +230,7 @@ script PUSH_WALLHACK (int which)
 {
     int i, time, tid;
     int pln = PlayerNumber();
-    
+
     switch (which)
     {
       case 1:
@@ -239,7 +257,7 @@ script PUSH_WALLHACK (int which)
             if (!CheckInventory("WallhackVision")) { break; }
         }
         break;
-    
+
       case 2:
         TakeInventory("WallHackVision",1);
         GiveInventory("CannotIntoWallhack",1);
@@ -254,15 +272,15 @@ script PUSH_WALLHACK (int which)
 script PUSH_DUNKED (void)
 {
     int Time = 52;
-    
+
     while (Time > 0)
     {
         SetHudSize(320, 240, false);
-        
+
         // Scanlines
         if ((Timer() % 3) == 0)
-        DrawScanlines();
-        
+            DrawScanlines();
+
         // Binary
         if ((Timer() % 3) == 0)
             DrawBinary();
@@ -273,8 +291,26 @@ script PUSH_DUNKED (void)
         hudmessage (s:FontZ[random(0,1)],s:"\n";
         1, 0,FontCL[random(0,2)], FontX, FontY, 0.1);
         delay(1);
-        
+
         Time--;
         Delay(1);
     }
+}
+
+/*<04:55:27> "Kyle873": 
+int players = PlayerCount();
+int drones = 0;
+for (int i = PlayerTID; i < PlayerTID + MAX_PLAYERS; i++)
+    if (CheckActorInventory(i, "PushDrone"))
+        drones++;
+if (players - drones <= 1)
+{
+    // We've only got one player left
+}
+
+<04:56:25> "Kyle873": 
+if (players - drones <= 1)
+{
+    for (int i = PlayerTID; i < PlayerTID + MAX_PLAYERS; i++)
+        Thing_Damage(i, 1000000;
 }

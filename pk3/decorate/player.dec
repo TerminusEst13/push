@@ -13,6 +13,11 @@ actor PowerRespawnProtection : PowerProtection
     +DONTBLAST
 }
 
+actor PowerPermaFlight : PowerFlight
+{
+    Powerup.Duration 0x7FFFFFFF
+}
+
 actor PushPlayer : DoomPlayer
 {
     Speed 1
@@ -97,6 +102,68 @@ actor PushPlayer : DoomPlayer
         TNT1 AAAAAAAAA 0 A_FadeIn(0.1)
         PLAY Z 1
         PLAY Z -1
+        Stop
+    }
+}
+
+actor DronePlayer : PlayerPawn
+{
+    Speed 1
+    Health 500
+    Radius 16
+    Height 56
+    PainChance 255
+    Gravity 0.575
+    Mass 10
+    Player.JumpZ 13
+    Player.ForwardMove 1.8, 0.9
+    Player.SideMove 1.6, 0.8
+    Player.DisplayName "Drone"
+    /*Player.StartItem "Push Gun"
+    Player.StartItem "IsADrone", 1
+    Player.StartItem "PowerPermaFlight", 1
+    Player.StartItem "WallHackToggle", 1*/ // None of this is given on morph, interestingly.
+    Player.MorphWeapon "Drone Gun"
+    DamageFactor "Normal", 0.0
+    DamageFactor "PushDamage", 0.0
+    DamageFactor "PushDamage2", 0.0
+    DamageFactor "GrenadeDamage", 0.0
+    DamageFactor "NoDamage", 0.0
+    Player.SoundClass "Pusher"
+    RadiusDamageFactor 0.0
+    Player.ColorRange 112, 127
+    //-SHOOTABLE
+    +NOSKIN
+    +NODAMAGE
+    +NOBLOOD
+    +THRUSPECIES
+    Species "Player"
+    States
+    {
+    Spawn:
+        PDRN A -1 BRIGHT
+        Loop
+    See:
+        PDRN A 2 BRIGHT
+        Loop
+    Missile:
+        PDRN BC 2 Bright
+        PDRN D 2 Bright
+        goto See
+    Pain:
+        PDRN A 4 Bright
+        goto See
+    Death:
+        TNT1 A 0
+        PDRN A 1 Bright
+        TNT1 A 0 A_Stop
+        TNT1 A 0 A_PlayerScream
+        TNT1 AAAAAAAAAAAAAAA 0 A_SpawnItemEx("DeathSpark",random(-10,10),random(-10,10),random(24,42),random(-150,150)/100.0,random(-150,150)/100.0,random(100,300)/300.0,random(-180,180),161)
+        TNT1 AAAAAAAAA 0 A_SpawnItemEx("Binary0",random(-10,10),random(-10,10),random(24,42),random(-100,100)/150.0,random(-100,100)/150.0,random(100,300)/250.0,random(-180,180),160)
+        TNT1 AAAAAAAAA 0 A_SpawnItemEx("Binary1",random(-10,10),random(-10,10),random(24,42),random(-100,100)/150.0,random(-100,100)/150.0,random(100,300)/250.0,random(-180,180),160)
+        TNT1 A 1
+        TNT1 A 1 A_NoBlocking
+        TNT1 A -1
         Stop
     }
 }
