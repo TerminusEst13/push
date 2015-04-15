@@ -79,6 +79,7 @@ POLISH:
 - Difficulty settings have been removed.
 - For singleplayer (why?) purposes, Push maps now have their own episode entry.
 - Push43 has had a LOT of texture alignment.
+- All of the scripts have been converted to named scripts.
 
 WHY WE CAN'T HAVE NICE DETAIL:
 - It's no longer possible to dive into the Cacodemon's mouth in Push17 and hide there.

@@ -1,4 +1,4 @@
-script 827 ENTER
+script PUSH_DM_ENTER ENTER
 {
     delay(15);
     if (GetCVar("deathmatch") != 1 || isLMS()) { terminate; }
@@ -8,7 +8,7 @@ script 827 ENTER
     }
 }
 
-script 828 OPEN
+script PUSH_DM_OPEN OPEN
 {
     TimeExceeded = 0;
     delay(5);

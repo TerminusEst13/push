@@ -12,6 +12,7 @@ str FontZ[2] ={"0","1"};
 int FontCL[3] ={CR_DARKGREEN,CR_GREEN,CR_OLIVE};
 
 #include "commonfuncs.h"
+#include "push_const.h"
 #include "push_funcs.h"
 #include "push_text.h"
 #include "push_jump.h"
@@ -22,7 +23,7 @@ int deathAssistedBy[PLAYERMAX];
 
 int PlayerTIDs[PLAYERMAX];
 
-script 531 OPEN
+script PUSH_SERVER OPEN
 {
     IsServer = 1;
     int cjumps, oldcjumps;
@@ -73,7 +74,7 @@ script 531 OPEN
     }
 }
 
-Script 530 OPEN
+Script PUSH_SUDDENDEATH OPEN
 {
     // Probably could compress this into the above script, but I'd rather not take a chance.
     int TimeUntilSuddenDeath = 1;
@@ -114,7 +115,7 @@ Script 530 OPEN
     }
 }
 
-script 532 ENTER
+script PUSH_ENTER ENTER
 {
     int Buttons;
     int Angle;
@@ -122,14 +123,20 @@ script 532 ENTER
     int tid;
     int pln = PlayerNumber();
 
-    GiveInventory("SetUnshootable",1);
-    GiveInventory("PowerRespawnProtection",1);
+    TakeInventory("InvulnTrigger",1);
     TakeInventory("LightAsAFeather",1);
     TakeInventory("EmergencyDodgeDone",1);
     TakeInventory("DrawingToolOn",1);
     TakeInventory("DrawingToolReady",1);
     GiveInventory("ImAlive",1);
     //SetPlayerProperty(0,1,PROP_BUDDHA);
+
+    if (GetCvar("p_cl_noprotection") == 0)
+    {
+        GiveInventory("SetUnshootable",1);
+        GiveInventory("InvulnTrigger",1); // This is given instead of checking for the cvar later just in case some wiseass swaps part-way.
+        GiveInventory("PowerRespawnProtection",1);
+    }
 
     while (1)
     {
@@ -157,10 +164,11 @@ script 532 ENTER
         else
           { GiveInventory("Force Gauntlet",1); }
 
-        if (DropSomeWeight == 70 && CheckInventory("LightAsAFeather") == 0)
+        if (DropSomeWeight == 70 && CheckInventory("LightAsAFeather") == 0 && CheckInventory("InvulnTrigger") == 1)
         {
             GiveInventory("SetShootable",1);
             GiveInventory("LightAsAFeather",1);
+            TakeInventory("InvulnTrigger",1);
         }
         DropSomeWeight++;
 
@@ -190,12 +198,12 @@ script 532 ENTER
     }
 }
 
-script 533 RESPAWN
+script PUSH_RESPAWN RESPAWN
 {
     ACS_ExecuteAlways(532,0,0,0);
 }
 
-script 534 DEATH
+script PUSH_DEATH DEATH
 {
     //int pln = PlayerNumber();
     //Log(n:pln, s:" was thrown off by ", n:lastShotBy[pln]);
@@ -204,10 +212,11 @@ script 534 DEATH
     TakeInventory("LightAsAFeather",1);
     TakeInventory("DrawingToolOn",1);
     TakeInventory("DrawingToolReady",1);
+    TakeInventory("InvulnTrigger",1);
     Thing_ChangeTID(0,0);
 }
 
-script 421 (int which)
+script PUSH_WALLHACK (int which)
 {
     int i, time, tid;
     int pln = PlayerNumber();
@@ -250,7 +259,7 @@ script 421 (int which)
 
 // The below was made by Kyle873, whom is 7H3 1337357 |-|4(|<3R 0N 7H3 PU5H|\|37
 
-script 404 (void)
+script PUSH_DUNKED (void)
 {
     int Time = 52;
     
