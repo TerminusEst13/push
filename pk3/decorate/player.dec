@@ -8,7 +8,7 @@ actor PowerRespawnProtection : PowerProtection
 {
     DamageFactor "Normal", 0.0
     Powerup.Color "White", 0.1
-    Powerup.Duration 70
+    Powerup.Duration 105
     +NORADIUSDMG
     +DONTBLAST
 }

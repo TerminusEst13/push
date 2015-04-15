@@ -25,6 +25,8 @@ actor "Force Gauntlet" : Weapon
         KGNT A 1 A_Raise
         Loop
     Fire:
+        TNT1 A 0 A_TakeInventory("PowerRespawnProtection",1)
+        TNT1 A 0 A_SetShootable
         TNT1 A 0 A_JumpIfInventory("DrawingToolReady",1,"DrawFire")
         KGNT ARQ 1
         TNT1 A 1
@@ -57,6 +59,8 @@ actor "Force Gauntlet" : Weapon
         KGNT QR 1 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
         goto Ready
     AltFire:
+        TNT1 A 0 A_TakeInventory("PowerRespawnProtection",1)
+        TNT1 A 0 A_SetShootable
         TNT1 A 0 A_JumpIfInventory("DrawingToolReady",1,"NormalReady")
         KGNT BC 1 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
         TNT1 A 0 A_Recoil(-2)
