@@ -60,6 +60,7 @@ MAPS:
 - A new map, Serpent Riders' Playhouse by Gothic, has been added at Push61.
 - A new map, Island Retreat by PresidentPeople, has been added at Push62.
 - A new map, Wild is the Wind by Infirnex, has been added at Push63.
+- A new map, Acid Killer by UniversalQuantifier, has been added at Push64.
 
 POLISH:
 - Sgt. Shivers has provided the best titlepic.
