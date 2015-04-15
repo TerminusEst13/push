@@ -260,3 +260,7 @@ Retreat/Splash        PRP_SPLA // From Marathon 2
 // Push63
 wind/howl             CANYWIND // From the General Series 6000
 wind/change           CANYWNCH // From the General Series 6000
+
+// Push64
+SFX SFX
+$ambient 1 SFX point continuous 1.0

@@ -123,20 +123,14 @@ script PUSH_ENTER ENTER
     int tid;
     int pln = PlayerNumber();
 
-    TakeInventory("InvulnTrigger",1);
     TakeInventory("LightAsAFeather",1);
     TakeInventory("EmergencyDodgeDone",1);
     TakeInventory("DrawingToolOn",1);
     TakeInventory("DrawingToolReady",1);
     GiveInventory("ImAlive",1);
     //SetPlayerProperty(0,1,PROP_BUDDHA);
-
-    if (GetCvar("p_cl_noprotection") == 0)
-    {
-        GiveInventory("SetUnshootable",1);
-        GiveInventory("InvulnTrigger",1); // This is given instead of checking for the cvar later just in case some wiseass swaps part-way.
-        GiveInventory("PowerRespawnProtection",1);
-    }
+    GiveInventory("SetUnshootable",1);
+    GiveInventory("PowerRespawnProtection",1);
 
     while (1)
     {
@@ -164,11 +158,10 @@ script PUSH_ENTER ENTER
         else
           { GiveInventory("Force Gauntlet",1); }
 
-        if (DropSomeWeight == 70 && CheckInventory("LightAsAFeather") == 0 && CheckInventory("InvulnTrigger") == 1)
+        if (DropSomeWeight == 70 && CheckInventory("LightAsAFeather") == 0)
         {
             GiveInventory("SetShootable",1);
             GiveInventory("LightAsAFeather",1);
-            TakeInventory("InvulnTrigger",1);
         }
         DropSomeWeight++;
 
@@ -212,7 +205,6 @@ script PUSH_DEATH DEATH
     TakeInventory("LightAsAFeather",1);
     TakeInventory("DrawingToolOn",1);
     TakeInventory("DrawingToolReady",1);
-    TakeInventory("InvulnTrigger",1);
     Thing_ChangeTID(0,0);
 }
 

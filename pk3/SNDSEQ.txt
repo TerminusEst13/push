@@ -1,4 +1,12 @@
+
+// Push27
 :RaisingLava
 	platform		1
 	playrepeat		HEDAT1
+end
+
+// Push64
+:Polyobj
+	door 1
+	playrepeat	SFX
 end
