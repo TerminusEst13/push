@@ -65,6 +65,23 @@ $playersound      Pusher   other   *usefail        OTNOWAY
 $playersound      Pusher   other   *taunt          OTTAUNT
 $playersound      Pusher   other   *jump           SILENCE
 
+// Drone voice taken from Marathon
+$playersound      Drone   Male   *death          SILENCE
+$playersounddup   Drone   Male   *xdeath         *death
+$playersounddup   Drone   Male   *burndeath      *death
+$playersounddup   Drone   Male   *crazydeath     *death
+$playersounddup   Drone   Male   *wimpydeath     *death
+$playersounddup   Drone   Male   *gibbed         *death
+$playersound      Drone   Male   *pain100        DRPLPAIN
+$playersounddup   Drone   Male   *pain75         *pain100
+$playersounddup   Drone   Male   *pain50         *pain100
+$playersounddup   Drone   Male   *pain25         *pain100
+$playersound      Drone   Male   *grunt          SILENCE
+$playersound      Drone   Male   *land           SILENCE
+$playersound      Drone   Male   *usefail        DRNOWAY
+$playersound      Drone   Male   *taunt          DRTAUNT
+$playersound      Drone   Male   *jump           SILENCE
+
 // Weapons
 // ===========
 
@@ -87,6 +104,8 @@ gauntlet/shothit      GANTSHIT // Taken from Smash Bros. Brawl
 
 draw/switch           trigger  // Taken from Kamen Rider Battride War
 draw/draw             draw     // Taken from Kamen Rider Battride War
+
+push/dronegun         DRONGUN  // Taken from Street Fighter X Tekken
 
 
 // Maps

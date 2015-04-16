@@ -12,6 +12,22 @@ actor Counter: Inventory
     -INVBAR
 }
 
+actor TranslationHolder
+{
+    +NOINTERACTION
+    -SOLID
+
+    Radius 1
+    Height 1
+    
+    States
+    {
+      Spawn:
+        TNT1 A -1
+        stop
+    }
+}
+
 actor OnTheGround : Boolean {}
 actor EmergencyDodgeDone : Boolean {}
 actor LightAsAFeather : Boolean {}

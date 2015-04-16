@@ -3,8 +3,6 @@
 
 world int 0:MaxJumpCount;
 global int 58:TimeExceeded;
-global int 59:DieDieTimeToDie;
-global int 60:OhShitItsTheFeds;
 
 int IsServer;
 int FontX;
@@ -25,21 +23,13 @@ int deathAssistedBy[PLAYERMAX];
 
 int PlayerTIDs[PLAYERMAX];
 
-script PUSH_WOWBYE (int pnum) DISCONNECT
-{
-  PlayerTIDs[pnum] = 0;
-}
-
 script PUSH_SERVER OPEN
 {
     IsServer = 1;
     int cjumps, oldcjumps;
     int s = unusedTID(37000, 47000);
-    int players;
-    int playercnt; // NOT playercunt
-    int _PTID;
-    int i;
-
+    int players = PlayerCount();
+    int drones = 0;
 
     /*if (Spawn("Doomsphere",0,0,0,s)) // Attempt to spawn a Doomsphere, a Zandronum-exclusive item.
     {
@@ -64,8 +54,6 @@ script PUSH_SERVER OPEN
         SetCVar("p_runninginzdoom",0);
     }
 
-    DieDieTimeToDie = 0;
-
     while (1)
     {
 
@@ -83,40 +71,15 @@ script PUSH_SERVER OPEN
         oldcjumps = cjumps;
         cjumps = GetCVar("p_jumpcount");
         if (cjumps != oldcjumps) { MaxJumpCount = cjumps; }
-        
-        // cod by murb
-        // donut steel
-        
-        if(!DieDieTimeToDie)
-        {
-          playercnt = PlayerCount();
-          players = 0;
-          
-          for (i = 0; i < PLAYERMAX; i++)
-          {
-            _PTID = PlayerTIDs[i];
-            
-            if (_PTID != 0) // don't condense this into one if!
-            {
-              if (CheckActorInventory(_PTID, "IsADrone") == 0)
-              {
-                //PrintBold(s:"TID (not a drone): ", d:_PTID);
-                players++;
-              }
-            }
-          }
-          
-          //PrintBold(s:"Players: ", d:players, s:", Player Count: ", d:playercnt);
-          
-          if (players < 2 && playercnt > 1) // if less than two people are left and more than 1 person in-game...
-          {
-            // kill all the drones!
-            //PrintBold(s:"One player left. Commencing slaughterstructionnihilator.");
-            DieDieTimeToDie = 1;
-          }
-        }
-        // ebn murb cod
-        
+
+    for (int i = PlayerTIDs[PLAYERMAX]; i < PlayerTIDs[PLAYERMAX] + PLAYERMAX; i++)
+      if (CheckActorInventory(i, "IsADrone"))
+        drones++;
+    if (players - drones <= 1)
+    {
+        PrintBold(s:"One player left.");
+    }
+
         delay(1);
     }
 }
@@ -125,8 +88,6 @@ Script PUSH_SUDDENDEATH OPEN
 {
     // Probably could compress this into the above script, but I'd rather not take a chance.
     int TimeUntilSuddenDeath = 1;
-
-    OhShitItsTheFeds = 0;
 
     delay(5);
 
@@ -147,8 +108,7 @@ Script PUSH_SUDDENDEATH OPEN
             AmbientSound("suddendeath/alarm",127);
             SetFont("smallfont");
             HudMessageBold(s:"WARNING: INVALID ACCESS DETECTED";HUDMSG_TYPEON,0,CR_RED,0.5,0.2,3.5,0.05);
-            OhShitItsTheFeds = 1;
-            
+
             while (1)
             {
                 SpawnSpot("TeleportFog",130);
@@ -171,7 +131,6 @@ script PUSH_ENTER ENTER
     int Angle;
     int DropSomeWeight;
     int tid;
-    int newtid;
     int pln = PlayerNumber();
 
     TakeInventory("LightAsAFeather",1);
@@ -241,20 +200,11 @@ script PUSH_ENTER ENTER
         if (GetCvar("p_runninginzandro") == 1)
         {
           if (GetCvar("sv_maxlives") > 1 && GetCvar("p_playerdrones") == 1 && GetPlayerLivesLeft(pln) == 0 && PlayerIsSpectator(pln) == 0 && isLMS() && PlayerCount() >= 2) // Bloody hell that's a lot of checks.
-          {
- 			newTID = unusedTID(23000, 55000);
-			Spawn("TranslationHolder",GetActorX(0),GetActorY(0),GetActorZ(0)+8.0,newTID);
-			Thing_SetTranslation(newTID, -1);
+          { 
             MorphActor(0, "DronePlayer", "", 0x7FFFFFFF, 194, "TeleportFog", "TeleportFog");
             TakeInventory("Push Gun",1);
             TakeInventory("Force Gauntlet",1);
             GiveInventory("IsADrone",1);
-            tid = defaultTID(-1);
-            PlayerTIDs[pln] = tid;
-			SetActivator(newTID);
-			Thing_SetTranslation(tid,-1);
-			SetActivator(tid);
-			Thing_Remove(newTID);
           }
         }
         if (isDead(0)) { terminate; }
@@ -264,22 +214,6 @@ script PUSH_ENTER ENTER
       else if (CheckInventory("IsADrone") == 1)
       {
         GiveInventory("PowerPermaFlight",1);
-        
-        if(DieDieTimeToDie)
-        {
-          UnmorphActor(0,1);
-          TakeInventory("PowerRespawnProtection",1);
-          DamageThing(0,MOD_RAILGUN);
-          // This is the most brute-force "kill your ass" I've seen.
-          // I'm fucking sick and tired of dealing with morphed classes not dying.
-          //PrintBold(s:"Player ", d:PlayerNumber(), s:" should be ded");
-        }
-        else
-        { GiveInventory("500Health",500); }
-        
-        /* if(GetCVar("p_drone_buff") && OhShitItsTheFeds)
-        { GiveInventory("PushItHarderMakeItBetter"); } */
-        
         if (isDead(0)) { terminate; }
         delay(1);
       }
@@ -301,7 +235,6 @@ script PUSH_DEATH DEATH
     TakeInventory("DrawingToolOn",1);
     TakeInventory("DrawingToolReady",1);
     Thing_ChangeTID(0,0);
-    PlayerTIDs[PlayerNumber()] = 0;
 }
 
 script PUSH_WALLHACK (int which)

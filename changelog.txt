@@ -17,7 +17,8 @@ GAMEPLAY:
 - Changing/swapping maps while in non-DM modes no longer renders the players invulnerable.
 - Sudden death drones now only show up in Last Man Standing/Team Last Man Standing.
 - Push is now compatible with and playable in ZDoom/GZDoom! I don't know WHY you'd want to, but there you have it!
-- Respawn protection now lasts three seconds. As soon as players fire, however, it's taken away, so players are now able to rocketjump out of the gate.
+- Respawn protection now is taken away as soon as players fire, so players are now able to rocketjump out of the gate.
+- p_playerdrones has been added as a cvar. When enabled, when the player is on his final life (and sv_maxlives is above one), he will be turned into a drone to chase down the remaining players as he sees fit.
 
 MAPS:
 - Push11 now has both drone spawns and projectile blocking boundaries.

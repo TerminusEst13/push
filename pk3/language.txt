@@ -1,3 +1,4 @@
 [enu default]
 
 OB_DEFAULT     = "%o fell out of bounds.";
+OB_RAILGUN     = " ";

@@ -5,6 +5,7 @@
 #define PUSH_DEATH                 534
 #define PUSH_DM_OPEN               535
 #define PUSH_DM_ENTER              536
+#define PUSH_WOWBYE                537
 
 #define PUSH_WALLHACK              421
 
