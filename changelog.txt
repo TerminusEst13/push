@@ -65,6 +65,7 @@ MAPS:
 - A new map, Acid Killer by UniversalQuantifier, has been added at Push64.
 - A new map, 7th Hell by Gardevoir, has been added at Push65.
 - A new map, Gimmick! by Deadon, has been added at Push66.
+- A new map, The Strongest Spirit by Guardsoul, has been added at Push67.
 
 POLISH:
 - Sgt. Shivers has provided the best titlepic.
@@ -92,6 +93,7 @@ WHY WE CAN'T HAVE NICE DETAIL:
 - The torches in the Push38 house's corner have been brought in, to keep people from butthugging the corner.
 - The hole in the center of Push39 has been risen up, and the pillars pulled back.
 - It's no longer possible to hide under the center platform in Push42.
+- It's no longer possible to hide in the pillars in Push41.
 
 
 FROM V0.5 TO V0.6:

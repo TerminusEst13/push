@@ -283,3 +283,14 @@ wind/change           CANYWNCH // From the General Series 6000
 // Push64
 SFX SFX
 $ambient 1 SFX point continuous 1.0
+
+// Push67
+SFX/FireStart	FIRESTRT
+SFX/FireLoop1	FIRELOP1
+SFX/FireLoop2	FIRELOP2
+SFX/FireLoop3	FIRELOP3
+SFX/FireDie	FIREDIE
+
+$Limit SFX/FireStart	0
+$Limit SFX/FireLoop	0
+$Limit SFX/FireDie	0

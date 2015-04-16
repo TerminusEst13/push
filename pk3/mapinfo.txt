@@ -466,7 +466,14 @@ map PUSH65 "7th Hell - Gardevoir"
 
 map PUSH66 "Gimmick! - Deadon"
 {
-	next = "PUSH01"
+	next = "PUSH67"
     music = "MPUSH66" // algar - The German's Room
     sky1 = "ISLANDSKY", 0.0
+}
+
+map PUSH67 "The Strongest Spirit - Guardsoul"
+{
+    next = "PUSH01"
+    music = "MPUSH67" // PsykkoPhobia Bros. - TOTALIZATOR
+    sky1 = "STSKY1"
 }

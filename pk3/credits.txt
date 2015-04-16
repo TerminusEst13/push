@@ -19,7 +19,7 @@
 - D_DM2TTL is Push & Pull by ((dynamic)).
 - Other music is credited in MapInfo.
 
-- PUSH02, PUSH04, and PUSH09 by Sgt. Shivers.
+- PUSH02, PUSH04, PUSH09, and PUSH57 by Sgt. Shivers.
 - PUSH03 by Roman6a.
  ^- Textures from Quake (except for the lava).
 - PUSH05 and PUSH18 by Dewce.
@@ -28,13 +28,13 @@
  ^ PUSH14 textures by Agaures.
 - PUSH08 by Mike12.
 - PUSH10 by Darsycho.
-- PUSH11 and PUSH43 by IdeIdoom.
+- PUSH11, PUSH43, PUSH53, and PUSH56 by IdeIdoom.
  ^- Textures by Cyb, taken from void.wad
 - PUSH12 by Aquasa.
  ^ Skybox taken from Cybercrime 3.
 - PUSH15, PUSH17, PUSH39, and PUSH40 by UnholyPimpin.
 - PUSH16 by Seryder.
-- PUSH19 and PUSH32 by PresidentPeople.
+- PUSH19, PUSH32, PUSH51, PUSH60, and PUSH62 by PresidentPeople.
  ^ Duke3D textures, water fountain and palm tree sprites from Realm 667.
  ^ Folding chair and potted plant from Doom Vacation.
  ^ Sky from PSX Doom TC.
@@ -49,7 +49,7 @@
 - PUSH26 by gaydad420.
  ^- Skybox from Sonic Advance 2.
  ^- Water from Metroid Fusion.
-- PUSH27 and PUSH45 by Gothic.
+- PUSH27, PUSH45, and PUSH61 by Gothic.
  ^- Textures from Quake.
 - PUSH28 by Sgt. Shivers, Kyle873, Seryder, and TerminusEst13.
  ^- Textures from HacX.
@@ -57,14 +57,14 @@
  ^- Textures from Mega Man 8-Bit Deathmatch.
 - PUSH30 by MrSetharoo.
  ^- Textures from (where else?) StarTropics.
-- PUSH31 by Kurashiki.
+- PUSH31 and PUSH50 by Kurashiki.
 - PUSH10 and PUSH33 by Tango.
  ^- PUSH10 textures taken from 8-Bit Deathmatch.
  ^- Water texture by didy.
  ^- Sky texture taken from Odamex CTF.
  ^- owall and oconcr taken from Ola Bjorling's Darkening E2).
  ^- Vegetation taken from Exhumed, Captain Toenail, and didy.
-- PUSH34 and PUSH49 by Infirnex.
+- PUSH34, PUSH49, PUSH55, and PUSH63 by Infirnex.
  ^- Ice textures taken from Mageslayer.
 - PUSH35 by Madokage.
  ^- Textures from Yume Nikki.
@@ -72,8 +72,12 @@
  ^- Textures from Smash Bros. N64.
 - PUSH37 and PUSH42 by Mystical.
  ^- Textures taken from HDoom and his big fat windy bottom.
-- PUSH38 by UniversalQuantifier.
-- PUSH41 by GuardSoul.
-- PUSH44, PUSH46, and PUSH48 by Gardevoir.
+- PUSH38, PUSH52, and PUSH64 by UniversalQuantifier.
+- PUSH41 and PUSH67 by GuardSoul.
+- PUSH44, PUSH46, PUSH48, PUSH54, and PUSH65 by Gardevoir.
 - PUSH47 by Smoke_Fumus.
  ^- Textures from Shadow Warrior and Duke Nukem 3D.
+- PUSH58 by MartyKirra.
+- PUSH59 by Untitled.
+- PUSH66 by Deadon.
+ ^- Textures from Mr. Gimmick.
