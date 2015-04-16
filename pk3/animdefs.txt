@@ -266,3 +266,9 @@ Warp Texture PRP_WATR
 // Push64
 WARP flat EARTHBL4
 WARP flat HT2T0733
+
+// Push66
+flat SEA1
+    pic SEA1 tics 8
+    pic SEA2 tics 8
+    pic SEA3 tics 8

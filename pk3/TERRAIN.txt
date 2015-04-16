@@ -122,3 +122,69 @@ Terrain RetreatWater
 Floor PRP_WATR RetreatWater
 
 
+// Push66
+//First of all, the splashes
+
+splash Water
+{
+	smallclass		WaterSplashBase
+	smallclip		12
+	smallsound		world/watersplashsmall
+
+	baseclass		WaterSplashBase
+	chunkclass		WaterSplash
+	chunkxvelshift	8
+	chunkyvelshift	8
+	chunkzvelshift	8
+	chunkbasezvel	2
+	sound			world/watersplash
+	NoAlert
+}
+
+//Terrains
+
+//defaultterrain default
+
+terrain defaultterrain
+{
+	splash			hard
+	footclip		0
+
+}
+
+terrain sea
+{
+	splash			gimmickwater
+	footclip		10
+	liquid
+}
+
+terrain island
+{
+}
+
+splash gimmickwater
+{
+	smallclass		None
+	smallclip		0
+	smallsound		njmt
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift	0
+	chunkyvelshift	0
+	chunkzvelshift	0
+	chunkbasezvel	0
+	sound			floor/snow
+	NoAlert
+}
+
+//defaultterrain normal
+
+//Which flat does what
+
+ifdoom
+
+floor NESGREEN island
+
+endif

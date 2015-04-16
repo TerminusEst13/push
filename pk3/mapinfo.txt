@@ -459,7 +459,14 @@ map PUSH64 "Acid Killer - UniversalQuantifier"
 
 map PUSH65 "7th Hell - Gardevoir"
 {
-	next = "PUSH01"
+	next = "PUSH66"
     music = "MPUSH65" // DJ Joge - 7th Heaven
     sky1 = "Sky3", 0.0
+}
+
+map PUSH66 "Gimmick! - Deadon"
+{
+	next = "PUSH01"
+    music = "MPUSH66" // algar - The German's Room
+    sky1 = "ISLANDSKY", 0.0
 }

@@ -64,6 +64,7 @@ MAPS:
 - A new map, Wild is the Wind by Infirnex, has been added at Push63.
 - A new map, Acid Killer by UniversalQuantifier, has been added at Push64.
 - A new map, 7th Hell by Gardevoir, has been added at Push65.
+- A new map, Gimmick! by Deadon, has been added at Push66.
 
 POLISH:
 - Sgt. Shivers has provided the best titlepic.

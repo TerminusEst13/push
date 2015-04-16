@@ -116,8 +116,8 @@ actor DronePlayer : PlayerPawn
     Gravity 0.575
     Mass 10
     Player.JumpZ 0
-    Player.ForwardMove 2.0, 1.0
-    Player.SideMove 1.7, 0.85
+    Player.ForwardMove 1.8, 0.9
+    Player.SideMove 1.6, 0.8
     Player.DisplayName "Drone"
     /*Player.StartItem "Push Gun"
     Player.StartItem "IsADrone", 1
