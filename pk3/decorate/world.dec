@@ -875,6 +875,7 @@ ACTOR SuddenDeathDrone
         TNT1 A 0 A_Jump(16,"ClearTarget")
         Loop
     Missile:
+        TNT1 A 0 A_JumpIfInTargetInventory("IsADrone",1,"ClearTarget")
         DRON BC 2 A_FaceTarget
         DRON D 2 Bright A_CustomMissile("DroneBall",32,0,0,0,0)
         DRON A 10

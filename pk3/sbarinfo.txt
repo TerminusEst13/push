@@ -26,6 +26,12 @@ InInventory ImAlive, 1
         { DrawImage "JUMPEMPT", -50, 170; }
     }
   }
+  InInventory IsADrone, 1
+  {
+      DrawImage "DRONEID1", 119, 1;
+      //DrawImage "DRONEID2", 119, 180;
+      
+  }
   InInventory WallHackVision, 1 {drawimage "CYBTRG", 0, 0;}
 }
 }
@@ -54,6 +60,12 @@ InInventory ImAlive, 1
         AspectRatio "16:9"
         { DrawImage "JUMPEMPT", -50, 170; }
     }
+  }
+  InInventory IsADrone, 1
+  {
+      DrawImage "DRONEID1", 119, 1;
+      //DrawImage "DRONEID2", 119, 180;
+      
   }
   InInventory WallHackVision, 1 {drawimage "CYBTRG", 0, 0;}
 }

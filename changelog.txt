@@ -63,6 +63,7 @@ MAPS:
 - A new map, Island Retreat by PresidentPeople, has been added at Push62.
 - A new map, Wild is the Wind by Infirnex, has been added at Push63.
 - A new map, Acid Killer by UniversalQuantifier, has been added at Push64.
+- A new map, 7th Hell by Gardevoir, has been added at Push65.
 
 POLISH:
 - Sgt. Shivers has provided the best titlepic.

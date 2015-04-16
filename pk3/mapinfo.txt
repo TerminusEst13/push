@@ -452,7 +452,14 @@ map PUSH63 "Wild is the Wind - Infirnex"
 
 map PUSH64 "Acid Killer - UniversalQuantifier"
 {
-	next = "PUSH01"
+	next = "PUSH65"
     music = "MPUSH64" // MXSP! - Samus vs Serris
     sky1 = "DATSKY"
+}
+
+map PUSH65 "7th Hell - Gardevoir"
+{
+	next = "PUSH01"
+    music = "MPUSH65" // DJ Joge - 7th Heaven
+    sky1 = "Sky3", 0.0
 }

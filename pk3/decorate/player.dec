@@ -133,7 +133,8 @@ actor DronePlayer : PlayerPawn
     RadiusDamageFactor 0.25
     Player.ColorRange 112, 127
     +NOSKIN
-    //+NODAMAGE
+    +NODAMAGE
+    +NOTARGET
     +NOBLOOD
     +THRUSPECIES
     Species "Player"
