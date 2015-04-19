@@ -72,11 +72,6 @@ Slow down ground on push08
 
 
 
-
-<playe> reason you can't have nice detail reason #6661999: push41's pillars have little notches where players can hide in/behind
-
-
-
 Make spawn protection a cl cvar.
 
 
@@ -189,7 +184,22 @@ CL cvar to turn off flashing on hit.
 
 
 
+Does push63 have drone spawns?
+Drone players should not show up on wallhack visor.
+Drones need HUD of some kind.
 
+Push66 needs multiplayer spawns.
+Make drones unaffected by wind.
+
+Puah45 should have drones spawn at four corners.
+
+Disable doublejump on sudden death?
+
+On push17, drones can reach the bottom of the mouth and spam omnomnomnom.
+
+Drones need 1 mass.
+
+Make mpush64 louder.
 
 
 
