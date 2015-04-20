@@ -114,7 +114,7 @@ actor DronePlayer : PlayerPawn
     Height 56
     PainChance 255
     Gravity 0.575
-    Mass 10
+    Mass 1
     Player.JumpZ 0
     Player.ForwardMove 1.8, 0.9
     Player.SideMove 1.6, 0.8
@@ -124,19 +124,18 @@ actor DronePlayer : PlayerPawn
     Player.StartItem "PowerPermaFlight", 1
     Player.StartItem "WallHackToggle", 1*/ // None of this is given on morph, interestingly.
     Player.MorphWeapon "Drone Gun"
-    DamageFactor "Normal", 1.0
-    DamageFactor "PushDamage", 0.5
-    DamageFactor "PushDamage2", 0.5
+    DamageFactor "Normal", 0.0
     DamageFactor "GrenadeDamage", 0.5
+    DamageFactor "GauntletDamage", 0.5
     DamageFactor "NoDamage", 0.0
     Player.SoundClass "Drone"
-    RadiusDamageFactor 0.25
+    RadiusDamageFactor 0.0
     Player.ColorRange 112, 127
     +NOSKIN
-    +NODAMAGE
     +NOTARGET
     +NOBLOOD
     +THRUSPECIES
+    -WINDTHRUST
     Species "Player"
     States
     {
@@ -153,6 +152,16 @@ actor DronePlayer : PlayerPawn
     Pain:
         PDRN A 4 Bright
         goto See
+    Pain.GrenadeDamage:
+        TNT1 A 0 A_PlaySoundEx("push/dunk","soundslot6",0,1)
+        TNT1 A 0 A_GiveInventory("GTFO",1)
+        PDRN A 4 Bright
+        goto Spawn
+    Pain.GauntletDamage:
+        TNT1 A 0 A_PlaySoundEx("gauntlet/smash","soundslot6",0,1)
+        TNT1 A 0 A_GiveInventory("GTFO",1)
+        PDRN A 4 Bright
+        goto Spawn
     Death:
         TNT1 A 0
         PDRN A 1 Bright
@@ -213,6 +222,25 @@ actor ThrownTheGauntlet : CustomInventory
         stop
     Launch:
         TNT1 A 0 ThrustThingZ(0,40,0,1)
+        TNT1 A 0 ThrustThing(angle*256/360+128, 80, 1, 0)
+        stop
+    }
+}
+
+actor GTFO : CustomInventory
+{
+    Inventory.MaxAmount 1
+    Inventory.Amount 1
+    +AUTOACTIVATE
+    -INVBAR
+    States
+    {
+    Pickup:
+        TNT1 A 0 A_SetBlend("White",1.00,105)
+        TNT1 A 0 A_GiveInventory("DoomedGuy",70)
+        TNT1 A 0 A_PlaySoundEx("gauntlet/smash","soundslot6",0,1)
+        TNT1 A 0 A_Pain
+        TNT1 A 0 ACS_ExecuteAlways(404,0,0,0,0)
         TNT1 A 0 ThrustThing(angle*256/360+128, 80, 1, 0)
         stop
     }
