@@ -7,3 +7,4 @@ server int p_timelimit       = 4;
 server int p_punchdrunk      = 0;
 server int p_triggerhappy    = 0;
 server int p_playerdrones    = 0;
+server int p_nohazards       = 0;
