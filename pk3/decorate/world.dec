@@ -808,12 +808,12 @@ Inactive:
 
 Actor PowerQuadDamagePush : PowerDamage 
 { 
-  DamageFactor "normal", 4
+  DamageFactor "normal", 2.5
 }
 
 Actor QuadPush : PowerupGiver
 {
-  Inventory.PickupMessage "Quad Push!"
+  Inventory.PickupMessage "Extra Push!"
   Powerup.Color "FF 00 00", 0.2
   Powerup.Type QuadDamagePush
   Powerup.Duration -30
@@ -821,11 +821,11 @@ Actor QuadPush : PowerupGiver
   +INVENTORY.AUTOACTIVATE
   +INVENTORY.ALWAYSPICKUP
   +INVENTORY.FANCYPICKUPSOUND
-  Inventory.PickupSound "misc/p_pkup"
+  Inventory.PickupSound "powerup/grab"
   States
   {
   Spawn:
-    MEGA ABCD 6 Bright
+    PWRU E 6 Bright
     Loop
   }
 }
@@ -834,62 +834,64 @@ Actor FastPush : PowerupGiver
 {
   Inventory.PickupMessage "Fast Push!"
   Powerup.Color "00 00 FF", 0.2
+  Scale 0.9
   Powerup.Type DoubleFiringSpeed
   Powerup.Duration -20
   +NOGRAVITY
   +INVENTORY.AUTOACTIVATE
   +INVENTORY.ALWAYSPICKUP
   +INVENTORY.FANCYPICKUPSOUND
-  Inventory.PickupSound "misc/p_pkup"
+  Inventory.PickupSound "powerup/grab"
   States
   {
   Spawn:
-    MEGA ABCD 6 Bright
+    PWRU D 6 Bright
     Loop
   }
 }
 
 Actor Undunkable : PowerupGiver
 {
-  Inventory.PickupMessage "Undunkable!"
+  Inventory.PickupMessage "Unpushable!"
   Powerup.Color "00 FF 00", 0.2
+  Scale 0.95
   Powerup.Type Invulnerable
-  Powerup.Duration -25
+  Powerup.Duration -20
   +NOGRAVITY
   +INVENTORY.AUTOACTIVATE
   +INVENTORY.ALWAYSPICKUP
   +INVENTORY.FANCYPICKUPSOUND
-  Inventory.PickupSound "misc/p_pkup"
+  Inventory.PickupSound "powerup/grab"
   States
   {
   Spawn:
-    MEGA ABCD 6 Bright
+    PWRU F 6 Bright
     Loop
   }
 }
 
 Actor DunkTime : PowerupGiver
 {
-  Inventory.PickupMessage "Time Stop!"
+  Inventory.PickupMessage "Push Time!"
   Powerup.Color "FF D8 00", 0.2
   Powerup.Type TimeFreezer
-  Powerup.Duration -10
+  Powerup.Duration -5
   +NOGRAVITY
   +INVENTORY.AUTOACTIVATE
   +INVENTORY.ALWAYSPICKUP
   +INVENTORY.FANCYPICKUPSOUND
-  Inventory.PickupSound "misc/p_pkup"
+  Inventory.PickupSound "powerup/grab"
   States
   {
   Spawn:
-    MEGA ABCD 6 Bright
+    PWRU A 6 Bright
     Loop
   }
 }
 
 Actor ShadowDunk : PowerupGiver
 {
-  Inventory.PickupMessage "Cloak Mode!"
+  Inventory.PickupMessage "Shadow Push!"
   Powerup.Color "7F FF FF", 0.2
   Powerup.Type Ghost
   Powerup.Duration -30
@@ -897,30 +899,31 @@ Actor ShadowDunk : PowerupGiver
   +INVENTORY.AUTOACTIVATE
   +INVENTORY.ALWAYSPICKUP
   +INVENTORY.FANCYPICKUPSOUND
-  Inventory.PickupSound "misc/p_pkup"
+  Inventory.PickupSound "powerup/grab"
   States
   {
   Spawn:
-    MEGA ABCD 6 Bright
+    PWRU B 6 Bright
     Loop
   }
 }
 
 Actor IBELIEVEICANFLY : PowerupGiver
 {
-  Inventory.PickupMessage "Flight Mode!"
+  Inventory.PickupMessage "Flying Push!"
   Powerup.Color "FF 00 DC", 0.2
   Powerup.Type Flight
+  Scale 0.9
   Powerup.Duration -25
   +NOGRAVITY
   +INVENTORY.AUTOACTIVATE
   +INVENTORY.ALWAYSPICKUP
   +INVENTORY.FANCYPICKUPSOUND
-  Inventory.PickupSound "misc/p_pkup"
+  Inventory.PickupSound "powerup/grab"
   States
   {
   Spawn:
-    MEGA ABCD 6 Bright
+    PWRU C 6 Bright
     Loop
   }
 }

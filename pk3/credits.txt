@@ -12,6 +12,12 @@
 - Pusher Cacodemon on Push17 by IdeIdoom.
 - Falling stars on Push42 coded by KeksDose.
 - p_playerdrone ACS coded by Marrub.
+- Powerup graphics for push69 from:
+ ^- Doraemon: Minna de Asobo! (Time freeze)
+ ^- Take 2 Heaven (Cloaking device)
+ ^- Mega Run: Redford's Adventure (Flight, Double firing speed)
+ ^- All Kamen Rider: Rider Generations 2 (Extra Push)
+ ^- Legend of Zelda: Skyward Sword (Invulnerability)
 
 - F1 help screen and intermission images drawn by Sgt. Shivers.
 - M_DOOM graphic by Mr. Setharoo and Smoke_Fumus.

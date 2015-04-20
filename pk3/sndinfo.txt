@@ -298,3 +298,4 @@ $Limit SFX/FireDie	0
 // Push69
 JACKPOT		JACKPOT
 OTPLDETH	OTPLDETH
+powerup/grab PWERGET
