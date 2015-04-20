@@ -407,6 +407,7 @@ ACTOR FountainWaterLauncher 13000 //R667 LiquidFountains.wad
   +NOBLOCKMAP
   +DONTSPLASH
   +MOVEWITHSECTOR
+  +FORCEYBILLBOARD
   DamageType "NoDamage"
   States
   {
@@ -421,7 +422,7 @@ ACTOR FountainWaterLauncher 13000 //R667 LiquidFountains.wad
 
 
 
-// Push61
+// Push60
 ACTOR GriefStalkerButt : Serpent 13071
 {
    ClearFlags
@@ -479,8 +480,12 @@ ACTOR GriefSerpentSpawner 13055
        TNT1 G 0
        TNT1 A 35
       HourlyUpdate:
+       TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(1,0,0,0) == 1,"Nope")
        TNT1 A 2240 A_SpawnItemEx("GriefSerpent")
         loop
+      Nope:
+       TNT1 A 2240
+       loop
    }
 }
 
@@ -577,8 +582,12 @@ ACTOR GriefAfritSpawner 13056
        TNT1 A 0
        TNT1 A 2275
       HourlyUpdate:
+       TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(1,0,0,0) == 1,"Nope")
        TNT1 A 2240 A_SpawnItemEx("GriefAfrit")
         loop
+      Nope:
+       TNT1 A 2240
+       loop
    }
 }
 
