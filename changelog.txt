@@ -33,6 +33,7 @@ GAMEPLAY:
  ^- Push61
  ^- Push63
  ^- Push69
+- Push weapons no longer support autoaim.
 
 MAPS:
 - Push11 now has both drone spawns and projectile blocking boundaries.

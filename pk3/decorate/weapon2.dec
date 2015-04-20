@@ -1,5 +1,6 @@
 actor "Force Gauntlet" : Weapon
 {
+    +WEAPON.NOAUTOAIM
     Weapon.SelectionOrder 1
     Weapon.Slotnumber 1
     States

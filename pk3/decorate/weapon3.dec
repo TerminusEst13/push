@@ -1,5 +1,6 @@
 actor "Drone Gun" : Weapon
 {
+    +WEAPON.NOAUTOAIM
     Weapon.SelectionOrder 1
     Weapon.Slotnumber 0
     States
