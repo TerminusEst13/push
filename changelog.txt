@@ -14,11 +14,25 @@ GAMEPLAY:
  ^- Push22
  ^- Push24
  ^- Push31
+ ^- Push45
 - Changing/swapping maps while in non-DM modes no longer renders the players invulnerable.
 - Sudden death drones now only show up in Last Man Standing/Team Last Man Standing.
 - Push is now compatible with and playable in ZDoom/GZDoom! I don't know WHY you'd want to, but there you have it!
 - Respawn protection now is taken away as soon as players fire, so players are now able to rocketjump out of the gate.
 - p_playerdrones has been added as a cvar. When enabled, when the player is on his final life (and sv_maxlives is above one), he will be turned into a drone to chase down the remaining players as he sees fit.
+- p_nohazards has been added as a cvar. When enabled, all randomized dangers or map-changing hazards will be disabled. This affects maps:
+ ^- Push04
+ ^- Push16
+ ^- Push17
+ ^- Push27
+ ^- Push32
+ ^- Push34
+ ^- Push42
+ ^- Push44
+ ^- Push60
+ ^- Push61
+ ^- Push63
+ ^- Push69
 
 MAPS:
 - Push11 now has both drone spawns and projectile blocking boundaries.
@@ -66,6 +80,8 @@ MAPS:
 - A new map, 7th Hell by Gardevoir, has been added at Push65.
 - A new map, Gimmick! by Deadon, has been added at Push66.
 - A new map, The Strongest Spirit by Guardsoul, has been added at Push67.
+- A new map, The Longest Push by Infirnex, has been added at Push68.
+- A new map, Gardie's Crazy Game Show! by Gardevoir and Guardsoul, has been added at Push69.
 
 POLISH:
 - Sgt. Shivers has provided the best titlepic.
