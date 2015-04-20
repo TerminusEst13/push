@@ -202,7 +202,7 @@ map PUSH27 "Blazing Hell - Gothic"
     sky1 = "RSKY1"
 }
 
-map PUSH28 "Enlightened - Wad Squad"
+map PUSH28 "Enlightened - Wad Squad" // Seryder, Sgt. Shivers, and TerminusEst13
 {
     next = "PUSH29"
 	sky1 = "WAKEUP"
@@ -473,7 +473,21 @@ map PUSH66 "Gimmick! - Deadon"
 
 map PUSH67 "The Strongest Spirit - Guardsoul"
 {
-    next = "PUSH01"
+    next = "PUSH68"
     music = "MPUSH67" // PsykkoPhobia Bros. - TOTALIZATOR
     sky1 = "STSKY1"
+}
+
+map PUSH68 "The Longest Push - Infirnex"
+{
+	next = "PUSH69"
+    music = "MPUSH68" // DreaMSectioN - Quake (DS) (Edited slightly)
+    sky1 = "SKY01"
+}
+
+map PUSH69 "Gardie's Crazy Game Show! - GardeSoul" // Gardevoir & Guardsoul
+{
+    next = "PUSH01"
+    music = "MPUSH69" // Elwood - Sweet Dreams
+    sky1 = "PRP_SKY2", 1
 }

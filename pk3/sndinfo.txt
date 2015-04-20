@@ -294,3 +294,7 @@ SFX/FireDie	FIREDIE
 $Limit SFX/FireStart	0
 $Limit SFX/FireLoop	0
 $Limit SFX/FireDie	0
+
+// Push69
+JACKPOT		JACKPOT
+OTPLDETH	OTPLDETH

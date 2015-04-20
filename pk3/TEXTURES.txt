@@ -992,6 +992,95 @@ Sprite "RABSA0", 215, 215
 	}
 }
 
+// Push68
+
+Texture N_GRAC07, 256, 128
+{
+	Patch N_GRCR07, 0, 0
+	Patch N_GRCR07, 64, -16
+	Patch N_GRCR07, 128, 0
+	Patch N_GRCR07, 192, -16
+	Patch W32_4, 0, 0
+	Patch W32_1, 64, 0
+	Patch W32_4, 128, 0
+	Patch W32_4, 192, 0
+	Patch W32_4, 0, 56
+	Patch W32_4, 64, 56
+	Patch W32_1, 128, 56
+	Patch W32_4, 192, 56
+	Patch W33_8, 0, 120
+	Patch W33_8, 64, 120
+	Patch W33_8, 128, 120
+	Patch W33_8, 192, 120
+}
+
+Texture N_GRAY43, 64, 128
+{
+	Patch N_GRAY27, 0, 0
+	Patch N_GRAYX1, 0, 32
+}
+
+Texture N_GRAC14, 64, 128
+{
+	Patch N_GRCR07, 0, 0
+	Patch N_GRAY14, 0, 0
+	Patch W32_4, 0, 64
+}
+
+Texture N_GRAC45, 128, 128
+{
+	Patch N_GRCR07, 0, 0
+	Patch N_GRCR07, 64, -16
+	Patch N_GRAY37, 0, 0
+	Patch N_GRAY38, 0, 72
+}
+
+Texture N_GRAY59, 128, 128
+{
+	Patch N_GRAY34, 0, 0
+	Patch N_GRAY34, 64, -16
+	Patch N_GRAY36, 0, 0
+	Patch N_GRAY38, 0, -72
+}
+
+Texture N_GRAC16, 64, 128
+{
+	Patch N_GRCR07, 0, 0
+	Patch N_GRAY14, 0, 0
+	Patch W32_1, 0, 64
+}
+
+Texture N_GRGB21, 64, 128
+{
+	Patch N_GRBL34, 0, 0
+	Patch N_GRAY13, 0, 0
+	Patch W32_4, 0, 64
+}
+
+Texture N_GRAC69, 128, 128
+{
+	Patch N_GRCR07, 0, 0
+	Patch N_GRAY69, 0, 0
+	Patch N_GRAYX4, 0, 64
+	Patch N_GRCR07, 64, -16
+	Patch N_GRAYX4, 64, 0
+	Patch N_GRAY69, 64, 64
+}
+
+Texture N_GRGB14, 64, 128
+{
+	Patch N_GRBL34, 0, 0
+	Patch N_GRAY14, 0, 0
+	Patch W32_4, 0, 64
+}
+
+Texture N_GRGB16, 64, 128
+{
+	Patch N_GRBL34, 0, 0
+	Patch N_GRAY14, 0, 0
+	Patch W32_1, 0, 64
+}
+
 // Push tipbox
 
 graphic pushtip0, 640, 400

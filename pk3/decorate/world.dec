@@ -795,6 +795,127 @@ Inactive:
 }
 }
 
+// Push69
+
+Actor PowerQuadDamagePush : PowerDamage 
+{ 
+  DamageFactor "normal", 4
+}
+
+Actor QuadPush : PowerupGiver
+{
+  Inventory.PickupMessage "Quad Push!"
+  Powerup.Color "FF 00 00", 0.2
+  Powerup.Type QuadDamagePush
+  Powerup.Duration -30
+  +NOGRAVITY
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.ALWAYSPICKUP
+  +INVENTORY.FANCYPICKUPSOUND
+  Inventory.PickupSound "misc/p_pkup"
+  States
+  {
+  Spawn:
+    MEGA ABCD 6 Bright
+    Loop
+  }
+}
+
+Actor FastPush : PowerupGiver
+{
+  Inventory.PickupMessage "Fast Push!"
+  Powerup.Color "00 00 FF", 0.2
+  Powerup.Type DoubleFiringSpeed
+  Powerup.Duration -20
+  +NOGRAVITY
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.ALWAYSPICKUP
+  +INVENTORY.FANCYPICKUPSOUND
+  Inventory.PickupSound "misc/p_pkup"
+  States
+  {
+  Spawn:
+    MEGA ABCD 6 Bright
+    Loop
+  }
+}
+
+Actor Undunkable : PowerupGiver
+{
+  Inventory.PickupMessage "Undunkable!"
+  Powerup.Color "00 FF 00", 0.2
+  Powerup.Type Invulnerable
+  Powerup.Duration -25
+  +NOGRAVITY
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.ALWAYSPICKUP
+  +INVENTORY.FANCYPICKUPSOUND
+  Inventory.PickupSound "misc/p_pkup"
+  States
+  {
+  Spawn:
+    MEGA ABCD 6 Bright
+    Loop
+  }
+}
+
+Actor DunkTime : PowerupGiver
+{
+  Inventory.PickupMessage "Time Stop!"
+  Powerup.Color "FF D8 00", 0.2
+  Powerup.Type TimeFreezer
+  Powerup.Duration -10
+  +NOGRAVITY
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.ALWAYSPICKUP
+  +INVENTORY.FANCYPICKUPSOUND
+  Inventory.PickupSound "misc/p_pkup"
+  States
+  {
+  Spawn:
+    MEGA ABCD 6 Bright
+    Loop
+  }
+}
+
+Actor ShadowDunk : PowerupGiver
+{
+  Inventory.PickupMessage "Cloak Mode!"
+  Powerup.Color "7F FF FF", 0.2
+  Powerup.Type Ghost
+  Powerup.Duration -30
+  +NOGRAVITY
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.ALWAYSPICKUP
+  +INVENTORY.FANCYPICKUPSOUND
+  Inventory.PickupSound "misc/p_pkup"
+  States
+  {
+  Spawn:
+    MEGA ABCD 6 Bright
+    Loop
+  }
+}
+
+Actor IBELIEVEICANFLY : PowerupGiver
+{
+  Inventory.PickupMessage "Flight Mode!"
+  Powerup.Color "FF 00 DC", 0.2
+  Powerup.Type Flight
+  Powerup.Duration -25
+  +NOGRAVITY
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.ALWAYSPICKUP
+  +INVENTORY.FANCYPICKUPSOUND
+  Inventory.PickupSound "misc/p_pkup"
+  States
+  {
+  Spawn:
+    MEGA ABCD 6 Bright
+    Loop
+  }
+}
+
 
 
 // Global
