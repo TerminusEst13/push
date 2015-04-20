@@ -455,6 +455,7 @@ ACTOR RainDrop
 	+MISSILE 
 	+NOTELEPORT
 	+DontSplash
+    +FORCEYBILLBOARD
 	+CLIENTSIDEONLY
 	RenderStyle Add
 	Alpha .5
