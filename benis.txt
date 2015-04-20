@@ -105,55 +105,6 @@ New:
 Revae's CyDM03 map
 
 
-//// 50: ks_pushmiyajima_i.wad
-//// 51: pushmap-dunkindonuts-02-14-15.pk3 / by PresidentPeople
-//// 52: uq-puship.wad / Jazz Jackrabbit 2 - Beach Bunny!.s3m
-//// 53: ideidoom-push50.wad
-//// 54: Gardie-PUSH05-DWANGO2015.wad
-//// 55: RiverofFlame.wad (by Infirnex)
-  ^- Drone spawn
-  ^- Replace fireballs with lighter/dunker versions
-//// 56: IdeIdoom-PushXX3.wad
-  ^- Drone spawn? Is it there?
-//// 57: sgtshivers-bullseye.wad
-  ^- Drone spawn
-  ^- Decorate/polish up
-//// 58: mk-tsppush.pk3 // ModArchive - Cirdan - Starscreamer.xm
-  ^- Drone spawn
-  ^- Outside area can be flown to and is not a killfloor
-  ^- Walkways need expanded a LOT
-//// 59: untitled-pushxx.wad // Push-Mortem
-  ^- Drone spawn
-  ^- Can hide behind demon face walls.
-  ^- Drone spawn
-//// 60: pushmap-castleofgriefing-test.pk3 // Talk to Pres about A_PrintBold
-//// 61: gothic-serp.wad
-//// 62: Purple sky by Pres
-
-
-Updated:
-
-
-//// infernex-PUSH49v4.wad
-   ^- Check for Drone Spawn
-//// infirnex-PUSH34-v4.wad
-   ^- Check for Drone Spawn
-//// Push30+3-4-2015.wad
-//// ideidoom-PUSH43v2.wad
-//// pp-push28-edit.pk3
-//// pushmap-zombocom-edit-02-14-15.pk3
-//// pushmap-deserthotel-edit-02-19-15.pk3
-//// UniversalQuantifier-push_ice_v2v2.wad
-//// Gardie-PUSH48_lightfix.wad
-
-
-
-Guardsoul-PushMap2.wad
-Gardie-PUSH06-Welcome_To_Hell.wad
-
-uq-pushmap.wad (Save for Zandro 2.0)
-TerminusEst13: Would you be all right with it if I moved the pillars on the east and the west back a little bit to the edge of the platforms? I can already see players wanting to hide behind them to let everyone else fight it out.
-universal quantifier: Sure
 
 
 push57 is a target shooting bullseye, flying shotguns fly around and spew around that shoot players?
