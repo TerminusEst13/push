@@ -35,6 +35,7 @@ GAMEPLAY:
  ^- Push69
 - Push weapons no longer support autoaim.
 - The push laser was made one tic slower, but bolts now travel over 1.5x as fast. This should easily help its role in long-ranged nudging of opponents trying to recover.
+- If sv_nomedals is not turned on, it will automatically be turned on.
 
 MAPS:
 - Push11 now has both drone spawns and projectile blocking boundaries.

@@ -71,14 +71,17 @@ script PUSH_SERVER OPEN
 
     SetAirControl(0.01);
 
-    if (!GetCvar("compat_clientssendfullbuttoninfo") && GetCvar("p_runninginzandro") == 1)
+    if (GetCvar("compat_clientssendfullbuttoninfo") != 1 && GetCvar("p_runninginzandro") == 1)
         { ConsoleCommand("set compat_clientssendfullbuttoninfo 1"); }
 
     if (GetCvar("lmsallowedweapons") != 0 && GetCvar("p_runninginzandro") == 1)
         { ConsoleCommand("set lmsallowedweapons 0"); }
 
-    if (!GetCvar("sv_nocrouch") && GetCvar("p_runninginzandro") == 1)
+    if (GetCvar("sv_nocrouch") != 1 && GetCvar("p_runninginzandro") == 1)
         { ConsoleCommand("set sv_nocrouch 1"); }
+
+    if (GetCvar("sv_nomedals") != 1 && GetCvar("p_runninginzandro") == 1)
+        { ConsoleCommand("set sv_nomedals 1"); }
 
         oldcjumps = cjumps;
         cjumps = GetCVar("p_jumpcount");

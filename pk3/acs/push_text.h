@@ -106,6 +106,7 @@ GAMEPLAY:\n\
 - p_nohazards has been added as a cvar. When enabled, all randomized dangers or map-changing hazards will be disabled.\n\
 - Push weapons no longer support autoaim.\n\
 - The push laser was made one tic slower, but bolts now travel over 1.5x as fast. This should easily help its role in long-ranged nudging of opponents trying to recover.\n\
+- If sv_nomedals is not turned on, it will automatically be turned on.\n\
 \n\
 MAPS:\n\
 - Push11 now has both drone spawns and projectile blocking boundaries.\n\
