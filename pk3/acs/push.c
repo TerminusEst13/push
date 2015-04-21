@@ -275,11 +275,12 @@ script PUSH_ENTER ENTER
           //PrintBold(s:"Player ", d:PlayerNumber(), s:" should be ded");
         }
         else
-        { GiveInventory("500Health",500); }
-        
-        /* if(GetCVar("p_drone_buff") && OhShitItsTheFeds)
-        { GiveInventory("PushItHarderMakeItBetter"); } */
-        
+        {
+          /* if(GetCVar("p_drone_buff") && OhShitItsTheFeds)
+            { GiveInventory("PushItHarderMakeItBetter"); } */
+          GiveInventory("500Health",500);
+          TakeInventory("DoomedGuy",1);
+        }
         if (isDead(0)) { terminate; }
         delay(1);
       }
@@ -322,8 +323,8 @@ script PUSH_WALLHACK (int which)
                 if (i == pln || !PlayerInGame(i)) { continue; }
                 tid = PlayerTIDs[i];
                 if (isDead(tid)) { continue; }
-
-                HudMessageOnActor(tid, 0x7FFFFFFF, "PLAYMARK", "A", tid);
+                if (!CheckActorInventory(tid,"IsADrone"))
+                { HudMessageOnActor(tid, 0x7FFFFFFF, "PLAYMARK", "A", tid); }
             }
 
             Delay(2);
