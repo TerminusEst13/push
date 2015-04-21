@@ -70,8 +70,9 @@
  ^- Sky texture taken from Odamex CTF.
  ^- owall and oconcr taken from Ola Bjorling's Darkening E2).
  ^- Vegetation taken from Exhumed, Captain Toenail, and didy.
-- PUSH34, PUSH49, PUSH55, and PUSH63 by Infirnex.
+- PUSH34, PUSH49, PUSH55, PUSH63, and PUSH68 by Infirnex.
  ^- Ice textures taken from Mageslayer.
+ ^- PUSH68 textures taken from TXGREY
 - PUSH35 by Madokage.
  ^- Textures from Yume Nikki.
 - PUSH36 by Rofl25.
@@ -80,10 +81,12 @@
  ^- Textures taken from HDoom and his big fat windy bottom.
 - PUSH38, PUSH52, and PUSH64 by UniversalQuantifier.
 - PUSH41 and PUSH67 by GuardSoul.
-- PUSH44, PUSH46, PUSH48, PUSH54, and PUSH65 by Gardevoir.
+- PUSH44, PUSH46, PUSH48, PUSH54, PUSH65, and PUSH69 by Gardevoir.
 - PUSH47 by Smoke_Fumus.
  ^- Textures from Shadow Warrior and Duke Nukem 3D.
 - PUSH58 by MartyKirra.
 - PUSH59 by Untitled.
 - PUSH66 by Deadon.
  ^- Textures from Mr. Gimmick.
+- PUSH70 by Yholl.
+ ^- Skybox by plums.

@@ -487,7 +487,15 @@ map PUSH68 "The Longest Push - Infirnex"
 
 map PUSH69 "Gardie's Crazy Game Show! - GardeSoul" // Gardevoir & Guardsoul
 {
-    next = "PUSH01"
+    next = "PUSH70"
     music = "MPUSH69" // Elwood - Sweet Dreams
     sky1 = "PRP_SKY2", 1
+}
+
+map PUSH70 "Peaceful Hexagon Realm - Yholl"
+{
+   next = "PUSH01"
+   sky1 = "HEXSKY", 0.04
+   ForceNoSkyStretch
+   music = "MPUSH70" // Teque - Kharma
 }

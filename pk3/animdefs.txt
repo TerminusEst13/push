@@ -272,3 +272,7 @@ flat SEA1
     pic SEA1 tics 8
     pic SEA2 tics 8
     pic SEA3 tics 8
+
+// Push70
+warp2 flat HEXG3
+warp2 flat HEXG4

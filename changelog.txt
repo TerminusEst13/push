@@ -84,6 +84,8 @@ MAPS:
 - A new map, The Strongest Spirit by Guardsoul, has been added at Push67.
 - A new map, The Longest Push by Infirnex, has been added at Push68.
 - A new map, Gardie's Crazy Game Show! by Gardevoir and Guardsoul, has been added at Push69.
+- A new map, Peaceful Hexagon Realm by Yholl, has been added at Push70.
+
 
 POLISH:
 - Sgt. Shivers has provided the best titlepic.

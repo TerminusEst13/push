@@ -928,6 +928,167 @@ Actor IBELIEVEICANFLY : PowerupGiver
   }
 }
 
+// Push70
+
+ACTOR YhollNonSolidObject
+{
+   Radius 8
+   Height 8
+   +NOCLIP
+   +NOINTERACTION
+   +NOGRAVITY
+   States
+   {
+   Spawn:
+   TNT1 A 3
+   Stop
+   }
+}
+
+ACTOR YhollHexSteamSpawner : YhollNonSolidObject 19000
+{
+   States
+   {
+   Spawn:
+   TNT1 A 0
+   TNT1 A 0 A_Jump (50, "NoSteam")
+   TNT1 A 0 A_Jump (256, 1,2,3,4,5,6,7,8,9,10)
+   TNT1 A 0 A_SpawnItemEx ("YhollHexSteam1", frandom(-20,20), frandom(-20,20), frandom(2,5), 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+   Goto Spawn
+   TNT1 A 0 A_SpawnItemEx ("YhollHexSteam2", frandom(-20,20), frandom(-20,20), frandom(2,5), 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+   Goto Spawn
+   TNT1 A 0 A_SpawnItemEx ("YhollHexSteam3", frandom(-20,20), frandom(-20,20), frandom(2,5), 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+   Goto Spawn
+   TNT1 A 0 A_SpawnItemEx ("YhollHexSteam4", frandom(-20,20), frandom(-20,20), frandom(2,5), 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+   Goto Spawn
+   TNT1 A 0 A_SpawnItemEx ("YhollHexSteam5", frandom(-20,20), frandom(-20,20), frandom(2,5), 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+   Goto Spawn
+   TNT1 A 0 A_SpawnItemEx ("YhollHexSteam6", frandom(-20,20), frandom(-20,20), frandom(2,5), 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+   Goto Spawn
+   TNT1 A 0 A_SpawnItemEx ("YhollHexSteam7", frandom(-20,20), frandom(-20,20), frandom(2,5), 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+   Goto Spawn
+   TNT1 A 0 A_SpawnItemEx ("YhollHexSteam8", frandom(-20,20), frandom(-20,20), frandom(2,5), 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+   Goto Spawn
+   TNT1 A 0 A_SpawnItemEx ("YhollHexSteam9", frandom(-20,20), frandom(-20,20), frandom(2,5), 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+   Goto Spawn
+   TNT1 A 0 A_SpawnItemEx ("YhollHexSteam10", frandom(-20,20), frandom(-20,20), frandom(2,5), 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+   Goto Spawn
+   TNT1 A 1
+   Goto Spawn
+   NoSteam:
+   TNT1 A 1
+   Goto Spawn
+   }
+}
+
+ACTOR YhollHexSteam1 : YhollNonSolidObject
+{
+   RENDERSTYLE ADD
+   Alpha 0.35
+   Scale 4.6
+   -NOCLIP
+   +CLIENTSIDEONLY
+   +FORCEXYBILLBOARD
+   States
+   {
+   Spawn:
+   TNT1 A 0
+   TNT1 A 0 A_ChangeVelocity (frandom(-0.3, 0.3), frandom(-0.3, 0.3), frandom(3.2, 8), CVF_REPLACE)
+   SR03 ABCDEFGHIJKLMNOPQ 15 Bright A_FadeTo (0, 0.02, 1)
+   Stop
+   }
+}
+
+ACTOR YhollHexSteam2 : YhollHexSteam1
+{
+   Scale 5.0
+}
+
+ACTOR YhollHexSteam3 : YhollHexSteam1
+{
+   Scale 5.4
+}
+
+ACTOR YhollHexSteam4 : YhollHexSteam1
+{
+   Scale 5.8
+}
+
+ACTOR YhollHexSteam5 : YhollHexSteam1
+{
+   Scale 6.2
+}
+
+ACTOR YhollHexSteam6 : YhollHexSteam1
+{
+   Scale 6.6
+}
+
+ACTOR YhollHexSteam7 : YhollHexSteam1
+{
+   Scale 7.0
+}
+
+ACTOR YhollHexSteam8 : YhollHexSteam1
+{
+   Scale 7.4
+}
+
+ACTOR YhollHexSteam9 : YhollHexSteam1
+{
+   Scale 7.8
+}
+
+ACTOR YhollHexSteam10 : YhollHexSteam1
+{
+   Scale 8.2
+}
+
+ACTOR YhollHexMeltYourFaceOff 19001
+{
+   Radius 8
+   Height 8
+   +NOCLIP
+   +NOGRAVITY
+   +EXTREMEDEATH
+   DamageType "Extreme"
+   Obituary "%o got unplugged by a steam vent."
+   States
+   {
+   Spawn:
+   TNT1 A 0
+   TNT1 A 1 A_Explode(2000, 340, 0, 0, 340)
+   Loop
+   }
+}
+
+ACTOR YhollHexThrowYouIntoSpace 19002
+{
+   Radius 8
+   Height 8
+   +NOCLIP
+   +NOGRAVITY
+   DamageType "NoDamage"
+   States
+   {
+   Spawn:
+   TNT1 A 0
+   TNT1 A 1 A_Explode(350, 280)
+//   TNT1 A 1 A_RadiusThrust (20000, 420)  fug u radius thrust y u no work right
+   Loop
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 // Global

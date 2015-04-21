@@ -1081,6 +1081,26 @@ Texture N_GRGB16, 64, 128
 	Patch W32_1, 0, 64
 }
 
+
+// Push70
+
+Texture HEXSKY, 1024, 128
+{
+	Patch HEXSKY0, 0, 0
+	Patch HEXSKY1, 256, 0
+	Patch HEXSKY2, 512, 0
+	Patch HEXSKY3, 768, 0
+}
+
+
+
+
+
+
+
+
+
+
 // Push tipbox
 
 graphic pushtip0, 640, 400
