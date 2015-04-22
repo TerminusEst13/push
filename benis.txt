@@ -99,11 +99,6 @@ All maps need more police spawns, police need +NOCLIP on their shots.
 
 
 
-FOR v0.7:
-===============
-New:
-Revae's CyDM03 map
-
 
 
 
@@ -139,6 +134,18 @@ Drones need HUD of some kind.
 Disable doublejump on sudden death?
 
 Make mpush64 louder.
+
+
+
+
+
+FOR v0.8:
+===============
+New:
+Revae's CyDM03 map
+
+Push47 has a massive corner in the former-corner building.
+
 
 
 
