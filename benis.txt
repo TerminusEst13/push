@@ -143,6 +143,8 @@ FOR v0.8:
 ===============
 New:
 Revae's CyDM03 map
+InfirnexWater.wad
+Wind.wad (by Gothic)
 
 Updated:
 PUSH68.zip
