@@ -204,8 +204,6 @@ script PUSH_ENTER ENTER
         tid = defaultTID(-1);
         PlayerTIDs[pln] = tid;
 
-        GiveInventory("500Health",500);
-
         if (GetCvar("p_punchdrunk") == 1)
           { TakeInventory("Push Gun",1); }
         else
@@ -261,6 +259,8 @@ script PUSH_ENTER ENTER
           }
         }
         if (isDead(0)) { terminate; }
+
+        GiveInventory("500Health",500);
 
         delay(1);
       }
