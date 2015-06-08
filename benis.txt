@@ -151,6 +151,11 @@ PUSH68.zip
 
 Push47 has a massive corner in the former-corner building.
 
+Push09 need to have the killfloor slowly rise up, like unholypimpin's rejected drowning map.
+
+
+<kenny> speaking of power-up, have you considered disabling the use of double-jump while the flight powerup is active?
+
 
 
 
