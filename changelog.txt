@@ -3,6 +3,7 @@ FROM V0.7 TO V0.8:
 - Players are no longer capable of drowning.
 - The death camera now works.
 - Players are now no longer capable of dying after they've been killed.
+- Flying no longer triggers both doublejump or surfing counter.
 
 
 FROM V0.6 TO V0.7:

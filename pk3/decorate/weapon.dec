@@ -47,7 +47,11 @@ actor "Push Gun" : Weapon
         TNT1 A 0 A_JumpIfInventory("WallHackVision",1,"Nope")
         RGUN A 1 A_WeaponReady(WRF_NOFIRE | WRF_NOSWITCH)
         TNT1 A 0 A_PlayWeaponSound("push/altfire")
+        TNT1 A 0 A_JumpIfInventory("FakeWaterFlight",1,4)
+        TNT1 A 0 A_JumpIfInventory("PowerFlight",1,3)
+        TNT1 A 0 A_JumpIfInventory("IBelieveICanFly",1,2)
         TNT1 A 0 A_GiveInventory("SurfingCounter",1)
+        TNT1 A 0
         TNT1 A 0 A_GunFlash
         TNT1 A 0 A_JumpIfInventory("LevelIsTooBright",1,"BrightAltFire")
         TNT1 A 0 A_FireCustomMissile("PlasmaGrenade",0,0,0,0,0,5)
